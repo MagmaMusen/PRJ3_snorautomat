@@ -1,0 +1,2 @@
+Commit > Pull > Solve conflicts if any > Commit > Pull > Push
+Brug evt. programmer der gør det nemt
