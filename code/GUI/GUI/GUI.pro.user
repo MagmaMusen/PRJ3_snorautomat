@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 4.8.2, 2020-04-28T10:38:32. -->
+<!-- Written by QtCreator 4.8.2, 2020-05-01T13:06:55. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -281,7 +281,7 @@
        <value type="QString">/opt/poky/3.0.1/sysroots/arm1176jzfshf-vfp-poky-linux-gnueabi</value>
       </valuelist>
       <valuelist type="QVariantList" key="ProjectExplorer.RunConfiguration.LastDeployedTimes">
-       <value type="QDateTime">2020-04-19T19:33:28.126</value>
+       <value type="QDateTime">2020-04-28T14:22:06.946</value>
       </valuelist>
       <value type="bool" key="RemoteLinux.GenericDirectUploadStep.IgnoreMissingFiles">false</value>
       <value type="bool" key="RemoteLinux.GenericDirectUploadStep.Incremental">true</value>

@@ -1,14 +1,14 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include "firstwindowsignal.h"
+#include <QtEvents>
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    
-    setFixedSize(600,600);
 
+    setFixedSize(600,600);
     //Create the 3 buttons with names
     buttonFivePositive_ = new QPushButton("+20", this);
     buttonFiveNegative_ = new QPushButton("-20", this);
