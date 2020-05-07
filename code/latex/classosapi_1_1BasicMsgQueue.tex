@@ -1,0 +1,61 @@
+\hypertarget{classosapi_1_1BasicMsgQueue}{}\doxysection{osapi\+::Basic\+Msg\+Queue$<$ M $>$ Class Template Reference}
+\label{classosapi_1_1BasicMsgQueue}\index{osapi::BasicMsgQueue$<$ M $>$@{osapi::BasicMsgQueue$<$ M $>$}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structosapi_1_1BasicMsgQueue_1_1Item}{Item}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classosapi_1_1BasicMsgQueue_ac8b7b1eac306ca95974359db915deb7a}\label{classosapi_1_1BasicMsgQueue_ac8b7b1eac306ca95974359db915deb7a}} 
+{\bfseries Basic\+Msg\+Queue} (unsigned long max\+Size)
+\item 
+\mbox{\Hypertarget{classosapi_1_1BasicMsgQueue_a8d82ffda45ea8a1d8878f356e5d1284b}\label{classosapi_1_1BasicMsgQueue_a8d82ffda45ea8a1d8878f356e5d1284b}} 
+void {\bfseries send} (unsigned long id, M m=M())
+\item 
+\mbox{\Hypertarget{classosapi_1_1BasicMsgQueue_a7e1dcee4a1c9e6d966bb5d33b5c472cb}\label{classosapi_1_1BasicMsgQueue_a7e1dcee4a1c9e6d966bb5d33b5c472cb}} 
+M {\bfseries receive} (unsigned long \&id)
+\item 
+\mbox{\Hypertarget{classosapi_1_1BasicMsgQueue_ad1a7d939c4eebea66e00302eee7cbb6e}\label{classosapi_1_1BasicMsgQueue_ad1a7d939c4eebea66e00302eee7cbb6e}} 
+unsigned long {\bfseries size} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classosapi_1_1BasicMsgQueue_a140cef25ec89f74c416592ff57d18510}\label{classosapi_1_1BasicMsgQueue_a140cef25ec89f74c416592ff57d18510}} 
+typedef std\+::deque$<$ \mbox{\hyperlink{structosapi_1_1BasicMsgQueue_1_1Item}{Item}} $>$ {\bfseries Queue}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classosapi_1_1BasicMsgQueue_ae84cfda2df0c58f33b48bdc477ad6ad4}\label{classosapi_1_1BasicMsgQueue_ae84cfda2df0c58f33b48bdc477ad6ad4}} 
+unsigned long {\bfseries max\+Size\+\_\+}
+\item 
+\mbox{\Hypertarget{classosapi_1_1BasicMsgQueue_a283dab38e43fb4ceb357d36fad26389a}\label{classosapi_1_1BasicMsgQueue_a283dab38e43fb4ceb357d36fad26389a}} 
+Queue {\bfseries queue\+\_\+}
+\item 
+\mbox{\Hypertarget{classosapi_1_1BasicMsgQueue_a8968f816fc6ff01e18db2b8d9ebea597}\label{classosapi_1_1BasicMsgQueue_a8968f816fc6ff01e18db2b8d9ebea597}} 
+\mbox{\hyperlink{classosapi_1_1Mutex}{Mutex}} {\bfseries mut\+\_\+}
+\item 
+\mbox{\Hypertarget{classosapi_1_1BasicMsgQueue_a8cc8fb644c8614010b2aa8186dbbf617}\label{classosapi_1_1BasicMsgQueue_a8cc8fb644c8614010b2aa8186dbbf617}} 
+\mbox{\hyperlink{classosapi_1_1Conditional}{Conditional}} {\bfseries reader\+\_\+}
+\item 
+\mbox{\Hypertarget{classosapi_1_1BasicMsgQueue_aef19368244a6247010fc0aa4be9ccf00}\label{classosapi_1_1BasicMsgQueue_aef19368244a6247010fc0aa4be9ccf00}} 
+\mbox{\hyperlink{classosapi_1_1Conditional}{Conditional}} {\bfseries writer\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename M$>$\newline
+class osapi\+::\+Basic\+Msg\+Queue$<$ M $>$}
+
+
+
+Definition at line 16 of file Msg\+Queue.\+hpp.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Coin\+Detecting\+Sensors/\+O\+S\+Api\+Student/inc/osapi/Msg\+Queue.\+hpp\end{DoxyCompactItemize}

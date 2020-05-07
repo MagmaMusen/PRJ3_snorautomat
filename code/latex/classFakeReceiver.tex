@@ -1,0 +1,94 @@
+\hypertarget{classFakeReceiver}{}\doxysection{Fake\+Receiver Class Reference}
+\label{classFakeReceiver}\index{FakeReceiver@{FakeReceiver}}
+Inheritance diagram for Fake\+Receiver\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classFakeReceiver}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classFakeReceiver_a4b99bcb6dcb0b79ae40395cbd23b86a5}\label{classFakeReceiver_a4b99bcb6dcb0b79ae40395cbd23b86a5}} 
+enum \{ {\bfseries I\+D\+\_\+\+C\+O\+I\+N\+\_\+\+I\+ND}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classFakeReceiver_a7360451327ec7da539aebae0403503e8}\label{classFakeReceiver_a7360451327ec7da539aebae0403503e8}} 
+\mbox{\hyperlink{classosapi_1_1BasicMsgQueue}{osapi\+::\+Msg\+Queue}} $\ast$ {\bfseries get\+Msg\+Queue} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classFakeReceiver_a320bd7cf7e0ca6fc4c255504e41cb52d}\label{classFakeReceiver_a320bd7cf7e0ca6fc4c255504e41cb52d}} 
+static const int {\bfseries M\+A\+X\+\_\+\+Q\+U\+E\+U\+E\+\_\+\+S\+I\+ZE} = 10
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classFakeReceiver_a2c7d52c3cb993363af0c9d2bc21375d4}{run}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classFakeReceiver_af092fa7dde145a8e0673e69b79103b23}\label{classFakeReceiver_af092fa7dde145a8e0673e69b79103b23}} 
+void \mbox{\hyperlink{classFakeReceiver_af092fa7dde145a8e0673e69b79103b23}{Fake\+Receiver\+Handler}} (unsigned int id, \mbox{\hyperlink{classosapi_1_1Message}{osapi\+::\+Message}} $\ast$msg)
+\begin{DoxyCompactList}\small\item\em Indentifies messages on received on \mbox{\hyperlink{classFakeReceiver}{Fake\+Receiver}}\textquotesingle{}s message queue, casts the message if needed and starts the correct handler function. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classFakeReceiver_aa6c18883c74616376354e742867fab05}\label{classFakeReceiver_aa6c18883c74616376354e742867fab05}} 
+void \mbox{\hyperlink{classFakeReceiver_aa6c18883c74616376354e742867fab05}{Fake\+Receiver\+Handle\+Coin}} (\mbox{\hyperlink{structCoin}{Coin}} $\ast$msg)
+\begin{DoxyCompactList}\small\item\em Prints received coin value to console. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classFakeReceiver_aa7061de947bb4e372ba54e634cf0c333}\label{classFakeReceiver_aa7061de947bb4e372ba54e634cf0c333}} 
+bool \mbox{\hyperlink{classFakeReceiver_aa7061de947bb4e372ba54e634cf0c333}{running\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Event loop exit if set to false. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classFakeReceiver_a161518fbd569d2b9bbed5a89c71cc4d6}\label{classFakeReceiver_a161518fbd569d2b9bbed5a89c71cc4d6}} 
+\mbox{\hyperlink{classosapi_1_1BasicMsgQueue}{osapi\+::\+Msg\+Queue}} \mbox{\hyperlink{classFakeReceiver_a161518fbd569d2b9bbed5a89c71cc4d6}{mq\+\_\+}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classFakeReceiver}{Fake\+Receiver}}\textquotesingle{}s F\+I\+FO message queue where received events are stored. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 16 of file Fake\+Receiver.\+hpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classFakeReceiver_a2c7d52c3cb993363af0c9d2bc21375d4}\label{classFakeReceiver_a2c7d52c3cb993363af0c9d2bc21375d4}} 
+\index{FakeReceiver@{FakeReceiver}!run@{run}}
+\index{run@{run}!FakeReceiver@{FakeReceiver}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void Fake\+Receiver\+::run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Event loop. Receives messages from the message queue, calls the handler, then deletes the message. Is inherited from the Thread\+Functor class and overwritten. 
+
+Implements \mbox{\hyperlink{classosapi_1_1ThreadFunctor}{osapi\+::\+Thread\+Functor}}.
+
+
+
+Definition at line 7 of file Fake\+Receiver.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{8 \{}
+\DoxyCodeLine{9   std::cout << \textcolor{stringliteral}{"Event loop in FakeReceiver started running!"} << std::endl;}
+\DoxyCodeLine{10   \textcolor{keywordflow}{while}(\mbox{\hyperlink{classFakeReceiver_aa7061de947bb4e372ba54e634cf0c333}{running\_}})}
+\DoxyCodeLine{11   \{}
+\DoxyCodeLine{12     \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{long} \textcolor{keywordtype}{int} id;}
+\DoxyCodeLine{13     \mbox{\hyperlink{classosapi_1_1Message}{osapi::Message}}* msg = \mbox{\hyperlink{classFakeReceiver_a161518fbd569d2b9bbed5a89c71cc4d6}{mq\_}}.receive(\textcolor{keywordtype}{id});}
+\DoxyCodeLine{14     \mbox{\hyperlink{classFakeReceiver_af092fa7dde145a8e0673e69b79103b23}{FakeReceiverHandler}}(\textcolor{keywordtype}{id}, msg);}
+\DoxyCodeLine{15     \textcolor{keyword}{delete} msg;}
+\DoxyCodeLine{16   \}}
+\DoxyCodeLine{17 \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Coin\+Detecting\+Sensors/\+O\+S\+Api\+Student/\+C\+D\+S/Fake\+Receiver.\+hpp\item 
+Coin\+Detecting\+Sensors/\+O\+S\+Api\+Student/\+C\+D\+S/Fake\+Receiver.\+cpp\end{DoxyCompactItemize}

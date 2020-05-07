@@ -1,0 +1,77 @@
+\hypertarget{classosapi_1_1Conditional}{}\doxysection{osapi\+::Conditional Class Reference}
+\label{classosapi_1_1Conditional}\index{osapi::Conditional@{osapi::Conditional}}
+Inheritance diagram for osapi\+::Conditional\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classosapi_1_1Conditional}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classosapi_1_1Conditional_a6989311f524a2b74e9d72b27b29d0640}\label{classosapi_1_1Conditional_a6989311f524a2b74e9d72b27b29d0640}} 
+enum {\bfseries Awoken} \{ {\bfseries S\+I\+G\+N\+A\+L\+ED} =0, 
+{\bfseries T\+I\+M\+E\+D\+O\+UT} =1, 
+{\bfseries S\+I\+G\+N\+A\+L\+ED} =0, 
+{\bfseries T\+I\+M\+E\+D\+O\+UT} =1
+ \}
+\item 
+\mbox{\Hypertarget{classosapi_1_1Conditional_a6989311f524a2b74e9d72b27b29d0640}\label{classosapi_1_1Conditional_a6989311f524a2b74e9d72b27b29d0640}} 
+enum {\bfseries Awoken} \{ {\bfseries S\+I\+G\+N\+A\+L\+ED} =0, 
+{\bfseries T\+I\+M\+E\+D\+O\+UT} =1, 
+{\bfseries S\+I\+G\+N\+A\+L\+ED} =0, 
+{\bfseries T\+I\+M\+E\+D\+O\+UT} =1
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classosapi_1_1Conditional_a778b0370bcbf2da90e81d92035e436b7}\label{classosapi_1_1Conditional_a778b0370bcbf2da90e81d92035e436b7}} 
+void {\bfseries signal} ()
+\item 
+\mbox{\Hypertarget{classosapi_1_1Conditional_a206779a0d1c28828626c5f063d120d2b}\label{classosapi_1_1Conditional_a206779a0d1c28828626c5f063d120d2b}} 
+void {\bfseries broadcast} ()
+\item 
+\mbox{\Hypertarget{classosapi_1_1Conditional_a7386a8805625068c595b277fd3641759}\label{classosapi_1_1Conditional_a7386a8805625068c595b277fd3641759}} 
+void {\bfseries wait} (\mbox{\hyperlink{classosapi_1_1Mutex}{Mutex}} \&mut)
+\item 
+\mbox{\Hypertarget{classosapi_1_1Conditional_ab26e25c14866e6bb335e2423bc784e89}\label{classosapi_1_1Conditional_ab26e25c14866e6bb335e2423bc784e89}} 
+Awoken {\bfseries wait\+Timed} (\mbox{\hyperlink{classosapi_1_1Mutex}{Mutex}} \&mut, unsigned long timeout)
+\item 
+\mbox{\Hypertarget{classosapi_1_1Conditional_a778b0370bcbf2da90e81d92035e436b7}\label{classosapi_1_1Conditional_a778b0370bcbf2da90e81d92035e436b7}} 
+void {\bfseries signal} ()
+\item 
+\mbox{\Hypertarget{classosapi_1_1Conditional_a206779a0d1c28828626c5f063d120d2b}\label{classosapi_1_1Conditional_a206779a0d1c28828626c5f063d120d2b}} 
+void {\bfseries broadcast} ()
+\item 
+\mbox{\Hypertarget{classosapi_1_1Conditional_a7386a8805625068c595b277fd3641759}\label{classosapi_1_1Conditional_a7386a8805625068c595b277fd3641759}} 
+void {\bfseries wait} (\mbox{\hyperlink{classosapi_1_1Mutex}{Mutex}} \&mut)
+\item 
+\mbox{\Hypertarget{classosapi_1_1Conditional_ae7f50c1885208346ae0c6f38df8e2e12}\label{classosapi_1_1Conditional_ae7f50c1885208346ae0c6f38df8e2e12}} 
+Awoken {\bfseries wait\+Timed} (\mbox{\hyperlink{classosapi_1_1Mutex}{Mutex}} \&mut, unsigned long timeout)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classosapi_1_1Conditional_a4f6f1bd9a9bc8e1fabce742e1a486da8}\label{classosapi_1_1Conditional_a4f6f1bd9a9bc8e1fabce742e1a486da8}} 
+pthread\+\_\+condattr\+\_\+t {\bfseries condattr\+\_\+}
+\item 
+\mbox{\Hypertarget{classosapi_1_1Conditional_ae7f73e358f02a1c356ae5b37355a1d4e}\label{classosapi_1_1Conditional_ae7f73e358f02a1c356ae5b37355a1d4e}} 
+pthread\+\_\+cond\+\_\+t {\bfseries cond\+\_\+}
+\item 
+\mbox{\Hypertarget{classosapi_1_1Conditional_ad4c57e6189603fa9c0e360f31b4fe271}\label{classosapi_1_1Conditional_ad4c57e6189603fa9c0e360f31b4fe271}} 
+\mbox{\hyperlink{classosapi_1_1details_1_1Conditional}{details\+::\+Conditional}} $\ast$ {\bfseries cond\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 11 of file Conditional.\+hpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Coin\+Detecting\+Sensors/\+O\+S\+Api\+Student/inc/osapi/linux/Conditional.\+hpp\item 
+Coin\+Detecting\+Sensors/\+O\+S\+Api\+Student/linux/Conditional.\+cpp\end{DoxyCompactItemize}

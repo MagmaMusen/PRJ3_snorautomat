@@ -1,0 +1,77 @@
+\hypertarget{classosapi_1_1TimerId}{}\doxysection{osapi\+::Timer\+Id Class Reference}
+\label{classosapi_1_1TimerId}\index{osapi::TimerId@{osapi::TimerId}}
+Inheritance diagram for osapi\+::Timer\+Id\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classosapi_1_1TimerId}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classosapi_1_1TimerId_a5298c15e9f8109d4aa41e2c6baeda5fb}\label{classosapi_1_1TimerId_a5298c15e9f8109d4aa41e2c6baeda5fb}} 
+{\bfseries Timer\+Id} (\mbox{\hyperlink{classosapi_1_1BasicMsgQueue}{Msg\+Queue}} $\ast$mq, unsigned long id)
+\item 
+\mbox{\Hypertarget{classosapi_1_1TimerId_a01b4670fc169a617b0475225bb753b2e}\label{classosapi_1_1TimerId_a01b4670fc169a617b0475225bb753b2e}} 
+void {\bfseries arm} (unsigned long timeout, \mbox{\hyperlink{classosapi_1_1Message}{Message}} $\ast$m)
+\item 
+\mbox{\Hypertarget{classosapi_1_1TimerId_aa7acf7ad271408c3c86edd73d8cd331b}\label{classosapi_1_1TimerId_aa7acf7ad271408c3c86edd73d8cd331b}} 
+void {\bfseries re\+Arm} (\mbox{\hyperlink{classosapi_1_1Message}{Message}} $\ast$m)
+\item 
+\mbox{\Hypertarget{classosapi_1_1TimerId_a69246c76edcc25b3648ac3014c5312b0}\label{classosapi_1_1TimerId_a69246c76edcc25b3648ac3014c5312b0}} 
+void {\bfseries dis\+Arm} ()
+\item 
+\mbox{\Hypertarget{classosapi_1_1TimerId_a589abff9c94edc45dcbbbf7715814312}\label{classosapi_1_1TimerId_a589abff9c94edc45dcbbbf7715814312}} 
+bool {\bfseries is\+Canceled} () const
+\item 
+\mbox{\Hypertarget{classosapi_1_1TimerId_a0bbf29457ecf55f371d223c40ec166ad}\label{classosapi_1_1TimerId_a0bbf29457ecf55f371d223c40ec166ad}} 
+void {\bfseries set\+Canceled} ()
+\item 
+\mbox{\Hypertarget{classosapi_1_1TimerId_ab754b5e64ae40eb1c3b4d3d987293eaa}\label{classosapi_1_1TimerId_ab754b5e64ae40eb1c3b4d3d987293eaa}} 
+void {\bfseries set\+Not\+Canceled} ()
+\item 
+\mbox{\Hypertarget{classosapi_1_1TimerId_ad447472d8010362dad61dc64cc3c2b94}\label{classosapi_1_1TimerId_ad447472d8010362dad61dc64cc3c2b94}} 
+void {\bfseries send\+Timer\+Msg} ()
+\item 
+\mbox{\Hypertarget{classosapi_1_1TimerId_a8dd31ca6b2883d46f70f8892e86da48c}\label{classosapi_1_1TimerId_a8dd31ca6b2883d46f70f8892e86da48c}} 
+detail\+::\+Optional\+Iterator \& {\bfseries get\+Container\+Pos} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classosapi_1_1TimerId_ad3eca7a3ecfe51d0b5061e99c1798c6d}\label{classosapi_1_1TimerId_ad3eca7a3ecfe51d0b5061e99c1798c6d}} 
+\mbox{\hyperlink{classosapi_1_1Mutex}{Mutex}} {\bfseries mut\+\_\+}
+\item 
+\mbox{\Hypertarget{classosapi_1_1TimerId_a4ee685fb60e2ff3af25b2b7ef38960b0}\label{classosapi_1_1TimerId_a4ee685fb60e2ff3af25b2b7ef38960b0}} 
+\mbox{\hyperlink{classosapi_1_1Time}{Time}} {\bfseries armed\+Time\+\_\+}
+\item 
+\mbox{\Hypertarget{classosapi_1_1TimerId_ab6259483c94e15dc19688953bed3fe46}\label{classosapi_1_1TimerId_ab6259483c94e15dc19688953bed3fe46}} 
+unsigned long {\bfseries time\+Out\+\_\+}
+\item 
+\mbox{\Hypertarget{classosapi_1_1TimerId_a80cfc45b1d5303080779fbdbcd6ae1b0}\label{classosapi_1_1TimerId_a80cfc45b1d5303080779fbdbcd6ae1b0}} 
+\mbox{\hyperlink{classosapi_1_1BasicMsgQueue}{Msg\+Queue}} $\ast$ {\bfseries mq\+\_\+}
+\item 
+\mbox{\Hypertarget{classosapi_1_1TimerId_ae51dc34804651754d7f48bec805d1565}\label{classosapi_1_1TimerId_ae51dc34804651754d7f48bec805d1565}} 
+unsigned long {\bfseries id\+\_\+}
+\item 
+\mbox{\Hypertarget{classosapi_1_1TimerId_ab24851a446ad15ce4595b7d4f4caf54a}\label{classosapi_1_1TimerId_ab24851a446ad15ce4595b7d4f4caf54a}} 
+\mbox{\hyperlink{classosapi_1_1Message}{Message}} $\ast$ {\bfseries m\+\_\+}
+\item 
+\mbox{\Hypertarget{classosapi_1_1TimerId_a472e64b29740814d47f23dcf3ee43284}\label{classosapi_1_1TimerId_a472e64b29740814d47f23dcf3ee43284}} 
+bool {\bfseries canceled\+\_\+}
+\item 
+\mbox{\Hypertarget{classosapi_1_1TimerId_a92fe27bcf8b0ac599d600499430c0fa7}\label{classosapi_1_1TimerId_a92fe27bcf8b0ac599d600499430c0fa7}} 
+detail\+::\+Optional\+Iterator {\bfseries container\+Pos\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 41 of file Timer.\+cpp.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Coin\+Detecting\+Sensors/\+O\+S\+Api\+Student/common/Timer.\+cpp\end{DoxyCompactItemize}

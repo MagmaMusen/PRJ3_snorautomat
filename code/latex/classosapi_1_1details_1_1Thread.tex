@@ -1,0 +1,70 @@
+\hypertarget{classosapi_1_1details_1_1Thread}{}\doxysection{osapi\+::details\+::Thread Class Reference}
+\label{classosapi_1_1details_1_1Thread}\index{osapi::details::Thread@{osapi::details::Thread}}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classosapi_1_1details_1_1Thread_a092cffc3c612e3320f8bb899a9fd1a2f}\label{classosapi_1_1details_1_1Thread_a092cffc3c612e3320f8bb899a9fd1a2f}} 
+enum {\bfseries Thread\+Priority} \{ \newline
+{\bfseries P\+R\+I\+O\+R\+I\+T\+Y\+\_\+\+L\+OW} = T\+H\+R\+E\+A\+D\+\_\+\+P\+R\+I\+O\+R\+I\+T\+Y\+\_\+\+L\+O\+W\+E\+ST, 
+{\bfseries P\+R\+I\+O\+R\+I\+T\+Y\+\_\+\+B\+E\+L\+O\+W\+\_\+\+N\+O\+R\+M\+AL} = T\+H\+R\+E\+A\+D\+\_\+\+P\+R\+I\+O\+R\+I\+T\+Y\+\_\+\+B\+E\+L\+O\+W\+\_\+\+N\+O\+R\+M\+AL, 
+{\bfseries P\+R\+I\+O\+R\+I\+T\+Y\+\_\+\+N\+O\+R\+M\+AL} = T\+H\+R\+E\+A\+D\+\_\+\+P\+R\+I\+O\+R\+I\+T\+Y\+\_\+\+N\+O\+R\+M\+AL, 
+{\bfseries P\+R\+I\+O\+R\+I\+T\+Y\+\_\+\+A\+B\+O\+V\+E\+\_\+\+N\+O\+R\+M\+AL} = T\+H\+R\+E\+A\+D\+\_\+\+P\+R\+I\+O\+R\+I\+T\+Y\+\_\+\+A\+B\+O\+V\+E\+\_\+\+N\+O\+R\+M\+AL, 
+\newline
+{\bfseries P\+R\+I\+O\+R\+I\+T\+Y\+\_\+\+H\+I\+GH} = T\+H\+R\+E\+A\+D\+\_\+\+P\+R\+I\+O\+R\+I\+T\+Y\+\_\+\+H\+I\+G\+H\+E\+ST
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classosapi_1_1details_1_1Thread_a1513d29af11ef43d20c564134f9316e7}\label{classosapi_1_1details_1_1Thread_a1513d29af11ef43d20c564134f9316e7}} 
+{\bfseries Thread} (\mbox{\hyperlink{classosapi_1_1ThreadFunctor}{Thread\+Functor}} $\ast$tf, Thread\+Priority pri=Thread\+::\+P\+R\+I\+O\+R\+I\+T\+Y\+\_\+\+N\+O\+R\+M\+AL, const std\+::string \&name=\char`\"{}\char`\"{}, bool auto\+Start=false)
+\item 
+\mbox{\Hypertarget{classosapi_1_1details_1_1Thread_a32354c18994545c6100e36636baaac13}\label{classosapi_1_1details_1_1Thread_a32354c18994545c6100e36636baaac13}} 
+void {\bfseries start} ()
+\item 
+\mbox{\Hypertarget{classosapi_1_1details_1_1Thread_a5b49b55aff5c7b680bccdc0461d23ade}\label{classosapi_1_1details_1_1Thread_a5b49b55aff5c7b680bccdc0461d23ade}} 
+void {\bfseries set\+Priority} (Thread\+Priority pri)
+\item 
+\mbox{\Hypertarget{classosapi_1_1details_1_1Thread_a9670c55738b843b847749ee87774525e}\label{classosapi_1_1details_1_1Thread_a9670c55738b843b847749ee87774525e}} 
+Thread\+Priority {\bfseries get\+Priority} () const
+\item 
+\mbox{\Hypertarget{classosapi_1_1details_1_1Thread_a424d97481af4e472c756025e25dcafa1}\label{classosapi_1_1details_1_1Thread_a424d97481af4e472c756025e25dcafa1}} 
+std\+::string {\bfseries get\+Name} () const
+\item 
+\mbox{\Hypertarget{classosapi_1_1details_1_1Thread_a7e066cdab5ca65f4af8cdf0a64a9800f}\label{classosapi_1_1details_1_1Thread_a7e066cdab5ca65f4af8cdf0a64a9800f}} 
+void {\bfseries join} ()
+\item 
+\mbox{\Hypertarget{classosapi_1_1details_1_1Thread_a5e5877d9eb12fc761db9f57a2d2c1b56}\label{classosapi_1_1details_1_1Thread_a5e5877d9eb12fc761db9f57a2d2c1b56}} 
+void {\bfseries detach} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classosapi_1_1details_1_1Thread_a3bd7ec58b4a0ccffc950207511d073d6}\label{classosapi_1_1details_1_1Thread_a3bd7ec58b4a0ccffc950207511d073d6}} 
+\mbox{\hyperlink{classosapi_1_1ThreadFunctor}{Thread\+Functor}} $\ast$ {\bfseries tf\+\_\+}
+\item 
+\mbox{\Hypertarget{classosapi_1_1details_1_1Thread_a62b2d00a6b2dac2ef4cec1516f549e01}\label{classosapi_1_1details_1_1Thread_a62b2d00a6b2dac2ef4cec1516f549e01}} 
+Thread\+Priority {\bfseries priority\+\_\+}
+\item 
+\mbox{\Hypertarget{classosapi_1_1details_1_1Thread_a58b38b8222c2260491ea47815e955cdd}\label{classosapi_1_1details_1_1Thread_a58b38b8222c2260491ea47815e955cdd}} 
+std\+::string {\bfseries name\+\_\+}
+\item 
+\mbox{\Hypertarget{classosapi_1_1details_1_1Thread_a00d6309c29c8c7db4baf1116c72f3e17}\label{classosapi_1_1details_1_1Thread_a00d6309c29c8c7db4baf1116c72f3e17}} 
+H\+A\+N\+D\+LE {\bfseries handle\+\_\+}
+\item 
+\mbox{\Hypertarget{classosapi_1_1details_1_1Thread_a62c4b85c9cd514d74c96d1bc9481007c}\label{classosapi_1_1details_1_1Thread_a62c4b85c9cd514d74c96d1bc9481007c}} 
+bool {\bfseries attached\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 12 of file Thread.\+hpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Coin\+Detecting\+Sensors/\+O\+S\+Api\+Student/inc/osapi/winx86/details/Thread.\+hpp\item 
+Coin\+Detecting\+Sensors/\+O\+S\+Api\+Student/winx86/details/Thread\+Details.\+cpp\end{DoxyCompactItemize}

@@ -27,7 +27,7 @@ CXXFLAGS=-ggdb -O0
 LIBPATH=$(BASEPATH)/lib/host/debug
 else
 CXXFLAGS=-O2
-LIBPATH=$(BASEPATH)/lib/host/release
+LIBPATH=$(BASEPATH)/lib/target/debug
 endif
 # Setup the CFLAGS to ensure that the relevant warnings, includes and defines.
 CXXFLAGS+=-Wall -D_REENTRANT -DOS_LINUX -I$(BASEPATH)/inc

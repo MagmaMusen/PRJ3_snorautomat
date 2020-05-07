@@ -1,0 +1,116 @@
+\hypertarget{classosapi_1_1Thread}{}\doxysection{osapi\+::Thread Class Reference}
+\label{classosapi_1_1Thread}\index{osapi::Thread@{osapi::Thread}}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classosapi_1_1Thread_a29f9912dd4113cad7eba161835a5c114}\label{classosapi_1_1Thread_a29f9912dd4113cad7eba161835a5c114}} 
+enum {\bfseries Thread\+Priority} \{ \newline
+{\bfseries P\+R\+I\+O\+R\+I\+T\+Y\+\_\+\+L\+OW} = 15, 
+{\bfseries P\+R\+I\+O\+R\+I\+T\+Y\+\_\+\+B\+E\+L\+O\+W\+\_\+\+N\+O\+R\+M\+AL} = 30, 
+{\bfseries P\+R\+I\+O\+R\+I\+T\+Y\+\_\+\+N\+O\+R\+M\+AL} = 45, 
+{\bfseries P\+R\+I\+O\+R\+I\+T\+Y\+\_\+\+A\+B\+O\+V\+E\+\_\+\+N\+O\+R\+M\+AL} = 60, 
+\newline
+{\bfseries P\+R\+I\+O\+R\+I\+T\+Y\+\_\+\+H\+I\+GH} = 75, 
+{\bfseries P\+R\+I\+O\+R\+I\+T\+Y\+\_\+\+L\+OW} = 15, 
+{\bfseries P\+R\+I\+O\+R\+I\+T\+Y\+\_\+\+B\+E\+L\+O\+W\+\_\+\+N\+O\+R\+M\+AL} = 30, 
+{\bfseries P\+R\+I\+O\+R\+I\+T\+Y\+\_\+\+N\+O\+R\+M\+AL} = 45, 
+\newline
+{\bfseries P\+R\+I\+O\+R\+I\+T\+Y\+\_\+\+A\+B\+O\+V\+E\+\_\+\+N\+O\+R\+M\+AL} = 60, 
+{\bfseries P\+R\+I\+O\+R\+I\+T\+Y\+\_\+\+H\+I\+GH} = 75
+ \}
+\item 
+\mbox{\Hypertarget{classosapi_1_1Thread_a29f9912dd4113cad7eba161835a5c114}\label{classosapi_1_1Thread_a29f9912dd4113cad7eba161835a5c114}} 
+enum {\bfseries Thread\+Priority} \{ \newline
+{\bfseries P\+R\+I\+O\+R\+I\+T\+Y\+\_\+\+L\+OW} = 15, 
+{\bfseries P\+R\+I\+O\+R\+I\+T\+Y\+\_\+\+B\+E\+L\+O\+W\+\_\+\+N\+O\+R\+M\+AL} = 30, 
+{\bfseries P\+R\+I\+O\+R\+I\+T\+Y\+\_\+\+N\+O\+R\+M\+AL} = 45, 
+{\bfseries P\+R\+I\+O\+R\+I\+T\+Y\+\_\+\+A\+B\+O\+V\+E\+\_\+\+N\+O\+R\+M\+AL} = 60, 
+\newline
+{\bfseries P\+R\+I\+O\+R\+I\+T\+Y\+\_\+\+H\+I\+GH} = 75, 
+{\bfseries P\+R\+I\+O\+R\+I\+T\+Y\+\_\+\+L\+OW} = 15, 
+{\bfseries P\+R\+I\+O\+R\+I\+T\+Y\+\_\+\+B\+E\+L\+O\+W\+\_\+\+N\+O\+R\+M\+AL} = 30, 
+{\bfseries P\+R\+I\+O\+R\+I\+T\+Y\+\_\+\+N\+O\+R\+M\+AL} = 45, 
+\newline
+{\bfseries P\+R\+I\+O\+R\+I\+T\+Y\+\_\+\+A\+B\+O\+V\+E\+\_\+\+N\+O\+R\+M\+AL} = 60, 
+{\bfseries P\+R\+I\+O\+R\+I\+T\+Y\+\_\+\+H\+I\+GH} = 75
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classosapi_1_1Thread_a6b96884f4d39f6134bf8d3d53f0d695b}\label{classosapi_1_1Thread_a6b96884f4d39f6134bf8d3d53f0d695b}} 
+{\bfseries Thread} (\mbox{\hyperlink{classosapi_1_1ThreadFunctor}{Thread\+Functor}} $\ast$tf, Thread\+Priority p=P\+R\+I\+O\+R\+I\+T\+Y\+\_\+\+N\+O\+R\+M\+AL, const std\+::string \&name=\char`\"{}\char`\"{}, bool auto\+Start=false)
+\item 
+\mbox{\Hypertarget{classosapi_1_1Thread_a5409235d68889397cb5bfe092582cd72}\label{classosapi_1_1Thread_a5409235d68889397cb5bfe092582cd72}} 
+void {\bfseries start} ()
+\item 
+\mbox{\Hypertarget{classosapi_1_1Thread_a986ca922d21233b02a167ba1075bca5b}\label{classosapi_1_1Thread_a986ca922d21233b02a167ba1075bca5b}} 
+void {\bfseries set\+Priority} (Thread\+::\+Thread\+Priority p)
+\item 
+\mbox{\Hypertarget{classosapi_1_1Thread_a5eb2bf6bb954f812a60d8a53391af46a}\label{classosapi_1_1Thread_a5eb2bf6bb954f812a60d8a53391af46a}} 
+Thread\+Priority {\bfseries get\+Priority} () const
+\item 
+\mbox{\Hypertarget{classosapi_1_1Thread_a72df831524a737e7ed602b70c6e4dc3f}\label{classosapi_1_1Thread_a72df831524a737e7ed602b70c6e4dc3f}} 
+std\+::string {\bfseries get\+Name} () const
+\item 
+\mbox{\Hypertarget{classosapi_1_1Thread_a5017a4146002d0ba61cbd268f8b795b2}\label{classosapi_1_1Thread_a5017a4146002d0ba61cbd268f8b795b2}} 
+void {\bfseries join} ()
+\item 
+\mbox{\Hypertarget{classosapi_1_1Thread_a57764da6e88f008e90952f7273f7c70d}\label{classosapi_1_1Thread_a57764da6e88f008e90952f7273f7c70d}} 
+void {\bfseries detach} ()
+\item 
+\mbox{\Hypertarget{classosapi_1_1Thread_a70f871fd972d48ecb3c519cac271a204}\label{classosapi_1_1Thread_a70f871fd972d48ecb3c519cac271a204}} 
+{\bfseries Thread} (\mbox{\hyperlink{classosapi_1_1ThreadFunctor}{Thread\+Functor}} $\ast$tf, Thread\+Priority pri=Thread\+::\+P\+R\+I\+O\+R\+I\+T\+Y\+\_\+\+N\+O\+R\+M\+AL, const std\+::string \&name=\char`\"{}\char`\"{}, bool auto\+Start=false)
+\item 
+\mbox{\Hypertarget{classosapi_1_1Thread_a5409235d68889397cb5bfe092582cd72}\label{classosapi_1_1Thread_a5409235d68889397cb5bfe092582cd72}} 
+void {\bfseries start} ()
+\item 
+\mbox{\Hypertarget{classosapi_1_1Thread_afdd73421450b263242dabb06a9abc17a}\label{classosapi_1_1Thread_afdd73421450b263242dabb06a9abc17a}} 
+void {\bfseries set\+Priority} (Thread\+Priority pri)
+\item 
+\mbox{\Hypertarget{classosapi_1_1Thread_af80c6b5b96657d090f116fa2219bf24f}\label{classosapi_1_1Thread_af80c6b5b96657d090f116fa2219bf24f}} 
+Thread\+Priority {\bfseries get\+Priority} () const
+\item 
+\mbox{\Hypertarget{classosapi_1_1Thread_a72df831524a737e7ed602b70c6e4dc3f}\label{classosapi_1_1Thread_a72df831524a737e7ed602b70c6e4dc3f}} 
+std\+::string {\bfseries get\+Name} () const
+\item 
+\mbox{\Hypertarget{classosapi_1_1Thread_a5017a4146002d0ba61cbd268f8b795b2}\label{classosapi_1_1Thread_a5017a4146002d0ba61cbd268f8b795b2}} 
+void {\bfseries join} ()
+\item 
+\mbox{\Hypertarget{classosapi_1_1Thread_a57764da6e88f008e90952f7273f7c70d}\label{classosapi_1_1Thread_a57764da6e88f008e90952f7273f7c70d}} 
+void {\bfseries detach} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classosapi_1_1Thread_acf6075bfe777ce3db39f40464b7548b5}\label{classosapi_1_1Thread_acf6075bfe777ce3db39f40464b7548b5}} 
+\mbox{\hyperlink{classosapi_1_1ThreadFunctor}{Thread\+Functor}} $\ast$ {\bfseries tf\+\_\+}
+\item 
+\mbox{\Hypertarget{classosapi_1_1Thread_a6aa288ec3487ed5f4b1abe88cddc6aea}\label{classosapi_1_1Thread_a6aa288ec3487ed5f4b1abe88cddc6aea}} 
+Thread\+Priority {\bfseries priority\+\_\+}
+\item 
+\mbox{\Hypertarget{classosapi_1_1Thread_a75bc13f67c5eb1af9ffa9653f2af5643}\label{classosapi_1_1Thread_a75bc13f67c5eb1af9ffa9653f2af5643}} 
+std\+::string {\bfseries name\+\_\+}
+\item 
+\mbox{\Hypertarget{classosapi_1_1Thread_a6c450469c9e28cbdfafba93df44dfc11}\label{classosapi_1_1Thread_a6c450469c9e28cbdfafba93df44dfc11}} 
+pthread\+\_\+t {\bfseries thread\+Id\+\_\+}
+\item 
+\mbox{\Hypertarget{classosapi_1_1Thread_a06c0734f798f7589ae24130c8ff8e3b9}\label{classosapi_1_1Thread_a06c0734f798f7589ae24130c8ff8e3b9}} 
+bool {\bfseries attached\+\_\+}
+\item 
+\mbox{\Hypertarget{classosapi_1_1Thread_a87b2aa8c9a808975471242f2e82c5a45}\label{classosapi_1_1Thread_a87b2aa8c9a808975471242f2e82c5a45}} 
+\mbox{\hyperlink{classosapi_1_1details_1_1Thread}{details\+::\+Thread}} $\ast$ {\bfseries thread\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 14 of file Thread.\+hpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Coin\+Detecting\+Sensors/\+O\+S\+Api\+Student/inc/osapi/linux/Thread.\+hpp\item 
+Coin\+Detecting\+Sensors/\+O\+S\+Api\+Student/linux/Thread.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,62 @@
+\hypertarget{classLogSystem}{}\doxysection{Log\+System Class Reference}
+\label{classLogSystem}\index{LogSystem@{LogSystem}}
+Inheritance diagram for Log\+System\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classLogSystem}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classLogSystem_a651417553b776a3ae64768e486cde1a2}\label{classLogSystem_a651417553b776a3ae64768e486cde1a2}} 
+enum \{ {\bfseries I\+D\+\_\+\+L\+O\+G\+\_\+\+I\+ND}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classLogSystem_a8e565531cbbb9b2d308d0ca320ac88f9}\label{classLogSystem_a8e565531cbbb9b2d308d0ca320ac88f9}} 
+\mbox{\hyperlink{classosapi_1_1BasicMsgQueue}{osapi\+::\+Msg\+Queue}} $\ast$ {\bfseries get\+Msg\+Queue} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classLogSystem_af52772c929bf7a2d1e220b30cd47ad34}\label{classLogSystem_af52772c929bf7a2d1e220b30cd47ad34}} 
+static const int {\bfseries M\+A\+X\+\_\+\+Q\+U\+E\+U\+E\+\_\+\+S\+I\+ZE} = 10
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classLogSystem_a600f73a4ec1f2f7c8ff03fbf26861302}\label{classLogSystem_a600f73a4ec1f2f7c8ff03fbf26861302}} 
+void {\bfseries write\+To\+Log} (\mbox{\hyperlink{structLogInd}{Log\+Ind}} $\ast$l)
+\item 
+\mbox{\Hypertarget{classLogSystem_a66eef7e81083e294d581baead4b34d2c}\label{classLogSystem_a66eef7e81083e294d581baead4b34d2c}} 
+void {\bfseries handle\+Msg} (unsigned long id, \mbox{\hyperlink{classosapi_1_1Message}{osapi\+::\+Message}} $\ast$msg)
+\item 
+\mbox{\Hypertarget{classLogSystem_a336d84b80fbc90a608bcae80235a702b}\label{classLogSystem_a336d84b80fbc90a608bcae80235a702b}} 
+void {\bfseries run} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classLogSystem_adfe6901d261c7a12043cee9a8836ddd1}\label{classLogSystem_adfe6901d261c7a12043cee9a8836ddd1}} 
+\mbox{\hyperlink{classosapi_1_1BasicMsgQueue}{osapi\+::\+Msg\+Queue}} {\bfseries mq\+\_\+}
+\item 
+\mbox{\Hypertarget{classLogSystem_a97b6531661987585d6457040fcbfa3c3}\label{classLogSystem_a97b6531661987585d6457040fcbfa3c3}} 
+std\+::ofstream {\bfseries lf\+\_\+}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 15 of file Log\+System.\+hpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Coin\+Detecting\+Sensors/\+O\+S\+Api\+Student/inc/osapi/example/Log\+System.\+hpp\item 
+Coin\+Detecting\+Sensors/\+O\+S\+Api\+Student/example/Log\+System.\+cpp\end{DoxyCompactItemize}

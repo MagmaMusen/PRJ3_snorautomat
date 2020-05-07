@@ -1,0 +1,87 @@
+\hypertarget{classosapi_1_1details_1_1LogSystem}{}\doxysection{osapi\+::details\+::Log\+System Class Reference}
+\label{classosapi_1_1details_1_1LogSystem}\index{osapi::details::LogSystem@{osapi::details::LogSystem}}
+Inheritance diagram for osapi\+::details\+::Log\+System\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classosapi_1_1details_1_1LogSystem}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classosapi_1_1details_1_1LogSystem_a1b126e8a258bb9c32c8fa270c8271556}\label{classosapi_1_1details_1_1LogSystem_a1b126e8a258bb9c32c8fa270c8271556}} 
+void {\bfseries set\+New\+Output} (\mbox{\hyperlink{classosapi_1_1ILogOutput}{I\+Log\+Output}} $\ast$il\+Output)
+\item 
+\mbox{\Hypertarget{classosapi_1_1details_1_1LogSystem_a27b94ff29124b22faa27e5d96fff9bb6}\label{classosapi_1_1details_1_1LogSystem_a27b94ff29124b22faa27e5d96fff9bb6}} 
+void {\bfseries set\+Log\+Lvl} (Level lvl)
+\item 
+\mbox{\Hypertarget{classosapi_1_1details_1_1LogSystem_ac7c19c02bbef2e26d4598598f57e3009}\label{classosapi_1_1details_1_1LogSystem_ac7c19c02bbef2e26d4598598f57e3009}} 
+void {\bfseries log} (const char $\ast$file\+Name, int line\+No, const char $\ast$function\+Name, Level lvl, const std\+::stringstream \&ss)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classosapi_1_1details_1_1LogSystem_a7ad0905786a63ef941fefc021f8c7f58}\label{classosapi_1_1details_1_1LogSystem_a7ad0905786a63ef941fefc021f8c7f58}} 
+static \mbox{\hyperlink{classosapi_1_1details_1_1LogSystem}{Log\+System}} $\ast$ {\bfseries get\+Instance} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classosapi_1_1details_1_1LogSystem_a4ff7a2800d3c4e2e09369dcbef7e9d50}\label{classosapi_1_1details_1_1LogSystem_a4ff7a2800d3c4e2e09369dcbef7e9d50}} 
+enum \{ {\bfseries M\+A\+X\+\_\+\+L\+O\+G\+\_\+\+M\+SG} =100
+ \}
+\item 
+\mbox{\Hypertarget{classosapi_1_1details_1_1LogSystem_aedb714e873d330196a483f0c56cdfac4}\label{classosapi_1_1details_1_1LogSystem_aedb714e873d330196a483f0c56cdfac4}} 
+enum \{ {\bfseries I\+D\+\_\+\+S\+E\+T\+\_\+\+N\+E\+W\+\_\+\+O\+U\+T\+P\+UT}, 
+{\bfseries I\+D\+\_\+\+S\+E\+T\+\_\+\+L\+O\+G\+\_\+\+L\+VL}, 
+{\bfseries I\+D\+\_\+\+L\+OG}, 
+{\bfseries I\+D\+\_\+\+T\+E\+R\+M\+I\+N\+A\+TE}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classosapi_1_1details_1_1LogSystem_a1474e1f3f8baefd8cff0f7bf4ddf7a08}\label{classosapi_1_1details_1_1LogSystem_a1474e1f3f8baefd8cff0f7bf4ddf7a08}} 
+void {\bfseries handle\+Set\+New\+Output} (\mbox{\hyperlink{structosapi_1_1details_1_1SetNewOutput}{Set\+New\+Output}} $\ast$set\+New\+Output)
+\item 
+\mbox{\Hypertarget{classosapi_1_1details_1_1LogSystem_a07582ca660eeeb7f7177aa7200e03758}\label{classosapi_1_1details_1_1LogSystem_a07582ca660eeeb7f7177aa7200e03758}} 
+void {\bfseries handle\+Set\+Log\+Lvl} (\mbox{\hyperlink{structosapi_1_1details_1_1SetLogLvl}{Set\+Log\+Lvl}} $\ast$set\+Log\+Lvl)
+\item 
+\mbox{\Hypertarget{classosapi_1_1details_1_1LogSystem_a1488a1c8403286698eb9771b7a13201e}\label{classosapi_1_1details_1_1LogSystem_a1488a1c8403286698eb9771b7a13201e}} 
+void {\bfseries handle\+Log} (\mbox{\hyperlink{structosapi_1_1details_1_1Log}{Log}} $\ast$log)
+\item 
+\mbox{\Hypertarget{classosapi_1_1details_1_1LogSystem_afa5c7790280deb466233473a0dfdcce5}\label{classosapi_1_1details_1_1LogSystem_afa5c7790280deb466233473a0dfdcce5}} 
+void {\bfseries handle\+Msg} (unsigned long id, \mbox{\hyperlink{classosapi_1_1Message}{Message}} $\ast$msg)
+\item 
+\mbox{\Hypertarget{classosapi_1_1details_1_1LogSystem_a336d84b80fbc90a608bcae80235a702b}\label{classosapi_1_1details_1_1LogSystem_a336d84b80fbc90a608bcae80235a702b}} 
+void {\bfseries run} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classosapi_1_1details_1_1LogSystem_ab687b85c84aad7de6478624d74af9158}\label{classosapi_1_1details_1_1LogSystem_ab687b85c84aad7de6478624d74af9158}} 
+\mbox{\hyperlink{classosapi_1_1BasicMsgQueue}{Msg\+Queue}} {\bfseries mq\+\_\+}
+\item 
+\mbox{\Hypertarget{classosapi_1_1details_1_1LogSystem_aea74ebccc1992512af199eb17a74f3fd}\label{classosapi_1_1details_1_1LogSystem_aea74ebccc1992512af199eb17a74f3fd}} 
+bool {\bfseries running\+\_\+}
+\item 
+\mbox{\Hypertarget{classosapi_1_1details_1_1LogSystem_a07b87bcdfcab66d5d165f563c2dcc6bb}\label{classosapi_1_1details_1_1LogSystem_a07b87bcdfcab66d5d165f563c2dcc6bb}} 
+Level {\bfseries lvl\+\_\+}
+\item 
+\mbox{\Hypertarget{classosapi_1_1details_1_1LogSystem_ad31ad0c12eb80a513d35a433924ce8ea}\label{classosapi_1_1details_1_1LogSystem_ad31ad0c12eb80a513d35a433924ce8ea}} 
+\mbox{\hyperlink{classosapi_1_1ILogOutput}{I\+Log\+Output}} $\ast$ {\bfseries log\+Output\+\_\+}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 41 of file Log\+System.\+hpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Coin\+Detecting\+Sensors/\+O\+S\+Api\+Student/inc/osapi/details/Log\+System.\+hpp\item 
+Coin\+Detecting\+Sensors/\+O\+S\+Api\+Student/common/Log\+System.\+cpp\end{DoxyCompactItemize}
