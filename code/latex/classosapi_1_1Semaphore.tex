@@ -1,5 +1,9 @@
 \hypertarget{classosapi_1_1Semaphore}{}\doxysection{osapi\+::Semaphore Class Reference}
 \label{classosapi_1_1Semaphore}\index{osapi::Semaphore@{osapi::Semaphore}}
+
+
+{\ttfamily \#include $<$Semaphore.\+hpp$>$}
+
 Inheritance diagram for osapi\+::Semaphore\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -9,33 +13,30 @@ Inheritance diagram for osapi\+::Semaphore\+:\begin{figure}[H]
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classosapi_1_1Semaphore_a522b5150f2ca2c7e3c412333c8818d88}\label{classosapi_1_1Semaphore_a522b5150f2ca2c7e3c412333c8818d88}} 
-{\bfseries Semaphore} (unsigned int init\+Count)
+\mbox{\hyperlink{classosapi_1_1Semaphore_a522b5150f2ca2c7e3c412333c8818d88}{Semaphore}} (unsigned int init\+Count)
 \item 
-\mbox{\Hypertarget{classosapi_1_1Semaphore_ae13ac5e162e8b476961d0031c754d296}\label{classosapi_1_1Semaphore_ae13ac5e162e8b476961d0031c754d296}} 
-void {\bfseries wait} ()
+void \mbox{\hyperlink{classosapi_1_1Semaphore_ae13ac5e162e8b476961d0031c754d296}{wait}} ()
 \item 
-\mbox{\Hypertarget{classosapi_1_1Semaphore_a2829294602d7368c065fd21604b9ddd8}\label{classosapi_1_1Semaphore_a2829294602d7368c065fd21604b9ddd8}} 
-void {\bfseries signal} ()
+void \mbox{\hyperlink{classosapi_1_1Semaphore_a2829294602d7368c065fd21604b9ddd8}{signal}} ()
 \item 
-\mbox{\Hypertarget{classosapi_1_1Semaphore_a522b5150f2ca2c7e3c412333c8818d88}\label{classosapi_1_1Semaphore_a522b5150f2ca2c7e3c412333c8818d88}} 
-{\bfseries Semaphore} (unsigned int init\+Count)
+\mbox{\hyperlink{classosapi_1_1Semaphore_a3774ee090c5c8c90595e013da744f521}{$\sim$\+Semaphore}} ()
 \item 
-\mbox{\Hypertarget{classosapi_1_1Semaphore_ae13ac5e162e8b476961d0031c754d296}\label{classosapi_1_1Semaphore_ae13ac5e162e8b476961d0031c754d296}} 
-void {\bfseries wait} ()
+\mbox{\hyperlink{classosapi_1_1Semaphore_a522b5150f2ca2c7e3c412333c8818d88}{Semaphore}} (unsigned int init\+Count)
 \item 
-\mbox{\Hypertarget{classosapi_1_1Semaphore_a2829294602d7368c065fd21604b9ddd8}\label{classosapi_1_1Semaphore_a2829294602d7368c065fd21604b9ddd8}} 
-void {\bfseries signal} ()
+void \mbox{\hyperlink{classosapi_1_1Semaphore_ae13ac5e162e8b476961d0031c754d296}{wait}} ()
+\item 
+void \mbox{\hyperlink{classosapi_1_1Semaphore_a2829294602d7368c065fd21604b9ddd8}{signal}} ()
+\item 
+\mbox{\hyperlink{classosapi_1_1Semaphore_a3774ee090c5c8c90595e013da744f521}{$\sim$\+Semaphore}} ()
 \end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classosapi_1_1Semaphore_a307f16636dd456a1b80221f1fe4ce107}\label{classosapi_1_1Semaphore_a307f16636dd456a1b80221f1fe4ce107}} 
-sem\+\_\+t {\bfseries sem\+Id\+\_\+}
+sem\+\_\+t \mbox{\hyperlink{classosapi_1_1Semaphore_a307f16636dd456a1b80221f1fe4ce107}{sem\+Id\+\_\+}}
 \item 
-\mbox{\Hypertarget{classosapi_1_1Semaphore_a4475d77f464ba172de6885482d93a185}\label{classosapi_1_1Semaphore_a4475d77f464ba172de6885482d93a185}} 
-\mbox{\hyperlink{classosapi_1_1details_1_1Semaphore}{details\+::\+Semaphore}} $\ast$ {\bfseries sem\+\_\+}
+\mbox{\hyperlink{classosapi_1_1details_1_1Semaphore}{details\+::\+Semaphore}} $\ast$ \mbox{\hyperlink{classosapi_1_1Semaphore_a4475d77f464ba172de6885482d93a185}{sem\+\_\+}}
 \end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
 
 
 \doxysubsection{Detailed Description}
@@ -45,7 +46,128 @@ Definition at line 9 of file Semaphore.\+hpp.
 
 
 
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classosapi_1_1Semaphore_a522b5150f2ca2c7e3c412333c8818d88}\label{classosapi_1_1Semaphore_a522b5150f2ca2c7e3c412333c8818d88}} 
+\index{osapi::Semaphore@{osapi::Semaphore}!Semaphore@{Semaphore}}
+\index{Semaphore@{Semaphore}!osapi::Semaphore@{osapi::Semaphore}}
+\doxysubsubsection{\texorpdfstring{Semaphore()}{Semaphore()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily osapi\+::\+Semaphore\+::\+Semaphore (\begin{DoxyParamCaption}\item[{unsigned int}]{init\+Count }\end{DoxyParamCaption})}
+
+
+
+Definition at line 5 of file Semaphore.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{6   \{}
+\DoxyCodeLine{7     \textcolor{keywordflow}{if}(sem\_init(\&\mbox{\hyperlink{classosapi_1_1Semaphore_a307f16636dd456a1b80221f1fe4ce107}{semId\_}}, 1, initCount) != 0) \textcolor{keywordflow}{throw} SemaphoreError();}
+\DoxyCodeLine{8   \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classosapi_1_1Semaphore_a3774ee090c5c8c90595e013da744f521}\label{classosapi_1_1Semaphore_a3774ee090c5c8c90595e013da744f521}} 
+\index{osapi::Semaphore@{osapi::Semaphore}!````~Semaphore@{$\sim$Semaphore}}
+\index{````~Semaphore@{$\sim$Semaphore}!osapi::Semaphore@{osapi::Semaphore}}
+\doxysubsubsection{\texorpdfstring{$\sim$Semaphore()}{~Semaphore()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily osapi\+::\+Semaphore\+::$\sim$\+Semaphore (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 23 of file Semaphore.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{24   \{}
+\DoxyCodeLine{25     sem\_destroy(\&\mbox{\hyperlink{classosapi_1_1Semaphore_a307f16636dd456a1b80221f1fe4ce107}{semId\_}});}
+\DoxyCodeLine{26   \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classosapi_1_1Semaphore_a522b5150f2ca2c7e3c412333c8818d88}\label{classosapi_1_1Semaphore_a522b5150f2ca2c7e3c412333c8818d88}} 
+\index{osapi::Semaphore@{osapi::Semaphore}!Semaphore@{Semaphore}}
+\index{Semaphore@{Semaphore}!osapi::Semaphore@{osapi::Semaphore}}
+\doxysubsubsection{\texorpdfstring{Semaphore()}{Semaphore()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily osapi\+::\+Semaphore\+::\+Semaphore (\begin{DoxyParamCaption}\item[{unsigned int}]{init\+Count }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classosapi_1_1Semaphore_a3774ee090c5c8c90595e013da744f521}\label{classosapi_1_1Semaphore_a3774ee090c5c8c90595e013da744f521}} 
+\index{osapi::Semaphore@{osapi::Semaphore}!````~Semaphore@{$\sim$Semaphore}}
+\index{````~Semaphore@{$\sim$Semaphore}!osapi::Semaphore@{osapi::Semaphore}}
+\doxysubsubsection{\texorpdfstring{$\sim$Semaphore()}{~Semaphore()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily osapi\+::\+Semaphore\+::$\sim$\+Semaphore (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classosapi_1_1Semaphore_a2829294602d7368c065fd21604b9ddd8}\label{classosapi_1_1Semaphore_a2829294602d7368c065fd21604b9ddd8}} 
+\index{osapi::Semaphore@{osapi::Semaphore}!signal@{signal}}
+\index{signal@{signal}!osapi::Semaphore@{osapi::Semaphore}}
+\doxysubsubsection{\texorpdfstring{signal()}{signal()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void osapi\+::\+Semaphore\+::signal (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 17 of file Semaphore.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{18   \{}
+\DoxyCodeLine{19     \textcolor{keywordflow}{if}(sem\_post(\&\mbox{\hyperlink{classosapi_1_1Semaphore_a307f16636dd456a1b80221f1fe4ce107}{semId\_}}) != 0) \textcolor{keywordflow}{throw} SemaphoreError();}
+\DoxyCodeLine{20   \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classosapi_1_1Semaphore_a2829294602d7368c065fd21604b9ddd8}\label{classosapi_1_1Semaphore_a2829294602d7368c065fd21604b9ddd8}} 
+\index{osapi::Semaphore@{osapi::Semaphore}!signal@{signal}}
+\index{signal@{signal}!osapi::Semaphore@{osapi::Semaphore}}
+\doxysubsubsection{\texorpdfstring{signal()}{signal()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void osapi\+::\+Semaphore\+::signal (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classosapi_1_1Semaphore_ae13ac5e162e8b476961d0031c754d296}\label{classosapi_1_1Semaphore_ae13ac5e162e8b476961d0031c754d296}} 
+\index{osapi::Semaphore@{osapi::Semaphore}!wait@{wait}}
+\index{wait@{wait}!osapi::Semaphore@{osapi::Semaphore}}
+\doxysubsubsection{\texorpdfstring{wait()}{wait()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void osapi\+::\+Semaphore\+::wait (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 11 of file Semaphore.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{12   \{}
+\DoxyCodeLine{13     \textcolor{keywordflow}{if}(sem\_wait(\&\mbox{\hyperlink{classosapi_1_1Semaphore_a307f16636dd456a1b80221f1fe4ce107}{semId\_}}) != 0) \textcolor{keywordflow}{throw} SemaphoreError();}
+\DoxyCodeLine{14   \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classosapi_1_1Semaphore_ae13ac5e162e8b476961d0031c754d296}\label{classosapi_1_1Semaphore_ae13ac5e162e8b476961d0031c754d296}} 
+\index{osapi::Semaphore@{osapi::Semaphore}!wait@{wait}}
+\index{wait@{wait}!osapi::Semaphore@{osapi::Semaphore}}
+\doxysubsubsection{\texorpdfstring{wait()}{wait()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void osapi\+::\+Semaphore\+::wait (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classosapi_1_1Semaphore_a4475d77f464ba172de6885482d93a185}\label{classosapi_1_1Semaphore_a4475d77f464ba172de6885482d93a185}} 
+\index{osapi::Semaphore@{osapi::Semaphore}!sem\_@{sem\_}}
+\index{sem\_@{sem\_}!osapi::Semaphore@{osapi::Semaphore}}
+\doxysubsubsection{\texorpdfstring{sem\_}{sem\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classosapi_1_1details_1_1Semaphore}{details\+::\+Semaphore}}$\ast$ osapi\+::\+Semaphore\+::sem\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 21 of file Semaphore.\+hpp.
+
+\mbox{\Hypertarget{classosapi_1_1Semaphore_a307f16636dd456a1b80221f1fe4ce107}\label{classosapi_1_1Semaphore_a307f16636dd456a1b80221f1fe4ce107}} 
+\index{osapi::Semaphore@{osapi::Semaphore}!semId\_@{semId\_}}
+\index{semId\_@{semId\_}!osapi::Semaphore@{osapi::Semaphore}}
+\doxysubsubsection{\texorpdfstring{semId\_}{semId\_}}
+{\footnotesize\ttfamily sem\+\_\+t osapi\+::\+Semaphore\+::sem\+Id\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 17 of file Semaphore.\+hpp.
+
+
+
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-Coin\+Detecting\+Sensors/\+O\+S\+Api\+Student/inc/osapi/linux/Semaphore.\+hpp\item 
-Coin\+Detecting\+Sensors/\+O\+S\+Api\+Student/linux/Semaphore.\+cpp\end{DoxyCompactItemize}
+Coin\+Detecting\+Sensors/\+O\+S\+Api\+Student/inc/osapi/linux/\mbox{\hyperlink{linux_2Semaphore_8hpp}{Semaphore.\+hpp}}\item 
+Coin\+Detecting\+Sensors/\+O\+S\+Api\+Student/linux/\mbox{\hyperlink{linux_2Semaphore_8cpp}{Semaphore.\+cpp}}\end{DoxyCompactItemize}

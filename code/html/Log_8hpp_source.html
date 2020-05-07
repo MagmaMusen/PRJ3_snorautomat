@@ -69,45 +69,49 @@ $(function() {
 <div class="title">Log.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef OSAPI_LOG_HPP</span></div>
+<a href="Log_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef OSAPI_LOG_HPP</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define OSAPI_LOG_HPP</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;sstream&gt;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;osapi/LogTypes.hpp&quot;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;osapi/details/LogSystem.hpp&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="LogTypes_8hpp.html">osapi/LogTypes.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="details_2LogSystem_8hpp.html">osapi/details/LogSystem.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#define LOG(lvl, ...) do { \</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">    std::stringstream ss;  \</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="Log_8hpp.html#aabadde7d5f8f3525736c00118b4949e5">   11</a></span>&#160;<span class="preprocessor">    std::stringstream ss;  \</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">    ss &lt;&lt; __VA_ARGS__;                                     \</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">    osapi::details::LogSystem::getInstance()-&gt;log(__FILE__, __LINE__, __FUNCTION__, lvl, ss);   \</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">} while(0)</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#define LOG_DETAIL(lvl, fileName, lineNo, functionName, ...) do { \</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">      std::stringstream ss; \</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="Log_8hpp.html#a0b6f86fe45254dbf6b67760a921119a2">   17</a></span>&#160;<span class="preprocessor">      std::stringstream ss; \</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">      ss &lt;&lt; __VA_ARGS__; \</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">      osapi::details::LogSystem::getInstance()-&gt;log(fileName, lineNo, functionName, lvl, ss);     \</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">   } \</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">} while(0)</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#define OSAPI_LOG_EMG(...) LOG(osapi::Emergency, __VA_ARGS__)</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#define OSAPI_LOG_ALT(...) LOG(osapi::Alert, __VA_ARGS__)</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#define OSAPI_LOG_CRT(...) LOG(osapi::Critical, __VA_ARGS__)</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#define OSAPI_LOG_ERR(...) LOG(osapi::Error, __VA_ARGS__)</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#define OSAPI_LOG_WRN(...) LOG(osapi::Warning, __VA_ARGS__)</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#define OSAPI_LOG_NOT(...) LOG(osapi::Notice, __VA_ARGS__)</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#define OSAPI_LOG_INF(...) LOG(osapi::Informational, __VA_ARGS__)</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#define OSAPI_LOG_DBG(...) LOG(osapi::Debug, __VA_ARGS__)</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">namespace </span>osapi</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="Log_8hpp.html#a349ac4d9851b0baa32b38e92573f3871">   24</a></span>&#160;<span class="preprocessor">#define OSAPI_LOG_ALT(...) LOG(osapi::Alert, __VA_ARGS__)</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="Log_8hpp.html#a255592c7f08b42b5ecdf794c95403ec8">   25</a></span>&#160;<span class="preprocessor">#define OSAPI_LOG_CRT(...) LOG(osapi::Critical, __VA_ARGS__)</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="Log_8hpp.html#a592a097617fddf370c2c917262c9f512">   26</a></span>&#160;<span class="preprocessor">#define OSAPI_LOG_ERR(...) LOG(osapi::Error, __VA_ARGS__)</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="Log_8hpp.html#a4141cff2fc6657a17e279be9df818a0f">   27</a></span>&#160;<span class="preprocessor">#define OSAPI_LOG_WRN(...) LOG(osapi::Warning, __VA_ARGS__)</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="Log_8hpp.html#a38cc5801bd34c4b97bd794b7abc5df0b">   28</a></span>&#160;<span class="preprocessor">#define OSAPI_LOG_NOT(...) LOG(osapi::Notice, __VA_ARGS__)</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="Log_8hpp.html#a61b1b3b8e89186fe61bc354c50c8b72e">   29</a></span>&#160;<span class="preprocessor">#define OSAPI_LOG_INF(...) LOG(osapi::Informational, __VA_ARGS__)</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="Log_8hpp.html#a072c02f68a54b4fdd16595d0f96488aa">   30</a></span>&#160;<span class="preprocessor">#define OSAPI_LOG_DBG(...) LOG(osapi::Debug, __VA_ARGS__)</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="Log_8hpp.html#a7f3a06def08dedac3459ebd6061b20ba">   31</a></span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceosapi.html">osapi</a></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;{</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keywordtype">void</span> logSetNewOutput(ILogOutput* ilOutput);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="namespaceosapi.html#a1cd81643bbde2f22e67f2478dfeb34d4">logSetNewOutput</a>(ILogOutput* ilOutput);</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;}</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aLogTypes_8hpp_html"><div class="ttname"><a href="LogTypes_8hpp.html">LogTypes.hpp</a></div></div>
+<div class="ttc" id="anamespaceosapi_html"><div class="ttname"><a href="namespaceosapi.html">osapi</a></div><div class="ttdef"><b>Definition:</b> <a href="Completion_8cpp_source.html#l00004">Completion.cpp:5</a></div></div>
+<div class="ttc" id="adetails_2LogSystem_8hpp_html"><div class="ttname"><a href="details_2LogSystem_8hpp.html">LogSystem.hpp</a></div></div>
+<div class="ttc" id="anamespaceosapi_html_a1cd81643bbde2f22e67f2478dfeb34d4"><div class="ttname"><a href="namespaceosapi.html#a1cd81643bbde2f22e67f2478dfeb34d4">osapi::logSetNewOutput</a></div><div class="ttdeci">void logSetNewOutput(ILogOutput *ilOutput)</div><div class="ttdef"><b>Definition:</b> <a href="Log_8cpp_source.html#l00005">Log.cpp:5</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

@@ -1,0 +1,53 @@
+\hypertarget{TestTime_8cpp}{}\doxysection{Coin\+Detecting\+Sensors/\+O\+S\+Api\+Student/test/\+Test\+Time.cpp File Reference}
+\label{TestTime_8cpp}\index{CoinDetectingSensors/OSApiStudent/test/TestTime.cpp@{CoinDetectingSensors/OSApiStudent/test/TestTime.cpp}}
+{\ttfamily \#include $<$cstdlib$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$boost/test/included/unit\+\_\+test.\+hpp$>$}\newline
+{\ttfamily \#include $<$osapi/\+Time.\+hpp$>$}\newline
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{TestTime_8cpp_a6b2a3852db8bb19ab6909bac01859985}{B\+O\+O\+S\+T\+\_\+\+T\+E\+S\+T\+\_\+\+M\+O\+D\+U\+LE}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{TestTime_8cpp_a33e4ec96d5a5d9adea1b246e4b0b72f4}{B\+O\+O\+S\+T\+\_\+\+A\+U\+T\+O\+\_\+\+T\+E\+S\+T\+\_\+\+C\+A\+SE}} (test1)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{TestTime_8cpp_a6b2a3852db8bb19ab6909bac01859985}\label{TestTime_8cpp_a6b2a3852db8bb19ab6909bac01859985}} 
+\index{TestTime.cpp@{TestTime.cpp}!BOOST\_TEST\_MODULE@{BOOST\_TEST\_MODULE}}
+\index{BOOST\_TEST\_MODULE@{BOOST\_TEST\_MODULE}!TestTime.cpp@{TestTime.cpp}}
+\doxysubsubsection{\texorpdfstring{BOOST\_TEST\_MODULE}{BOOST\_TEST\_MODULE}}
+{\footnotesize\ttfamily \#define B\+O\+O\+S\+T\+\_\+\+T\+E\+S\+T\+\_\+\+M\+O\+D\+U\+LE}
+
+
+
+Definition at line 2 of file Test\+Time.\+cpp.
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{TestTime_8cpp_a33e4ec96d5a5d9adea1b246e4b0b72f4}\label{TestTime_8cpp_a33e4ec96d5a5d9adea1b246e4b0b72f4}} 
+\index{TestTime.cpp@{TestTime.cpp}!BOOST\_AUTO\_TEST\_CASE@{BOOST\_AUTO\_TEST\_CASE}}
+\index{BOOST\_AUTO\_TEST\_CASE@{BOOST\_AUTO\_TEST\_CASE}!TestTime.cpp@{TestTime.cpp}}
+\doxysubsubsection{\texorpdfstring{BOOST\_AUTO\_TEST\_CASE()}{BOOST\_AUTO\_TEST\_CASE()}}
+{\footnotesize\ttfamily B\+O\+O\+S\+T\+\_\+\+A\+U\+T\+O\+\_\+\+T\+E\+S\+T\+\_\+\+C\+A\+SE (\begin{DoxyParamCaption}\item[{test1}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 9 of file Test\+Time.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{10 \{}
+\DoxyCodeLine{11   \mbox{\hyperlink{classosapi_1_1Time}{osapi::Time}} t(100), t2(200), t3(100);}
+\DoxyCodeLine{12 }
+\DoxyCodeLine{13   BOOST\_CHECK( !(t>t2) );}
+\DoxyCodeLine{14   BOOST\_CHECK(! ((t>t3) || (t<t3)) );}
+\DoxyCodeLine{15   BOOST\_CHECK(t<=t3);}
+\DoxyCodeLine{16 \}}
+
+\end{DoxyCode}

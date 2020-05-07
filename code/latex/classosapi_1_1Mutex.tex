@@ -1,34 +1,39 @@
 \hypertarget{classosapi_1_1Mutex}{}\doxysection{osapi\+::Mutex Class Reference}
 \label{classosapi_1_1Mutex}\index{osapi::Mutex@{osapi::Mutex}}
+
+
+{\ttfamily \#include $<$Mutex.\+hpp$>$}
+
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classosapi_1_1Mutex_ad7bc7579c8d59a57da08e0f385d899f9}\label{classosapi_1_1Mutex_ad7bc7579c8d59a57da08e0f385d899f9}} 
-void {\bfseries lock} ()
+\mbox{\hyperlink{classosapi_1_1Mutex_a24b522c1c3dbead6208ff0054aabe2ac}{Mutex}} ()
 \item 
-\mbox{\Hypertarget{classosapi_1_1Mutex_a538c4b70ce00e605e9b2b9076de4497b}\label{classosapi_1_1Mutex_a538c4b70ce00e605e9b2b9076de4497b}} 
-void {\bfseries unlock} ()
+void \mbox{\hyperlink{classosapi_1_1Mutex_ad7bc7579c8d59a57da08e0f385d899f9}{lock}} ()
 \item 
-\mbox{\Hypertarget{classosapi_1_1Mutex_ad7bc7579c8d59a57da08e0f385d899f9}\label{classosapi_1_1Mutex_ad7bc7579c8d59a57da08e0f385d899f9}} 
-void {\bfseries lock} ()
+void \mbox{\hyperlink{classosapi_1_1Mutex_a538c4b70ce00e605e9b2b9076de4497b}{unlock}} ()
 \item 
-\mbox{\Hypertarget{classosapi_1_1Mutex_a538c4b70ce00e605e9b2b9076de4497b}\label{classosapi_1_1Mutex_a538c4b70ce00e605e9b2b9076de4497b}} 
-void {\bfseries unlock} ()
+\mbox{\hyperlink{classosapi_1_1Mutex_ac090650a7cb873776d5f8e82257f94b8}{$\sim$\+Mutex}} ()
+\item 
+\mbox{\hyperlink{classosapi_1_1Mutex_a24b522c1c3dbead6208ff0054aabe2ac}{Mutex}} ()
+\item 
+void \mbox{\hyperlink{classosapi_1_1Mutex_ad7bc7579c8d59a57da08e0f385d899f9}{lock}} ()
+\item 
+void \mbox{\hyperlink{classosapi_1_1Mutex_a538c4b70ce00e605e9b2b9076de4497b}{unlock}} ()
+\item 
+\mbox{\hyperlink{classosapi_1_1Mutex_ac090650a7cb873776d5f8e82257f94b8}{$\sim$\+Mutex}} ()
 \end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classosapi_1_1Mutex_a1973052dc2a75630a55590accd8e18d2}\label{classosapi_1_1Mutex_a1973052dc2a75630a55590accd8e18d2}} 
-pthread\+\_\+mutex\+\_\+t {\bfseries mut\+\_\+}
+pthread\+\_\+mutex\+\_\+t \mbox{\hyperlink{classosapi_1_1Mutex_a1973052dc2a75630a55590accd8e18d2}{mut\+\_\+}}
 \item 
-\mbox{\Hypertarget{classosapi_1_1Mutex_a6882ce159182c5006eba09cd5c544402}\label{classosapi_1_1Mutex_a6882ce159182c5006eba09cd5c544402}} 
-\mbox{\hyperlink{classosapi_1_1details_1_1Mutex}{details\+::\+Mutex}} $\ast$ {\bfseries mut\+\_\+}
+\mbox{\hyperlink{classosapi_1_1details_1_1Mutex}{details\+::\+Mutex}} $\ast$ \mbox{\hyperlink{classosapi_1_1Mutex_a6882ce159182c5006eba09cd5c544402}{mut\+\_\+}}
 \end{DoxyCompactItemize}
 \doxysubsection*{Friends}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classosapi_1_1Mutex_afaa859d8a3a3290fe69d19d8a8af11d8}\label{classosapi_1_1Mutex_afaa859d8a3a3290fe69d19d8a8af11d8}} 
-class {\bfseries Conditional}
+class \mbox{\hyperlink{classosapi_1_1Mutex_afaa859d8a3a3290fe69d19d8a8af11d8}{Conditional}}
 \end{DoxyCompactItemize}
 
 
@@ -39,7 +44,141 @@ Definition at line 10 of file Mutex.\+hpp.
 
 
 
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classosapi_1_1Mutex_a24b522c1c3dbead6208ff0054aabe2ac}\label{classosapi_1_1Mutex_a24b522c1c3dbead6208ff0054aabe2ac}} 
+\index{osapi::Mutex@{osapi::Mutex}!Mutex@{Mutex}}
+\index{Mutex@{Mutex}!osapi::Mutex@{osapi::Mutex}}
+\doxysubsubsection{\texorpdfstring{Mutex()}{Mutex()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily osapi\+::\+Mutex\+::\+Mutex (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 5 of file Mutex.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{6     \{}
+\DoxyCodeLine{7         \textcolor{keywordflow}{if} (pthread\_mutex\_init(\&\mbox{\hyperlink{classosapi_1_1Mutex_a1973052dc2a75630a55590accd8e18d2}{mut\_}}, NULL) != 0) \textcolor{keywordflow}{throw} MutexError();}
+\DoxyCodeLine{8     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classosapi_1_1Mutex_ac090650a7cb873776d5f8e82257f94b8}\label{classosapi_1_1Mutex_ac090650a7cb873776d5f8e82257f94b8}} 
+\index{osapi::Mutex@{osapi::Mutex}!````~Mutex@{$\sim$Mutex}}
+\index{````~Mutex@{$\sim$Mutex}!osapi::Mutex@{osapi::Mutex}}
+\doxysubsubsection{\texorpdfstring{$\sim$Mutex()}{~Mutex()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily osapi\+::\+Mutex\+::$\sim$\+Mutex (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 20 of file Mutex.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{21     \{}
+\DoxyCodeLine{22         pthread\_mutex\_destroy(\&\mbox{\hyperlink{classosapi_1_1Mutex_a1973052dc2a75630a55590accd8e18d2}{mut\_}});}
+\DoxyCodeLine{23     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classosapi_1_1Mutex_a24b522c1c3dbead6208ff0054aabe2ac}\label{classosapi_1_1Mutex_a24b522c1c3dbead6208ff0054aabe2ac}} 
+\index{osapi::Mutex@{osapi::Mutex}!Mutex@{Mutex}}
+\index{Mutex@{Mutex}!osapi::Mutex@{osapi::Mutex}}
+\doxysubsubsection{\texorpdfstring{Mutex()}{Mutex()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily osapi\+::\+Mutex\+::\+Mutex (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classosapi_1_1Mutex_ac090650a7cb873776d5f8e82257f94b8}\label{classosapi_1_1Mutex_ac090650a7cb873776d5f8e82257f94b8}} 
+\index{osapi::Mutex@{osapi::Mutex}!````~Mutex@{$\sim$Mutex}}
+\index{````~Mutex@{$\sim$Mutex}!osapi::Mutex@{osapi::Mutex}}
+\doxysubsubsection{\texorpdfstring{$\sim$Mutex()}{~Mutex()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily osapi\+::\+Mutex\+::$\sim$\+Mutex (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classosapi_1_1Mutex_ad7bc7579c8d59a57da08e0f385d899f9}\label{classosapi_1_1Mutex_ad7bc7579c8d59a57da08e0f385d899f9}} 
+\index{osapi::Mutex@{osapi::Mutex}!lock@{lock}}
+\index{lock@{lock}!osapi::Mutex@{osapi::Mutex}}
+\doxysubsubsection{\texorpdfstring{lock()}{lock()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void osapi\+::\+Mutex\+::lock (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 10 of file Mutex.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{11     \{}
+\DoxyCodeLine{12         \textcolor{keywordflow}{if} (pthread\_mutex\_lock(\&\mbox{\hyperlink{classosapi_1_1Mutex_a1973052dc2a75630a55590accd8e18d2}{mut\_}}) != 0) \textcolor{keywordflow}{throw} MutexError();}
+\DoxyCodeLine{13     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classosapi_1_1Mutex_ad7bc7579c8d59a57da08e0f385d899f9}\label{classosapi_1_1Mutex_ad7bc7579c8d59a57da08e0f385d899f9}} 
+\index{osapi::Mutex@{osapi::Mutex}!lock@{lock}}
+\index{lock@{lock}!osapi::Mutex@{osapi::Mutex}}
+\doxysubsubsection{\texorpdfstring{lock()}{lock()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void osapi\+::\+Mutex\+::lock (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classosapi_1_1Mutex_a538c4b70ce00e605e9b2b9076de4497b}\label{classosapi_1_1Mutex_a538c4b70ce00e605e9b2b9076de4497b}} 
+\index{osapi::Mutex@{osapi::Mutex}!unlock@{unlock}}
+\index{unlock@{unlock}!osapi::Mutex@{osapi::Mutex}}
+\doxysubsubsection{\texorpdfstring{unlock()}{unlock()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void osapi\+::\+Mutex\+::unlock (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 15 of file Mutex.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{16     \{}
+\DoxyCodeLine{17         \textcolor{keywordflow}{if} (pthread\_mutex\_unlock(\&\mbox{\hyperlink{classosapi_1_1Mutex_a1973052dc2a75630a55590accd8e18d2}{mut\_}}) != 0) \textcolor{keywordflow}{throw} MutexError();}
+\DoxyCodeLine{18     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classosapi_1_1Mutex_a538c4b70ce00e605e9b2b9076de4497b}\label{classosapi_1_1Mutex_a538c4b70ce00e605e9b2b9076de4497b}} 
+\index{osapi::Mutex@{osapi::Mutex}!unlock@{unlock}}
+\index{unlock@{unlock}!osapi::Mutex@{osapi::Mutex}}
+\doxysubsubsection{\texorpdfstring{unlock()}{unlock()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void osapi\+::\+Mutex\+::unlock (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classosapi_1_1Mutex_afaa859d8a3a3290fe69d19d8a8af11d8}\label{classosapi_1_1Mutex_afaa859d8a3a3290fe69d19d8a8af11d8}} 
+\index{osapi::Mutex@{osapi::Mutex}!Conditional@{Conditional}}
+\index{Conditional@{Conditional}!osapi::Mutex@{osapi::Mutex}}
+\doxysubsubsection{\texorpdfstring{Conditional}{Conditional}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classosapi_1_1Conditional}{Conditional}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line 19 of file Mutex.\+hpp.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classosapi_1_1Mutex_a1973052dc2a75630a55590accd8e18d2}\label{classosapi_1_1Mutex_a1973052dc2a75630a55590accd8e18d2}} 
+\index{osapi::Mutex@{osapi::Mutex}!mut\_@{mut\_}}
+\index{mut\_@{mut\_}!osapi::Mutex@{osapi::Mutex}}
+\doxysubsubsection{\texorpdfstring{mut\_}{mut\_}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily pthread\+\_\+mutex\+\_\+t osapi\+::\+Mutex\+::mut\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 20 of file Mutex.\+hpp.
+
+\mbox{\Hypertarget{classosapi_1_1Mutex_a6882ce159182c5006eba09cd5c544402}\label{classosapi_1_1Mutex_a6882ce159182c5006eba09cd5c544402}} 
+\index{osapi::Mutex@{osapi::Mutex}!mut\_@{mut\_}}
+\index{mut\_@{mut\_}!osapi::Mutex@{osapi::Mutex}}
+\doxysubsubsection{\texorpdfstring{mut\_}{mut\_}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classosapi_1_1details_1_1Mutex}{details\+::\+Mutex}}$\ast$ osapi\+::\+Mutex\+::mut\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 26 of file Mutex.\+hpp.
+
+
+
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-Coin\+Detecting\+Sensors/\+O\+S\+Api\+Student/inc/osapi/linux/Mutex.\+hpp\item 
-Coin\+Detecting\+Sensors/\+O\+S\+Api\+Student/linux/Mutex.\+cpp\end{DoxyCompactItemize}
+Coin\+Detecting\+Sensors/\+O\+S\+Api\+Student/inc/osapi/linux/\mbox{\hyperlink{linux_2Mutex_8hpp}{Mutex.\+hpp}}\item 
+Coin\+Detecting\+Sensors/\+O\+S\+Api\+Student/linux/\mbox{\hyperlink{linux_2Mutex_8cpp}{Mutex.\+cpp}}\end{DoxyCompactItemize}

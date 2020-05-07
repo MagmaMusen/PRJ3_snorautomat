@@ -69,25 +69,25 @@ $(function() {
 <div class="title">Mutex.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef OSAPI_WINX86_MUTEX_DETAILS_HPP</span></div>
+<a href="winx86_2details_2Mutex_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef OSAPI_WINX86_MUTEX_DETAILS_HPP</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define OSAPI_WINX86_MUTEX_DETAILS_HPP</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;windows.h&gt;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;osapi/Utility.hpp&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="Utility_8hpp.html">osapi/Utility.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace </span>osapi</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceosapi.html">osapi</a></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;  <span class="keyword">namespace </span>details</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;  {    </div>
 <div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="classosapi_1_1details_1_1Mutex.html">   10</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classosapi_1_1details_1_1Mutex.html">Mutex</a> : <a class="code" href="classosapi_1_1Notcopyable.html">Notcopyable</a></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    {</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;      <a class="code" href="classosapi_1_1details_1_1Mutex.html">Mutex</a>();</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;      <span class="keywordtype">void</span> lock();</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;      <span class="keywordtype">void</span> unlock();</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;      CRITICAL_SECTION&amp; nativeHandle();</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;      ~<a class="code" href="classosapi_1_1details_1_1Mutex.html">Mutex</a>();</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;      <a class="code" href="classosapi_1_1details_1_1Mutex.html#afcaaa216b4abdaed04c002bc3c10fa31">Mutex</a>();</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;      <span class="keywordtype">void</span> <a class="code" href="classosapi_1_1details_1_1Mutex.html#a22a98d0557915764e72291199b88bdf5">lock</a>();</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;      <span class="keywordtype">void</span> <a class="code" href="classosapi_1_1details_1_1Mutex.html#ac31724af2f42ddd0f5b9ab006f28f507">unlock</a>();</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;      CRITICAL_SECTION&amp; <a class="code" href="classosapi_1_1details_1_1Mutex.html#a7b53ddee8080ee57776a9d694e26b4fa">nativeHandle</a>();</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;      <a class="code" href="classosapi_1_1details_1_1Mutex.html#a9d031f69342ef55fcf8d6b64506f75aa">~Mutex</a>();</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;      CRITICAL_SECTION cs_;</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="classosapi_1_1details_1_1Mutex.html#a3a014c5e4303e3ae24ebfe2394a23d8c">   19</a></span>&#160;      CRITICAL_SECTION <a class="code" href="classosapi_1_1details_1_1Mutex.html#a3a014c5e4303e3ae24ebfe2394a23d8c">cs_</a>;</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    };</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  }</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  </div>
@@ -97,8 +97,16 @@ $(function() {
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclassosapi_1_1details_1_1Mutex_html_a3a014c5e4303e3ae24ebfe2394a23d8c"><div class="ttname"><a href="classosapi_1_1details_1_1Mutex.html#a3a014c5e4303e3ae24ebfe2394a23d8c">osapi::details::Mutex::cs_</a></div><div class="ttdeci">CRITICAL_SECTION cs_</div><div class="ttdef"><b>Definition:</b> <a href="winx86_2details_2Mutex_8hpp_source.html#l00019">Mutex.hpp:19</a></div></div>
+<div class="ttc" id="aclassosapi_1_1details_1_1Mutex_html_a9d031f69342ef55fcf8d6b64506f75aa"><div class="ttname"><a href="classosapi_1_1details_1_1Mutex.html#a9d031f69342ef55fcf8d6b64506f75aa">osapi::details::Mutex::~Mutex</a></div><div class="ttdeci">~Mutex()</div><div class="ttdef"><b>Definition:</b> <a href="MutexDetails_8cpp_source.html#l00031">MutexDetails.cpp:31</a></div></div>
+<div class="ttc" id="aclassosapi_1_1details_1_1Mutex_html_ac31724af2f42ddd0f5b9ab006f28f507"><div class="ttname"><a href="classosapi_1_1details_1_1Mutex.html#ac31724af2f42ddd0f5b9ab006f28f507">osapi::details::Mutex::unlock</a></div><div class="ttdeci">void unlock()</div><div class="ttdef"><b>Definition:</b> <a href="MutexDetails_8cpp_source.html#l00020">MutexDetails.cpp:20</a></div></div>
+<div class="ttc" id="anamespaceosapi_html"><div class="ttname"><a href="namespaceosapi.html">osapi</a></div><div class="ttdef"><b>Definition:</b> <a href="Completion_8cpp_source.html#l00004">Completion.cpp:5</a></div></div>
 <div class="ttc" id="aclassosapi_1_1details_1_1Mutex_html"><div class="ttname"><a href="classosapi_1_1details_1_1Mutex.html">osapi::details::Mutex</a></div><div class="ttdef"><b>Definition:</b> <a href="winx86_2details_2Mutex_8hpp_source.html#l00010">Mutex.hpp:11</a></div></div>
+<div class="ttc" id="aUtility_8hpp_html"><div class="ttname"><a href="Utility_8hpp.html">Utility.hpp</a></div></div>
+<div class="ttc" id="aclassosapi_1_1details_1_1Mutex_html_afcaaa216b4abdaed04c002bc3c10fa31"><div class="ttname"><a href="classosapi_1_1details_1_1Mutex.html#afcaaa216b4abdaed04c002bc3c10fa31">osapi::details::Mutex::Mutex</a></div><div class="ttdeci">Mutex()</div><div class="ttdef"><b>Definition:</b> <a href="MutexDetails_8cpp_source.html#l00010">MutexDetails.cpp:10</a></div></div>
 <div class="ttc" id="aclassosapi_1_1Notcopyable_html"><div class="ttname"><a href="classosapi_1_1Notcopyable.html">osapi::Notcopyable</a></div><div class="ttdef"><b>Definition:</b> <a href="Utility_8hpp_source.html#l00007">Utility.hpp:8</a></div></div>
+<div class="ttc" id="aclassosapi_1_1details_1_1Mutex_html_a7b53ddee8080ee57776a9d694e26b4fa"><div class="ttname"><a href="classosapi_1_1details_1_1Mutex.html#a7b53ddee8080ee57776a9d694e26b4fa">osapi::details::Mutex::nativeHandle</a></div><div class="ttdeci">CRITICAL_SECTION &amp; nativeHandle()</div><div class="ttdef"><b>Definition:</b> <a href="MutexDetails_8cpp_source.html#l00025">MutexDetails.cpp:25</a></div></div>
+<div class="ttc" id="aclassosapi_1_1details_1_1Mutex_html_a22a98d0557915764e72291199b88bdf5"><div class="ttname"><a href="classosapi_1_1details_1_1Mutex.html#a22a98d0557915764e72291199b88bdf5">osapi::details::Mutex::lock</a></div><div class="ttdeci">void lock()</div><div class="ttdef"><b>Definition:</b> <a href="MutexDetails_8cpp_source.html#l00015">MutexDetails.cpp:15</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

@@ -1,6 +1,25 @@
 var searchData=
 [
-  ['getmsgqueue_26',['getMsgQueue',['../classCoinIdentifier.html#a6a93d1e39be515da841054d5033d5669',1,'CoinIdentifier::getMsgQueue()'],['../classSensorReader.html#a0e493b0e27ba3f3c4ffaf76ec5d253ae',1,'SensorReader::getMsgQueue()']]],
-  ['guimessagequeue_27',['GUIMessageQueue',['../classGUIMessageQueue.html',1,'']]],
-  ['guimsgqueue_28',['GUIMsgQueue',['../classGUIMsgQueue.html',1,'']]]
+  ['fakereceiver_97',['FakeReceiver',['../classFakeReceiver.html',1,'FakeReceiver'],['../classFakeReceiver.html#a38cff5e82317c5f6f10995004a9b5595',1,'FakeReceiver::FakeReceiver()']]],
+  ['fakereceiver_2ecpp_98',['FakeReceiver.cpp',['../FakeReceiver_8cpp.html',1,'']]],
+  ['fakereceiver_2ehpp_99',['FakeReceiver.hpp',['../FakeReceiver_8hpp.html',1,'']]],
+  ['fakereceiverhandlecoin_100',['FakeReceiverHandleCoin',['../classFakeReceiver.html#aa6c18883c74616376354e742867fab05',1,'FakeReceiver']]],
+  ['fakereceiverhandler_101',['FakeReceiverHandler',['../classFakeReceiver.html#af092fa7dde145a8e0673e69b79103b23',1,'FakeReceiver']]],
+  ['fd_5fi2c_102',['fd_i2c',['../I2CVirtual_8cpp.html#a8dd1a45bc5567056b03e24febf185198',1,'I2CVirtual.cpp']]],
+  ['fiftycents_5f_103',['fiftyCents_',['../classpaymentWindow.html#af0bd36408a275829d4569341ab393cdc',1,'paymentWindow::fiftyCents_()'],['../classsnorWindow.html#a6b6996f7cc42ac13f94831871092b42a',1,'snorWindow::fiftyCents_()']]],
+  ['fiftyoreclicked_104',['fiftyOreClicked',['../classpaymentWindow.html#a29dcb5dc3da47da5f249acc2454f3301',1,'paymentWindow']]],
+  ['filename_5f_105',['fileName_',['../structosapi_1_1details_1_1Log.html#a65e4c404e4522b89e51ddca7750feb7e',1,'osapi::details::Log']]],
+  ['firstwindowsignal_106',['firstWindowSignal',['../classfirstWindowSignal.html',1,'firstWindowSignal'],['../classfirstWindowSignal.html#a8a01385648c03d1c8d0b73c96b961e71',1,'firstWindowSignal::firstWindowSignal(QObject *parent=nullptr)'],['../classfirstWindowSignal.html#ac15860e94b238e4a35a98ceaceffed39',1,'firstWindowSignal::firstWindowSignal()']]],
+  ['firstwindowsignal_2ecpp_107',['firstwindowsignal.cpp',['../firstwindowsignal_8cpp.html',1,'(Global Namespace)'],['../00_2firstwindowsignal_8cpp.html',1,'(Global Namespace)']]],
+  ['firstwindowsignal_2eh_108',['firstwindowsignal.h',['../firstwindowsignal_8h.html',1,'(Global Namespace)'],['../00_2firstwindowsignal_8h.html',1,'(Global Namespace)']]],
+  ['firstwindowsignals_109',['firstWindowSignals',['../classfirstWindowSignals.html',1,'firstWindowSignals'],['../classfirstWindowSignals.html#a16822058966a380aa474803ba8bb25e2',1,'firstWindowSignals::firstWindowSignals()']]],
+  ['firstwindowsignals_2ecpp_110',['firstwindowsignals.cpp',['../firstwindowsignals_8cpp.html',1,'']]],
+  ['firstwindowsignals_2eh_111',['firstwindowsignals.h',['../firstwindowsignals_8h.html',1,'']]],
+  ['firstwindowsinals_112',['firstWindowSinals',['../classfirstWindowSinals.html',1,'firstWindowSinals'],['../classfirstWindowSinals.html#afbfccec937273850119219d9f01515ba',1,'firstWindowSinals::firstWindowSinals()']]],
+  ['firstwindowsinals_2ecpp_113',['firstwindowsinals.cpp',['../firstwindowsinals_8cpp.html',1,'']]],
+  ['firstwindowsinals_2eh_114',['firstwindowsinals.h',['../firstwindowsinals_8h.html',1,'']]],
+  ['firstwindowsinals_5fh_115',['FIRSTWINDOWSINALS_H',['../firstwindowsinals_8h.html#a6090e0520f35b7b512ca883dbf6803cb',1,'firstwindowsinals.h']]],
+  ['fivecrownclicked_116',['fiveCrownClicked',['../classpaymentWindow.html#af4793a8d889405c078d113f97852ded7',1,'paymentWindow']]],
+  ['fivecrowns_5f_117',['fiveCrowns_',['../classpaymentWindow.html#acf142459a4cb26e07b85580ebb01654b',1,'paymentWindow::fiveCrowns_()'],['../classsnorWindow.html#ad717ffbb2679c29944847ab69088abb9',1,'snorWindow::fiveCrowns_()']]],
+  ['functionname_5f_118',['functionName_',['../structosapi_1_1details_1_1Log.html#a5b52014ef123d38509ec17c765dedc25',1,'osapi::details::Log']]]
 ];

@@ -1,5 +1,9 @@
 \hypertarget{classtekst2}{}\doxysection{tekst2 Class Reference}
 \label{classtekst2}\index{tekst2@{tekst2}}
+
+
+{\ttfamily \#include $<$tekst2.\+h$>$}
+
 Inheritance diagram for tekst2\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -9,23 +13,19 @@ Inheritance diagram for tekst2\+:\begin{figure}[H]
 \doxysubsection*{Signals}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classtekst2_a34aed054abb9901f4aeb95185f6de9e1}\label{classtekst2_a34aed054abb9901f4aeb95185f6de9e1}} 
-void {\bfseries value\+Changed} (int)
+void \mbox{\hyperlink{classtekst2_a34aed054abb9901f4aeb95185f6de9e1}{value\+Changed}} (int)
 \end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classtekst2_a718b4ed82cc85f40abdab47926cc2bf8}\label{classtekst2_a718b4ed82cc85f40abdab47926cc2bf8}} 
-{\bfseries tekst2} (Q\+Widget $\ast$parent=nullptr)
+\mbox{\hyperlink{classtekst2_a718b4ed82cc85f40abdab47926cc2bf8}{tekst2}} (Q\+Widget $\ast$parent=nullptr)
 \item 
-\mbox{\Hypertarget{classtekst2_a24e42457d857dc438ecbb2745087df47}\label{classtekst2_a24e42457d857dc438ecbb2745087df47}} 
-void {\bfseries print} ()
+void \mbox{\hyperlink{classtekst2_a24e42457d857dc438ecbb2745087df47}{print}} ()
 \end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classtekst2_ab322e8255c51832d31ae4cb2de57cc31}\label{classtekst2_ab322e8255c51832d31ae4cb2de57cc31}} 
-char {\bfseries tekst\+\_\+}
+char \mbox{\hyperlink{classtekst2_ab322e8255c51832d31ae4cb2de57cc31}{tekst\+\_\+}}
 \end{DoxyCompactItemize}
 
 
@@ -36,7 +36,68 @@ Definition at line 6 of file tekst2.\+h.
 
 
 
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classtekst2_a718b4ed82cc85f40abdab47926cc2bf8}\label{classtekst2_a718b4ed82cc85f40abdab47926cc2bf8}} 
+\index{tekst2@{tekst2}!tekst2@{tekst2}}
+\index{tekst2@{tekst2}!tekst2@{tekst2}}
+\doxysubsubsection{\texorpdfstring{tekst2()}{tekst2()}}
+{\footnotesize\ttfamily tekst2\+::tekst2 (\begin{DoxyParamCaption}\item[{Q\+Widget $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Definition at line 5 of file tekst2.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{5                               : QWidget(parent)}
+\DoxyCodeLine{6 \{}
+\DoxyCodeLine{7     QLineEdit *\mbox{\hyperlink{classtekst2_ab322e8255c51832d31ae4cb2de57cc31}{tekst\_}} = \textcolor{keyword}{new} QLineEdit (\textcolor{stringliteral}{"Du mangler at betale"});}
+\DoxyCodeLine{8     \textcolor{comment}{//QPushButton *m\_button = new QPushButton ("Hello World", this);}}
+\DoxyCodeLine{9 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classtekst2_a24e42457d857dc438ecbb2745087df47}\label{classtekst2_a24e42457d857dc438ecbb2745087df47}} 
+\index{tekst2@{tekst2}!print@{print}}
+\index{print@{print}!tekst2@{tekst2}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void tekst2\+::print (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 11 of file tekst2.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{12 \{}
+\DoxyCodeLine{13     QLineEdit LineEdit3(\textcolor{stringliteral}{"Du mangler at betale:"});}
+\DoxyCodeLine{14 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classtekst2_a34aed054abb9901f4aeb95185f6de9e1}\label{classtekst2_a34aed054abb9901f4aeb95185f6de9e1}} 
+\index{tekst2@{tekst2}!valueChanged@{valueChanged}}
+\index{valueChanged@{valueChanged}!tekst2@{tekst2}}
+\doxysubsubsection{\texorpdfstring{valueChanged}{valueChanged}}
+{\footnotesize\ttfamily void tekst2\+::value\+Changed (\begin{DoxyParamCaption}\item[{int}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classtekst2_ab322e8255c51832d31ae4cb2de57cc31}\label{classtekst2_ab322e8255c51832d31ae4cb2de57cc31}} 
+\index{tekst2@{tekst2}!tekst\_@{tekst\_}}
+\index{tekst\_@{tekst\_}!tekst2@{tekst2}}
+\doxysubsubsection{\texorpdfstring{tekst\_}{tekst\_}}
+{\footnotesize\ttfamily char tekst2\+::tekst\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 17 of file tekst2.\+h.
+
+
+
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-G\+U\+I/trial\+Roop/tekst2.\+h\item 
-G\+U\+I/trial\+Roop/tekst2.\+cpp\end{DoxyCompactItemize}
+G\+U\+I/trial\+Roop/\mbox{\hyperlink{tekst2_8h}{tekst2.\+h}}\item 
+G\+U\+I/trial\+Roop/\mbox{\hyperlink{tekst2_8cpp}{tekst2.\+cpp}}\end{DoxyCompactItemize}

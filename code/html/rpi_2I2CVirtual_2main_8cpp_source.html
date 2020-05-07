@@ -69,29 +69,33 @@ $(function() {
 <div class="title">main.cpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;I2CVirtual.hpp&quot;</span></div>
+<a href="rpi_2I2CVirtual_2main_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="I2CVirtual_8hpp.html">I2CVirtual.hpp</a>&quot;</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;unistd.h&gt;</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keywordtype">int</span> main()</div>
+<div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="rpi_2I2CVirtual_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">    5</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="CoinDetectingSensors_2OSApiStudent_2CDS_2main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">main</a>()</div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;{</div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    <a class="code" href="classi2c.html">i2c</a> name(0x48);</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    </div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <span class="keywordflow">for</span>(;;)</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    {</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;       name.i2cSend(0b00000011);</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;       name.<a class="code" href="classi2c.html#a74992c4494bcccf99bdffad173ed3ad7">i2cSend</a>(0b00000011);</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;       <span class="comment">/*sleep(1);</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">       name.i2cReceive();*/</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        <span class="comment">/*if (name.i2cReceive() == 0b11111111)</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">        {</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">            printf(&quot;RecievedGGGGG data\n&quot;);*/</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <span class="comment">//}</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        sleep(1);</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <a class="code" href="namespaceosapi.html#aeed8c6f1372f57481ea48bcf2a672c82">sleep</a>(1);</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    }</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aclassi2c_html"><div class="ttname"><a href="classi2c.html">i2c</a></div><div class="ttdef"><b>Definition:</b> <a href="I2CVirtual_8hpp_source.html#l00007">I2CVirtual.hpp:8</a></div></div>
+<div class="ttc" id="anamespaceosapi_html_aeed8c6f1372f57481ea48bcf2a672c82"><div class="ttname"><a href="namespaceosapi.html#aeed8c6f1372f57481ea48bcf2a672c82">osapi::sleep</a></div><div class="ttdeci">void sleep(unsigned long msecs)</div><div class="ttdef"><b>Definition:</b> <a href="linux_2Utility_8cpp_source.html#l00006">Utility.cpp:6</a></div></div>
+<div class="ttc" id="aclassi2c_html_a74992c4494bcccf99bdffad173ed3ad7"><div class="ttname"><a href="classi2c.html#a74992c4494bcccf99bdffad173ed3ad7">i2c::i2cSend</a></div><div class="ttdeci">void i2cSend(char buffer1)</div><div class="ttdef"><b>Definition:</b> <a href="I2CVirtual_8cpp_source.html#l00021">I2CVirtual.cpp:21</a></div></div>
+<div class="ttc" id="aCoinDetectingSensors_2OSApiStudent_2CDS_2main_8cpp_html_a0ddf1224851353fc92bfbff6f499fa97"><div class="ttname"><a href="CoinDetectingSensors_2OSApiStudent_2CDS_2main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">main</a></div><div class="ttdeci">int main(int argc, char *argv[])</div><div class="ttdef"><b>Definition:</b> <a href="CoinDetectingSensors_2OSApiStudent_2CDS_2main_8cpp_source.html#l00008">main.cpp:8</a></div></div>
+<div class="ttc" id="aI2CVirtual_8hpp_html"><div class="ttname"><a href="I2CVirtual_8hpp.html">I2CVirtual.hpp</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

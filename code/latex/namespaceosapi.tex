@@ -1,0 +1,550 @@
+\hypertarget{namespaceosapi}{}\doxysection{osapi Namespace Reference}
+\label{namespaceosapi}\index{osapi@{osapi}}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespaceosapi_1_1detail}{detail}}
+\item 
+ \mbox{\hyperlink{namespaceosapi_1_1details}{details}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classosapi_1_1BasicMsgQueue}{Basic\+Msg\+Queue}}
+\item 
+class \mbox{\hyperlink{classosapi_1_1Completion}{Completion}}
+\item 
+class \mbox{\hyperlink{classosapi_1_1Conditional}{Conditional}}
+\item 
+class \mbox{\hyperlink{classosapi_1_1ConditionalError}{Conditional\+Error}}
+\item 
+class \mbox{\hyperlink{classosapi_1_1ILogOutput}{I\+Log\+Output}}
+\item 
+class \mbox{\hyperlink{classosapi_1_1ITimer}{I\+Timer}}
+\item 
+class \mbox{\hyperlink{classosapi_1_1ITimerId}{I\+Timer\+Id}}
+\item 
+class \mbox{\hyperlink{classosapi_1_1LogLevelError}{Log\+Level\+Error}}
+\item 
+class \mbox{\hyperlink{classosapi_1_1LogOutputStdOut}{Log\+Output\+Std\+Out}}
+\item 
+class \mbox{\hyperlink{classosapi_1_1Message}{Message}}
+\item 
+class \mbox{\hyperlink{classosapi_1_1Mutex}{Mutex}}
+\item 
+class \mbox{\hyperlink{classosapi_1_1MutexError}{Mutex\+Error}}
+\item 
+class \mbox{\hyperlink{classosapi_1_1Notcopyable}{Notcopyable}}
+\item 
+class \mbox{\hyperlink{classosapi_1_1RAII}{R\+A\+II}}
+\item 
+class \mbox{\hyperlink{classosapi_1_1ScopedLock}{Scoped\+Lock}}
+\item 
+class \mbox{\hyperlink{classosapi_1_1Semaphore}{Semaphore}}
+\item 
+class \mbox{\hyperlink{classosapi_1_1SemaphoreError}{Semaphore\+Error}}
+\item 
+class \mbox{\hyperlink{classosapi_1_1SystemError}{System\+Error}}
+\item 
+class \mbox{\hyperlink{classosapi_1_1Thread}{Thread}}
+\item 
+class \mbox{\hyperlink{classosapi_1_1ThreadError}{Thread\+Error}}
+\item 
+class \mbox{\hyperlink{classosapi_1_1ThreadFunctor}{Thread\+Functor}}
+\item 
+class \mbox{\hyperlink{classosapi_1_1Time}{Time}}
+\item 
+class \mbox{\hyperlink{classosapi_1_1Timer}{Timer}}
+\item 
+class \mbox{\hyperlink{classosapi_1_1TimerId}{Timer\+Id}}
+\item 
+struct \mbox{\hyperlink{structosapi_1_1xxxAwoken}{xxx\+Awoken}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{classosapi_1_1BasicMsgQueue}{Basic\+Msg\+Queue}}$<$ \mbox{\hyperlink{classosapi_1_1Message}{Message}} $\ast$ $>$ \mbox{\hyperlink{namespaceosapi_a1bacbda2d705cebe3418c74fd3d05e94}{Msg\+Queue}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{namespaceosapi_a14699808c3cc5f95b6eaef678d1f8dcc}{Level}} \{ \newline
+\mbox{\hyperlink{namespaceosapi_a14699808c3cc5f95b6eaef678d1f8dccabf1430c65fefe3a09c169f12ee9d049b}{Emergency}} = 0, 
+\mbox{\hyperlink{namespaceosapi_a14699808c3cc5f95b6eaef678d1f8dccae762d0fcd19060730176f9ffe796e7fd}{Alert}} = 1, 
+\mbox{\hyperlink{namespaceosapi_a14699808c3cc5f95b6eaef678d1f8dcca761aec726aa7c936c145a0128ccc4655}{Critical}} = 2, 
+\mbox{\hyperlink{namespaceosapi_a14699808c3cc5f95b6eaef678d1f8dcca0838b38800b1b44523ab224c82597a00}{Error}} = 3, 
+\newline
+\mbox{\hyperlink{namespaceosapi_a14699808c3cc5f95b6eaef678d1f8dcca16fb8e672263f0b887fc2badbe4a7da3}{Warning}} = 4, 
+\mbox{\hyperlink{namespaceosapi_a14699808c3cc5f95b6eaef678d1f8dcca14ba47ed4ac2c9d3ab8c450d3939a013}{Notice}} = 5, 
+\mbox{\hyperlink{namespaceosapi_a14699808c3cc5f95b6eaef678d1f8dcca3f16cd2afcaab52a6e22d0c3ea6814af}{Informational}} = 6, 
+\mbox{\hyperlink{namespaceosapi_a14699808c3cc5f95b6eaef678d1f8dccab2bbedb207102a30b5a5e6fed844afbe}{Debug}} = 7
+ \}
+\item 
+enum \{ \mbox{\hyperlink{namespaceosapi_a311867d5b96da34e4a53740752676f92a68cfefd619005783b137f01ba554d7d9}{L\+O\+G\+\_\+\+L\+E\+V\+E\+LS}} = Debug +1
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{namespaceosapi_a1cd81643bbde2f22e67f2478dfeb34d4}{log\+Set\+New\+Output}} (\mbox{\hyperlink{classosapi_1_1ILogOutput}{I\+Log\+Output}} $\ast$il\+Output)
+\item 
+\mbox{\hyperlink{namespaceosapi_a14699808c3cc5f95b6eaef678d1f8dcc}{Level}} \mbox{\hyperlink{namespaceosapi_a8abdb6d4733b0987754b50e00a1fec93}{convert\+Str\+To\+Lvl}} (const std\+::string \&lvl)
+\item 
+bool \mbox{\hyperlink{namespaceosapi_a174933c80ddc2d33ccd1870371c49461}{operator$>$}} (const \mbox{\hyperlink{classosapi_1_1Time}{Time}} \&t1, const \mbox{\hyperlink{classosapi_1_1Time}{Time}} \&t2)
+\item 
+bool \mbox{\hyperlink{namespaceosapi_a8e6ef0c5559da71396d202a4c2d8cbc3}{operator$<$=}} (const \mbox{\hyperlink{classosapi_1_1Time}{Time}} \&t1, const \mbox{\hyperlink{classosapi_1_1Time}{Time}} \&t2)
+\item 
+bool \mbox{\hyperlink{namespaceosapi_af28140333bb4e4b0a6bfccf4b68ef11c}{operator$>$=}} (const \mbox{\hyperlink{classosapi_1_1Time}{Time}} \&t1, const \mbox{\hyperlink{classosapi_1_1Time}{Time}} \&t2)
+\item 
+\mbox{\hyperlink{classosapi_1_1Time}{Time}} \mbox{\hyperlink{namespaceosapi_af4f318be9726534933c80fa1690f31f4}{operator+}} (\mbox{\hyperlink{classosapi_1_1Time}{Time}} t1, const \mbox{\hyperlink{classosapi_1_1Time}{Time}} \&t2)
+\item 
+\mbox{\hyperlink{classosapi_1_1Time}{Time}} \mbox{\hyperlink{namespaceosapi_aa5786dbe14015882d46b43cba18edbed}{operator+}} (signed long long t1, \mbox{\hyperlink{classosapi_1_1Time}{Time}} t2)
+\item 
+\mbox{\hyperlink{classosapi_1_1Time}{Time}} \mbox{\hyperlink{namespaceosapi_acb9da922b659bcab53cdbcaf899792f8}{operator+}} (\mbox{\hyperlink{classosapi_1_1Time}{Time}} t1, signed long long t2)
+\item 
+\mbox{\hyperlink{classosapi_1_1Time}{Time}} \mbox{\hyperlink{namespaceosapi_abe4d40480fe067cecde46b059d70782e}{operator-\/}} (\mbox{\hyperlink{classosapi_1_1Time}{Time}} t1, const \mbox{\hyperlink{classosapi_1_1Time}{Time}} \&t2)
+\item 
+\mbox{\hyperlink{classosapi_1_1Time}{Time}} \mbox{\hyperlink{namespaceosapi_a93fcd622837565577357088d360eb2ea}{operator-\/}} (signed long long t1, \mbox{\hyperlink{classosapi_1_1Time}{Time}} t2)
+\item 
+\mbox{\hyperlink{classosapi_1_1Time}{Time}} \mbox{\hyperlink{namespaceosapi_a51fe2aba48ef12d4354647e37df3b02c}{operator-\/}} (\mbox{\hyperlink{classosapi_1_1Time}{Time}} t1, signed long long t2)
+\item 
+\mbox{\hyperlink{classosapi_1_1ITimerId}{I\+Timer\+Id}} $\ast$ \mbox{\hyperlink{namespaceosapi_a0e494ea43da266f31568003f6ce4704a}{create\+New\+Timer}} (\mbox{\hyperlink{namespaceosapi_a1bacbda2d705cebe3418c74fd3d05e94}{Msg\+Queue}} $\ast$mq, unsigned long id)
+\item 
+\mbox{\hyperlink{classosapi_1_1Time}{Time}} \mbox{\hyperlink{namespaceosapi_a97db4c68ee6d057030e07ce4187607f0}{get\+Current\+Monotonic\+Time}} ()
+\item 
+\mbox{\hyperlink{classosapi_1_1Time}{Time}} \mbox{\hyperlink{namespaceosapi_a58c5e43a8ae9cf6848c7fbbe2d929d2d}{get\+Current\+Time}} ()
+\item 
+std\+::string \mbox{\hyperlink{namespaceosapi_aaccf58b826b11fd458aaca705046b354}{time\+To\+Str}} (const \mbox{\hyperlink{classosapi_1_1Time}{Time}} \&t, const std\+::string \&format)
+\item 
+void \mbox{\hyperlink{namespaceosapi_aeed8c6f1372f57481ea48bcf2a672c82}{sleep}} (unsigned long msecs)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const std\+::string \mbox{\hyperlink{namespaceosapi_a9bfa42fc256673c86ef9b2319e92322f}{Level\+Str}} \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{namespaceosapi_a1bacbda2d705cebe3418c74fd3d05e94}\label{namespaceosapi_a1bacbda2d705cebe3418c74fd3d05e94}} 
+\index{osapi@{osapi}!MsgQueue@{MsgQueue}}
+\index{MsgQueue@{MsgQueue}!osapi@{osapi}}
+\doxysubsubsection{\texorpdfstring{MsgQueue}{MsgQueue}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{classosapi_1_1BasicMsgQueue}{Basic\+Msg\+Queue}}$<$\mbox{\hyperlink{classosapi_1_1Message}{Message}}$\ast$$>$ \mbox{\hyperlink{namespaceosapi_a1bacbda2d705cebe3418c74fd3d05e94}{osapi\+::\+Msg\+Queue}}}
+
+
+
+Definition at line 60 of file Msg\+Queue.\+hpp.
+
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{namespaceosapi_a311867d5b96da34e4a53740752676f92}\label{namespaceosapi_a311867d5b96da34e4a53740752676f92}} 
+\doxysubsubsection{\texorpdfstring{anonymous enum}{anonymous enum}}
+{\footnotesize\ttfamily anonymous enum}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LOG\_LEVELS@{LOG\_LEVELS}!osapi@{osapi}}\index{osapi@{osapi}!LOG\_LEVELS@{LOG\_LEVELS}}}\mbox{\Hypertarget{namespaceosapi_a311867d5b96da34e4a53740752676f92a68cfefd619005783b137f01ba554d7d9}\label{namespaceosapi_a311867d5b96da34e4a53740752676f92a68cfefd619005783b137f01ba554d7d9}} 
+L\+O\+G\+\_\+\+L\+E\+V\+E\+LS&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 20 of file Log\+Types.\+hpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{21   \{}
+\DoxyCodeLine{22     \mbox{\hyperlink{namespaceosapi_a311867d5b96da34e4a53740752676f92a68cfefd619005783b137f01ba554d7d9}{LOG\_LEVELS}} = \mbox{\hyperlink{namespaceosapi_a14699808c3cc5f95b6eaef678d1f8dccab2bbedb207102a30b5a5e6fed844afbe}{Debug}} +1}
+\DoxyCodeLine{23   \};}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceosapi_a14699808c3cc5f95b6eaef678d1f8dcc}\label{namespaceosapi_a14699808c3cc5f95b6eaef678d1f8dcc}} 
+\index{osapi@{osapi}!Level@{Level}}
+\index{Level@{Level}!osapi@{osapi}}
+\doxysubsubsection{\texorpdfstring{Level}{Level}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespaceosapi_a14699808c3cc5f95b6eaef678d1f8dcc}{osapi\+::\+Level}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Emergency@{Emergency}!osapi@{osapi}}\index{osapi@{osapi}!Emergency@{Emergency}}}\mbox{\Hypertarget{namespaceosapi_a14699808c3cc5f95b6eaef678d1f8dccabf1430c65fefe3a09c169f12ee9d049b}\label{namespaceosapi_a14699808c3cc5f95b6eaef678d1f8dccabf1430c65fefe3a09c169f12ee9d049b}} 
+Emergency&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Alert@{Alert}!osapi@{osapi}}\index{osapi@{osapi}!Alert@{Alert}}}\mbox{\Hypertarget{namespaceosapi_a14699808c3cc5f95b6eaef678d1f8dccae762d0fcd19060730176f9ffe796e7fd}\label{namespaceosapi_a14699808c3cc5f95b6eaef678d1f8dccae762d0fcd19060730176f9ffe796e7fd}} 
+Alert&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Critical@{Critical}!osapi@{osapi}}\index{osapi@{osapi}!Critical@{Critical}}}\mbox{\Hypertarget{namespaceosapi_a14699808c3cc5f95b6eaef678d1f8dcca761aec726aa7c936c145a0128ccc4655}\label{namespaceosapi_a14699808c3cc5f95b6eaef678d1f8dcca761aec726aa7c936c145a0128ccc4655}} 
+Critical&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Error@{Error}!osapi@{osapi}}\index{osapi@{osapi}!Error@{Error}}}\mbox{\Hypertarget{namespaceosapi_a14699808c3cc5f95b6eaef678d1f8dcca0838b38800b1b44523ab224c82597a00}\label{namespaceosapi_a14699808c3cc5f95b6eaef678d1f8dcca0838b38800b1b44523ab224c82597a00}} 
+Error&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Warning@{Warning}!osapi@{osapi}}\index{osapi@{osapi}!Warning@{Warning}}}\mbox{\Hypertarget{namespaceosapi_a14699808c3cc5f95b6eaef678d1f8dcca16fb8e672263f0b887fc2badbe4a7da3}\label{namespaceosapi_a14699808c3cc5f95b6eaef678d1f8dcca16fb8e672263f0b887fc2badbe4a7da3}} 
+Warning&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Notice@{Notice}!osapi@{osapi}}\index{osapi@{osapi}!Notice@{Notice}}}\mbox{\Hypertarget{namespaceosapi_a14699808c3cc5f95b6eaef678d1f8dcca14ba47ed4ac2c9d3ab8c450d3939a013}\label{namespaceosapi_a14699808c3cc5f95b6eaef678d1f8dcca14ba47ed4ac2c9d3ab8c450d3939a013}} 
+Notice&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Informational@{Informational}!osapi@{osapi}}\index{osapi@{osapi}!Informational@{Informational}}}\mbox{\Hypertarget{namespaceosapi_a14699808c3cc5f95b6eaef678d1f8dcca3f16cd2afcaab52a6e22d0c3ea6814af}\label{namespaceosapi_a14699808c3cc5f95b6eaef678d1f8dcca3f16cd2afcaab52a6e22d0c3ea6814af}} 
+Informational&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Debug@{Debug}!osapi@{osapi}}\index{osapi@{osapi}!Debug@{Debug}}}\mbox{\Hypertarget{namespaceosapi_a14699808c3cc5f95b6eaef678d1f8dccab2bbedb207102a30b5a5e6fed844afbe}\label{namespaceosapi_a14699808c3cc5f95b6eaef678d1f8dccab2bbedb207102a30b5a5e6fed844afbe}} 
+Debug&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 9 of file Log\+Types.\+hpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{10   \{}
+\DoxyCodeLine{11     \mbox{\hyperlink{namespaceosapi_a14699808c3cc5f95b6eaef678d1f8dccabf1430c65fefe3a09c169f12ee9d049b}{Emergency}} = 0,}
+\DoxyCodeLine{12     \mbox{\hyperlink{namespaceosapi_a14699808c3cc5f95b6eaef678d1f8dccae762d0fcd19060730176f9ffe796e7fd}{Alert}} = 1,}
+\DoxyCodeLine{13     \mbox{\hyperlink{namespaceosapi_a14699808c3cc5f95b6eaef678d1f8dcca761aec726aa7c936c145a0128ccc4655}{Critical}} = 2,}
+\DoxyCodeLine{14     \mbox{\hyperlink{namespaceosapi_a14699808c3cc5f95b6eaef678d1f8dcca0838b38800b1b44523ab224c82597a00}{Error}} = 3,}
+\DoxyCodeLine{15     \mbox{\hyperlink{namespaceosapi_a14699808c3cc5f95b6eaef678d1f8dcca16fb8e672263f0b887fc2badbe4a7da3}{Warning}} = 4,}
+\DoxyCodeLine{16     \mbox{\hyperlink{namespaceosapi_a14699808c3cc5f95b6eaef678d1f8dcca14ba47ed4ac2c9d3ab8c450d3939a013}{Notice}} = 5,}
+\DoxyCodeLine{17     \mbox{\hyperlink{namespaceosapi_a14699808c3cc5f95b6eaef678d1f8dcca3f16cd2afcaab52a6e22d0c3ea6814af}{Informational}} = 6,}
+\DoxyCodeLine{18     \mbox{\hyperlink{namespaceosapi_a14699808c3cc5f95b6eaef678d1f8dccab2bbedb207102a30b5a5e6fed844afbe}{Debug}} = 7}
+\DoxyCodeLine{19   \};}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespaceosapi_a8abdb6d4733b0987754b50e00a1fec93}\label{namespaceosapi_a8abdb6d4733b0987754b50e00a1fec93}} 
+\index{osapi@{osapi}!convertStrToLvl@{convertStrToLvl}}
+\index{convertStrToLvl@{convertStrToLvl}!osapi@{osapi}}
+\doxysubsubsection{\texorpdfstring{convertStrToLvl()}{convertStrToLvl()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceosapi_a14699808c3cc5f95b6eaef678d1f8dcc}{Level}} osapi\+::convert\+Str\+To\+Lvl (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{lvl }\end{DoxyParamCaption})}
+
+
+
+Definition at line 68 of file Log\+Types.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{69   \{}
+\DoxyCodeLine{70     \textcolor{keyword}{static} StrToLvl   stl;}
+\DoxyCodeLine{71          }
+\DoxyCodeLine{72     \textcolor{keywordflow}{return} stl(lvl);}
+\DoxyCodeLine{73   \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceosapi_a0e494ea43da266f31568003f6ce4704a}\label{namespaceosapi_a0e494ea43da266f31568003f6ce4704a}} 
+\index{osapi@{osapi}!createNewTimer@{createNewTimer}}
+\index{createNewTimer@{createNewTimer}!osapi@{osapi}}
+\doxysubsubsection{\texorpdfstring{createNewTimer()}{createNewTimer()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classosapi_1_1ITimerId}{I\+Timer\+Id}} $\ast$ osapi\+::create\+New\+Timer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceosapi_a1bacbda2d705cebe3418c74fd3d05e94}{Msg\+Queue}} $\ast$}]{mq,  }\item[{unsigned long}]{id }\end{DoxyParamCaption})}
+
+
+
+Definition at line 266 of file Timer.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{267   \{}
+\DoxyCodeLine{268     \textcolor{keywordflow}{return} \textcolor{keyword}{new} TimerId(mq, \textcolor{keywordtype}{id});}
+\DoxyCodeLine{269   \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceosapi_a97db4c68ee6d057030e07ce4187607f0}\label{namespaceosapi_a97db4c68ee6d057030e07ce4187607f0}} 
+\index{osapi@{osapi}!getCurrentMonotonicTime@{getCurrentMonotonicTime}}
+\index{getCurrentMonotonicTime@{getCurrentMonotonicTime}!osapi@{osapi}}
+\doxysubsubsection{\texorpdfstring{getCurrentMonotonicTime()}{getCurrentMonotonicTime()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classosapi_1_1Time}{Time}} osapi\+::get\+Current\+Monotonic\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 7 of file Clock\+Time.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{8   \{}
+\DoxyCodeLine{9     \textcolor{keyword}{struct }timespec ts;}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11     \textcolor{comment}{// Get monotonic time}}
+\DoxyCodeLine{12     clock\_gettime(CLOCK\_MONOTONIC, \&ts);}
+\DoxyCodeLine{13     }
+\DoxyCodeLine{14     \textcolor{keywordflow}{return} Time(ts.tv\_sec, ts.tv\_nsec/1000000L);}
+\DoxyCodeLine{15   \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceosapi_a58c5e43a8ae9cf6848c7fbbe2d929d2d}\label{namespaceosapi_a58c5e43a8ae9cf6848c7fbbe2d929d2d}} 
+\index{osapi@{osapi}!getCurrentTime@{getCurrentTime}}
+\index{getCurrentTime@{getCurrentTime}!osapi@{osapi}}
+\doxysubsubsection{\texorpdfstring{getCurrentTime()}{getCurrentTime()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classosapi_1_1Time}{Time}} osapi\+::get\+Current\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 17 of file Clock\+Time.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{18   \{}
+\DoxyCodeLine{19     \textcolor{keyword}{struct }timespec ts;}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{21     \textcolor{comment}{// Get monotonic time}}
+\DoxyCodeLine{22     clock\_gettime(CLOCK\_REALTIME, \&ts);}
+\DoxyCodeLine{23     }
+\DoxyCodeLine{24     \textcolor{keywordflow}{return} Time(ts.tv\_sec, ts.tv\_nsec/1000000L);}
+\DoxyCodeLine{25   \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceosapi_a1cd81643bbde2f22e67f2478dfeb34d4}\label{namespaceosapi_a1cd81643bbde2f22e67f2478dfeb34d4}} 
+\index{osapi@{osapi}!logSetNewOutput@{logSetNewOutput}}
+\index{logSetNewOutput@{logSetNewOutput}!osapi@{osapi}}
+\doxysubsubsection{\texorpdfstring{logSetNewOutput()}{logSetNewOutput()}}
+{\footnotesize\ttfamily void osapi\+::log\+Set\+New\+Output (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classosapi_1_1ILogOutput}{I\+Log\+Output}} $\ast$}]{il\+Output }\end{DoxyParamCaption})}
+
+
+
+Definition at line 5 of file Log.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{6   \{}
+\DoxyCodeLine{7     \mbox{\hyperlink{namespaceosapi_1_1detail_a0db2835d611c18370b74f262933a5ae1}{details::LogSystem::getInstance}}()-\/>setNewOutput(ilOutput);}
+\DoxyCodeLine{8   \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceosapi_aa5786dbe14015882d46b43cba18edbed}\label{namespaceosapi_aa5786dbe14015882d46b43cba18edbed}} 
+\index{osapi@{osapi}!operator+@{operator+}}
+\index{operator+@{operator+}!osapi@{osapi}}
+\doxysubsubsection{\texorpdfstring{operator+()}{operator+()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classosapi_1_1Time}{Time}} osapi\+::operator+ (\begin{DoxyParamCaption}\item[{signed long long}]{t1,  }\item[{\mbox{\hyperlink{classosapi_1_1Time}{Time}}}]{t2 }\end{DoxyParamCaption})}
+
+
+
+Definition at line 117 of file Time.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{118   \{}
+\DoxyCodeLine{119     t2 += t1;}
+\DoxyCodeLine{120     \textcolor{keywordflow}{return} t2;}
+\DoxyCodeLine{121   \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceosapi_af4f318be9726534933c80fa1690f31f4}\label{namespaceosapi_af4f318be9726534933c80fa1690f31f4}} 
+\index{osapi@{osapi}!operator+@{operator+}}
+\index{operator+@{operator+}!osapi@{osapi}}
+\doxysubsubsection{\texorpdfstring{operator+()}{operator+()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classosapi_1_1Time}{Time}} osapi\+::operator+ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classosapi_1_1Time}{Time}}}]{t1,  }\item[{const \mbox{\hyperlink{classosapi_1_1Time}{Time}} \&}]{t2 }\end{DoxyParamCaption})}
+
+
+
+Definition at line 111 of file Time.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{112   \{}
+\DoxyCodeLine{113     t1 += t2;}
+\DoxyCodeLine{114     \textcolor{keywordflow}{return} t1;}
+\DoxyCodeLine{115   \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceosapi_acb9da922b659bcab53cdbcaf899792f8}\label{namespaceosapi_acb9da922b659bcab53cdbcaf899792f8}} 
+\index{osapi@{osapi}!operator+@{operator+}}
+\index{operator+@{operator+}!osapi@{osapi}}
+\doxysubsubsection{\texorpdfstring{operator+()}{operator+()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classosapi_1_1Time}{Time}} osapi\+::operator+ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classosapi_1_1Time}{Time}}}]{t1,  }\item[{signed long long}]{t2 }\end{DoxyParamCaption})}
+
+
+
+Definition at line 123 of file Time.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{124   \{}
+\DoxyCodeLine{125     t1 += t2;}
+\DoxyCodeLine{126     \textcolor{keywordflow}{return} t1;}
+\DoxyCodeLine{127   \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceosapi_a93fcd622837565577357088d360eb2ea}\label{namespaceosapi_a93fcd622837565577357088d360eb2ea}} 
+\index{osapi@{osapi}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!osapi@{osapi}}
+\doxysubsubsection{\texorpdfstring{operator-\/()}{operator-()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classosapi_1_1Time}{Time}} osapi\+::operator-\/ (\begin{DoxyParamCaption}\item[{signed long long}]{t1,  }\item[{\mbox{\hyperlink{classosapi_1_1Time}{Time}}}]{t2 }\end{DoxyParamCaption})}
+
+
+
+Definition at line 136 of file Time.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{137   \{}
+\DoxyCodeLine{138     t2 -\/= t1;}
+\DoxyCodeLine{139     \textcolor{keywordflow}{return} t1;}
+\DoxyCodeLine{140   \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceosapi_abe4d40480fe067cecde46b059d70782e}\label{namespaceosapi_abe4d40480fe067cecde46b059d70782e}} 
+\index{osapi@{osapi}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!osapi@{osapi}}
+\doxysubsubsection{\texorpdfstring{operator-\/()}{operator-()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classosapi_1_1Time}{Time}} osapi\+::operator-\/ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classosapi_1_1Time}{Time}}}]{t1,  }\item[{const \mbox{\hyperlink{classosapi_1_1Time}{Time}} \&}]{t2 }\end{DoxyParamCaption})}
+
+
+
+Definition at line 130 of file Time.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{131   \{}
+\DoxyCodeLine{132     t1 -\/= t2;}
+\DoxyCodeLine{133     \textcolor{keywordflow}{return} t1;}
+\DoxyCodeLine{134   \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceosapi_a51fe2aba48ef12d4354647e37df3b02c}\label{namespaceosapi_a51fe2aba48ef12d4354647e37df3b02c}} 
+\index{osapi@{osapi}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!osapi@{osapi}}
+\doxysubsubsection{\texorpdfstring{operator-\/()}{operator-()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classosapi_1_1Time}{Time}} osapi\+::operator-\/ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classosapi_1_1Time}{Time}}}]{t1,  }\item[{signed long long}]{t2 }\end{DoxyParamCaption})}
+
+
+
+Definition at line 142 of file Time.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{143   \{}
+\DoxyCodeLine{144     t1 -\/= t2;}
+\DoxyCodeLine{145     \textcolor{keywordflow}{return} t1;}
+\DoxyCodeLine{146   \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceosapi_a8e6ef0c5559da71396d202a4c2d8cbc3}\label{namespaceosapi_a8e6ef0c5559da71396d202a4c2d8cbc3}} 
+\index{osapi@{osapi}!operator$<$=@{operator$<$=}}
+\index{operator$<$=@{operator$<$=}!osapi@{osapi}}
+\doxysubsubsection{\texorpdfstring{operator$<$=()}{operator<=()}}
+{\footnotesize\ttfamily bool osapi\+::operator$<$= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classosapi_1_1Time}{Time}} \&}]{t1,  }\item[{const \mbox{\hyperlink{classosapi_1_1Time}{Time}} \&}]{t2 }\end{DoxyParamCaption})}
+
+
+
+Definition at line 98 of file Time.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{99   \{}
+\DoxyCodeLine{100     \textcolor{keywordflow}{return} !(t2<t1);}
+\DoxyCodeLine{101   \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceosapi_a174933c80ddc2d33ccd1870371c49461}\label{namespaceosapi_a174933c80ddc2d33ccd1870371c49461}} 
+\index{osapi@{osapi}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!osapi@{osapi}}
+\doxysubsubsection{\texorpdfstring{operator$>$()}{operator>()}}
+{\footnotesize\ttfamily bool osapi\+::operator$>$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classosapi_1_1Time}{Time}} \&}]{t1,  }\item[{const \mbox{\hyperlink{classosapi_1_1Time}{Time}} \&}]{t2 }\end{DoxyParamCaption})}
+
+
+
+Definition at line 93 of file Time.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{94   \{}
+\DoxyCodeLine{95     \textcolor{keywordflow}{return} t2 < t1;}
+\DoxyCodeLine{96   \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceosapi_af28140333bb4e4b0a6bfccf4b68ef11c}\label{namespaceosapi_af28140333bb4e4b0a6bfccf4b68ef11c}} 
+\index{osapi@{osapi}!operator$>$=@{operator$>$=}}
+\index{operator$>$=@{operator$>$=}!osapi@{osapi}}
+\doxysubsubsection{\texorpdfstring{operator$>$=()}{operator>=()}}
+{\footnotesize\ttfamily bool osapi\+::operator$>$= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classosapi_1_1Time}{Time}} \&}]{t1,  }\item[{const \mbox{\hyperlink{classosapi_1_1Time}{Time}} \&}]{t2 }\end{DoxyParamCaption})}
+
+
+
+Definition at line 103 of file Time.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{104   \{}
+\DoxyCodeLine{105     \textcolor{keywordflow}{return} !(t1<t2);    }
+\DoxyCodeLine{106   \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceosapi_aeed8c6f1372f57481ea48bcf2a672c82}\label{namespaceosapi_aeed8c6f1372f57481ea48bcf2a672c82}} 
+\index{osapi@{osapi}!sleep@{sleep}}
+\index{sleep@{sleep}!osapi@{osapi}}
+\doxysubsubsection{\texorpdfstring{sleep()}{sleep()}}
+{\footnotesize\ttfamily void osapi\+::sleep (\begin{DoxyParamCaption}\item[{unsigned long}]{msecs }\end{DoxyParamCaption})}
+
+
+
+Definition at line 6 of file Utility.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{7     \{}
+\DoxyCodeLine{8         usleep(msecs*1000);}
+\DoxyCodeLine{9     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceosapi_aaccf58b826b11fd458aaca705046b354}\label{namespaceosapi_aaccf58b826b11fd458aaca705046b354}} 
+\index{osapi@{osapi}!timeToStr@{timeToStr}}
+\index{timeToStr@{timeToStr}!osapi@{osapi}}
+\doxysubsubsection{\texorpdfstring{timeToStr()}{timeToStr()}}
+{\footnotesize\ttfamily std\+::string osapi\+::time\+To\+Str (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classosapi_1_1Time}{Time}} \&}]{t,  }\item[{const std\+::string \&}]{format }\end{DoxyParamCaption})}
+
+
+
+Definition at line 27 of file Clock\+Time.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{28   \{}
+\DoxyCodeLine{29     \textcolor{keyword}{const} \textcolor{keywordtype}{int} MAX\_RESULT=64;}
+\DoxyCodeLine{30     \textcolor{keyword}{struct }tm timeStruct;}
+\DoxyCodeLine{31     time\_t tt = t.secs();}
+\DoxyCodeLine{32     gmtime\_r(\&tt, \&timeStruct);}
+\DoxyCodeLine{33 }
+\DoxyCodeLine{34     std::string result;}
+\DoxyCodeLine{35     }
+\DoxyCodeLine{36     result.resize(MAX\_RESULT+1);}
+\DoxyCodeLine{37     strftime(\&result[0], MAX\_RESULT, format.c\_str(), \&timeStruct);}
+\DoxyCodeLine{38     \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{39   \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{namespaceosapi_a9bfa42fc256673c86ef9b2319e92322f}\label{namespaceosapi_a9bfa42fc256673c86ef9b2319e92322f}} 
+\index{osapi@{osapi}!LevelStr@{LevelStr}}
+\index{LevelStr@{LevelStr}!osapi@{osapi}}
+\doxysubsubsection{\texorpdfstring{LevelStr}{LevelStr}}
+{\footnotesize\ttfamily const std\+::string osapi\+::\+Level\+Str}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= }
+\DoxyCodeLine{  \{}
+\DoxyCodeLine{    \textcolor{stringliteral}{"EMG"},}
+\DoxyCodeLine{    \textcolor{stringliteral}{"ALT"},}
+\DoxyCodeLine{    \textcolor{stringliteral}{"CRT"},}
+\DoxyCodeLine{    \textcolor{stringliteral}{"ERR"},}
+\DoxyCodeLine{    \textcolor{stringliteral}{"WRN"},}
+\DoxyCodeLine{    \textcolor{stringliteral}{"NOT"},}
+\DoxyCodeLine{    \textcolor{stringliteral}{"INF"},}
+\DoxyCodeLine{    \textcolor{stringliteral}{"DBG"}}
+\DoxyCodeLine{  \}}
+
+\end{DoxyCode}
+
+
+Definition at line 8 of file Log\+Types.\+cpp.
+

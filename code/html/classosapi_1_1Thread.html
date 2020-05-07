@@ -61,7 +61,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>osapi</b></li><li class="navelem"><a class="el" href="classosapi_1_1Thread.html">Thread</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespaceosapi.html">osapi</a></li><li class="navelem"><a class="el" href="classosapi_1_1Thread.html">Thread</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -74,116 +74,743 @@ $(function() {
 <div class="title">osapi::Thread Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="linux_2Thread_8hpp_source.html">Thread.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a29f9912dd4113cad7eba161835a5c114"><td class="memItemLeft" align="right" valign="top"><a id="a29f9912dd4113cad7eba161835a5c114"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>ThreadPriority</b> { <br />
-&#160;&#160;<b>PRIORITY_LOW</b> = 15, 
-<b>PRIORITY_BELOW_NORMAL</b> = 30, 
-<b>PRIORITY_NORMAL</b> = 45, 
-<b>PRIORITY_ABOVE_NORMAL</b> = 60, 
+<tr class="memitem:a29f9912dd4113cad7eba161835a5c114"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1Thread.html#a29f9912dd4113cad7eba161835a5c114">ThreadPriority</a> { <br />
+&#160;&#160;<a class="el" href="classosapi_1_1Thread.html#a29f9912dd4113cad7eba161835a5c114a19d5e344d128aac14e44d82cabc9424c">PRIORITY_LOW</a> = 15, 
+<a class="el" href="classosapi_1_1Thread.html#a29f9912dd4113cad7eba161835a5c114a049d818c6c9d61c9811e915ba16177c5">PRIORITY_BELOW_NORMAL</a> = 30, 
+<a class="el" href="classosapi_1_1Thread.html#a29f9912dd4113cad7eba161835a5c114a16a4382f55a1827d83c6ac2ced571dd8">PRIORITY_NORMAL</a> = 45, 
+<a class="el" href="classosapi_1_1Thread.html#a29f9912dd4113cad7eba161835a5c114aca12d024bd249f78326b794cb2d0b8d6">PRIORITY_ABOVE_NORMAL</a> = 60, 
 <br />
-&#160;&#160;<b>PRIORITY_HIGH</b> = 75, 
-<b>PRIORITY_LOW</b> = 15, 
-<b>PRIORITY_BELOW_NORMAL</b> = 30, 
-<b>PRIORITY_NORMAL</b> = 45, 
+&#160;&#160;<a class="el" href="classosapi_1_1Thread.html#a29f9912dd4113cad7eba161835a5c114a96f89509830f8d1b2937de4eab13a88c">PRIORITY_HIGH</a> = 75, 
+<a class="el" href="classosapi_1_1Thread.html#a29f9912dd4113cad7eba161835a5c114a19d5e344d128aac14e44d82cabc9424c">PRIORITY_LOW</a> = 15, 
+<a class="el" href="classosapi_1_1Thread.html#a29f9912dd4113cad7eba161835a5c114a049d818c6c9d61c9811e915ba16177c5">PRIORITY_BELOW_NORMAL</a> = 30, 
+<a class="el" href="classosapi_1_1Thread.html#a29f9912dd4113cad7eba161835a5c114a16a4382f55a1827d83c6ac2ced571dd8">PRIORITY_NORMAL</a> = 45, 
 <br />
-&#160;&#160;<b>PRIORITY_ABOVE_NORMAL</b> = 60, 
-<b>PRIORITY_HIGH</b> = 75
+&#160;&#160;<a class="el" href="classosapi_1_1Thread.html#a29f9912dd4113cad7eba161835a5c114aca12d024bd249f78326b794cb2d0b8d6">PRIORITY_ABOVE_NORMAL</a> = 60, 
+<a class="el" href="classosapi_1_1Thread.html#a29f9912dd4113cad7eba161835a5c114a96f89509830f8d1b2937de4eab13a88c">PRIORITY_HIGH</a> = 75
 <br />
  }</td></tr>
 <tr class="separator:a29f9912dd4113cad7eba161835a5c114"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a29f9912dd4113cad7eba161835a5c114"><td class="memItemLeft" align="right" valign="top"><a id="a29f9912dd4113cad7eba161835a5c114"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>ThreadPriority</b> { <br />
-&#160;&#160;<b>PRIORITY_LOW</b> = 15, 
-<b>PRIORITY_BELOW_NORMAL</b> = 30, 
-<b>PRIORITY_NORMAL</b> = 45, 
-<b>PRIORITY_ABOVE_NORMAL</b> = 60, 
+<tr class="memitem:a29f9912dd4113cad7eba161835a5c114"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1Thread.html#a29f9912dd4113cad7eba161835a5c114">ThreadPriority</a> { <br />
+&#160;&#160;<a class="el" href="classosapi_1_1Thread.html#a29f9912dd4113cad7eba161835a5c114a19d5e344d128aac14e44d82cabc9424c">PRIORITY_LOW</a> = 15, 
+<a class="el" href="classosapi_1_1Thread.html#a29f9912dd4113cad7eba161835a5c114a049d818c6c9d61c9811e915ba16177c5">PRIORITY_BELOW_NORMAL</a> = 30, 
+<a class="el" href="classosapi_1_1Thread.html#a29f9912dd4113cad7eba161835a5c114a16a4382f55a1827d83c6ac2ced571dd8">PRIORITY_NORMAL</a> = 45, 
+<a class="el" href="classosapi_1_1Thread.html#a29f9912dd4113cad7eba161835a5c114aca12d024bd249f78326b794cb2d0b8d6">PRIORITY_ABOVE_NORMAL</a> = 60, 
 <br />
-&#160;&#160;<b>PRIORITY_HIGH</b> = 75, 
-<b>PRIORITY_LOW</b> = 15, 
-<b>PRIORITY_BELOW_NORMAL</b> = 30, 
-<b>PRIORITY_NORMAL</b> = 45, 
+&#160;&#160;<a class="el" href="classosapi_1_1Thread.html#a29f9912dd4113cad7eba161835a5c114a96f89509830f8d1b2937de4eab13a88c">PRIORITY_HIGH</a> = 75, 
+<a class="el" href="classosapi_1_1Thread.html#a29f9912dd4113cad7eba161835a5c114a19d5e344d128aac14e44d82cabc9424c">PRIORITY_LOW</a> = 15, 
+<a class="el" href="classosapi_1_1Thread.html#a29f9912dd4113cad7eba161835a5c114a049d818c6c9d61c9811e915ba16177c5">PRIORITY_BELOW_NORMAL</a> = 30, 
+<a class="el" href="classosapi_1_1Thread.html#a29f9912dd4113cad7eba161835a5c114a16a4382f55a1827d83c6ac2ced571dd8">PRIORITY_NORMAL</a> = 45, 
 <br />
-&#160;&#160;<b>PRIORITY_ABOVE_NORMAL</b> = 60, 
-<b>PRIORITY_HIGH</b> = 75
+&#160;&#160;<a class="el" href="classosapi_1_1Thread.html#a29f9912dd4113cad7eba161835a5c114aca12d024bd249f78326b794cb2d0b8d6">PRIORITY_ABOVE_NORMAL</a> = 60, 
+<a class="el" href="classosapi_1_1Thread.html#a29f9912dd4113cad7eba161835a5c114a96f89509830f8d1b2937de4eab13a88c">PRIORITY_HIGH</a> = 75
 <br />
  }</td></tr>
 <tr class="separator:a29f9912dd4113cad7eba161835a5c114"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a6b96884f4d39f6134bf8d3d53f0d695b"><td class="memItemLeft" align="right" valign="top"><a id="a6b96884f4d39f6134bf8d3d53f0d695b"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Thread</b> (<a class="el" href="classosapi_1_1ThreadFunctor.html">ThreadFunctor</a> *tf, ThreadPriority p=PRIORITY_NORMAL, const std::string &amp;name=&quot;&quot;, bool autoStart=false)</td></tr>
+<tr class="memitem:a6b96884f4d39f6134bf8d3d53f0d695b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1Thread.html#a6b96884f4d39f6134bf8d3d53f0d695b">Thread</a> (<a class="el" href="classosapi_1_1ThreadFunctor.html">ThreadFunctor</a> *tf, <a class="el" href="classosapi_1_1Thread.html#a29f9912dd4113cad7eba161835a5c114">ThreadPriority</a> p=<a class="el" href="classosapi_1_1Thread.html#a29f9912dd4113cad7eba161835a5c114a16a4382f55a1827d83c6ac2ced571dd8">PRIORITY_NORMAL</a>, const std::string &amp;name=&quot;&quot;, bool autoStart=false)</td></tr>
 <tr class="separator:a6b96884f4d39f6134bf8d3d53f0d695b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5409235d68889397cb5bfe092582cd72"><td class="memItemLeft" align="right" valign="top"><a id="a5409235d68889397cb5bfe092582cd72"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>start</b> ()</td></tr>
+<tr class="memitem:a65b3257241469c89c61a769bdac96a76"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1Thread.html#a65b3257241469c89c61a769bdac96a76">~Thread</a> ()</td></tr>
+<tr class="separator:a65b3257241469c89c61a769bdac96a76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5409235d68889397cb5bfe092582cd72"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1Thread.html#a5409235d68889397cb5bfe092582cd72">start</a> ()</td></tr>
 <tr class="separator:a5409235d68889397cb5bfe092582cd72"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a986ca922d21233b02a167ba1075bca5b"><td class="memItemLeft" align="right" valign="top"><a id="a986ca922d21233b02a167ba1075bca5b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setPriority</b> (Thread::ThreadPriority p)</td></tr>
+<tr class="memitem:a986ca922d21233b02a167ba1075bca5b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1Thread.html#a986ca922d21233b02a167ba1075bca5b">setPriority</a> (<a class="el" href="classosapi_1_1Thread.html#a29f9912dd4113cad7eba161835a5c114">Thread::ThreadPriority</a> p)</td></tr>
 <tr class="separator:a986ca922d21233b02a167ba1075bca5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5eb2bf6bb954f812a60d8a53391af46a"><td class="memItemLeft" align="right" valign="top"><a id="a5eb2bf6bb954f812a60d8a53391af46a"></a>
-ThreadPriority&#160;</td><td class="memItemRight" valign="bottom"><b>getPriority</b> () const</td></tr>
+<tr class="memitem:a5eb2bf6bb954f812a60d8a53391af46a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classosapi_1_1Thread.html#a29f9912dd4113cad7eba161835a5c114">ThreadPriority</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1Thread.html#a5eb2bf6bb954f812a60d8a53391af46a">getPriority</a> () const</td></tr>
 <tr class="separator:a5eb2bf6bb954f812a60d8a53391af46a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a72df831524a737e7ed602b70c6e4dc3f"><td class="memItemLeft" align="right" valign="top"><a id="a72df831524a737e7ed602b70c6e4dc3f"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>getName</b> () const</td></tr>
+<tr class="memitem:a72df831524a737e7ed602b70c6e4dc3f"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1Thread.html#a72df831524a737e7ed602b70c6e4dc3f">getName</a> () const</td></tr>
 <tr class="separator:a72df831524a737e7ed602b70c6e4dc3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5017a4146002d0ba61cbd268f8b795b2"><td class="memItemLeft" align="right" valign="top"><a id="a5017a4146002d0ba61cbd268f8b795b2"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>join</b> ()</td></tr>
+<tr class="memitem:a5017a4146002d0ba61cbd268f8b795b2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1Thread.html#a5017a4146002d0ba61cbd268f8b795b2">join</a> ()</td></tr>
 <tr class="separator:a5017a4146002d0ba61cbd268f8b795b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a57764da6e88f008e90952f7273f7c70d"><td class="memItemLeft" align="right" valign="top"><a id="a57764da6e88f008e90952f7273f7c70d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>detach</b> ()</td></tr>
+<tr class="memitem:a57764da6e88f008e90952f7273f7c70d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1Thread.html#a57764da6e88f008e90952f7273f7c70d">detach</a> ()</td></tr>
 <tr class="separator:a57764da6e88f008e90952f7273f7c70d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a70f871fd972d48ecb3c519cac271a204"><td class="memItemLeft" align="right" valign="top"><a id="a70f871fd972d48ecb3c519cac271a204"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Thread</b> (<a class="el" href="classosapi_1_1ThreadFunctor.html">ThreadFunctor</a> *tf, ThreadPriority pri=Thread::PRIORITY_NORMAL, const std::string &amp;name=&quot;&quot;, bool autoStart=false)</td></tr>
+<tr class="memitem:a70f871fd972d48ecb3c519cac271a204"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1Thread.html#a70f871fd972d48ecb3c519cac271a204">Thread</a> (<a class="el" href="classosapi_1_1ThreadFunctor.html">ThreadFunctor</a> *tf, <a class="el" href="classosapi_1_1Thread.html#a29f9912dd4113cad7eba161835a5c114">ThreadPriority</a> pri=<a class="el" href="classosapi_1_1Thread.html#a29f9912dd4113cad7eba161835a5c114a16a4382f55a1827d83c6ac2ced571dd8">Thread::PRIORITY_NORMAL</a>, const std::string &amp;name=&quot;&quot;, bool autoStart=false)</td></tr>
 <tr class="separator:a70f871fd972d48ecb3c519cac271a204"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5409235d68889397cb5bfe092582cd72"><td class="memItemLeft" align="right" valign="top"><a id="a5409235d68889397cb5bfe092582cd72"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>start</b> ()</td></tr>
+<tr class="memitem:a65b3257241469c89c61a769bdac96a76"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1Thread.html#a65b3257241469c89c61a769bdac96a76">~Thread</a> ()</td></tr>
+<tr class="separator:a65b3257241469c89c61a769bdac96a76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5409235d68889397cb5bfe092582cd72"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1Thread.html#a5409235d68889397cb5bfe092582cd72">start</a> ()</td></tr>
 <tr class="separator:a5409235d68889397cb5bfe092582cd72"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afdd73421450b263242dabb06a9abc17a"><td class="memItemLeft" align="right" valign="top"><a id="afdd73421450b263242dabb06a9abc17a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setPriority</b> (ThreadPriority pri)</td></tr>
+<tr class="memitem:afdd73421450b263242dabb06a9abc17a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1Thread.html#afdd73421450b263242dabb06a9abc17a">setPriority</a> (<a class="el" href="classosapi_1_1Thread.html#a29f9912dd4113cad7eba161835a5c114">ThreadPriority</a> pri)</td></tr>
 <tr class="separator:afdd73421450b263242dabb06a9abc17a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af80c6b5b96657d090f116fa2219bf24f"><td class="memItemLeft" align="right" valign="top"><a id="af80c6b5b96657d090f116fa2219bf24f"></a>
-ThreadPriority&#160;</td><td class="memItemRight" valign="bottom"><b>getPriority</b> () const</td></tr>
+<tr class="memitem:af80c6b5b96657d090f116fa2219bf24f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classosapi_1_1Thread.html#a29f9912dd4113cad7eba161835a5c114">ThreadPriority</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1Thread.html#af80c6b5b96657d090f116fa2219bf24f">getPriority</a> () const</td></tr>
 <tr class="separator:af80c6b5b96657d090f116fa2219bf24f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a72df831524a737e7ed602b70c6e4dc3f"><td class="memItemLeft" align="right" valign="top"><a id="a72df831524a737e7ed602b70c6e4dc3f"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>getName</b> () const</td></tr>
+<tr class="memitem:a72df831524a737e7ed602b70c6e4dc3f"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1Thread.html#a72df831524a737e7ed602b70c6e4dc3f">getName</a> () const</td></tr>
 <tr class="separator:a72df831524a737e7ed602b70c6e4dc3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5017a4146002d0ba61cbd268f8b795b2"><td class="memItemLeft" align="right" valign="top"><a id="a5017a4146002d0ba61cbd268f8b795b2"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>join</b> ()</td></tr>
+<tr class="memitem:a5017a4146002d0ba61cbd268f8b795b2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1Thread.html#a5017a4146002d0ba61cbd268f8b795b2">join</a> ()</td></tr>
 <tr class="separator:a5017a4146002d0ba61cbd268f8b795b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a57764da6e88f008e90952f7273f7c70d"><td class="memItemLeft" align="right" valign="top"><a id="a57764da6e88f008e90952f7273f7c70d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>detach</b> ()</td></tr>
+<tr class="memitem:a57764da6e88f008e90952f7273f7c70d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1Thread.html#a57764da6e88f008e90952f7273f7c70d">detach</a> ()</td></tr>
 <tr class="separator:a57764da6e88f008e90952f7273f7c70d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:acf6075bfe777ce3db39f40464b7548b5"><td class="memItemLeft" align="right" valign="top"><a id="acf6075bfe777ce3db39f40464b7548b5"></a>
-<a class="el" href="classosapi_1_1ThreadFunctor.html">ThreadFunctor</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>tf_</b></td></tr>
+<tr class="memitem:acf6075bfe777ce3db39f40464b7548b5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classosapi_1_1ThreadFunctor.html">ThreadFunctor</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1Thread.html#acf6075bfe777ce3db39f40464b7548b5">tf_</a></td></tr>
 <tr class="separator:acf6075bfe777ce3db39f40464b7548b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6aa288ec3487ed5f4b1abe88cddc6aea"><td class="memItemLeft" align="right" valign="top"><a id="a6aa288ec3487ed5f4b1abe88cddc6aea"></a>
-ThreadPriority&#160;</td><td class="memItemRight" valign="bottom"><b>priority_</b></td></tr>
+<tr class="memitem:a6aa288ec3487ed5f4b1abe88cddc6aea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classosapi_1_1Thread.html#a29f9912dd4113cad7eba161835a5c114">ThreadPriority</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1Thread.html#a6aa288ec3487ed5f4b1abe88cddc6aea">priority_</a></td></tr>
 <tr class="separator:a6aa288ec3487ed5f4b1abe88cddc6aea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a75bc13f67c5eb1af9ffa9653f2af5643"><td class="memItemLeft" align="right" valign="top"><a id="a75bc13f67c5eb1af9ffa9653f2af5643"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>name_</b></td></tr>
+<tr class="memitem:a75bc13f67c5eb1af9ffa9653f2af5643"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1Thread.html#a75bc13f67c5eb1af9ffa9653f2af5643">name_</a></td></tr>
 <tr class="separator:a75bc13f67c5eb1af9ffa9653f2af5643"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c450469c9e28cbdfafba93df44dfc11"><td class="memItemLeft" align="right" valign="top"><a id="a6c450469c9e28cbdfafba93df44dfc11"></a>
-pthread_t&#160;</td><td class="memItemRight" valign="bottom"><b>threadId_</b></td></tr>
+<tr class="memitem:a6c450469c9e28cbdfafba93df44dfc11"><td class="memItemLeft" align="right" valign="top">pthread_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1Thread.html#a6c450469c9e28cbdfafba93df44dfc11">threadId_</a></td></tr>
 <tr class="separator:a6c450469c9e28cbdfafba93df44dfc11"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a06c0734f798f7589ae24130c8ff8e3b9"><td class="memItemLeft" align="right" valign="top"><a id="a06c0734f798f7589ae24130c8ff8e3b9"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>attached_</b></td></tr>
+<tr class="memitem:a06c0734f798f7589ae24130c8ff8e3b9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1Thread.html#a06c0734f798f7589ae24130c8ff8e3b9">attached_</a></td></tr>
 <tr class="separator:a06c0734f798f7589ae24130c8ff8e3b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a87b2aa8c9a808975471242f2e82c5a45"><td class="memItemLeft" align="right" valign="top"><a id="a87b2aa8c9a808975471242f2e82c5a45"></a>
-<a class="el" href="classosapi_1_1details_1_1Thread.html">details::Thread</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>thread_</b></td></tr>
+<tr class="memitem:a87b2aa8c9a808975471242f2e82c5a45"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classosapi_1_1details_1_1Thread.html">details::Thread</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1Thread.html#a87b2aa8c9a808975471242f2e82c5a45">thread_</a></td></tr>
 <tr class="separator:a87b2aa8c9a808975471242f2e82c5a45"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
 <p class="definition">Definition at line <a class="el" href="linux_2Thread_8hpp_source.html#l00014">14</a> of file <a class="el" href="linux_2Thread_8hpp_source.html">Thread.hpp</a>.</p>
-</div><hr/>The documentation for this class was generated from the following files:<ul>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="a29f9912dd4113cad7eba161835a5c114"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29f9912dd4113cad7eba161835a5c114">&#9670;&nbsp;</a></span>ThreadPriority <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classosapi_1_1Thread.html#a29f9912dd4113cad7eba161835a5c114">osapi::Thread::ThreadPriority</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a29f9912dd4113cad7eba161835a5c114a19d5e344d128aac14e44d82cabc9424c"></a>PRIORITY_LOW&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a29f9912dd4113cad7eba161835a5c114a049d818c6c9d61c9811e915ba16177c5"></a>PRIORITY_BELOW_NORMAL&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a29f9912dd4113cad7eba161835a5c114a16a4382f55a1827d83c6ac2ced571dd8"></a>PRIORITY_NORMAL&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a29f9912dd4113cad7eba161835a5c114aca12d024bd249f78326b794cb2d0b8d6"></a>PRIORITY_ABOVE_NORMAL&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a29f9912dd4113cad7eba161835a5c114a96f89509830f8d1b2937de4eab13a88c"></a>PRIORITY_HIGH&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a29f9912dd4113cad7eba161835a5c114a19d5e344d128aac14e44d82cabc9424c"></a>PRIORITY_LOW&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a29f9912dd4113cad7eba161835a5c114a049d818c6c9d61c9811e915ba16177c5"></a>PRIORITY_BELOW_NORMAL&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a29f9912dd4113cad7eba161835a5c114a16a4382f55a1827d83c6ac2ced571dd8"></a>PRIORITY_NORMAL&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a29f9912dd4113cad7eba161835a5c114aca12d024bd249f78326b794cb2d0b8d6"></a>PRIORITY_ABOVE_NORMAL&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a29f9912dd4113cad7eba161835a5c114a96f89509830f8d1b2937de4eab13a88c"></a>PRIORITY_HIGH&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+<p class="definition">Definition at line <a class="el" href="linux_2Thread_8hpp_source.html#l00017">17</a> of file <a class="el" href="linux_2Thread_8hpp_source.html">Thread.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    {</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;      <a class="code" href="classosapi_1_1Thread.html#a29f9912dd4113cad7eba161835a5c114a19d5e344d128aac14e44d82cabc9424c">PRIORITY_LOW</a> = 15,</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;      <a class="code" href="classosapi_1_1Thread.html#a29f9912dd4113cad7eba161835a5c114a049d818c6c9d61c9811e915ba16177c5">PRIORITY_BELOW_NORMAL</a> = 30,</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;      <a class="code" href="classosapi_1_1Thread.html#a29f9912dd4113cad7eba161835a5c114a16a4382f55a1827d83c6ac2ced571dd8">PRIORITY_NORMAL</a> = 45,</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;      <a class="code" href="classosapi_1_1Thread.html#a29f9912dd4113cad7eba161835a5c114aca12d024bd249f78326b794cb2d0b8d6">PRIORITY_ABOVE_NORMAL</a> = 60,</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;      <a class="code" href="classosapi_1_1Thread.html#a29f9912dd4113cad7eba161835a5c114a96f89509830f8d1b2937de4eab13a88c">PRIORITY_HIGH</a> = 75</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    };</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a29f9912dd4113cad7eba161835a5c114"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29f9912dd4113cad7eba161835a5c114">&#9670;&nbsp;</a></span>ThreadPriority <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classosapi_1_1Thread.html#a29f9912dd4113cad7eba161835a5c114">osapi::Thread::ThreadPriority</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a29f9912dd4113cad7eba161835a5c114a19d5e344d128aac14e44d82cabc9424c"></a>PRIORITY_LOW&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a29f9912dd4113cad7eba161835a5c114a049d818c6c9d61c9811e915ba16177c5"></a>PRIORITY_BELOW_NORMAL&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a29f9912dd4113cad7eba161835a5c114a16a4382f55a1827d83c6ac2ced571dd8"></a>PRIORITY_NORMAL&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a29f9912dd4113cad7eba161835a5c114aca12d024bd249f78326b794cb2d0b8d6"></a>PRIORITY_ABOVE_NORMAL&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a29f9912dd4113cad7eba161835a5c114a96f89509830f8d1b2937de4eab13a88c"></a>PRIORITY_HIGH&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a29f9912dd4113cad7eba161835a5c114a19d5e344d128aac14e44d82cabc9424c"></a>PRIORITY_LOW&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a29f9912dd4113cad7eba161835a5c114a049d818c6c9d61c9811e915ba16177c5"></a>PRIORITY_BELOW_NORMAL&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a29f9912dd4113cad7eba161835a5c114a16a4382f55a1827d83c6ac2ced571dd8"></a>PRIORITY_NORMAL&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a29f9912dd4113cad7eba161835a5c114aca12d024bd249f78326b794cb2d0b8d6"></a>PRIORITY_ABOVE_NORMAL&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a29f9912dd4113cad7eba161835a5c114a96f89509830f8d1b2937de4eab13a88c"></a>PRIORITY_HIGH&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+<p class="definition">Definition at line <a class="el" href="winx86_2Thread_8hpp_source.html#l00019">19</a> of file <a class="el" href="winx86_2Thread_8hpp_source.html">Thread.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;                       {</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;      <a class="code" href="classosapi_1_1Thread.html#a29f9912dd4113cad7eba161835a5c114a19d5e344d128aac14e44d82cabc9424c">PRIORITY_LOW</a>,</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;      <a class="code" href="classosapi_1_1Thread.html#a29f9912dd4113cad7eba161835a5c114a049d818c6c9d61c9811e915ba16177c5">PRIORITY_BELOW_NORMAL</a>,</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;      <a class="code" href="classosapi_1_1Thread.html#a29f9912dd4113cad7eba161835a5c114a16a4382f55a1827d83c6ac2ced571dd8">PRIORITY_NORMAL</a>,</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;      <a class="code" href="classosapi_1_1Thread.html#a29f9912dd4113cad7eba161835a5c114aca12d024bd249f78326b794cb2d0b8d6">PRIORITY_ABOVE_NORMAL</a>,</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;      <a class="code" href="classosapi_1_1Thread.html#a29f9912dd4113cad7eba161835a5c114a96f89509830f8d1b2937de4eab13a88c">PRIORITY_HIGH</a></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    };</div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a6b96884f4d39f6134bf8d3d53f0d695b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b96884f4d39f6134bf8d3d53f0d695b">&#9670;&nbsp;</a></span>Thread() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">osapi::Thread::Thread </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classosapi_1_1ThreadFunctor.html">ThreadFunctor</a> *&#160;</td>
+          <td class="paramname"><em>tf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classosapi_1_1Thread.html#a29f9912dd4113cad7eba161835a5c114">Thread::ThreadPriority</a>&#160;</td>
+          <td class="paramname"><em>priority</em> = <code><a class="el" href="classosapi_1_1Thread.html#a29f9912dd4113cad7eba161835a5c114a16a4382f55a1827d83c6ac2ced571dd8">PRIORITY_NORMAL</a></code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em> = <code>&quot;&quot;</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>autoStart</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="linux_2Thread_8cpp_source.html#l00009">9</a> of file <a class="el" href="linux_2Thread_8cpp_source.html">Thread.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    : <a class="code" href="classosapi_1_1Thread.html#acf6075bfe777ce3db39f40464b7548b5">tf_</a>(tf), <a class="code" href="classosapi_1_1Thread.html#a6aa288ec3487ed5f4b1abe88cddc6aea">priority_</a>(priority), <a class="code" href="classosapi_1_1Thread.html#a75bc13f67c5eb1af9ffa9653f2af5643">name_</a>(name), <a class="code" href="classosapi_1_1Thread.html#a06c0734f798f7589ae24130c8ff8e3b9">attached_</a>(<span class="keyword">true</span>)</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  {</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keywordflow">if</span>(autoStart)</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;      <a class="code" href="classosapi_1_1Thread.html#a5409235d68889397cb5bfe092582cd72">start</a>();</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a65b3257241469c89c61a769bdac96a76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65b3257241469c89c61a769bdac96a76">&#9670;&nbsp;</a></span>~Thread() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">osapi::Thread::~Thread </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="linux_2Thread_8cpp_source.html#l00020">20</a> of file <a class="el" href="linux_2Thread_8cpp_source.html">Thread.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  {</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="classosapi_1_1Thread.html#a57764da6e88f008e90952f7273f7c70d">detach</a>();</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a70f871fd972d48ecb3c519cac271a204"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70f871fd972d48ecb3c519cac271a204">&#9670;&nbsp;</a></span>Thread() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">osapi::Thread::Thread </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classosapi_1_1ThreadFunctor.html">ThreadFunctor</a> *&#160;</td>
+          <td class="paramname"><em>tf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classosapi_1_1Thread.html#a29f9912dd4113cad7eba161835a5c114">ThreadPriority</a>&#160;</td>
+          <td class="paramname"><em>pri</em> = <code><a class="el" href="classosapi_1_1Thread.html#a29f9912dd4113cad7eba161835a5c114a16a4382f55a1827d83c6ac2ced571dd8">Thread::PRIORITY_NORMAL</a></code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em> = <code>&quot;&quot;</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>autoStart</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a65b3257241469c89c61a769bdac96a76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65b3257241469c89c61a769bdac96a76">&#9670;&nbsp;</a></span>~Thread() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">osapi::Thread::~Thread </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a57764da6e88f008e90952f7273f7c70d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57764da6e88f008e90952f7273f7c70d">&#9670;&nbsp;</a></span>detach() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void osapi::Thread::detach </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="linux_2Thread_8cpp_source.html#l00089">89</a> of file <a class="el" href="linux_2Thread_8cpp_source.html">Thread.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  {</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordflow">if</span>(!<a class="code" href="classosapi_1_1Thread.html#a06c0734f798f7589ae24130c8ff8e3b9">attached_</a>) <span class="keywordflow">throw</span> ThreadError();</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <a class="code" href="classosapi_1_1Thread.html#a06c0734f798f7589ae24130c8ff8e3b9">attached_</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <a class="code" href="classosapi_1_1Thread.html#acf6075bfe777ce3db39f40464b7548b5">tf_</a> = NULL;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    pthread_detach(<a class="code" href="classosapi_1_1Thread.html#a6c450469c9e28cbdfafba93df44dfc11">threadId_</a>);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a57764da6e88f008e90952f7273f7c70d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57764da6e88f008e90952f7273f7c70d">&#9670;&nbsp;</a></span>detach() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void osapi::Thread::detach </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a72df831524a737e7ed602b70c6e4dc3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72df831524a737e7ed602b70c6e4dc3f">&#9670;&nbsp;</a></span>getName() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string osapi::Thread::getName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="linux_2Thread_8cpp_source.html#l00077">77</a> of file <a class="el" href="linux_2Thread_8cpp_source.html">Thread.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  {</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classosapi_1_1Thread.html#a75bc13f67c5eb1af9ffa9653f2af5643">name_</a>;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  } </div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a72df831524a737e7ed602b70c6e4dc3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72df831524a737e7ed602b70c6e4dc3f">&#9670;&nbsp;</a></span>getName() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string osapi::Thread::getName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5eb2bf6bb954f812a60d8a53391af46a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5eb2bf6bb954f812a60d8a53391af46a">&#9670;&nbsp;</a></span>getPriority() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classosapi_1_1Thread.html#a29f9912dd4113cad7eba161835a5c114">Thread::ThreadPriority</a> osapi::Thread::getPriority </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="linux_2Thread_8cpp_source.html#l00071">71</a> of file <a class="el" href="linux_2Thread_8cpp_source.html">Thread.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  {</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classosapi_1_1Thread.html#a6aa288ec3487ed5f4b1abe88cddc6aea">priority_</a>;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="af80c6b5b96657d090f116fa2219bf24f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af80c6b5b96657d090f116fa2219bf24f">&#9670;&nbsp;</a></span>getPriority() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classosapi_1_1Thread.html#a29f9912dd4113cad7eba161835a5c114">ThreadPriority</a> osapi::Thread::getPriority </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5017a4146002d0ba61cbd268f8b795b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5017a4146002d0ba61cbd268f8b795b2">&#9670;&nbsp;</a></span>join() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void osapi::Thread::join </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="linux_2Thread_8cpp_source.html#l00083">83</a> of file <a class="el" href="linux_2Thread_8cpp_source.html">Thread.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  {</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordflow">if</span>(!<a class="code" href="classosapi_1_1Thread.html#a06c0734f798f7589ae24130c8ff8e3b9">attached_</a>) <span class="keywordflow">throw</span> ThreadError();</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <a class="code" href="classosapi_1_1Thread.html#acf6075bfe777ce3db39f40464b7548b5">tf_</a>-&gt;<a class="code" href="classosapi_1_1ThreadFunctor.html#a04d2b95bc023d30ee08386758c33e8ba">threadDone_</a>.<a class="code" href="classosapi_1_1Completion.html#af8a7bd1386bf1f50f4b81e003f394494">wait</a>();</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a5017a4146002d0ba61cbd268f8b795b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5017a4146002d0ba61cbd268f8b795b2">&#9670;&nbsp;</a></span>join() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void osapi::Thread::join </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a986ca922d21233b02a167ba1075bca5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a986ca922d21233b02a167ba1075bca5b">&#9670;&nbsp;</a></span>setPriority() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void osapi::Thread::setPriority </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classosapi_1_1Thread.html#a29f9912dd4113cad7eba161835a5c114">Thread::ThreadPriority</a>&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="linux_2Thread_8cpp_source.html#l00056">56</a> of file <a class="el" href="linux_2Thread_8cpp_source.html">Thread.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  {</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordflow">if</span>(!<a class="code" href="classosapi_1_1Thread.html#a06c0734f798f7589ae24130c8ff8e3b9">attached_</a>) <span class="keywordflow">throw</span> ThreadError();</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordflow">if</span>(getuid() == 0) <span class="comment">// Check to see if we are root</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    {        </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;      <span class="keywordflow">if</span>(pthread_setschedprio(<a class="code" href="classosapi_1_1Thread.html#a6c450469c9e28cbdfafba93df44dfc11">threadId_</a>, <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(priority)) != 0) <span class="keywordflow">throw</span> ThreadError();</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;      <a class="code" href="classosapi_1_1Thread.html#a6aa288ec3487ed5f4b1abe88cddc6aea">priority_</a> = priority;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    }</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    {</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;      <span class="comment">// Do nothing</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    }    </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="afdd73421450b263242dabb06a9abc17a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afdd73421450b263242dabb06a9abc17a">&#9670;&nbsp;</a></span>setPriority() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void osapi::Thread::setPriority </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classosapi_1_1Thread.html#a29f9912dd4113cad7eba161835a5c114">ThreadPriority</a>&#160;</td>
+          <td class="paramname"><em>pri</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5409235d68889397cb5bfe092582cd72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5409235d68889397cb5bfe092582cd72">&#9670;&nbsp;</a></span>start() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void osapi::Thread::start </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="linux_2Thread_8cpp_source.html#l00025">25</a> of file <a class="el" href="linux_2Thread_8cpp_source.html">Thread.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  {</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordflow">if</span>(getuid() == 0) <span class="comment">// Check to see if we are root</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    {</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;      <span class="comment">/* Steps to go through */</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;      pthread_attr_t  attr;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;      <span class="keywordflow">if</span>(pthread_attr_init(&amp;attr) != 0) <span class="keywordflow">throw</span> ThreadError();                                        <span class="comment">// Init attr</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;      sched_param sched_p;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;      <span class="keywordflow">if</span>(pthread_attr_setschedpolicy(&amp;attr, SCHED_RR) != 0) <span class="keywordflow">throw</span> ThreadError();                    <span class="comment">// Set RR scheduling (RT, timesliced)</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;      <span class="keywordflow">if</span>(pthread_attr_setinheritsched(&amp;attr, PTHREAD_EXPLICIT_SCHED) != 0) <span class="keywordflow">throw</span> ThreadError(); <span class="comment">// Create thread with explicit (non-inherited) scheduling - setting priority will not work otherwise!</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;      sched_p.sched_priority = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(<a class="code" href="classosapi_1_1Thread.html#a6aa288ec3487ed5f4b1abe88cddc6aea">priority_</a>);                         <span class="comment">// Set priority</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;      <span class="keywordflow">if</span>(pthread_attr_setschedparam(&amp;attr, &amp;sched_p) != 0) <span class="keywordflow">throw</span> ThreadError();                 <span class="comment">// Use the priority        </span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;      <span class="comment">/* Missing thread creation */</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;      <span class="keywordflow">if</span> (pthread_create(&amp;<a class="code" href="classosapi_1_1Thread.html#a6c450469c9e28cbdfafba93df44dfc11">threadId_</a>, &amp;attr, <a class="code" href="classosapi_1_1ThreadFunctor.html#a26b0ae3a3f8c2d8319f6631b4dc3942e">ThreadFunctor::threadMapper</a>, <a class="code" href="classosapi_1_1Thread.html#acf6075bfe777ce3db39f40464b7548b5">tf_</a>) != 0)</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keywordflow">throw</span> ThreadError();</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;      </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;      pthread_attr_destroy(&amp;attr);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    }</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    {</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;      <span class="comment">/* Missing thread creation */</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;      <span class="keywordflow">if</span> (pthread_create(&amp;<a class="code" href="classosapi_1_1Thread.html#a6c450469c9e28cbdfafba93df44dfc11">threadId_</a>, NULL, <a class="code" href="classosapi_1_1ThreadFunctor.html#a26b0ae3a3f8c2d8319f6631b4dc3942e">ThreadFunctor::threadMapper</a>, <a class="code" href="classosapi_1_1Thread.html#acf6075bfe777ce3db39f40464b7548b5">tf_</a>) != 0)</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keywordflow">throw</span> ThreadError();</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    }</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="comment">// If ok no exception was thrown thus we have a valid thread and its attached!</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="code" href="classosapi_1_1Thread.html#a06c0734f798f7589ae24130c8ff8e3b9">attached_</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a5409235d68889397cb5bfe092582cd72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5409235d68889397cb5bfe092582cd72">&#9670;&nbsp;</a></span>start() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void osapi::Thread::start </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a06c0734f798f7589ae24130c8ff8e3b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06c0734f798f7589ae24130c8ff8e3b9">&#9670;&nbsp;</a></span>attached_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool osapi::Thread::attached_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="linux_2Thread_8hpp_source.html#l00044">44</a> of file <a class="el" href="linux_2Thread_8hpp_source.html">Thread.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a75bc13f67c5eb1af9ffa9653f2af5643"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75bc13f67c5eb1af9ffa9653f2af5643">&#9670;&nbsp;</a></span>name_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string osapi::Thread::name_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="linux_2Thread_8hpp_source.html#l00042">42</a> of file <a class="el" href="linux_2Thread_8hpp_source.html">Thread.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a6aa288ec3487ed5f4b1abe88cddc6aea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6aa288ec3487ed5f4b1abe88cddc6aea">&#9670;&nbsp;</a></span>priority_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classosapi_1_1Thread.html#a29f9912dd4113cad7eba161835a5c114">ThreadPriority</a> osapi::Thread::priority_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="linux_2Thread_8hpp_source.html#l00041">41</a> of file <a class="el" href="linux_2Thread_8hpp_source.html">Thread.hpp</a>.</p>
+
+</div>
+</div>
+<a id="acf6075bfe777ce3db39f40464b7548b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf6075bfe777ce3db39f40464b7548b5">&#9670;&nbsp;</a></span>tf_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classosapi_1_1ThreadFunctor.html">ThreadFunctor</a>* osapi::Thread::tf_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="linux_2Thread_8hpp_source.html#l00040">40</a> of file <a class="el" href="linux_2Thread_8hpp_source.html">Thread.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a87b2aa8c9a808975471242f2e82c5a45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87b2aa8c9a808975471242f2e82c5a45">&#9670;&nbsp;</a></span>thread_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classosapi_1_1details_1_1Thread.html">details::Thread</a>* osapi::Thread::thread_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="winx86_2Thread_8hpp_source.html#l00039">39</a> of file <a class="el" href="winx86_2Thread_8hpp_source.html">Thread.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a6c450469c9e28cbdfafba93df44dfc11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c450469c9e28cbdfafba93df44dfc11">&#9670;&nbsp;</a></span>threadId_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">pthread_t osapi::Thread::threadId_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="linux_2Thread_8hpp_source.html#l00043">43</a> of file <a class="el" href="linux_2Thread_8hpp_source.html">Thread.hpp</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>CoinDetectingSensors/OSApiStudent/inc/osapi/linux/<a class="el" href="linux_2Thread_8hpp_source.html">Thread.hpp</a></li>
 <li>CoinDetectingSensors/OSApiStudent/linux/<a class="el" href="linux_2Thread_8cpp_source.html">Thread.cpp</a></li>
 </ul>
 </div><!-- contents -->
+<div class="ttc" id="aclassosapi_1_1Thread_html_a29f9912dd4113cad7eba161835a5c114a049d818c6c9d61c9811e915ba16177c5"><div class="ttname"><a href="classosapi_1_1Thread.html#a29f9912dd4113cad7eba161835a5c114a049d818c6c9d61c9811e915ba16177c5">osapi::Thread::PRIORITY_BELOW_NORMAL</a></div><div class="ttdeci">@ PRIORITY_BELOW_NORMAL</div><div class="ttdef"><b>Definition:</b> <a href="linux_2Thread_8hpp_source.html#l00020">Thread.hpp:20</a></div></div>
+<div class="ttc" id="aclassosapi_1_1Thread_html_a29f9912dd4113cad7eba161835a5c114a19d5e344d128aac14e44d82cabc9424c"><div class="ttname"><a href="classosapi_1_1Thread.html#a29f9912dd4113cad7eba161835a5c114a19d5e344d128aac14e44d82cabc9424c">osapi::Thread::PRIORITY_LOW</a></div><div class="ttdeci">@ PRIORITY_LOW</div><div class="ttdef"><b>Definition:</b> <a href="linux_2Thread_8hpp_source.html#l00019">Thread.hpp:19</a></div></div>
+<div class="ttc" id="aclassosapi_1_1Thread_html_a29f9912dd4113cad7eba161835a5c114a96f89509830f8d1b2937de4eab13a88c"><div class="ttname"><a href="classosapi_1_1Thread.html#a29f9912dd4113cad7eba161835a5c114a96f89509830f8d1b2937de4eab13a88c">osapi::Thread::PRIORITY_HIGH</a></div><div class="ttdeci">@ PRIORITY_HIGH</div><div class="ttdef"><b>Definition:</b> <a href="linux_2Thread_8hpp_source.html#l00024">Thread.hpp:23</a></div></div>
+<div class="ttc" id="aclassosapi_1_1ThreadFunctor_html_a04d2b95bc023d30ee08386758c33e8ba"><div class="ttname"><a href="classosapi_1_1ThreadFunctor.html#a04d2b95bc023d30ee08386758c33e8ba">osapi::ThreadFunctor::threadDone_</a></div><div class="ttdeci">Completion threadDone_</div><div class="ttdef"><b>Definition:</b> <a href="linux_2ThreadFunctor_8hpp_source.html#l00020">ThreadFunctor.hpp:20</a></div></div>
+<div class="ttc" id="aclassosapi_1_1Thread_html_a29f9912dd4113cad7eba161835a5c114a16a4382f55a1827d83c6ac2ced571dd8"><div class="ttname"><a href="classosapi_1_1Thread.html#a29f9912dd4113cad7eba161835a5c114a16a4382f55a1827d83c6ac2ced571dd8">osapi::Thread::PRIORITY_NORMAL</a></div><div class="ttdeci">@ PRIORITY_NORMAL</div><div class="ttdef"><b>Definition:</b> <a href="linux_2Thread_8hpp_source.html#l00021">Thread.hpp:21</a></div></div>
+<div class="ttc" id="aclassosapi_1_1Thread_html_a29f9912dd4113cad7eba161835a5c114aca12d024bd249f78326b794cb2d0b8d6"><div class="ttname"><a href="classosapi_1_1Thread.html#a29f9912dd4113cad7eba161835a5c114aca12d024bd249f78326b794cb2d0b8d6">osapi::Thread::PRIORITY_ABOVE_NORMAL</a></div><div class="ttdeci">@ PRIORITY_ABOVE_NORMAL</div><div class="ttdef"><b>Definition:</b> <a href="linux_2Thread_8hpp_source.html#l00022">Thread.hpp:22</a></div></div>
+<div class="ttc" id="aclassosapi_1_1Completion_html_af8a7bd1386bf1f50f4b81e003f394494"><div class="ttname"><a href="classosapi_1_1Completion.html#af8a7bd1386bf1f50f4b81e003f394494">osapi::Completion::wait</a></div><div class="ttdeci">void wait()</div><div class="ttdef"><b>Definition:</b> <a href="Completion_8cpp_source.html#l00012">Completion.cpp:12</a></div></div>
+<div class="ttc" id="aclassosapi_1_1Thread_html_a6aa288ec3487ed5f4b1abe88cddc6aea"><div class="ttname"><a href="classosapi_1_1Thread.html#a6aa288ec3487ed5f4b1abe88cddc6aea">osapi::Thread::priority_</a></div><div class="ttdeci">ThreadPriority priority_</div><div class="ttdef"><b>Definition:</b> <a href="linux_2Thread_8hpp_source.html#l00041">Thread.hpp:41</a></div></div>
+<div class="ttc" id="aclassosapi_1_1Thread_html_a06c0734f798f7589ae24130c8ff8e3b9"><div class="ttname"><a href="classosapi_1_1Thread.html#a06c0734f798f7589ae24130c8ff8e3b9">osapi::Thread::attached_</a></div><div class="ttdeci">bool attached_</div><div class="ttdef"><b>Definition:</b> <a href="linux_2Thread_8hpp_source.html#l00044">Thread.hpp:44</a></div></div>
+<div class="ttc" id="aclassosapi_1_1Thread_html_a57764da6e88f008e90952f7273f7c70d"><div class="ttname"><a href="classosapi_1_1Thread.html#a57764da6e88f008e90952f7273f7c70d">osapi::Thread::detach</a></div><div class="ttdeci">void detach()</div><div class="ttdef"><b>Definition:</b> <a href="linux_2Thread_8cpp_source.html#l00089">Thread.cpp:89</a></div></div>
+<div class="ttc" id="aclassosapi_1_1Thread_html_acf6075bfe777ce3db39f40464b7548b5"><div class="ttname"><a href="classosapi_1_1Thread.html#acf6075bfe777ce3db39f40464b7548b5">osapi::Thread::tf_</a></div><div class="ttdeci">ThreadFunctor * tf_</div><div class="ttdef"><b>Definition:</b> <a href="linux_2Thread_8hpp_source.html#l00040">Thread.hpp:40</a></div></div>
+<div class="ttc" id="aclassosapi_1_1Thread_html_a75bc13f67c5eb1af9ffa9653f2af5643"><div class="ttname"><a href="classosapi_1_1Thread.html#a75bc13f67c5eb1af9ffa9653f2af5643">osapi::Thread::name_</a></div><div class="ttdeci">std::string name_</div><div class="ttdef"><b>Definition:</b> <a href="linux_2Thread_8hpp_source.html#l00042">Thread.hpp:42</a></div></div>
+<div class="ttc" id="aclassosapi_1_1Thread_html_a6c450469c9e28cbdfafba93df44dfc11"><div class="ttname"><a href="classosapi_1_1Thread.html#a6c450469c9e28cbdfafba93df44dfc11">osapi::Thread::threadId_</a></div><div class="ttdeci">pthread_t threadId_</div><div class="ttdef"><b>Definition:</b> <a href="linux_2Thread_8hpp_source.html#l00043">Thread.hpp:43</a></div></div>
+<div class="ttc" id="aclassosapi_1_1Thread_html_a5409235d68889397cb5bfe092582cd72"><div class="ttname"><a href="classosapi_1_1Thread.html#a5409235d68889397cb5bfe092582cd72">osapi::Thread::start</a></div><div class="ttdeci">void start()</div><div class="ttdef"><b>Definition:</b> <a href="linux_2Thread_8cpp_source.html#l00025">Thread.cpp:25</a></div></div>
+<div class="ttc" id="aclassosapi_1_1ThreadFunctor_html_a26b0ae3a3f8c2d8319f6631b4dc3942e"><div class="ttname"><a href="classosapi_1_1ThreadFunctor.html#a26b0ae3a3f8c2d8319f6631b4dc3942e">osapi::ThreadFunctor::threadMapper</a></div><div class="ttdeci">static void * threadMapper(void *p)</div><div class="ttdef"><b>Definition:</b> <a href="linux_2ThreadFunctor_8cpp_source.html#l00005">ThreadFunctor.cpp:5</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

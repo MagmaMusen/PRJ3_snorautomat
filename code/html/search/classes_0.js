@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['auxsignals_86',['AuxSignals',['../classAuxSignals.html',1,'']]]
+  ['auxsignals_495',['AuxSignals',['../classAuxSignals.html',1,'']]]
 ];

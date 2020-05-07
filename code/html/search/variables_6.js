@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['sensordistancemillimeter_5f_173',['sensorDistanceMillimeter_',['../classCoinIdentifier.html#a9b1c68a8a130d8c3cb19e4764dffe646',1,'CoinIdentifier']]]
+  ['handle_5f_913',['handle_',['../classosapi_1_1details_1_1Thread.html#a00d6309c29c8c7db4baf1116c72f3e17',1,'osapi::details::Thread']]]
 ];

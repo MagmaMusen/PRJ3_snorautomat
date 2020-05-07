@@ -69,12 +69,12 @@ $(function() {
 <div class="title">mainwindow.cpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;mainwindow.h&quot;</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;snorwindow.h&quot;</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;auxsignals.h&quot;</span></div>
+<a href="trialRoop_2mainwindow_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="trialRoop_2mainwindow_8h.html">mainwindow.h</a>&quot;</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="snorwindow_8h.html">snorwindow.h</a>&quot;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="auxsignals_8h.html">auxsignals.h</a>&quot;</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;ui_mainwindow.h&quot;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;newwindow.h&quot;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;globals.h&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="newwindow_8h.html">newwindow.h</a>&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="trialRoop_2globals_8h.html">globals.h</a>&quot;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;QApplication&gt;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;QLineEdit&gt;</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;QTextEdit&gt;</span></div>
@@ -87,21 +87,21 @@ $(function() {
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;MainWindow::MainWindow(QWidget *parent) :</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<a class="code" href="classMainWindow.html#a996c5a2b6f77944776856f08ec30858d">MainWindow::MainWindow</a>(QWidget *parent) :</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    QMainWindow(parent),</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    ui(new Ui::<a class="code" href="classMainWindow.html">MainWindow</a>)</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    ui(new <a class="code" href="namespaceUi.html">Ui</a>::<a class="code" href="classMainWindow.html">MainWindow</a>)</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;{</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    ui-&gt;setupUi(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="classMainWindow.html#a43606649aeaf9e561328935fca0cd1bf">ui</a>-&gt;setupUi(<span class="keyword">this</span>);</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    setFixedSize(600,600);</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="comment">//Create the 3 buttons with names</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    buttonFivePositve_ = <span class="keyword">new</span> QPushButton(<span class="stringliteral">&quot;+5&quot;</span>, <span class="keyword">this</span>);</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    buttonFiveNegative_ = <span class="keyword">new</span> QPushButton(<span class="stringliteral">&quot;-5&quot;</span>, <span class="keyword">this</span>);</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    buttonDecline_ = <span class="keyword">new</span> QPushButton(<span class="stringliteral">&quot;Decline&quot;</span>, <span class="keyword">this</span>);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="classMainWindow.html#a30b4608c10fe79586f5ae66483b10642">buttonFivePositve_</a> = <span class="keyword">new</span> QPushButton(<span class="stringliteral">&quot;+5&quot;</span>, <span class="keyword">this</span>);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="classMainWindow.html#a55b0fe177f1617dce40e80d0e439ea51">buttonFiveNegative_</a> = <span class="keyword">new</span> QPushButton(<span class="stringliteral">&quot;-5&quot;</span>, <span class="keyword">this</span>);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="classMainWindow.html#ab4b2cca90a5fc8352757babaa2477b9f">buttonDecline_</a> = <span class="keyword">new</span> QPushButton(<span class="stringliteral">&quot;Decline&quot;</span>, <span class="keyword">this</span>);</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="comment">//Create a LineEdit object</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    LE1_ = <span class="keyword">new</span> QLineEdit(<span class="stringliteral">&quot;Indtast den onsket laengde snor&quot;</span>, <span class="keyword">this</span>);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="code" href="classMainWindow.html#ad7e5a0e0b9b4e9ec33413b4852b41808">LE1_</a> = <span class="keyword">new</span> QLineEdit(<span class="stringliteral">&quot;Indtast den onsket laengde snor&quot;</span>, <span class="keyword">this</span>);</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="comment">//Create a spinbox where the length of the rope is going to be showed</span></div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    QSpinBox *progress1_ = <span class="keyword">new</span> QSpinBox(<span class="keyword">this</span>);</div>
@@ -111,17 +111,17 @@ $(function() {
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="code" href="classAuxSignals.html">AuxSignals</a> * auxSignals = <span class="keyword">new</span> <a class="code" href="classAuxSignals.html">AuxSignals</a>;</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="comment">//Sets the geometry for the 3 buttons</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    buttonFivePositve_-&gt;setGeometry(10,80,80,30);</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    buttonFiveNegative_-&gt;setGeometry(140, 80, 80, 30);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <a class="code" href="classMainWindow.html#a30b4608c10fe79586f5ae66483b10642">buttonFivePositve_</a>-&gt;setGeometry(10,80,80,30);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="classMainWindow.html#a55b0fe177f1617dce40e80d0e439ea51">buttonFiveNegative_</a>-&gt;setGeometry(140, 80, 80, 30);</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="comment">//buttonAccept_-&gt;setGeometry(270, 10, 80, 30);</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    buttonDecline_-&gt;setGeometry(400, 80, 80, 30);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="classMainWindow.html#ab4b2cca90a5fc8352757babaa2477b9f">buttonDecline_</a>-&gt;setGeometry(400, 80, 80, 30);</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="comment">//Set the LineEdit to Read Only</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    LE1_-&gt;setReadOnly(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="code" href="classMainWindow.html#ad7e5a0e0b9b4e9ec33413b4852b41808">LE1_</a>-&gt;setReadOnly(<span class="keyword">true</span>);</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="comment">//Set the LineEdit&#39;s geometry</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    LE1_-&gt;setGeometry(10, 10, 340, 30);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <a class="code" href="classMainWindow.html#ad7e5a0e0b9b4e9ec33413b4852b41808">LE1_</a>-&gt;setGeometry(10, 10, 340, 30);</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="comment">//Set the progress1_</span></div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    progress1_-&gt;setGeometry(10, 140, 80, 30);</div>
@@ -133,42 +133,42 @@ $(function() {
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    progress1_-&gt;setSuffix(<span class="stringliteral">&quot;cm&quot;</span>);</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="comment">//Connect button FivePositive_ to progress1_</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    connect(buttonFivePositve_, SIGNAL(clicked()),</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    connect(<a class="code" href="classMainWindow.html#a30b4608c10fe79586f5ae66483b10642">buttonFivePositve_</a>, SIGNAL(clicked()),</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            auxSignals, SLOT(buttonFivePositiveClicked()));</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    connect(auxSignals, SIGNAL(valueChangedPositive(<span class="keywordtype">int</span>)),</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            progress1_, SLOT(setValue(<span class="keywordtype">int</span>)));</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="comment">//Connect buttonFiveNegative_ to progress1_</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    connect(buttonFiveNegative_, SIGNAL(clicked()),</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    connect(<a class="code" href="classMainWindow.html#a55b0fe177f1617dce40e80d0e439ea51">buttonFiveNegative_</a>, SIGNAL(clicked()),</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            auxSignals, SLOT(buttonFiveNegativeClicked()));</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    connect(auxSignals, SIGNAL(valueChangedNegative(<span class="keywordtype">int</span>)),</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            progress1_, SLOT(setValue(<span class="keywordtype">int</span>)));</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="comment">//Accept button is pressed and should go to new window</span></div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    connect(buttonAccept_, SIGNAL(clickedButton()),</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            <span class="keyword">this</span>, SLOT(openSnorWindow()));</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    connect(<a class="code" href="classMainWindow.html#a85ecc118c2718431686b9c6909ba112e">buttonAccept_</a>, SIGNAL(<a class="code" href="classMainWindow.html#a6a9edf83825d63c8f7667485751b99b8">clickedButton</a>()),</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            <span class="keyword">this</span>, SLOT(<a class="code" href="classMainWindow.html#ac2555f806302671dfcb66c18082810a5">openSnorWindow</a>()));</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="comment">//reset to 0</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    connect(buttonDecline_, SIGNAL(clicked()),</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    connect(<a class="code" href="classMainWindow.html#ab4b2cca90a5fc8352757babaa2477b9f">buttonDecline_</a>, SIGNAL(clicked()),</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            auxSignals, SLOT(buttonCancelClicked()));</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    connect(auxSignals, SIGNAL(valueReset(<span class="keywordtype">int</span>)),</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            progress1_, SLOT(setValue(<span class="keywordtype">int</span>)));</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;}</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;MainWindow::~MainWindow()</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<a class="code" href="classMainWindow.html#ae98d00a93bc118200eeef9f9bba1dba7">MainWindow::~MainWindow</a>()</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;{</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keyword">delete</span> ui;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keyword">delete</span> <a class="code" href="classMainWindow.html#a43606649aeaf9e561328935fca0cd1bf">ui</a>;</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;}</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="keywordtype">void</span> MainWindow::openSnorWindow()</div>
+<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="classMainWindow.html#ac2555f806302671dfcb66c18082810a5">   93</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classMainWindow.html#ac2555f806302671dfcb66c18082810a5">MainWindow::openSnorWindow</a>()</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;{</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    mySnorWindow = <span class="keyword">new</span> <a class="code" href="classsnorWindow.html">snorWindow</a>();</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    mySnorWindow-&gt;show();</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <a class="code" href="classMainWindow.html#aca6b186b0885dacaebea2d5dc2e3d9d7">mySnorWindow</a> = <span class="keyword">new</span> <a class="code" href="classsnorWindow.html">snorWindow</a>();</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <a class="code" href="classMainWindow.html#aca6b186b0885dacaebea2d5dc2e3d9d7">mySnorWindow</a>-&gt;show();</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;}</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="keywordtype">void</span> MainWindow::showWindowOne()</div>
+<div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="classMainWindow.html#aa0d3305722378c3b859150a1f1415ab0">  100</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classMainWindow.html#aa0d3305722378c3b859150a1f1415ab0">MainWindow::showWindowOne</a>()</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;{</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;   <span class="comment">/* this -&gt;hide();</span></div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="comment">    MainWindow *w = new MainWindow();</span></div>
@@ -176,21 +176,40 @@ $(function() {
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;}</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="keywordtype">void</span> MainWindow::on_acceptButton_clicked()</div>
+<div class="line"><a name="l00108"></a><span class="lineno"><a class="line" href="classMainWindow.html#a1892de56e9ae308c6356a0e786df2f98">  108</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classMainWindow.html#a1892de56e9ae308c6356a0e786df2f98">MainWindow::on_acceptButton_clicked</a>()</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;{</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    mySnorWindow = <span class="keyword">new</span> <a class="code" href="classsnorWindow.html">snorWindow</a>(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <a class="code" href="classMainWindow.html#aca6b186b0885dacaebea2d5dc2e3d9d7">mySnorWindow</a> = <span class="keyword">new</span> <a class="code" href="classsnorWindow.html">snorWindow</a>(<span class="keyword">this</span>);</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;   <span class="comment">// mysnorWindow-&gt;setGeometry(270, 10, 80, 30);</span></div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    hide();</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    mySnorWindow-&gt;show();</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <a class="code" href="classMainWindow.html#aca6b186b0885dacaebea2d5dc2e3d9d7">mySnorWindow</a>-&gt;show();</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;}</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
 </div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="atrialRoop_2globals_8h_html"><div class="ttname"><a href="trialRoop_2globals_8h.html">globals.h</a></div></div>
+<div class="ttc" id="atrialRoop_2mainwindow_8h_html"><div class="ttname"><a href="trialRoop_2mainwindow_8h.html">mainwindow.h</a></div></div>
+<div class="ttc" id="aclassMainWindow_html_a6a9edf83825d63c8f7667485751b99b8"><div class="ttname"><a href="classMainWindow.html#a6a9edf83825d63c8f7667485751b99b8">MainWindow::clickedButton</a></div><div class="ttdeci">bool clickedButton()</div></div>
 <div class="ttc" id="aclassAuxSignals_html"><div class="ttname"><a href="classAuxSignals.html">AuxSignals</a></div><div class="ttdef"><b>Definition:</b> <a href="auxsignals_8h_source.html#l00007">auxsignals.h:8</a></div></div>
+<div class="ttc" id="aclassMainWindow_html_aa0d3305722378c3b859150a1f1415ab0"><div class="ttname"><a href="classMainWindow.html#aa0d3305722378c3b859150a1f1415ab0">MainWindow::showWindowOne</a></div><div class="ttdeci">void showWindowOne()</div><div class="ttdef"><b>Definition:</b> <a href="trialRoop_2mainwindow_8cpp_source.html#l00100">mainwindow.cpp:100</a></div></div>
+<div class="ttc" id="aclassMainWindow_html_ae98d00a93bc118200eeef9f9bba1dba7"><div class="ttname"><a href="classMainWindow.html#ae98d00a93bc118200eeef9f9bba1dba7">MainWindow::~MainWindow</a></div><div class="ttdeci">~MainWindow()</div><div class="ttdef"><b>Definition:</b> <a href="GUI_2mainwindow_8cpp_source.html#l00080">mainwindow.cpp:80</a></div></div>
+<div class="ttc" id="aclassMainWindow_html_a30b4608c10fe79586f5ae66483b10642"><div class="ttname"><a href="classMainWindow.html#a30b4608c10fe79586f5ae66483b10642">MainWindow::buttonFivePositve_</a></div><div class="ttdeci">QPushButton * buttonFivePositve_</div><div class="ttdef"><b>Definition:</b> <a href="trialRoop_2mainwindow_8h_source.html#l00040">mainwindow.h:40</a></div></div>
+<div class="ttc" id="aclassMainWindow_html_ab4b2cca90a5fc8352757babaa2477b9f"><div class="ttname"><a href="classMainWindow.html#ab4b2cca90a5fc8352757babaa2477b9f">MainWindow::buttonDecline_</a></div><div class="ttdeci">QPushButton * buttonDecline_</div><div class="ttdef"><b>Definition:</b> <a href="GUI_2mainwindow_8h_source.html#l00032">mainwindow.h:32</a></div></div>
+<div class="ttc" id="aclassMainWindow_html_a1892de56e9ae308c6356a0e786df2f98"><div class="ttname"><a href="classMainWindow.html#a1892de56e9ae308c6356a0e786df2f98">MainWindow::on_acceptButton_clicked</a></div><div class="ttdeci">void on_acceptButton_clicked()</div><div class="ttdef"><b>Definition:</b> <a href="trialRoop_2mainwindow_8cpp_source.html#l00108">mainwindow.cpp:108</a></div></div>
+<div class="ttc" id="anamespaceUi_html"><div class="ttname"><a href="namespaceUi.html">Ui</a></div><div class="ttdef"><b>Definition:</b> <a href="GUI_2mainwindow_8h_source.html#l00008">mainwindow.h:8</a></div></div>
 <div class="ttc" id="aclassMainWindow_html"><div class="ttname"><a href="classMainWindow.html">MainWindow</a></div><div class="ttdef"><b>Definition:</b> <a href="GUI_2mainwindow_8h_source.html#l00012">mainwindow.h:13</a></div></div>
+<div class="ttc" id="aclassMainWindow_html_a996c5a2b6f77944776856f08ec30858d"><div class="ttname"><a href="classMainWindow.html#a996c5a2b6f77944776856f08ec30858d">MainWindow::MainWindow</a></div><div class="ttdeci">MainWindow(QWidget *parent=nullptr)</div><div class="ttdef"><b>Definition:</b> <a href="GUI_2mainwindow_8cpp_source.html#l00005">mainwindow.cpp:5</a></div></div>
+<div class="ttc" id="anewwindow_8h_html"><div class="ttname"><a href="newwindow_8h.html">newwindow.h</a></div></div>
+<div class="ttc" id="aauxsignals_8h_html"><div class="ttname"><a href="auxsignals_8h.html">auxsignals.h</a></div></div>
+<div class="ttc" id="aclassMainWindow_html_a43606649aeaf9e561328935fca0cd1bf"><div class="ttname"><a href="classMainWindow.html#a43606649aeaf9e561328935fca0cd1bf">MainWindow::ui</a></div><div class="ttdeci">Ui::MainWindow * ui</div><div class="ttdef"><b>Definition:</b> <a href="GUI_2mainwindow_8h_source.html#l00021">mainwindow.h:21</a></div></div>
+<div class="ttc" id="aclassMainWindow_html_ac2555f806302671dfcb66c18082810a5"><div class="ttname"><a href="classMainWindow.html#ac2555f806302671dfcb66c18082810a5">MainWindow::openSnorWindow</a></div><div class="ttdeci">void openSnorWindow()</div><div class="ttdef"><b>Definition:</b> <a href="trialRoop_2mainwindow_8cpp_source.html#l00093">mainwindow.cpp:93</a></div></div>
+<div class="ttc" id="aclassMainWindow_html_aca6b186b0885dacaebea2d5dc2e3d9d7"><div class="ttname"><a href="classMainWindow.html#aca6b186b0885dacaebea2d5dc2e3d9d7">MainWindow::mySnorWindow</a></div><div class="ttdeci">snorWindow * mySnorWindow</div><div class="ttdef"><b>Definition:</b> <a href="trialRoop_2mainwindow_8h_source.html#l00034">mainwindow.h:34</a></div></div>
+<div class="ttc" id="aclassMainWindow_html_a85ecc118c2718431686b9c6909ba112e"><div class="ttname"><a href="classMainWindow.html#a85ecc118c2718431686b9c6909ba112e">MainWindow::buttonAccept_</a></div><div class="ttdeci">QPushButton * buttonAccept_</div><div class="ttdef"><b>Definition:</b> <a href="GUI_2mainwindow_8h_source.html#l00031">mainwindow.h:31</a></div></div>
+<div class="ttc" id="asnorwindow_8h_html"><div class="ttname"><a href="snorwindow_8h.html">snorwindow.h</a></div></div>
 <div class="ttc" id="aclasssnorWindow_html"><div class="ttname"><a href="classsnorWindow.html">snorWindow</a></div><div class="ttdef"><b>Definition:</b> <a href="snorwindow_8h_source.html#l00019">snorwindow.h:20</a></div></div>
+<div class="ttc" id="aclassMainWindow_html_ad7e5a0e0b9b4e9ec33413b4852b41808"><div class="ttname"><a href="classMainWindow.html#ad7e5a0e0b9b4e9ec33413b4852b41808">MainWindow::LE1_</a></div><div class="ttdeci">QLineEdit * LE1_</div><div class="ttdef"><b>Definition:</b> <a href="GUI_2mainwindow_8h_source.html#l00024">mainwindow.h:24</a></div></div>
+<div class="ttc" id="aclassMainWindow_html_a55b0fe177f1617dce40e80d0e439ea51"><div class="ttname"><a href="classMainWindow.html#a55b0fe177f1617dce40e80d0e439ea51">MainWindow::buttonFiveNegative_</a></div><div class="ttdeci">QPushButton * buttonFiveNegative_</div><div class="ttdef"><b>Definition:</b> <a href="GUI_2mainwindow_8h_source.html#l00030">mainwindow.h:30</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

@@ -69,7 +69,7 @@ $(function() {
 <div class="title">CDSdriver.c</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &lt;linux/gpio.h&gt;</span></div>
+<a href="CDSdriver_8c.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &lt;linux/gpio.h&gt;</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;linux/fs.h&gt;</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;linux/cdev.h&gt;</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;linux/device.h&gt;</span></div>
@@ -83,19 +83,19 @@ $(function() {
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;linux/timekeeping.h&gt;</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#define CDS_MAJOR 43</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#define CDS_MINOR 0</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#define NBR_MINORS 2 // 2 sensors.</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;MODULE_LICENSE(<span class="stringliteral">&quot;GPL&quot;</span>);</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;MODULE_AUTHOR(<span class="stringliteral">&quot;Magnus Hauge Kyneb&quot;</span>);</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;MODULE_DESCRIPTION(<span class="stringliteral">&quot;Driver for Coin Detecting Sensors (CDS)&quot;</span>);</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="CDSdriver_8c.html#a39adb198a60a3e01cf0e267ec3cbbb87">   15</a></span>&#160;<span class="preprocessor">#define CDS_MINOR 0</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="CDSdriver_8c.html#ab809d25022e9c7dcf4030b68fe72f6a8">   16</a></span>&#160;<span class="preprocessor">#define NBR_MINORS 2 // 2 sensors.</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="CDSdriver_8c.html#aa0f4a746a7099e3694341e294141a89c">   17</a></span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="CDSdriver_8c.html#ad94b36675e7eb067ea3ce6ff9e244a44">   18</a></span>&#160;<a class="code" href="CDSdriver_8c.html#ad94b36675e7eb067ea3ce6ff9e244a44">MODULE_LICENSE</a>(<span class="stringliteral">&quot;GPL&quot;</span>);</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="CDSdriver_8c.html#a439c14a939ac680a44c9de6f46cf281d">   19</a></span>&#160;<a class="code" href="CDSdriver_8c.html#a439c14a939ac680a44c9de6f46cf281d">MODULE_AUTHOR</a>(<span class="stringliteral">&quot;Magnus Hauge Kyneb&quot;</span>);</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="CDSdriver_8c.html#a6f6f4def3ac14e219448712a34c06853">   20</a></span>&#160;<a class="code" href="CDSdriver_8c.html#a6f6f4def3ac14e219448712a34c06853">MODULE_DESCRIPTION</a>(<span class="stringliteral">&quot;Driver for Coin Detecting Sensors (CDS)&quot;</span>);</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">static</span> <span class="keywordtype">int</span> devno;</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">static</span> <span class="keywordtype">int</span> gpioNumberSensorOneRising = 22;</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">static</span> <span class="keywordtype">int</span> gpioNumberSensorOneFalling = 23;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">static</span> <span class="keywordtype">int</span> gpioNumberSensorTwoRising = 24;</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="CDSdriver_8c.html#a310689e15fc9e13058ae715bb9362ee2">   25</a></span>&#160;<span class="keyword">static</span> <span class="keywordtype">int</span> gpioNumberSensorTwoRising = 24;</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">static</span> <span class="keyword">struct </span>cdev CDS_dev;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">struct </span>file_operations my_fops;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">struct </span>file_operations <a class="code" href="CDSdriver_8c.html#a310689e15fc9e13058ae715bb9362ee2">my_fops</a>;</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">static</span> DECLARE_WAIT_QUEUE_HEAD(wq);</div>
@@ -105,33 +105,33 @@ $(function() {
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">static</span> irqreturn_t SensorTwoRising_interrupt_handler(<span class="keywordtype">int</span> irq, <span class="keywordtype">void</span> *dev_id);</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">static</span> irqreturn_t SensorOneFalling_interrupt_handler(<span class="keywordtype">int</span> irq, <span class="keywordtype">void</span> *dev_id);</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keywordtype">int</span> isr_sensorOneGpio_value;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keywordtype">int</span> isr_sensorTwoGpio_value;</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="CDSdriver_8c.html#a731e12d83741c66c3f53de3455bb82db">   37</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="CDSdriver_8c.html#a731e12d83741c66c3f53de3455bb82db">isr_sensorOneGpio_value</a>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="CDSdriver_8c.html#abc260dfbd3d4aecd52b761ce2bb9329f">   38</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="CDSdriver_8c.html#abc260dfbd3d4aecd52b761ce2bb9329f">isr_sensorTwoGpio_value</a>;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keywordtype">int</span> save_count = 0; </div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="CDSdriver_8c.html#aacae5d304dcef5f6bbf0fe5030e50626">   40</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="CDSdriver_8c.html#aacae5d304dcef5f6bbf0fe5030e50626">save_count</a> = 0; </div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">struct </span>timespec isr_timespec[3];</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keywordtype">long</span> saved_times[3];</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">struct </span>timespec <a class="code" href="CDSdriver_8c.html#a01d33c6057cb83be0611832ee2a0d31d">isr_timespec</a>[3];</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="CDSdriver_8c.html#ad925bd2ea910519995b894f5fa9b0d94">   43</a></span>&#160;<span class="keywordtype">long</span> <a class="code" href="CDSdriver_8c.html#ad925bd2ea910519995b894f5fa9b0d94">saved_times</a>[3];</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">static</span> irqreturn_t SensorOneRising_interrupt_handler(<span class="keywordtype">int</span> irq, <span class="keywordtype">void</span> *dev_id)</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;{</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment">// Save urgent information.</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  ktime_get_ts(&amp;isr_timespec[0]);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  ktime_get_ts(&amp;<a class="code" href="CDSdriver_8c.html#a01d33c6057cb83be0611832ee2a0d31d">isr_timespec</a>[0]);</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  </div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keywordflow">return</span> IRQ_HANDLED;</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;}</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">static</span> irqreturn_t SensorTwoRising_interrupt_handler(<span class="keywordtype">int</span> irq, <span class="keywordtype">void</span> *dev_id)</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;{</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  ktime_get_ts(&amp;isr_timespec[1]);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  ktime_get_ts(&amp;<a class="code" href="CDSdriver_8c.html#a01d33c6057cb83be0611832ee2a0d31d">isr_timespec</a>[1]);</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="keywordflow">return</span> IRQ_HANDLED;</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;}</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keyword">static</span> irqreturn_t SensorOneFalling_interrupt_handler(<span class="keywordtype">int</span> irq, <span class="keywordtype">void</span> *dev_id)</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;{</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  ktime_get_ts(&amp;isr_timespec[2]);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  ktime_get_ts(&amp;<a class="code" href="CDSdriver_8c.html#a01d33c6057cb83be0611832ee2a0d31d">isr_timespec</a>[2]);</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  </div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  flag = 1;</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  wake_up_interruptible(&amp;wq);</div>
@@ -139,7 +139,7 @@ $(function() {
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;}</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keywordtype">int</span> CDS_open(<span class="keyword">struct</span> inode *inode, <span class="keyword">struct</span> file *filep)</div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="CDSdriver_8c.html#abc60d06b01d381b76006f773979a5e95">   75</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="CDSdriver_8c.html#abc60d06b01d381b76006f773979a5e95">CDS_open</a>(<span class="keyword">struct</span> inode *inode, <span class="keyword">struct</span> file *filep)</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;{</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <span class="keywordtype">int</span> major, minor;</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  major = MAJOR(inode-&gt;i_rdev);</div>
@@ -168,7 +168,7 @@ $(function() {
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;}</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="keywordtype">int</span> CDS_release(<span class="keyword">struct</span> inode *inode, <span class="keyword">struct</span> file *filep)</div>
+<div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="CDSdriver_8c.html#a59dce6f17487fa45ec2890cce4e37444">  105</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="CDSdriver_8c.html#a59dce6f17487fa45ec2890cce4e37444">CDS_release</a>(<span class="keyword">struct</span> inode *inode, <span class="keyword">struct</span> file *filep)</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;{</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keywordtype">int</span> minor, major;</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
@@ -185,13 +185,13 @@ $(function() {
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; </div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160; </div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160; </div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;ssize_t CDS_read(<span class="keyword">struct</span> file *filep, <span class="keywordtype">char</span> __user *buf, <span class="keywordtype">size_t</span> count, loff_t *f_pos)</div>
+<div class="line"><a name="l00127"></a><span class="lineno"><a class="line" href="CDSdriver_8c.html#a90cc19095d89a8a27eac12e30859dde9">  127</a></span>&#160;ssize_t <a class="code" href="CDSdriver_8c.html#a90cc19095d89a8a27eac12e30859dde9">CDS_read</a>(<span class="keyword">struct</span> file *filep, <span class="keywordtype">char</span> __user *buf, <span class="keywordtype">size_t</span> count, loff_t *f_pos)</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160; {</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;     wait_event_interruptible(wq, flag &gt; 0);</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;     flag = 0;</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    </div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;     <span class="keywordtype">long</span> relativeTime_sensorTwoRising = isr_timespec[1].tv_nsec - isr_timespec[0].tv_nsec;</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;     <span class="keywordtype">long</span> relativeTime_sensorOneFalling = isr_timespec[2].tv_nsec - isr_timespec[0].tv_nsec;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;     <span class="keywordtype">long</span> relativeTime_sensorTwoRising = <a class="code" href="CDSdriver_8c.html#a01d33c6057cb83be0611832ee2a0d31d">isr_timespec</a>[1].tv_nsec - <a class="code" href="CDSdriver_8c.html#a01d33c6057cb83be0611832ee2a0d31d">isr_timespec</a>[0].tv_nsec;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;     <span class="keywordtype">long</span> relativeTime_sensorOneFalling = <a class="code" href="CDSdriver_8c.html#a01d33c6057cb83be0611832ee2a0d31d">isr_timespec</a>[2].tv_nsec - <a class="code" href="CDSdriver_8c.html#a01d33c6057cb83be0611832ee2a0d31d">isr_timespec</a>[0].tv_nsec;</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160; </div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;     <span class="keywordtype">char</span> message_buffer[255];</div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;     </div>
@@ -214,10 +214,10 @@ $(function() {
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160; </div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160; </div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160; </div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;<span class="keyword">struct </span>file_operations my_fops = {</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    .open = CDS_open,</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    .release = CDS_release,</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    .read = CDS_read,</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;<span class="keyword">struct </span>file_operations <a class="code" href="CDSdriver_8c.html#a310689e15fc9e13058ae715bb9362ee2">my_fops</a> = {</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    .open = <a class="code" href="CDSdriver_8c.html#abc60d06b01d381b76006f773979a5e95">CDS_open</a>,</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    .release = <a class="code" href="CDSdriver_8c.html#a59dce6f17487fa45ec2890cce4e37444">CDS_release</a>,</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    .read = <a class="code" href="CDSdriver_8c.html#a90cc19095d89a8a27eac12e30859dde9">CDS_read</a>,</div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;};</div>
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160; </div>
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160; </div>
@@ -260,17 +260,17 @@ $(function() {
 <div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160; </div>
 <div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    <span class="comment">// Specifying major &amp; minor number.</span></div>
 <div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    printk(KERN_ALERT <span class="stringliteral">&quot;Specifying Major and Minor numbers - 43 and 0\n&quot;</span>);</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    devno = MKDEV(CDS_MAJOR, CDS_MINOR);</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    devno = MKDEV(<a class="code" href="CDSdriver_8c.html#a39adb198a60a3e01cf0e267ec3cbbb87">CDS_MAJOR</a>, <a class="code" href="CDSdriver_8c.html#ab809d25022e9c7dcf4030b68fe72f6a8">CDS_MINOR</a>);</div>
 <div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160; </div>
 <div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    <span class="comment">// Allocate device numbers.</span></div>
 <div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    printk(KERN_ALERT <span class="stringliteral">&quot;Registering major and minor numbers for 1 device\n&quot;</span>);</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    err = register_chrdev_region(devno, NBR_MINORS, <span class="stringliteral">&quot;CDS driver&quot;</span>);</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    err = register_chrdev_region(devno, <a class="code" href="CDSdriver_8c.html#aa0f4a746a7099e3694341e294141a89c">NBR_MINORS</a>, <span class="stringliteral">&quot;CDS driver&quot;</span>);</div>
 <div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    <span class="keywordflow">if</span> (err &lt; 0)</div>
 <div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;       <span class="keywordflow">goto</span> err_free_buf;</div>
 <div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160; </div>
 <div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    <span class="comment">// Initialize character device.</span></div>
 <div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;    printk(KERN_ALERT <span class="stringliteral">&quot;Initializing cdev\n&quot;</span>);</div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    cdev_init(&amp;CDS_dev, &amp;my_fops); </div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    cdev_init(&amp;CDS_dev, &amp;<a class="code" href="CDSdriver_8c.html#a310689e15fc9e13058ae715bb9362ee2">my_fops</a>); </div>
 <div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;    </div>
 <div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;    printk(KERN_ALERT <span class="stringliteral">&quot;Adding cdev\n&quot;</span>);</div>
 <div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;    err = cdev_add(&amp;CDS_dev, devno, 1);</div>
@@ -283,7 +283,7 @@ $(function() {
 <div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160; </div>
 <div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;    <span class="comment">// Error handling.</span></div>
 <div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    err_dev_unregister:</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;        unregister_chrdev_region(devno, NBR_MINORS);</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;        unregister_chrdev_region(devno, <a class="code" href="CDSdriver_8c.html#aa0f4a746a7099e3694341e294141a89c">NBR_MINORS</a>);</div>
 <div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160; </div>
 <div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    err_free_buf:</div>
 <div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;        gpio_free(gpioNumberSensorOneRising);</div>
@@ -305,7 +305,7 @@ $(function() {
 <div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160; </div>
 <div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;    <span class="comment">// Free device numbers.</span></div>
 <div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    printk(KERN_ALERT <span class="stringliteral">&quot;Unregister cdev\n&quot;</span>);</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    unregister_chrdev_region(devno, NBR_MINORS);</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    unregister_chrdev_region(devno, <a class="code" href="CDSdriver_8c.html#aa0f4a746a7099e3694341e294141a89c">NBR_MINORS</a>);</div>
 <div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;  </div>
 <div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    printk(KERN_ALERT <span class="stringliteral">&quot;Freeing gpio number 16\n&quot;</span>);</div>
 <div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    gpio_free(gpioNumberSensorOneRising);</div>
@@ -313,9 +313,26 @@ $(function() {
 <div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    gpio_free(gpioNumberSensorTwoRising);</div>
 <div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;}</div>
 <div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160; </div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;module_init(CDS_driver_init);</div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;module_exit(CDS_driver_exit);</div>
+<div class="line"><a name="l00257"></a><span class="lineno"><a class="line" href="CDSdriver_8c.html#a92f5030f973aaf4ec0400a69eff3b1c5">  257</a></span>&#160;<a class="code" href="CDSdriver_8c.html#a92f5030f973aaf4ec0400a69eff3b1c5">module_init</a>(CDS_driver_init);</div>
+<div class="line"><a name="l00258"></a><span class="lineno"><a class="line" href="CDSdriver_8c.html#a866d4e3f1ce93fede43791a220ffff0b">  258</a></span>&#160;<a class="code" href="CDSdriver_8c.html#a866d4e3f1ce93fede43791a220ffff0b">module_exit</a>(CDS_driver_exit);</div>
 </div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aCDSdriver_8c_html_ad925bd2ea910519995b894f5fa9b0d94"><div class="ttname"><a href="CDSdriver_8c.html#ad925bd2ea910519995b894f5fa9b0d94">saved_times</a></div><div class="ttdeci">long saved_times[3]</div><div class="ttdef"><b>Definition:</b> <a href="CDSdriver_8c_source.html#l00043">CDSdriver.c:43</a></div></div>
+<div class="ttc" id="aCDSdriver_8c_html_abc60d06b01d381b76006f773979a5e95"><div class="ttname"><a href="CDSdriver_8c.html#abc60d06b01d381b76006f773979a5e95">CDS_open</a></div><div class="ttdeci">int CDS_open(struct inode *inode, struct file *filep)</div><div class="ttdoc">Open. Requests interrupt lines on specified GPIO and connects handlers and triggers.</div><div class="ttdef"><b>Definition:</b> <a href="CDSdriver_8c_source.html#l00075">CDSdriver.c:75</a></div></div>
+<div class="ttc" id="aCDSdriver_8c_html_a39adb198a60a3e01cf0e267ec3cbbb87"><div class="ttname"><a href="CDSdriver_8c.html#a39adb198a60a3e01cf0e267ec3cbbb87">CDS_MAJOR</a></div><div class="ttdeci">#define CDS_MAJOR</div><div class="ttdef"><b>Definition:</b> <a href="CDSdriver_8c_source.html#l00015">CDSdriver.c:14</a></div></div>
+<div class="ttc" id="aCDSdriver_8c_html_ab809d25022e9c7dcf4030b68fe72f6a8"><div class="ttname"><a href="CDSdriver_8c.html#ab809d25022e9c7dcf4030b68fe72f6a8">CDS_MINOR</a></div><div class="ttdeci">#define CDS_MINOR</div><div class="ttdef"><b>Definition:</b> <a href="CDSdriver_8c_source.html#l00016">CDSdriver.c:15</a></div></div>
+<div class="ttc" id="aCDSdriver_8c_html_a310689e15fc9e13058ae715bb9362ee2"><div class="ttname"><a href="CDSdriver_8c.html#a310689e15fc9e13058ae715bb9362ee2">my_fops</a></div><div class="ttdeci">struct file_operations my_fops</div><div class="ttdoc">File operations.</div><div class="ttdef"><b>Definition:</b> <a href="CDSdriver_8c_source.html#l00025">CDSdriver.c:27</a></div></div>
+<div class="ttc" id="aCDSdriver_8c_html_a866d4e3f1ce93fede43791a220ffff0b"><div class="ttname"><a href="CDSdriver_8c.html#a866d4e3f1ce93fede43791a220ffff0b">module_exit</a></div><div class="ttdeci">module_exit(CDS_driver_exit)</div></div>
+<div class="ttc" id="aCDSdriver_8c_html_a92f5030f973aaf4ec0400a69eff3b1c5"><div class="ttname"><a href="CDSdriver_8c.html#a92f5030f973aaf4ec0400a69eff3b1c5">module_init</a></div><div class="ttdeci">module_init(CDS_driver_init)</div></div>
+<div class="ttc" id="aCDSdriver_8c_html_a01d33c6057cb83be0611832ee2a0d31d"><div class="ttname"><a href="CDSdriver_8c.html#a01d33c6057cb83be0611832ee2a0d31d">isr_timespec</a></div><div class="ttdeci">struct timespec isr_timespec[3]</div><div class="ttdef"><b>Definition:</b> <a href="CDSdriver_8c_source.html#l00040">CDSdriver.c:42</a></div></div>
+<div class="ttc" id="aCDSdriver_8c_html_aa0f4a746a7099e3694341e294141a89c"><div class="ttname"><a href="CDSdriver_8c.html#aa0f4a746a7099e3694341e294141a89c">NBR_MINORS</a></div><div class="ttdeci">#define NBR_MINORS</div><div class="ttdef"><b>Definition:</b> <a href="CDSdriver_8c_source.html#l00017">CDSdriver.c:16</a></div></div>
+<div class="ttc" id="aCDSdriver_8c_html_a731e12d83741c66c3f53de3455bb82db"><div class="ttname"><a href="CDSdriver_8c.html#a731e12d83741c66c3f53de3455bb82db">isr_sensorOneGpio_value</a></div><div class="ttdeci">int isr_sensorOneGpio_value</div><div class="ttdef"><b>Definition:</b> <a href="CDSdriver_8c_source.html#l00037">CDSdriver.c:37</a></div></div>
+<div class="ttc" id="aCDSdriver_8c_html_a439c14a939ac680a44c9de6f46cf281d"><div class="ttname"><a href="CDSdriver_8c.html#a439c14a939ac680a44c9de6f46cf281d">MODULE_AUTHOR</a></div><div class="ttdeci">MODULE_AUTHOR(&quot;Magnus Hauge Kyneb&quot;)</div></div>
+<div class="ttc" id="aCDSdriver_8c_html_a6f6f4def3ac14e219448712a34c06853"><div class="ttname"><a href="CDSdriver_8c.html#a6f6f4def3ac14e219448712a34c06853">MODULE_DESCRIPTION</a></div><div class="ttdeci">MODULE_DESCRIPTION(&quot;Driver for Coin Detecting Sensors (CDS)&quot;)</div></div>
+<div class="ttc" id="aCDSdriver_8c_html_abc260dfbd3d4aecd52b761ce2bb9329f"><div class="ttname"><a href="CDSdriver_8c.html#abc260dfbd3d4aecd52b761ce2bb9329f">isr_sensorTwoGpio_value</a></div><div class="ttdeci">int isr_sensorTwoGpio_value</div><div class="ttdef"><b>Definition:</b> <a href="CDSdriver_8c_source.html#l00038">CDSdriver.c:38</a></div></div>
+<div class="ttc" id="aCDSdriver_8c_html_ad94b36675e7eb067ea3ce6ff9e244a44"><div class="ttname"><a href="CDSdriver_8c.html#ad94b36675e7eb067ea3ce6ff9e244a44">MODULE_LICENSE</a></div><div class="ttdeci">MODULE_LICENSE(&quot;GPL&quot;)</div></div>
+<div class="ttc" id="aCDSdriver_8c_html_a59dce6f17487fa45ec2890cce4e37444"><div class="ttname"><a href="CDSdriver_8c.html#a59dce6f17487fa45ec2890cce4e37444">CDS_release</a></div><div class="ttdeci">int CDS_release(struct inode *inode, struct file *filep)</div><div class="ttdoc">Close. Frees interrupt lines.</div><div class="ttdef"><b>Definition:</b> <a href="CDSdriver_8c_source.html#l00105">CDSdriver.c:105</a></div></div>
+<div class="ttc" id="aCDSdriver_8c_html_aacae5d304dcef5f6bbf0fe5030e50626"><div class="ttname"><a href="CDSdriver_8c.html#aacae5d304dcef5f6bbf0fe5030e50626">save_count</a></div><div class="ttdeci">int save_count</div><div class="ttdef"><b>Definition:</b> <a href="CDSdriver_8c_source.html#l00040">CDSdriver.c:40</a></div></div>
+<div class="ttc" id="aCDSdriver_8c_html_a90cc19095d89a8a27eac12e30859dde9"><div class="ttname"><a href="CDSdriver_8c.html#a90cc19095d89a8a27eac12e30859dde9">CDS_read</a></div><div class="ttdeci">ssize_t CDS_read(struct file *filep, char __user *buf, size_t count, loff_t *f_pos)</div><div class="ttdef"><b>Definition:</b> <a href="CDSdriver_8c_source.html#l00127">CDSdriver.c:127</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

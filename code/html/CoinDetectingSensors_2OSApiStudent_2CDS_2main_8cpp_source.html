@@ -69,14 +69,14 @@ $(function() {
 <div class="title">main.cpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;CoinIdentifier.hpp&quot;</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;SensorReader.hpp&quot;</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;FakeReceiver.hpp&quot;</span></div>
+<a href="CoinDetectingSensors_2OSApiStudent_2CDS_2main_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="CoinIdentifier_8hpp.html">CoinIdentifier.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="SensorReader_8hpp.html">SensorReader.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="FakeReceiver_8hpp.html">FakeReceiver.hpp</a>&quot;</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;osapi/Thread.hpp&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="Thread_8hpp.html">osapi/Thread.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;stdlib.h&gt;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keywordtype">int</span> main(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> *argv[])</div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="CoinDetectingSensors_2OSApiStudent_2CDS_2main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">    8</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="CoinDetectingSensors_2OSApiStudent_2CDS_2main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">main</a>(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> *argv[])</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;  </div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;  <span class="keywordflow">if</span> (argc &gt; 1)</div>
@@ -102,7 +102,7 @@ $(function() {
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <a class="code" href="classFakeReceiver.html">FakeReceiver</a> myReceiver;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  </div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <a class="code" href="classCoinIdentifier.html">CoinIdentifier</a> myCoinIdentifier(myReceiver.getMsgQueue());</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <a class="code" href="classCoinIdentifier.html">CoinIdentifier</a> myCoinIdentifier(myReceiver.<a class="code" href="classFakeReceiver.html#a7360451327ec7da539aebae0403503e8">getMsgQueue</a>());</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <a class="code" href="classSensorReader.html">SensorReader</a> mySensorReader(&amp;myCoinIdentifier);</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
@@ -110,13 +110,13 @@ $(function() {
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <a class="code" href="classosapi_1_1Thread.html">osapi::Thread</a> identifierThread(&amp;myCoinIdentifier);</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <a class="code" href="classosapi_1_1Thread.html">osapi::Thread</a> readerThread(&amp;mySensorReader);</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  receiverThread.start();</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  identifierThread.start();</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  readerThread.start();</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  receiverThread.<a class="code" href="classosapi_1_1Thread.html#a5409235d68889397cb5bfe092582cd72">start</a>();</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  identifierThread.<a class="code" href="classosapi_1_1Thread.html#a5409235d68889397cb5bfe092582cd72">start</a>();</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  readerThread.<a class="code" href="classosapi_1_1Thread.html#a5409235d68889397cb5bfe092582cd72">start</a>();</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  receiverThread.join();</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  identifierThread.join();</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  readerThread.join();</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  receiverThread.<a class="code" href="classosapi_1_1Thread.html#a5017a4146002d0ba61cbd268f8b795b2">join</a>();</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  identifierThread.<a class="code" href="classosapi_1_1Thread.html#a5017a4146002d0ba61cbd268f8b795b2">join</a>();</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  readerThread.<a class="code" href="classosapi_1_1Thread.html#a5017a4146002d0ba61cbd268f8b795b2">join</a>();</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  std::cout &lt;&lt; <span class="stringliteral">&quot;Exited read function in main()&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
@@ -124,9 +124,17 @@ $(function() {
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aclassosapi_1_1Thread_html"><div class="ttname"><a href="classosapi_1_1Thread.html">osapi::Thread</a></div><div class="ttdef"><b>Definition:</b> <a href="linux_2Thread_8hpp_source.html#l00014">Thread.hpp:15</a></div></div>
+<div class="ttc" id="aclassosapi_1_1Thread_html_a5017a4146002d0ba61cbd268f8b795b2"><div class="ttname"><a href="classosapi_1_1Thread.html#a5017a4146002d0ba61cbd268f8b795b2">osapi::Thread::join</a></div><div class="ttdeci">void join()</div><div class="ttdef"><b>Definition:</b> <a href="linux_2Thread_8cpp_source.html#l00083">Thread.cpp:83</a></div></div>
 <div class="ttc" id="aclassSensorReader_html"><div class="ttname"><a href="classSensorReader.html">SensorReader</a></div><div class="ttdef"><b>Definition:</b> <a href="SensorReader_8hpp_source.html#l00018">SensorReader.hpp:19</a></div></div>
+<div class="ttc" id="aFakeReceiver_8hpp_html"><div class="ttname"><a href="FakeReceiver_8hpp.html">FakeReceiver.hpp</a></div></div>
+<div class="ttc" id="aCoinIdentifier_8hpp_html"><div class="ttname"><a href="CoinIdentifier_8hpp.html">CoinIdentifier.hpp</a></div></div>
 <div class="ttc" id="aclassFakeReceiver_html"><div class="ttname"><a href="classFakeReceiver.html">FakeReceiver</a></div><div class="ttdef"><b>Definition:</b> <a href="FakeReceiver_8hpp_source.html#l00016">FakeReceiver.hpp:17</a></div></div>
+<div class="ttc" id="aCoinDetectingSensors_2OSApiStudent_2CDS_2main_8cpp_html_a0ddf1224851353fc92bfbff6f499fa97"><div class="ttname"><a href="CoinDetectingSensors_2OSApiStudent_2CDS_2main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">main</a></div><div class="ttdeci">int main(int argc, char *argv[])</div><div class="ttdef"><b>Definition:</b> <a href="CoinDetectingSensors_2OSApiStudent_2CDS_2main_8cpp_source.html#l00008">main.cpp:8</a></div></div>
 <div class="ttc" id="aclassCoinIdentifier_html"><div class="ttname"><a href="classCoinIdentifier.html">CoinIdentifier</a></div><div class="ttdef"><b>Definition:</b> <a href="CoinIdentifier_8hpp_source.html#l00027">CoinIdentifier.hpp:28</a></div></div>
+<div class="ttc" id="aclassFakeReceiver_html_a7360451327ec7da539aebae0403503e8"><div class="ttname"><a href="classFakeReceiver.html#a7360451327ec7da539aebae0403503e8">FakeReceiver::getMsgQueue</a></div><div class="ttdeci">osapi::MsgQueue * getMsgQueue()</div><div class="ttdef"><b>Definition:</b> <a href="FakeReceiver_8cpp_source.html#l00019">FakeReceiver.cpp:19</a></div></div>
+<div class="ttc" id="aThread_8hpp_html"><div class="ttname"><a href="Thread_8hpp.html">Thread.hpp</a></div></div>
+<div class="ttc" id="aSensorReader_8hpp_html"><div class="ttname"><a href="SensorReader_8hpp.html">SensorReader.hpp</a></div></div>
+<div class="ttc" id="aclassosapi_1_1Thread_html_a5409235d68889397cb5bfe092582cd72"><div class="ttname"><a href="classosapi_1_1Thread.html#a5409235d68889397cb5bfe092582cd72">osapi::Thread::start</a></div><div class="ttdeci">void start()</div><div class="ttdef"><b>Definition:</b> <a href="linux_2Thread_8cpp_source.html#l00025">Thread.cpp:25</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

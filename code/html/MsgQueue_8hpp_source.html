@@ -69,7 +69,7 @@ $(function() {
 <div class="title">MsgQueue.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef IHA_MSG_QUEUE_HPP_</span></div>
+<a href="MsgQueue_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef IHA_MSG_QUEUE_HPP_</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define IHA_MSG_QUEUE_HPP_</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;deque&gt;</span></div>
@@ -77,40 +77,40 @@ $(function() {
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#ifdef BOOST_SUPPORT</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;boost/shared_ptr.hpp&gt;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;osapi/Mutex.hpp&gt;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;osapi/Conditional.hpp&gt;</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;osapi/Message.hpp&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="Mutex_8hpp.html">osapi/Mutex.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="Conditional_8hpp.html">osapi/Conditional.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="Message_8hpp.html">osapi/Message.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">namespace </span>osapi</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceosapi.html">osapi</a></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  <span class="keyword">template</span>&lt;<span class="keyword">typename</span> M&gt;</div>
 <div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="classosapi_1_1BasicMsgQueue.html">   16</a></span>&#160;  <span class="keyword">class </span><a class="code" href="classosapi_1_1BasicMsgQueue.html">BasicMsgQueue</a></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  {</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="code" href="classosapi_1_1BasicMsgQueue.html">BasicMsgQueue</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> maxSize);</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="classosapi_1_1BasicMsgQueue.html#ac8b7b1eac306ca95974359db915deb7a">   19</a></span>&#160;    <a class="code" href="classosapi_1_1BasicMsgQueue.html#ac8b7b1eac306ca95974359db915deb7a">BasicMsgQueue</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> maxSize);</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordtype">void</span> send(<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <span class="keywordtype">id</span>, M m = M());</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    M receive(<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span>&amp; <span class="keywordtype">id</span>);</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> size() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="classosapi_1_1BasicMsgQueue.html#a8d82ffda45ea8a1d8878f356e5d1284b">   21</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classosapi_1_1BasicMsgQueue.html#a8d82ffda45ea8a1d8878f356e5d1284b">send</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <span class="keywordtype">id</span>, M m = M());</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="classosapi_1_1BasicMsgQueue.html#a7e1dcee4a1c9e6d966bb5d33b5c472cb">   22</a></span>&#160;    M <a class="code" href="classosapi_1_1BasicMsgQueue.html#a7e1dcee4a1c9e6d966bb5d33b5c472cb">receive</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span>&amp; <span class="keywordtype">id</span>);</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="classosapi_1_1BasicMsgQueue.html#ad1a7d939c4eebea66e00302eee7cbb6e">   23</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <a class="code" href="classosapi_1_1BasicMsgQueue.html#ad1a7d939c4eebea66e00302eee7cbb6e">size</a>() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    ~<a class="code" href="classosapi_1_1BasicMsgQueue.html">BasicMsgQueue</a>();</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="classosapi_1_1BasicMsgQueue.html#a988c077044233935cec08a5224e6142a">   25</a></span>&#160;    <a class="code" href="classosapi_1_1BasicMsgQueue.html#a988c077044233935cec08a5224e6142a">~BasicMsgQueue</a>();</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <span class="keyword">private</span>:</div>
 <div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="structosapi_1_1BasicMsgQueue_1_1Item.html">   27</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="structosapi_1_1BasicMsgQueue_1_1Item.html">Item</a></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    {</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;      <a class="code" href="structosapi_1_1BasicMsgQueue_1_1Item.html">Item</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <span class="keywordtype">id</span>, M m)</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        : id_(<span class="keywordtype">id</span>), m_(m) { }</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="structosapi_1_1BasicMsgQueue_1_1Item.html#a773d21321fdc8a05b25fc04af5e71320">   29</a></span>&#160;      <a class="code" href="structosapi_1_1BasicMsgQueue_1_1Item.html#a773d21321fdc8a05b25fc04af5e71320">Item</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <span class="keywordtype">id</span>, M m)</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        : <a class="code" href="structosapi_1_1BasicMsgQueue_1_1Item.html#a1e77e6398c2a2fa22ed37f0daa1815b3">id_</a>(id), <a class="code" href="structosapi_1_1BasicMsgQueue_1_1Item.html#a5c29af2cfa125c6efa99b7c47173a9b2">m_</a>(m) { }</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;      <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span>   id_;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;      M               m_;</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="structosapi_1_1BasicMsgQueue_1_1Item.html#a1e77e6398c2a2fa22ed37f0daa1815b3">   32</a></span>&#160;      <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span>   <a class="code" href="structosapi_1_1BasicMsgQueue_1_1Item.html#a1e77e6398c2a2fa22ed37f0daa1815b3">id_</a>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="structosapi_1_1BasicMsgQueue_1_1Item.html#a5c29af2cfa125c6efa99b7c47173a9b2">   33</a></span>&#160;      M               <a class="code" href="structosapi_1_1BasicMsgQueue_1_1Item.html#a5c29af2cfa125c6efa99b7c47173a9b2">m_</a>;</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    };</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  </div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">typedef</span> std::deque&lt;Item&gt; Queue;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span>     maxSize_;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    Queue             queue_;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="classosapi_1_1Mutex.html">Mutex</a>             mut_;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="classosapi_1_1Conditional.html">Conditional</a>       reader_, writer_;</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="classosapi_1_1BasicMsgQueue.html#a140cef25ec89f74c416592ff57d18510">   38</a></span>&#160;    <span class="keyword">typedef</span> std::deque&lt;Item&gt; <a class="code" href="classosapi_1_1BasicMsgQueue.html#a140cef25ec89f74c416592ff57d18510">Queue</a>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classosapi_1_1BasicMsgQueue.html#ae84cfda2df0c58f33b48bdc477ad6ad4">   39</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span>     <a class="code" href="classosapi_1_1BasicMsgQueue.html#ae84cfda2df0c58f33b48bdc477ad6ad4">maxSize_</a>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="classosapi_1_1BasicMsgQueue.html#a283dab38e43fb4ceb357d36fad26389a">   40</a></span>&#160;    <a class="code" href="classosapi_1_1BasicMsgQueue.html#a140cef25ec89f74c416592ff57d18510">Queue</a>             <a class="code" href="classosapi_1_1BasicMsgQueue.html#a283dab38e43fb4ceb357d36fad26389a">queue_</a>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classosapi_1_1BasicMsgQueue.html#a8968f816fc6ff01e18db2b8d9ebea597">   41</a></span>&#160;    <a class="code" href="classosapi_1_1Mutex.html">Mutex</a>             <a class="code" href="classosapi_1_1BasicMsgQueue.html#a8968f816fc6ff01e18db2b8d9ebea597">mut_</a>;</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classosapi_1_1BasicMsgQueue.html#aef19368244a6247010fc0aa4be9ccf00">   42</a></span>&#160;    <a class="code" href="classosapi_1_1Conditional.html">Conditional</a>       <a class="code" href="classosapi_1_1BasicMsgQueue.html#a8cc8fb644c8614010b2aa8186dbbf617">reader_</a>, <a class="code" href="classosapi_1_1BasicMsgQueue.html#aef19368244a6247010fc0aa4be9ccf00">writer_</a>;</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  };</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keyword">namespace </span>detail</div>
@@ -118,7 +118,7 @@ $(function() {
 <div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="structosapi_1_1detail_1_1MapItemDeleter.html">   47</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="structosapi_1_1detail_1_1MapItemDeleter.html">MapItemDeleter</a></div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    {</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;      <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;      <span class="keywordtype">void</span> operator()(T t)</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="structosapi_1_1detail_1_1MapItemDeleter.html#a2ea03cd226bd927143c61f4f6c4733af">   50</a></span>&#160;      <span class="keywordtype">void</span> <a class="code" href="structosapi_1_1detail_1_1MapItemDeleter.html#a2ea03cd226bd927143c61f4f6c4733af">operator()</a>(T t)</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;      {</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keyword">delete</span> t.m_;</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;      }</div>
@@ -128,7 +128,7 @@ $(function() {
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  </div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="comment">/* Defines */</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="keyword">typedef</span> <a class="code" href="classosapi_1_1BasicMsgQueue.html">BasicMsgQueue&lt;Message*&gt;</a>         <a class="code" href="classosapi_1_1BasicMsgQueue.html">MsgQueue</a>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="namespaceosapi.html#a1bacbda2d705cebe3418c74fd3d05e94">   60</a></span>&#160;  <span class="keyword">typedef</span> <a class="code" href="classosapi_1_1BasicMsgQueue.html">BasicMsgQueue&lt;Message*&gt;</a>         <a class="code" href="namespaceosapi.html#a1bacbda2d705cebe3418c74fd3d05e94">MsgQueue</a>;</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">#ifdef BOOST_SUPPORT</span></div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="keyword">typedef</span> boost::shared_ptr&lt;Message&gt;      MessagePtr;</div>
@@ -140,57 +140,57 @@ $(function() {
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="comment">/* Implementation */</span></div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keyword">template</span>&lt;<span class="keyword">typename</span> M&gt;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <a class="code" href="classosapi_1_1BasicMsgQueue.html">BasicMsgQueue&lt;M&gt;::BasicMsgQueue</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> maxSize)</div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="classosapi_1_1BasicMsgQueue.html#ac8b7b1eac306ca95974359db915deb7a">   72</a></span>&#160;  <a class="code" href="classosapi_1_1BasicMsgQueue.html#ac8b7b1eac306ca95974359db915deb7a">BasicMsgQueue&lt;M&gt;::BasicMsgQueue</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> maxSize)</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    : maxSize_(maxSize)</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  {</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  }</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <span class="keyword">template</span>&lt;<span class="keyword">typename</span> M&gt;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="keywordtype">void</span> BasicMsgQueue&lt;M&gt;::send(<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <span class="keywordtype">id</span>, M m)</div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="classosapi_1_1BasicMsgQueue.html#a8d82ffda45ea8a1d8878f356e5d1284b">   79</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classosapi_1_1BasicMsgQueue.html#a8d82ffda45ea8a1d8878f356e5d1284b">BasicMsgQueue&lt;M&gt;::send</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <span class="keywordtype">id</span>, M m)</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  {  </div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    mut_.lock();</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  </div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordflow">while</span>(queue_.size() == maxSize_)</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;      writer_.wait(mut_);</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    queue_.push_back(Item(<span class="keywordtype">id</span>, m));</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    queue_.push_back(<a class="code" href="structosapi_1_1BasicMsgQueue_1_1Item.html">Item</a>(<span class="keywordtype">id</span>, m));</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    mut_.unlock();</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    reader_.signal();</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  }</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  </div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <span class="keyword">template</span>&lt;<span class="keyword">typename</span> M&gt;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  M BasicMsgQueue&lt;M&gt;::receive(<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span>&amp; <span class="keywordtype">id</span>)</div>
+<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="classosapi_1_1BasicMsgQueue.html#a7e1dcee4a1c9e6d966bb5d33b5c472cb">   93</a></span>&#160;  M <a class="code" href="classosapi_1_1BasicMsgQueue.html#a7e1dcee4a1c9e6d966bb5d33b5c472cb">BasicMsgQueue&lt;M&gt;::receive</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span>&amp; <span class="keywordtype">id</span>)</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  {</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    mut_.lock();</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  </div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keywordflow">while</span>(queue_.size() == 0)</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;      reader_.wait(mut_);</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  </div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    Item i = queue_.front();</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <a class="code" href="structosapi_1_1BasicMsgQueue_1_1Item.html">Item</a> i = queue_.front();</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    queue_.pop_front();</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    writer_.signal();</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  </div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    mut_.unlock();</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keywordtype">id</span> = i.id_;</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordflow">return</span> i.m_;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keywordtype">id</span> = i.<a class="code" href="structosapi_1_1BasicMsgQueue_1_1Item.html#a1e77e6398c2a2fa22ed37f0daa1815b3">id_</a>;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordflow">return</span> i.<a class="code" href="structosapi_1_1BasicMsgQueue_1_1Item.html#a5c29af2cfa125c6efa99b7c47173a9b2">m_</a>;</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    </div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  }</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  </div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  <span class="keyword">template</span>&lt;<span class="keyword">typename</span> M&gt;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> BasicMsgQueue&lt;M&gt;::size()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00114"></a><span class="lineno"><a class="line" href="classosapi_1_1BasicMsgQueue.html#ad1a7d939c4eebea66e00302eee7cbb6e">  114</a></span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <a class="code" href="classosapi_1_1BasicMsgQueue.html#ad1a7d939c4eebea66e00302eee7cbb6e">BasicMsgQueue&lt;M&gt;::size</a>()<span class="keyword"> const</span></div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="keyword">  </span>{</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keywordflow">return</span> queue_.size();</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  }</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  <span class="keyword">template</span>&lt;<span class="keyword">typename</span> M&gt;</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  BasicMsgQueue&lt;M&gt;::~BasicMsgQueue()</div>
+<div class="line"><a name="l00120"></a><span class="lineno"><a class="line" href="classosapi_1_1BasicMsgQueue.html#a988c077044233935cec08a5224e6142a">  120</a></span>&#160;  <a class="code" href="classosapi_1_1BasicMsgQueue.html#a988c077044233935cec08a5224e6142a">BasicMsgQueue&lt;M&gt;::~BasicMsgQueue</a>()</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  {</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    std::for_each(queue_.begin(), queue_.end(), detail::MapItemDeleter());</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    std::for_each(queue_.begin(), queue_.end(), <a class="code" href="structosapi_1_1detail_1_1MapItemDeleter.html">detail::MapItemDeleter</a>());</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;  }</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160; </div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;}</div>
@@ -198,11 +198,31 @@ $(function() {
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160; </div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="astructosapi_1_1BasicMsgQueue_1_1Item_html_a5c29af2cfa125c6efa99b7c47173a9b2"><div class="ttname"><a href="structosapi_1_1BasicMsgQueue_1_1Item.html#a5c29af2cfa125c6efa99b7c47173a9b2">osapi::BasicMsgQueue::Item::m_</a></div><div class="ttdeci">M m_</div><div class="ttdef"><b>Definition:</b> <a href="MsgQueue_8hpp_source.html#l00033">MsgQueue.hpp:33</a></div></div>
+<div class="ttc" id="aMessage_8hpp_html"><div class="ttname"><a href="Message_8hpp.html">Message.hpp</a></div></div>
+<div class="ttc" id="aclassosapi_1_1BasicMsgQueue_html_a8968f816fc6ff01e18db2b8d9ebea597"><div class="ttname"><a href="classosapi_1_1BasicMsgQueue.html#a8968f816fc6ff01e18db2b8d9ebea597">osapi::BasicMsgQueue::mut_</a></div><div class="ttdeci">Mutex mut_</div><div class="ttdef"><b>Definition:</b> <a href="MsgQueue_8hpp_source.html#l00041">MsgQueue.hpp:41</a></div></div>
+<div class="ttc" id="aclassosapi_1_1BasicMsgQueue_html_a140cef25ec89f74c416592ff57d18510"><div class="ttname"><a href="classosapi_1_1BasicMsgQueue.html#a140cef25ec89f74c416592ff57d18510">osapi::BasicMsgQueue::Queue</a></div><div class="ttdeci">std::deque&lt; Item &gt; Queue</div><div class="ttdef"><b>Definition:</b> <a href="MsgQueue_8hpp_source.html#l00038">MsgQueue.hpp:38</a></div></div>
+<div class="ttc" id="anamespaceosapi_html"><div class="ttname"><a href="namespaceosapi.html">osapi</a></div><div class="ttdef"><b>Definition:</b> <a href="Completion_8cpp_source.html#l00004">Completion.cpp:5</a></div></div>
+<div class="ttc" id="aclassosapi_1_1BasicMsgQueue_html_a8d82ffda45ea8a1d8878f356e5d1284b"><div class="ttname"><a href="classosapi_1_1BasicMsgQueue.html#a8d82ffda45ea8a1d8878f356e5d1284b">osapi::BasicMsgQueue::send</a></div><div class="ttdeci">void send(unsigned long id, M m=M())</div><div class="ttdef"><b>Definition:</b> <a href="MsgQueue_8hpp_source.html#l00079">MsgQueue.hpp:79</a></div></div>
+<div class="ttc" id="aclassosapi_1_1BasicMsgQueue_html_a988c077044233935cec08a5224e6142a"><div class="ttname"><a href="classosapi_1_1BasicMsgQueue.html#a988c077044233935cec08a5224e6142a">osapi::BasicMsgQueue::~BasicMsgQueue</a></div><div class="ttdeci">~BasicMsgQueue()</div><div class="ttdef"><b>Definition:</b> <a href="MsgQueue_8hpp_source.html#l00120">MsgQueue.hpp:120</a></div></div>
+<div class="ttc" id="aclassosapi_1_1BasicMsgQueue_html_a7e1dcee4a1c9e6d966bb5d33b5c472cb"><div class="ttname"><a href="classosapi_1_1BasicMsgQueue.html#a7e1dcee4a1c9e6d966bb5d33b5c472cb">osapi::BasicMsgQueue::receive</a></div><div class="ttdeci">M receive(unsigned long &amp;id)</div><div class="ttdef"><b>Definition:</b> <a href="MsgQueue_8hpp_source.html#l00093">MsgQueue.hpp:93</a></div></div>
+<div class="ttc" id="aMutex_8hpp_html"><div class="ttname"><a href="Mutex_8hpp.html">Mutex.hpp</a></div></div>
+<div class="ttc" id="astructosapi_1_1BasicMsgQueue_1_1Item_html_a773d21321fdc8a05b25fc04af5e71320"><div class="ttname"><a href="structosapi_1_1BasicMsgQueue_1_1Item.html#a773d21321fdc8a05b25fc04af5e71320">osapi::BasicMsgQueue::Item::Item</a></div><div class="ttdeci">Item(unsigned long id, M m)</div><div class="ttdef"><b>Definition:</b> <a href="MsgQueue_8hpp_source.html#l00029">MsgQueue.hpp:29</a></div></div>
+<div class="ttc" id="aclassosapi_1_1BasicMsgQueue_html_aef19368244a6247010fc0aa4be9ccf00"><div class="ttname"><a href="classosapi_1_1BasicMsgQueue.html#aef19368244a6247010fc0aa4be9ccf00">osapi::BasicMsgQueue::writer_</a></div><div class="ttdeci">Conditional writer_</div><div class="ttdef"><b>Definition:</b> <a href="MsgQueue_8hpp_source.html#l00042">MsgQueue.hpp:42</a></div></div>
 <div class="ttc" id="aclassosapi_1_1Mutex_html"><div class="ttname"><a href="classosapi_1_1Mutex.html">osapi::Mutex</a></div><div class="ttdef"><b>Definition:</b> <a href="linux_2Mutex_8hpp_source.html#l00010">Mutex.hpp:11</a></div></div>
+<div class="ttc" id="aclassosapi_1_1BasicMsgQueue_html_a283dab38e43fb4ceb357d36fad26389a"><div class="ttname"><a href="classosapi_1_1BasicMsgQueue.html#a283dab38e43fb4ceb357d36fad26389a">osapi::BasicMsgQueue::queue_</a></div><div class="ttdeci">Queue queue_</div><div class="ttdef"><b>Definition:</b> <a href="MsgQueue_8hpp_source.html#l00040">MsgQueue.hpp:40</a></div></div>
 <div class="ttc" id="aclassosapi_1_1Conditional_html"><div class="ttname"><a href="classosapi_1_1Conditional.html">osapi::Conditional</a></div><div class="ttdef"><b>Definition:</b> <a href="linux_2Conditional_8hpp_source.html#l00011">Conditional.hpp:12</a></div></div>
 <div class="ttc" id="aclassosapi_1_1BasicMsgQueue_html"><div class="ttname"><a href="classosapi_1_1BasicMsgQueue.html">osapi::BasicMsgQueue</a></div><div class="ttdef"><b>Definition:</b> <a href="MsgQueue_8hpp_source.html#l00016">MsgQueue.hpp:17</a></div></div>
+<div class="ttc" id="astructosapi_1_1BasicMsgQueue_1_1Item_html_a1e77e6398c2a2fa22ed37f0daa1815b3"><div class="ttname"><a href="structosapi_1_1BasicMsgQueue_1_1Item.html#a1e77e6398c2a2fa22ed37f0daa1815b3">osapi::BasicMsgQueue::Item::id_</a></div><div class="ttdeci">unsigned long id_</div><div class="ttdef"><b>Definition:</b> <a href="MsgQueue_8hpp_source.html#l00032">MsgQueue.hpp:32</a></div></div>
+<div class="ttc" id="astructosapi_1_1detail_1_1MapItemDeleter_html_a2ea03cd226bd927143c61f4f6c4733af"><div class="ttname"><a href="structosapi_1_1detail_1_1MapItemDeleter.html#a2ea03cd226bd927143c61f4f6c4733af">osapi::detail::MapItemDeleter::operator()</a></div><div class="ttdeci">void operator()(T t)</div><div class="ttdef"><b>Definition:</b> <a href="MsgQueue_8hpp_source.html#l00050">MsgQueue.hpp:50</a></div></div>
 <div class="ttc" id="astructosapi_1_1BasicMsgQueue_1_1Item_html"><div class="ttname"><a href="structosapi_1_1BasicMsgQueue_1_1Item.html">osapi::BasicMsgQueue::Item</a></div><div class="ttdef"><b>Definition:</b> <a href="MsgQueue_8hpp_source.html#l00027">MsgQueue.hpp:28</a></div></div>
+<div class="ttc" id="anamespaceosapi_html_a1bacbda2d705cebe3418c74fd3d05e94"><div class="ttname"><a href="namespaceosapi.html#a1bacbda2d705cebe3418c74fd3d05e94">osapi::MsgQueue</a></div><div class="ttdeci">BasicMsgQueue&lt; Message * &gt; MsgQueue</div><div class="ttdef"><b>Definition:</b> <a href="MsgQueue_8hpp_source.html#l00060">MsgQueue.hpp:60</a></div></div>
+<div class="ttc" id="aclassosapi_1_1BasicMsgQueue_html_ac8b7b1eac306ca95974359db915deb7a"><div class="ttname"><a href="classosapi_1_1BasicMsgQueue.html#ac8b7b1eac306ca95974359db915deb7a">osapi::BasicMsgQueue::BasicMsgQueue</a></div><div class="ttdeci">BasicMsgQueue(unsigned long maxSize)</div><div class="ttdef"><b>Definition:</b> <a href="MsgQueue_8hpp_source.html#l00072">MsgQueue.hpp:72</a></div></div>
+<div class="ttc" id="aclassosapi_1_1BasicMsgQueue_html_ad1a7d939c4eebea66e00302eee7cbb6e"><div class="ttname"><a href="classosapi_1_1BasicMsgQueue.html#ad1a7d939c4eebea66e00302eee7cbb6e">osapi::BasicMsgQueue::size</a></div><div class="ttdeci">unsigned long size() const</div><div class="ttdef"><b>Definition:</b> <a href="MsgQueue_8hpp_source.html#l00114">MsgQueue.hpp:114</a></div></div>
 <div class="ttc" id="astructosapi_1_1detail_1_1MapItemDeleter_html"><div class="ttname"><a href="structosapi_1_1detail_1_1MapItemDeleter.html">osapi::detail::MapItemDeleter</a></div><div class="ttdef"><b>Definition:</b> <a href="MsgQueue_8hpp_source.html#l00047">MsgQueue.hpp:48</a></div></div>
+<div class="ttc" id="aConditional_8hpp_html"><div class="ttname"><a href="Conditional_8hpp.html">Conditional.hpp</a></div></div>
+<div class="ttc" id="aclassosapi_1_1BasicMsgQueue_html_ae84cfda2df0c58f33b48bdc477ad6ad4"><div class="ttname"><a href="classosapi_1_1BasicMsgQueue.html#ae84cfda2df0c58f33b48bdc477ad6ad4">osapi::BasicMsgQueue::maxSize_</a></div><div class="ttdeci">unsigned long maxSize_</div><div class="ttdef"><b>Definition:</b> <a href="MsgQueue_8hpp_source.html#l00039">MsgQueue.hpp:39</a></div></div>
+<div class="ttc" id="aclassosapi_1_1BasicMsgQueue_html_a8cc8fb644c8614010b2aa8186dbbf617"><div class="ttname"><a href="classosapi_1_1BasicMsgQueue.html#a8cc8fb644c8614010b2aa8186dbbf617">osapi::BasicMsgQueue::reader_</a></div><div class="ttdeci">Conditional reader_</div><div class="ttdef"><b>Definition:</b> <a href="MsgQueue_8hpp_source.html#l00042">MsgQueue.hpp:42</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

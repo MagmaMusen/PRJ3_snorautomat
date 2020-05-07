@@ -9,14 +9,13 @@ Inheritance diagram for osapi\+::I\+Timer\+:\begin{figure}[H]
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classosapi_1_1ITimer_a3dc19620f2f57fa6c09bf31b211cd6d4}\label{classosapi_1_1ITimer_a3dc19620f2f57fa6c09bf31b211cd6d4}} 
-virtual void {\bfseries arm} (\mbox{\hyperlink{classosapi_1_1ITimerId}{I\+Timer\+Id}} $\ast$iti, const \mbox{\hyperlink{classosapi_1_1Time}{Time}} \&t)=0
+virtual void \mbox{\hyperlink{classosapi_1_1ITimer_a3dc19620f2f57fa6c09bf31b211cd6d4}{arm}} (\mbox{\hyperlink{classosapi_1_1ITimerId}{I\+Timer\+Id}} $\ast$iti, const \mbox{\hyperlink{classosapi_1_1Time}{Time}} \&t)=0
 \item 
-\mbox{\Hypertarget{classosapi_1_1ITimer_a93b0cf4d235c27969de2bd66282da299}\label{classosapi_1_1ITimer_a93b0cf4d235c27969de2bd66282da299}} 
-virtual void {\bfseries dis\+Arm} (\mbox{\hyperlink{classosapi_1_1ITimerId}{I\+Timer\+Id}} $\ast$ti)=0
+virtual void \mbox{\hyperlink{classosapi_1_1ITimer_a93b0cf4d235c27969de2bd66282da299}{dis\+Arm}} (\mbox{\hyperlink{classosapi_1_1ITimerId}{I\+Timer\+Id}} $\ast$ti)=0
 \item 
-\mbox{\Hypertarget{classosapi_1_1ITimer_ac9391ae221367446f96120f5e615d055}\label{classosapi_1_1ITimer_ac9391ae221367446f96120f5e615d055}} 
-\mbox{\hyperlink{classosapi_1_1Mutex}{Mutex}} \& {\bfseries get\+Lock} ()
+\mbox{\hyperlink{classosapi_1_1Mutex}{Mutex}} \& \mbox{\hyperlink{classosapi_1_1ITimer_ac9391ae221367446f96120f5e615d055}{get\+Lock}} ()
+\item 
+virtual \mbox{\hyperlink{classosapi_1_1ITimer_a5f3fa1f0149bd279b8c8dd80fd9e0ae3}{$\sim$\+I\+Timer}} ()
 \end{DoxyCompactItemize}
 \doxysubsection*{Additional Inherited Members}
 
@@ -28,6 +27,53 @@ Definition at line 16 of file Timer.\+cpp.
 
 
 
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classosapi_1_1ITimer_a5f3fa1f0149bd279b8c8dd80fd9e0ae3}\label{classosapi_1_1ITimer_a5f3fa1f0149bd279b8c8dd80fd9e0ae3}} 
+\index{osapi::ITimer@{osapi::ITimer}!````~ITimer@{$\sim$ITimer}}
+\index{````~ITimer@{$\sim$ITimer}!osapi::ITimer@{osapi::ITimer}}
+\doxysubsubsection{\texorpdfstring{$\sim$ITimer()}{~ITimer()}}
+{\footnotesize\ttfamily virtual osapi\+::\+I\+Timer\+::$\sim$\+I\+Timer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Definition at line 24 of file Timer.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{24 \{\}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classosapi_1_1ITimer_a3dc19620f2f57fa6c09bf31b211cd6d4}\label{classosapi_1_1ITimer_a3dc19620f2f57fa6c09bf31b211cd6d4}} 
+\index{osapi::ITimer@{osapi::ITimer}!arm@{arm}}
+\index{arm@{arm}!osapi::ITimer@{osapi::ITimer}}
+\doxysubsubsection{\texorpdfstring{arm()}{arm()}}
+{\footnotesize\ttfamily virtual void osapi\+::\+I\+Timer\+::arm (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classosapi_1_1ITimerId}{I\+Timer\+Id}} $\ast$}]{iti,  }\item[{const \mbox{\hyperlink{classosapi_1_1Time}{Time}} \&}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classosapi_1_1Timer_abd23931bbebf6751c5b1a921f331a7b1}{osapi\+::\+Timer}}.
+
+\mbox{\Hypertarget{classosapi_1_1ITimer_a93b0cf4d235c27969de2bd66282da299}\label{classosapi_1_1ITimer_a93b0cf4d235c27969de2bd66282da299}} 
+\index{osapi::ITimer@{osapi::ITimer}!disArm@{disArm}}
+\index{disArm@{disArm}!osapi::ITimer@{osapi::ITimer}}
+\doxysubsubsection{\texorpdfstring{disArm()}{disArm()}}
+{\footnotesize\ttfamily virtual void osapi\+::\+I\+Timer\+::dis\+Arm (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classosapi_1_1ITimerId}{I\+Timer\+Id}} $\ast$}]{ti }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classosapi_1_1Timer_a7e9063324a0b252afd6a1b679a3e86f4}{osapi\+::\+Timer}}.
+
+\mbox{\Hypertarget{classosapi_1_1ITimer_ac9391ae221367446f96120f5e615d055}\label{classosapi_1_1ITimer_ac9391ae221367446f96120f5e615d055}} 
+\index{osapi::ITimer@{osapi::ITimer}!getLock@{getLock}}
+\index{getLock@{getLock}!osapi::ITimer@{osapi::ITimer}}
+\doxysubsubsection{\texorpdfstring{getLock()}{getLock()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classosapi_1_1Mutex}{Mutex}}\& osapi\+::\+I\+Timer\+::get\+Lock (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-Coin\+Detecting\+Sensors/\+O\+S\+Api\+Student/common/Timer.\+cpp\end{DoxyCompactItemize}
+Coin\+Detecting\+Sensors/\+O\+S\+Api\+Student/common/\mbox{\hyperlink{Timer_8cpp}{Timer.\+cpp}}\end{DoxyCompactItemize}

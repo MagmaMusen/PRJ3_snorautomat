@@ -69,32 +69,38 @@ $(function() {
 <div class="title">KeyBoardInput.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef KEYBOARD_INPUT_H_</span></div>
+<a href="KeyBoardInput_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef KEYBOARD_INPUT_H_</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define KEYBOARD_INPUT_H_</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;osapi/MsgQueue.hpp&gt;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;osapi/ThreadFunctor.hpp&gt;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;osapi/example/LogSystem.hpp&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="MsgQueue_8hpp.html">osapi/MsgQueue.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="ThreadFunctor_8hpp.html">osapi/ThreadFunctor.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="example_2LogSystem_8hpp.html">osapi/example/LogSystem.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
 <div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="classKeyBoardInput.html">    9</a></span>&#160;<span class="keyword">class </span><a class="code" href="classKeyBoardInput.html">KeyBoardInput</a> : <span class="keyword">public</span> <a class="code" href="classosapi_1_1ThreadFunctor.html">osapi::ThreadFunctor</a></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;  <a class="code" href="classKeyBoardInput.html">KeyBoardInput</a>(<a class="code" href="classLogSystem.html">LogSystem</a>* l)</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    : l_(l)</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="classKeyBoardInput.html#a1b810286d243257b65a619a289d376bc">   12</a></span>&#160;  <a class="code" href="classKeyBoardInput.html#a1b810286d243257b65a619a289d376bc">KeyBoardInput</a>(<a class="code" href="classLogSystem.html">LogSystem</a>* l)</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    : <a class="code" href="classKeyBoardInput.html#adfe8d80fe41eb6c76a39df1302608b24">l_</a>(l)</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  {</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  }</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  </div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  <span class="keywordtype">void</span> run();</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classKeyBoardInput.html#a95184ba8da6c69456506b0d23db5e1e8">run</a>();</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  <a class="code" href="classLogSystem.html">LogSystem</a>*      l_;</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="classKeyBoardInput.html#adfe8d80fe41eb6c76a39df1302608b24">   20</a></span>&#160;  <a class="code" href="classLogSystem.html">LogSystem</a>*      <a class="code" href="classKeyBoardInput.html#adfe8d80fe41eb6c76a39df1302608b24">l_</a>;</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;};</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  </div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aMsgQueue_8hpp_html"><div class="ttname"><a href="MsgQueue_8hpp.html">MsgQueue.hpp</a></div></div>
+<div class="ttc" id="aexample_2LogSystem_8hpp_html"><div class="ttname"><a href="example_2LogSystem_8hpp.html">LogSystem.hpp</a></div></div>
+<div class="ttc" id="aclassKeyBoardInput_html_a1b810286d243257b65a619a289d376bc"><div class="ttname"><a href="classKeyBoardInput.html#a1b810286d243257b65a619a289d376bc">KeyBoardInput::KeyBoardInput</a></div><div class="ttdeci">KeyBoardInput(LogSystem *l)</div><div class="ttdef"><b>Definition:</b> <a href="KeyBoardInput_8hpp_source.html#l00012">KeyBoardInput.hpp:12</a></div></div>
+<div class="ttc" id="aclassKeyBoardInput_html_a95184ba8da6c69456506b0d23db5e1e8"><div class="ttname"><a href="classKeyBoardInput.html#a95184ba8da6c69456506b0d23db5e1e8">KeyBoardInput::run</a></div><div class="ttdeci">void run()</div><div class="ttdef"><b>Definition:</b> <a href="KeyBoardInput_8cpp_source.html#l00004">KeyBoardInput.cpp:4</a></div></div>
+<div class="ttc" id="aclassKeyBoardInput_html_adfe8d80fe41eb6c76a39df1302608b24"><div class="ttname"><a href="classKeyBoardInput.html#adfe8d80fe41eb6c76a39df1302608b24">KeyBoardInput::l_</a></div><div class="ttdeci">LogSystem * l_</div><div class="ttdef"><b>Definition:</b> <a href="KeyBoardInput_8hpp_source.html#l00020">KeyBoardInput.hpp:20</a></div></div>
 <div class="ttc" id="aclassLogSystem_html"><div class="ttname"><a href="classLogSystem.html">LogSystem</a></div><div class="ttdef"><b>Definition:</b> <a href="example_2LogSystem_8hpp_source.html#l00015">LogSystem.hpp:16</a></div></div>
 <div class="ttc" id="aclassosapi_1_1ThreadFunctor_html"><div class="ttname"><a href="classosapi_1_1ThreadFunctor.html">osapi::ThreadFunctor</a></div><div class="ttdef"><b>Definition:</b> <a href="linux_2ThreadFunctor_8hpp_source.html#l00009">ThreadFunctor.hpp:10</a></div></div>
+<div class="ttc" id="aThreadFunctor_8hpp_html"><div class="ttname"><a href="ThreadFunctor_8hpp.html">ThreadFunctor.hpp</a></div></div>
 <div class="ttc" id="aclassKeyBoardInput_html"><div class="ttname"><a href="classKeyBoardInput.html">KeyBoardInput</a></div><div class="ttdef"><b>Definition:</b> <a href="KeyBoardInput_8hpp_source.html#l00009">KeyBoardInput.hpp:10</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

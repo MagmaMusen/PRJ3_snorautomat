@@ -1,5 +1,9 @@
 \hypertarget{classKeyBoardInput}{}\doxysection{Key\+Board\+Input Class Reference}
 \label{classKeyBoardInput}\index{KeyBoardInput@{KeyBoardInput}}
+
+
+{\ttfamily \#include $<$Key\+Board\+Input.\+hpp$>$}
+
 Inheritance diagram for Key\+Board\+Input\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -9,20 +13,17 @@ Inheritance diagram for Key\+Board\+Input\+:\begin{figure}[H]
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classKeyBoardInput_a1b810286d243257b65a619a289d376bc}\label{classKeyBoardInput_a1b810286d243257b65a619a289d376bc}} 
-{\bfseries Key\+Board\+Input} (\mbox{\hyperlink{classLogSystem}{Log\+System}} $\ast$l)
+\mbox{\hyperlink{classKeyBoardInput_a1b810286d243257b65a619a289d376bc}{Key\+Board\+Input}} (\mbox{\hyperlink{classLogSystem}{Log\+System}} $\ast$l)
 \end{DoxyCompactItemize}
 \doxysubsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classKeyBoardInput_a95184ba8da6c69456506b0d23db5e1e8}\label{classKeyBoardInput_a95184ba8da6c69456506b0d23db5e1e8}} 
-void {\bfseries run} ()
+void \mbox{\hyperlink{classKeyBoardInput_a95184ba8da6c69456506b0d23db5e1e8}{run}} ()
 \end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classKeyBoardInput_adfe8d80fe41eb6c76a39df1302608b24}\label{classKeyBoardInput_adfe8d80fe41eb6c76a39df1302608b24}} 
-\mbox{\hyperlink{classLogSystem}{Log\+System}} $\ast$ {\bfseries l\+\_\+}
+\mbox{\hyperlink{classLogSystem}{Log\+System}} $\ast$ \mbox{\hyperlink{classKeyBoardInput_adfe8d80fe41eb6c76a39df1302608b24}{l\+\_\+}}
 \end{DoxyCompactItemize}
 \doxysubsection*{Additional Inherited Members}
 
@@ -34,7 +35,72 @@ Definition at line 9 of file Key\+Board\+Input.\+hpp.
 
 
 
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classKeyBoardInput_a1b810286d243257b65a619a289d376bc}\label{classKeyBoardInput_a1b810286d243257b65a619a289d376bc}} 
+\index{KeyBoardInput@{KeyBoardInput}!KeyBoardInput@{KeyBoardInput}}
+\index{KeyBoardInput@{KeyBoardInput}!KeyBoardInput@{KeyBoardInput}}
+\doxysubsubsection{\texorpdfstring{KeyBoardInput()}{KeyBoardInput()}}
+{\footnotesize\ttfamily Key\+Board\+Input\+::\+Key\+Board\+Input (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classLogSystem}{Log\+System}} $\ast$}]{l }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 12 of file Key\+Board\+Input.\+hpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{13     : \mbox{\hyperlink{classKeyBoardInput_adfe8d80fe41eb6c76a39df1302608b24}{l\_}}(l)}
+\DoxyCodeLine{14   \{}
+\DoxyCodeLine{15   \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classKeyBoardInput_a95184ba8da6c69456506b0d23db5e1e8}\label{classKeyBoardInput_a95184ba8da6c69456506b0d23db5e1e8}} 
+\index{KeyBoardInput@{KeyBoardInput}!run@{run}}
+\index{run@{run}!KeyBoardInput@{KeyBoardInput}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void Key\+Board\+Input\+::run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classosapi_1_1ThreadFunctor_a823fdf26390662df38ac9b2639277ecd}{osapi\+::\+Thread\+Functor}}.
+
+
+
+Definition at line 4 of file Key\+Board\+Input.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{5 \{}
+\DoxyCodeLine{6   \textcolor{keywordflow}{for}(;;)}
+\DoxyCodeLine{7   \{}
+\DoxyCodeLine{8     std::string s;}
+\DoxyCodeLine{9     }
+\DoxyCodeLine{10     std::cin >> s;}
+\DoxyCodeLine{11     \mbox{\hyperlink{structLogInd}{LogInd}}* logInd = \textcolor{keyword}{new} \mbox{\hyperlink{structLogInd}{LogInd}};}
+\DoxyCodeLine{12     logInd-\/>\mbox{\hyperlink{structLogInd_a3bf3bb9ec46589d0c479d14219804c34}{text}} = s;}
+\DoxyCodeLine{13     \mbox{\hyperlink{classKeyBoardInput_adfe8d80fe41eb6c76a39df1302608b24}{l\_}}-\/>\mbox{\hyperlink{classLogSystem_a8e565531cbbb9b2d308d0ca320ac88f9}{getMsgQueue}}()-\/>\mbox{\hyperlink{classosapi_1_1BasicMsgQueue_a8d82ffda45ea8a1d8878f356e5d1284b}{send}}(\mbox{\hyperlink{classLogSystem_a651417553b776a3ae64768e486cde1a2a626524475021720a1a432c4c5ba7fa9b}{LogSystem::ID\_LOG\_IND}}, logInd);}
+\DoxyCodeLine{14   \} }
+\DoxyCodeLine{15 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classKeyBoardInput_adfe8d80fe41eb6c76a39df1302608b24}\label{classKeyBoardInput_adfe8d80fe41eb6c76a39df1302608b24}} 
+\index{KeyBoardInput@{KeyBoardInput}!l\_@{l\_}}
+\index{l\_@{l\_}!KeyBoardInput@{KeyBoardInput}}
+\doxysubsubsection{\texorpdfstring{l\_}{l\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classLogSystem}{Log\+System}}$\ast$ Key\+Board\+Input\+::l\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 20 of file Key\+Board\+Input.\+hpp.
+
+
+
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-Coin\+Detecting\+Sensors/\+O\+S\+Api\+Student/inc/osapi/example/Key\+Board\+Input.\+hpp\item 
-Coin\+Detecting\+Sensors/\+O\+S\+Api\+Student/example/Key\+Board\+Input.\+cpp\end{DoxyCompactItemize}
+Coin\+Detecting\+Sensors/\+O\+S\+Api\+Student/inc/osapi/example/\mbox{\hyperlink{KeyBoardInput_8hpp}{Key\+Board\+Input.\+hpp}}\item 
+Coin\+Detecting\+Sensors/\+O\+S\+Api\+Student/example/\mbox{\hyperlink{KeyBoardInput_8cpp}{Key\+Board\+Input.\+cpp}}\end{DoxyCompactItemize}

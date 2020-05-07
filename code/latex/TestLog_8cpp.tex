@@ -1,0 +1,46 @@
+\hypertarget{TestLog_8cpp}{}\doxysection{Coin\+Detecting\+Sensors/\+O\+S\+Api\+Student/test/\+Test\+Log.cpp File Reference}
+\label{TestLog_8cpp}\index{CoinDetectingSensors/OSApiStudent/test/TestLog.cpp@{CoinDetectingSensors/OSApiStudent/test/TestLog.cpp}}
+{\ttfamily \#include $<$syslog.\+h$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include $<$osapi/\+Log.\+hpp$>$}\newline
+{\ttfamily \#include $<$osapi/\+I\+Log\+Output.\+hpp$>$}\newline
+{\ttfamily \#include $<$osapi/\+Utility.\+hpp$>$}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classSyslog}{Syslog}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{TestLog_8cpp_a0ddf1224851353fc92bfbff6f499fa97}{main}} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{TestLog_8cpp_a0ddf1224851353fc92bfbff6f499fa97}\label{TestLog_8cpp_a0ddf1224851353fc92bfbff6f499fa97}} 
+\index{TestLog.cpp@{TestLog.cpp}!main@{main}}
+\index{main@{main}!TestLog.cpp@{TestLog.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 98 of file Test\+Log.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{99 \{}
+\DoxyCodeLine{100   \mbox{\hyperlink{Log_8hpp_a7f3a06def08dedac3459ebd6061b20ba}{OSAPI\_LOG\_DBG}}(\textcolor{stringliteral}{"Hello"});}
+\DoxyCodeLine{101   }
+\DoxyCodeLine{102   \mbox{\hyperlink{classSyslog}{Syslog}}* sys = \textcolor{keyword}{new} \mbox{\hyperlink{classSyslog}{Syslog}}(\textcolor{stringliteral}{"TestLog"});}
+\DoxyCodeLine{103   \mbox{\hyperlink{namespaceosapi_a1cd81643bbde2f22e67f2478dfeb34d4}{osapi::logSetNewOutput}}(sys);}
+\DoxyCodeLine{104 }
+\DoxyCodeLine{105   \mbox{\hyperlink{Log_8hpp_a7f3a06def08dedac3459ebd6061b20ba}{OSAPI\_LOG\_DBG}}(\textcolor{stringliteral}{"Hello"});}
+\DoxyCodeLine{106 }
+\DoxyCodeLine{107   \mbox{\hyperlink{namespaceosapi_aeed8c6f1372f57481ea48bcf2a672c82}{osapi::sleep}}(10000);}
+\DoxyCodeLine{108 \}}
+
+\end{DoxyCode}

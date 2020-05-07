@@ -1,0 +1,47 @@
+\hypertarget{TestTimer_8cpp}{}\doxysection{Coin\+Detecting\+Sensors/\+O\+S\+Api\+Student/test/\+Test\+Timer.cpp File Reference}
+\label{TestTimer_8cpp}\index{CoinDetectingSensors/OSApiStudent/test/TestTimer.cpp@{CoinDetectingSensors/OSApiStudent/test/TestTimer.cpp}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$osapi/\+Thread.\+hpp$>$}\newline
+{\ttfamily \#include $<$osapi/\+Thread\+Functor.\+hpp$>$}\newline
+{\ttfamily \#include $<$osapi/\+Message.\+hpp$>$}\newline
+{\ttfamily \#include $<$osapi/\+Msg\+Queue.\+hpp$>$}\newline
+{\ttfamily \#include $<$osapi/\+Timer.\+hpp$>$}\newline
+{\ttfamily \#include $<$osapi/\+Log.\+hpp$>$}\newline
+{\ttfamily \#include $<$osapi/\+Utility.\+hpp$>$}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classTestTimer}{Test\+Timer}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{TestTimer_8cpp_a0ddf1224851353fc92bfbff6f499fa97}{main}} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{TestTimer_8cpp_a0ddf1224851353fc92bfbff6f499fa97}\label{TestTimer_8cpp_a0ddf1224851353fc92bfbff6f499fa97}} 
+\index{TestTimer.cpp@{TestTimer.cpp}!main@{main}}
+\index{main@{main}!TestTimer.cpp@{TestTimer.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 132 of file Test\+Timer.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{133 \{}
+\DoxyCodeLine{134   \mbox{\hyperlink{classTestTimer}{TestTimer}} tt;}
+\DoxyCodeLine{135   \mbox{\hyperlink{classosapi_1_1Thread}{osapi::Thread}} t(\&tt);}
+\DoxyCodeLine{136   t.start();}
+\DoxyCodeLine{137   \mbox{\hyperlink{namespaceosapi_aeed8c6f1372f57481ea48bcf2a672c82}{osapi::sleep}}(4000);}
+\DoxyCodeLine{138   tt.\mbox{\hyperlink{classTestTimer_ac1264abb1b811da884b54780ccd74ea4}{getMsgQueue}}()-\/>\mbox{\hyperlink{classosapi_1_1BasicMsgQueue_a8d82ffda45ea8a1d8878f356e5d1284b}{send}}(\mbox{\hyperlink{classTestTimer_ab477d050d17cce4bd7ed07d21e40ab70a73f98ebfacc32ad971c85df6ef236b57}{TestTimer::ID\_TERMINATE}});}
+\DoxyCodeLine{139   t.join();}
+\DoxyCodeLine{140   }
+\DoxyCodeLine{141   \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{142 \}}
+
+\end{DoxyCode}

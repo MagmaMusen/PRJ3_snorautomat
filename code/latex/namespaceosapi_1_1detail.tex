@@ -1,0 +1,64 @@
+\hypertarget{namespaceosapi_1_1detail}{}\doxysection{osapi\+::detail Namespace Reference}
+\label{namespaceosapi_1_1detail}\index{osapi::detail@{osapi::detail}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structosapi_1_1detail_1_1MapItemDeleter}{Map\+Item\+Deleter}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::multimap$<$ \+::\mbox{\hyperlink{classosapi_1_1Time}{osapi\+::\+Time}}, \mbox{\hyperlink{classosapi_1_1TimerId}{Timer\+Id}} $\ast$ $>$ \mbox{\hyperlink{namespaceosapi_1_1detail_afe8a325e3f718f6d41a50450c5963128}{Container}}
+\item 
+typedef std\+::pair$<$ Container\+::iterator, bool $>$ \mbox{\hyperlink{namespaceosapi_1_1detail_a5a7a4edb86a1799d9cc8b1ff460cd30f}{Optional\+Iterator}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\+::\mbox{\hyperlink{classosapi_1_1ITimer}{osapi\+::\+I\+Timer}} $\ast$ \mbox{\hyperlink{namespaceosapi_1_1detail_a0db2835d611c18370b74f262933a5ae1}{get\+Instance}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{namespaceosapi_1_1detail_afe8a325e3f718f6d41a50450c5963128}\label{namespaceosapi_1_1detail_afe8a325e3f718f6d41a50450c5963128}} 
+\index{osapi::detail@{osapi::detail}!Container@{Container}}
+\index{Container@{Container}!osapi::detail@{osapi::detail}}
+\doxysubsubsection{\texorpdfstring{Container}{Container}}
+{\footnotesize\ttfamily typedef std\+::multimap$<$ \+::\mbox{\hyperlink{classosapi_1_1Time}{osapi\+::\+Time}}, \mbox{\hyperlink{classosapi_1_1TimerId}{Timer\+Id}}$\ast$$>$ \mbox{\hyperlink{namespaceosapi_1_1detail_afe8a325e3f718f6d41a50450c5963128}{osapi\+::detail\+::\+Container}}}
+
+
+
+Definition at line 33 of file Timer.\+cpp.
+
+\mbox{\Hypertarget{namespaceosapi_1_1detail_a5a7a4edb86a1799d9cc8b1ff460cd30f}\label{namespaceosapi_1_1detail_a5a7a4edb86a1799d9cc8b1ff460cd30f}} 
+\index{osapi::detail@{osapi::detail}!OptionalIterator@{OptionalIterator}}
+\index{OptionalIterator@{OptionalIterator}!osapi::detail@{osapi::detail}}
+\doxysubsubsection{\texorpdfstring{OptionalIterator}{OptionalIterator}}
+{\footnotesize\ttfamily typedef std\+::pair$<$Container\+::iterator, bool$>$ \mbox{\hyperlink{namespaceosapi_1_1detail_a5a7a4edb86a1799d9cc8b1ff460cd30f}{osapi\+::detail\+::\+Optional\+Iterator}}}
+
+
+
+Definition at line 34 of file Timer.\+cpp.
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespaceosapi_1_1detail_a0db2835d611c18370b74f262933a5ae1}\label{namespaceosapi_1_1detail_a0db2835d611c18370b74f262933a5ae1}} 
+\index{osapi::detail@{osapi::detail}!getInstance@{getInstance}}
+\index{getInstance@{getInstance}!osapi::detail@{osapi::detail}}
+\doxysubsubsection{\texorpdfstring{getInstance()}{getInstance()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classosapi_1_1ITimer}{osapi\+::\+I\+Timer}} $\ast$ osapi\+::detail\+::get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 274 of file Timer.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{275     \{}
+\DoxyCodeLine{276       static ::osapi::Timer timer;}
+\DoxyCodeLine{277       static ::osapi::Thread t(\&timer, Thread::PRIORITY\_HIGH, \textcolor{stringliteral}{"Timer Thread"}, \textcolor{keyword}{true});}
+\DoxyCodeLine{278       \textcolor{keywordflow}{return} \&timer;}
+\DoxyCodeLine{279     \}}
+
+\end{DoxyCode}

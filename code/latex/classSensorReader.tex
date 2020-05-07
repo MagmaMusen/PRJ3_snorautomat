@@ -13,24 +13,20 @@ Inheritance diagram for Sensor\+Reader\+:\begin{figure}[H]
 \doxysubsection*{Public Types}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classSensorReader_a6745a565b7f71eff935165ea8359f38c}\label{classSensorReader_a6745a565b7f71eff935165ea8359f38c}} 
-enum \{ {\bfseries I\+D\+\_\+\+R\+E\+A\+D\+\_\+\+I\+ND}, 
-{\bfseries I\+D\+\_\+\+I\+D\+E\+N\+T\+I\+F\+Y\+\_\+\+I\+ND}
+enum \{ \mbox{\hyperlink{classSensorReader_a6745a565b7f71eff935165ea8359f38cace0b1b5f649c0323d50d7d4b88112bf0}{I\+D\+\_\+\+R\+E\+A\+D\+\_\+\+I\+ND}}, 
+\mbox{\hyperlink{classSensorReader_a6745a565b7f71eff935165ea8359f38caf4c894da014aad75b6a953be9f14dc61}{I\+D\+\_\+\+I\+D\+E\+N\+T\+I\+F\+Y\+\_\+\+I\+ND}}
  \}
 \begin{DoxyCompactList}\small\item\em Event message ID\textquotesingle{}s. Used to cast wrapper structs. They are received as their base-\/class Message and therefore need to be identified and casted. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classSensorReader_a639d876b26cc84413f5ff092dc7a3f45}\label{classSensorReader_a639d876b26cc84413f5ff092dc7a3f45}} 
 \mbox{\hyperlink{classSensorReader_a639d876b26cc84413f5ff092dc7a3f45}{Sensor\+Reader}} (\mbox{\hyperlink{classCoinIdentifier}{Coin\+Identifier}} $\ast$identifier)
 \begin{DoxyCompactList}\small\item\em Constructor. Parameter is the identifier that will receive the time signature captures from \mbox{\hyperlink{classSensorReader}{Sensor\+Reader}}. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classSensorReader_a0e493b0e27ba3f3c4ffaf76ec5d253ae}\label{classSensorReader_a0e493b0e27ba3f3c4ffaf76ec5d253ae}} 
-\mbox{\hyperlink{classosapi_1_1BasicMsgQueue}{osapi\+::\+Msg\+Queue}} $\ast$ \mbox{\hyperlink{classSensorReader_a0e493b0e27ba3f3c4ffaf76ec5d253ae}{get\+Msg\+Queue}} ()
+\mbox{\hyperlink{namespaceosapi_a1bacbda2d705cebe3418c74fd3d05e94}{osapi\+::\+Msg\+Queue}} $\ast$ \mbox{\hyperlink{classSensorReader_a0e493b0e27ba3f3c4ffaf76ec5d253ae}{get\+Msg\+Queue}} ()
 \begin{DoxyCompactList}\small\item\em Returns message queue of the class. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Static Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classSensorReader_a0d96f1b0b532e468b5bec8a08baf5c70}\label{classSensorReader_a0d96f1b0b532e468b5bec8a08baf5c70}} 
 static const int \mbox{\hyperlink{classSensorReader_a0d96f1b0b532e468b5bec8a08baf5c70}{M\+A\+X\+\_\+\+Q\+U\+E\+U\+E\+\_\+\+S\+I\+ZE}} = 64
 \begin{DoxyCompactList}\small\item\em Message queue size. Sending on a full queue will block sender to keep synchronized. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Protected Member Functions}
@@ -41,31 +37,23 @@ void \mbox{\hyperlink{classSensorReader_a23ed6518af32a6ddaf062767f36e612a}{run}}
 \doxysubsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classSensorReader_abfd6546a9e7d2f5ac3405ccae9be1441}\label{classSensorReader_abfd6546a9e7d2f5ac3405ccae9be1441}} 
 void \mbox{\hyperlink{classSensorReader_abfd6546a9e7d2f5ac3405ccae9be1441}{sensor\+Reader\+Handler}} (unsigned int id, \mbox{\hyperlink{classosapi_1_1Message}{osapi\+::\+Message}} $\ast$msg)
 \begin{DoxyCompactList}\small\item\em Indentifies messages on received on \mbox{\hyperlink{classSensorReader}{Sensor\+Reader}}\textquotesingle{}s message queue, casts the message if needed and starts the correct handler function. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classSensorReader_ad50d7a03d46b8a9b8b6a69d1704bc797}\label{classSensorReader_ad50d7a03d46b8a9b8b6a69d1704bc797}} 
 void \mbox{\hyperlink{classSensorReader_ad50d7a03d46b8a9b8b6a69d1704bc797}{sensor\+Reader\+Handle\+Read}} ()
 \begin{DoxyCompactList}\small\item\em Reads from /dev/\+C\+DS file which is the sensor character drivers node. Reading from the file returns time signatures as coins pass by the sensors. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classSensorReader_a4794e2c710f6f39c44562e4e413f2afd}\label{classSensorReader_a4794e2c710f6f39c44562e4e413f2afd}} 
 void \mbox{\hyperlink{classSensorReader_a4794e2c710f6f39c44562e4e413f2afd}{extract\+Times}} (std\+::string line, std\+::string delimiter, \mbox{\hyperlink{structCoinTimings}{Coin\+Timings}} $\ast$timings)
 \begin{DoxyCompactList}\small\item\em Turns the string from read from the C\+D\+S-\/driver into captured timings in the specified \mbox{\hyperlink{structCoinTimings}{Coin\+Timings}} struct. The delimiter is the seperator of the two time values read from the driver. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classSensorReader_a108399193faacafcd594f88219313bb9}\label{classSensorReader_a108399193faacafcd594f88219313bb9}} 
 bool \mbox{\hyperlink{classSensorReader_a108399193faacafcd594f88219313bb9}{running\+\_\+}}
 \begin{DoxyCompactList}\small\item\em Event loop exit if set to false. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classSensorReader_a018e114544e7105b049b25a5e77cf69d}\label{classSensorReader_a018e114544e7105b049b25a5e77cf69d}} 
-\mbox{\hyperlink{classosapi_1_1BasicMsgQueue}{osapi\+::\+Msg\+Queue}} \mbox{\hyperlink{classSensorReader_a018e114544e7105b049b25a5e77cf69d}{mq\+\_\+}}
+\mbox{\hyperlink{namespaceosapi_a1bacbda2d705cebe3418c74fd3d05e94}{osapi\+::\+Msg\+Queue}} \mbox{\hyperlink{classSensorReader_a018e114544e7105b049b25a5e77cf69d}{mq\+\_\+}}
 \begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classSensorReader}{Sensor\+Reader}}\textquotesingle{}s F\+I\+FO message queue where received events are stored. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classSensorReader_a421be37e19c468ca3da02d5ea30e8ff4}\label{classSensorReader_a421be37e19c468ca3da02d5ea30e8ff4}} 
 std\+::string \mbox{\hyperlink{classSensorReader_a421be37e19c468ca3da02d5ea30e8ff4}{delimiter\+\_\+}} = \char`\"{},\char`\"{}
 \begin{DoxyCompactList}\small\item\em Seperator between the time values read from the C\+D\+S-\/driver file. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classSensorReader_aedf6dd3455da40a556738a42c07c67df}\label{classSensorReader_aedf6dd3455da40a556738a42c07c67df}} 
 std\+::string \mbox{\hyperlink{classSensorReader_aedf6dd3455da40a556738a42c07c67df}{linereading\+\_\+}}
 \begin{DoxyCompactList}\small\item\em Line read from the C\+D\+S-\/driver file. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classSensorReader_a97da157cd4897d1c8c6af0f4b4a590d1}\label{classSensorReader_a97da157cd4897d1c8c6af0f4b4a590d1}} 
 \mbox{\hyperlink{classCoinIdentifier}{Coin\+Identifier}} $\ast$ \mbox{\hyperlink{classSensorReader_a97da157cd4897d1c8c6af0f4b4a590d1}{identifier\+\_\+}}
 \begin{DoxyCompactList}\small\item\em Receiver of the timing indication events, which will turn the time signatures into coin values. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
@@ -77,7 +65,112 @@ Definition at line 18 of file Sensor\+Reader.\+hpp.
 
 
 
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{classSensorReader_a6745a565b7f71eff935165ea8359f38c}\label{classSensorReader_a6745a565b7f71eff935165ea8359f38c}} 
+\doxysubsubsection{\texorpdfstring{anonymous enum}{anonymous enum}}
+{\footnotesize\ttfamily anonymous enum}
+
+
+
+Event message ID\textquotesingle{}s. Used to cast wrapper structs. They are received as their base-\/class Message and therefore need to be identified and casted. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ID\_READ\_IND@{ID\_READ\_IND}!SensorReader@{SensorReader}}\index{SensorReader@{SensorReader}!ID\_READ\_IND@{ID\_READ\_IND}}}\mbox{\Hypertarget{classSensorReader_a6745a565b7f71eff935165ea8359f38cace0b1b5f649c0323d50d7d4b88112bf0}\label{classSensorReader_a6745a565b7f71eff935165ea8359f38cace0b1b5f649c0323d50d7d4b88112bf0}} 
+I\+D\+\_\+\+R\+E\+A\+D\+\_\+\+I\+ND&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ID\_IDENTIFY\_IND@{ID\_IDENTIFY\_IND}!SensorReader@{SensorReader}}\index{SensorReader@{SensorReader}!ID\_IDENTIFY\_IND@{ID\_IDENTIFY\_IND}}}\mbox{\Hypertarget{classSensorReader_a6745a565b7f71eff935165ea8359f38caf4c894da014aad75b6a953be9f14dc61}\label{classSensorReader_a6745a565b7f71eff935165ea8359f38caf4c894da014aad75b6a953be9f14dc61}} 
+I\+D\+\_\+\+I\+D\+E\+N\+T\+I\+F\+Y\+\_\+\+I\+ND&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 28 of file Sensor\+Reader.\+hpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{28          \{}
+\DoxyCodeLine{29         \mbox{\hyperlink{classSensorReader_a6745a565b7f71eff935165ea8359f38cace0b1b5f649c0323d50d7d4b88112bf0}{ID\_READ\_IND}}, }
+\DoxyCodeLine{30         \mbox{\hyperlink{classSensorReader_a6745a565b7f71eff935165ea8359f38caf4c894da014aad75b6a953be9f14dc61}{ID\_IDENTIFY\_IND}}}
+\DoxyCodeLine{31     \};}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classSensorReader_a639d876b26cc84413f5ff092dc7a3f45}\label{classSensorReader_a639d876b26cc84413f5ff092dc7a3f45}} 
+\index{SensorReader@{SensorReader}!SensorReader@{SensorReader}}
+\index{SensorReader@{SensorReader}!SensorReader@{SensorReader}}
+\doxysubsubsection{\texorpdfstring{SensorReader()}{SensorReader()}}
+{\footnotesize\ttfamily Sensor\+Reader\+::\+Sensor\+Reader (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCoinIdentifier}{Coin\+Identifier}} $\ast$}]{identifier }\end{DoxyParamCaption})}
+
+
+
+Constructor. Parameter is the identifier that will receive the time signature captures from \mbox{\hyperlink{classSensorReader}{Sensor\+Reader}}. 
+
+
+
+Definition at line 5 of file Sensor\+Reader.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{6     : \mbox{\hyperlink{classSensorReader_a018e114544e7105b049b25a5e77cf69d}{mq\_}}(\mbox{\hyperlink{classSensorReader_a0d96f1b0b532e468b5bec8a08baf5c70}{MAX\_QUEUE\_SIZE}}), \mbox{\hyperlink{classSensorReader_a108399193faacafcd594f88219313bb9}{running\_}}(\textcolor{keyword}{true})}
+\DoxyCodeLine{7 \{}
+\DoxyCodeLine{8   \mbox{\hyperlink{classSensorReader_a97da157cd4897d1c8c6af0f4b4a590d1}{identifier\_}} = identifier;}
+\DoxyCodeLine{9 \}}
+
+\end{DoxyCode}
+
+
 \doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSensorReader_a4794e2c710f6f39c44562e4e413f2afd}\label{classSensorReader_a4794e2c710f6f39c44562e4e413f2afd}} 
+\index{SensorReader@{SensorReader}!extractTimes@{extractTimes}}
+\index{extractTimes@{extractTimes}!SensorReader@{SensorReader}}
+\doxysubsubsection{\texorpdfstring{extractTimes()}{extractTimes()}}
+{\footnotesize\ttfamily void Sensor\+Reader\+::extract\+Times (\begin{DoxyParamCaption}\item[{std\+::string}]{line,  }\item[{std\+::string}]{delimiter,  }\item[{\mbox{\hyperlink{structCoinTimings}{Coin\+Timings}} $\ast$}]{timings }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Turns the string from read from the C\+D\+S-\/driver into captured timings in the specified \mbox{\hyperlink{structCoinTimings}{Coin\+Timings}} struct. The delimiter is the seperator of the two time values read from the driver. 
+
+
+
+Definition at line 70 of file Sensor\+Reader.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{71 \{}
+\DoxyCodeLine{72   \textcolor{keywordtype}{size\_t}                 pos = 0;}
+\DoxyCodeLine{73   std::string::size\_type sz;}
+\DoxyCodeLine{74 }
+\DoxyCodeLine{75   pos = line.find(delimiter);}
+\DoxyCodeLine{76 }
+\DoxyCodeLine{77   timings-\/>\mbox{\hyperlink{structCoinTimings_a4c5677be6f0efd644a61e2ab1f0aafe4}{timeDifferenceRising}} = std::stol(line.substr(0, pos), \&sz);}
+\DoxyCodeLine{78   line.erase(0, pos + \mbox{\hyperlink{classSensorReader_a421be37e19c468ca3da02d5ea30e8ff4}{delimiter\_}}.length());}
+\DoxyCodeLine{79   timings-\/>\mbox{\hyperlink{structCoinTimings_ad462bede898ef3982eef32f97e2cd176}{timeDifferenceEnterExit}} = std::stol(line, \&sz);}
+\DoxyCodeLine{80 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classSensorReader_a0e493b0e27ba3f3c4ffaf76ec5d253ae}\label{classSensorReader_a0e493b0e27ba3f3c4ffaf76ec5d253ae}} 
+\index{SensorReader@{SensorReader}!getMsgQueue@{getMsgQueue}}
+\index{getMsgQueue@{getMsgQueue}!SensorReader@{SensorReader}}
+\doxysubsubsection{\texorpdfstring{getMsgQueue()}{getMsgQueue()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceosapi_a1bacbda2d705cebe3418c74fd3d05e94}{osapi\+::\+Msg\+Queue}} $\ast$ Sensor\+Reader\+::get\+Msg\+Queue (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns message queue of the class. 
+
+
+
+Definition at line 11 of file Sensor\+Reader.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{11 \{ \textcolor{keywordflow}{return} \&\mbox{\hyperlink{classSensorReader_a018e114544e7105b049b25a5e77cf69d}{mq\_}}; \}}
+
+\end{DoxyCode}
 \mbox{\Hypertarget{classSensorReader_a23ed6518af32a6ddaf062767f36e612a}\label{classSensorReader_a23ed6518af32a6ddaf062767f36e612a}} 
 \index{SensorReader@{SensorReader}!run@{run}}
 \index{run@{run}!SensorReader@{SensorReader}}
@@ -86,7 +179,7 @@ Definition at line 18 of file Sensor\+Reader.\+hpp.
 
 Event loop. Receives messages from the message queue, calls the handler, then deletes the message. Is inherited from the Thread\+Functor class and overwritten. 
 
-Implements \mbox{\hyperlink{classosapi_1_1ThreadFunctor}{osapi\+::\+Thread\+Functor}}.
+Implements \mbox{\hyperlink{classosapi_1_1ThreadFunctor_a823fdf26390662df38ac9b2639277ecd}{osapi\+::\+Thread\+Functor}}.
 
 
 
@@ -99,16 +192,179 @@ Definition at line 13 of file Sensor\+Reader.\+cpp.
 \DoxyCodeLine{16   \textcolor{keywordflow}{while} (\mbox{\hyperlink{classSensorReader_a108399193faacafcd594f88219313bb9}{running\_}})}
 \DoxyCodeLine{17   \{}
 \DoxyCodeLine{18     \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{long} \textcolor{keywordtype}{int} id;}
-\DoxyCodeLine{19     \mbox{\hyperlink{classosapi_1_1Message}{osapi::Message}} *  msg = \mbox{\hyperlink{classSensorReader_a018e114544e7105b049b25a5e77cf69d}{mq\_}}.receive(\textcolor{keywordtype}{id});}
+\DoxyCodeLine{19     \mbox{\hyperlink{classosapi_1_1Message}{osapi::Message}} *  msg = \mbox{\hyperlink{classSensorReader_a018e114544e7105b049b25a5e77cf69d}{mq\_}}.\mbox{\hyperlink{classosapi_1_1BasicMsgQueue_a7e1dcee4a1c9e6d966bb5d33b5c472cb}{receive}}(\textcolor{keywordtype}{id});}
 \DoxyCodeLine{20     \mbox{\hyperlink{classSensorReader_abfd6546a9e7d2f5ac3405ccae9be1441}{sensorReaderHandler}}(\textcolor{keywordtype}{id}, msg);}
 \DoxyCodeLine{21     \textcolor{keyword}{delete} msg;}
 \DoxyCodeLine{22   \}}
 \DoxyCodeLine{23 \}}
 
 \end{DoxyCode}
+\mbox{\Hypertarget{classSensorReader_abfd6546a9e7d2f5ac3405ccae9be1441}\label{classSensorReader_abfd6546a9e7d2f5ac3405ccae9be1441}} 
+\index{SensorReader@{SensorReader}!sensorReaderHandler@{sensorReaderHandler}}
+\index{sensorReaderHandler@{sensorReaderHandler}!SensorReader@{SensorReader}}
+\doxysubsubsection{\texorpdfstring{sensorReaderHandler()}{sensorReaderHandler()}}
+{\footnotesize\ttfamily void Sensor\+Reader\+::sensor\+Reader\+Handler (\begin{DoxyParamCaption}\item[{unsigned int}]{id,  }\item[{\mbox{\hyperlink{classosapi_1_1Message}{osapi\+::\+Message}} $\ast$}]{msg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Indentifies messages on received on \mbox{\hyperlink{classSensorReader}{Sensor\+Reader}}\textquotesingle{}s message queue, casts the message if needed and starts the correct handler function. 
+
+
+
+Definition at line 25 of file Sensor\+Reader.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{26 \{}
+\DoxyCodeLine{27   \textcolor{keywordflow}{switch} (\textcolor{keywordtype}{id})}
+\DoxyCodeLine{28   \{}
+\DoxyCodeLine{29   \textcolor{keywordflow}{case} \mbox{\hyperlink{classSensorReader_a6745a565b7f71eff935165ea8359f38cace0b1b5f649c0323d50d7d4b88112bf0}{ID\_READ\_IND}}:}
+\DoxyCodeLine{30     \mbox{\hyperlink{classSensorReader_ad50d7a03d46b8a9b8b6a69d1704bc797}{sensorReaderHandleRead}}();}
+\DoxyCodeLine{31     \textcolor{keywordflow}{break};}
+\DoxyCodeLine{32 }
+\DoxyCodeLine{33   \textcolor{keywordflow}{default}:}
+\DoxyCodeLine{34     \textcolor{keywordflow}{break};}
+\DoxyCodeLine{35   \}}
+\DoxyCodeLine{36 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classSensorReader_ad50d7a03d46b8a9b8b6a69d1704bc797}\label{classSensorReader_ad50d7a03d46b8a9b8b6a69d1704bc797}} 
+\index{SensorReader@{SensorReader}!sensorReaderHandleRead@{sensorReaderHandleRead}}
+\index{sensorReaderHandleRead@{sensorReaderHandleRead}!SensorReader@{SensorReader}}
+\doxysubsubsection{\texorpdfstring{sensorReaderHandleRead()}{sensorReaderHandleRead()}}
+{\footnotesize\ttfamily void Sensor\+Reader\+::sensor\+Reader\+Handle\+Read (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Reads from /dev/\+C\+DS file which is the sensor character drivers node. Reading from the file returns time signatures as coins pass by the sensors. 
+
+
+
+Definition at line 38 of file Sensor\+Reader.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{39 \{}
+\DoxyCodeLine{40   std::ifstream sensordriverfile(\textcolor{stringliteral}{"/dev/CDS"});}
+\DoxyCodeLine{41 }
+\DoxyCodeLine{42   std::cout << \textcolor{stringliteral}{"Started read handler in SensorReader!"} << std::endl;}
+\DoxyCodeLine{43 }
+\DoxyCodeLine{44 }
+\DoxyCodeLine{45   \textcolor{keywordflow}{if} (sensordriverfile.is\_open())}
+\DoxyCodeLine{46   \{}
+\DoxyCodeLine{47     \textcolor{keywordflow}{while} (getline(sensordriverfile, \mbox{\hyperlink{classSensorReader_aedf6dd3455da40a556738a42c07c67df}{linereading\_}}))}
+\DoxyCodeLine{48     \{}
+\DoxyCodeLine{49       \textcolor{comment}{// 'Reading' string might now contain something like "353432,364335".}}
+\DoxyCodeLine{50 }
+\DoxyCodeLine{51       \textcolor{comment}{// Seperate string into the two captured timings.}}
+\DoxyCodeLine{52       \mbox{\hyperlink{structCoinTimings}{CoinTimings}}* capture = \textcolor{keyword}{new} \mbox{\hyperlink{structCoinTimings}{CoinTimings}};}
+\DoxyCodeLine{53       \mbox{\hyperlink{classSensorReader_a4794e2c710f6f39c44562e4e413f2afd}{extractTimes}}(\mbox{\hyperlink{classSensorReader_aedf6dd3455da40a556738a42c07c67df}{linereading\_}}, \mbox{\hyperlink{classSensorReader_a421be37e19c468ca3da02d5ea30e8ff4}{delimiter\_}}, capture);}
+\DoxyCodeLine{54 }
+\DoxyCodeLine{55       \textcolor{comment}{// Send to identifier.}}
+\DoxyCodeLine{56       \mbox{\hyperlink{classSensorReader_a97da157cd4897d1c8c6af0f4b4a590d1}{identifier\_}}-\/>\mbox{\hyperlink{classCoinIdentifier_a6a93d1e39be515da841054d5033d5669}{getMsgQueue}}()-\/>\mbox{\hyperlink{classosapi_1_1BasicMsgQueue_a8d82ffda45ea8a1d8878f356e5d1284b}{send}}(\mbox{\hyperlink{classSensorReader_a6745a565b7f71eff935165ea8359f38caf4c894da014aad75b6a953be9f14dc61}{ID\_IDENTIFY\_IND}}, capture);}
+\DoxyCodeLine{57       \textcolor{comment}{// identifier\_-\/>Identify(capturedTimeA\_, capturedTimeB\_);}}
+\DoxyCodeLine{58     \}}
+\DoxyCodeLine{59 }
+\DoxyCodeLine{60     sensordriverfile.close();}
+\DoxyCodeLine{61   \}}
+\DoxyCodeLine{62 }
+\DoxyCodeLine{63   \textcolor{keywordflow}{else}}
+\DoxyCodeLine{64     std::cout << \textcolor{stringliteral}{"Unable to open file /dev/CDS. Have you made a device node "}}
+\DoxyCodeLine{65                  \textcolor{stringliteral}{"for the sensors?"}}
+\DoxyCodeLine{66               << std::endl;}
+\DoxyCodeLine{67 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classSensorReader_a421be37e19c468ca3da02d5ea30e8ff4}\label{classSensorReader_a421be37e19c468ca3da02d5ea30e8ff4}} 
+\index{SensorReader@{SensorReader}!delimiter\_@{delimiter\_}}
+\index{delimiter\_@{delimiter\_}!SensorReader@{SensorReader}}
+\doxysubsubsection{\texorpdfstring{delimiter\_}{delimiter\_}}
+{\footnotesize\ttfamily std\+::string Sensor\+Reader\+::delimiter\+\_\+ = \char`\"{},\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Seperator between the time values read from the C\+D\+S-\/driver file. 
+
+
+
+Definition at line 61 of file Sensor\+Reader.\+hpp.
+
+\mbox{\Hypertarget{classSensorReader_a97da157cd4897d1c8c6af0f4b4a590d1}\label{classSensorReader_a97da157cd4897d1c8c6af0f4b4a590d1}} 
+\index{SensorReader@{SensorReader}!identifier\_@{identifier\_}}
+\index{identifier\_@{identifier\_}!SensorReader@{SensorReader}}
+\doxysubsubsection{\texorpdfstring{identifier\_}{identifier\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCoinIdentifier}{Coin\+Identifier}}$\ast$ Sensor\+Reader\+::identifier\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Receiver of the timing indication events, which will turn the time signatures into coin values. 
+
+
+
+Definition at line 67 of file Sensor\+Reader.\+hpp.
+
+\mbox{\Hypertarget{classSensorReader_aedf6dd3455da40a556738a42c07c67df}\label{classSensorReader_aedf6dd3455da40a556738a42c07c67df}} 
+\index{SensorReader@{SensorReader}!linereading\_@{linereading\_}}
+\index{linereading\_@{linereading\_}!SensorReader@{SensorReader}}
+\doxysubsubsection{\texorpdfstring{linereading\_}{linereading\_}}
+{\footnotesize\ttfamily std\+::string Sensor\+Reader\+::linereading\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Line read from the C\+D\+S-\/driver file. 
+
+
+
+Definition at line 64 of file Sensor\+Reader.\+hpp.
+
+\mbox{\Hypertarget{classSensorReader_a0d96f1b0b532e468b5bec8a08baf5c70}\label{classSensorReader_a0d96f1b0b532e468b5bec8a08baf5c70}} 
+\index{SensorReader@{SensorReader}!MAX\_QUEUE\_SIZE@{MAX\_QUEUE\_SIZE}}
+\index{MAX\_QUEUE\_SIZE@{MAX\_QUEUE\_SIZE}!SensorReader@{SensorReader}}
+\doxysubsubsection{\texorpdfstring{MAX\_QUEUE\_SIZE}{MAX\_QUEUE\_SIZE}}
+{\footnotesize\ttfamily const int Sensor\+Reader\+::\+M\+A\+X\+\_\+\+Q\+U\+E\+U\+E\+\_\+\+S\+I\+ZE = 64\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Message queue size. Sending on a full queue will block sender to keep synchronized. 
+
+
+
+Definition at line 22 of file Sensor\+Reader.\+hpp.
+
+\mbox{\Hypertarget{classSensorReader_a018e114544e7105b049b25a5e77cf69d}\label{classSensorReader_a018e114544e7105b049b25a5e77cf69d}} 
+\index{SensorReader@{SensorReader}!mq\_@{mq\_}}
+\index{mq\_@{mq\_}!SensorReader@{SensorReader}}
+\doxysubsubsection{\texorpdfstring{mq\_}{mq\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceosapi_a1bacbda2d705cebe3418c74fd3d05e94}{osapi\+::\+Msg\+Queue}} Sensor\+Reader\+::mq\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\mbox{\hyperlink{classSensorReader}{Sensor\+Reader}}\textquotesingle{}s F\+I\+FO message queue where received events are stored. 
+
+
+
+Definition at line 55 of file Sensor\+Reader.\+hpp.
+
+\mbox{\Hypertarget{classSensorReader_a108399193faacafcd594f88219313bb9}\label{classSensorReader_a108399193faacafcd594f88219313bb9}} 
+\index{SensorReader@{SensorReader}!running\_@{running\_}}
+\index{running\_@{running\_}!SensorReader@{SensorReader}}
+\doxysubsubsection{\texorpdfstring{running\_}{running\_}}
+{\footnotesize\ttfamily bool Sensor\+Reader\+::running\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Event loop exit if set to false. 
+
+
+
+Definition at line 51 of file Sensor\+Reader.\+hpp.
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-Coin\+Detecting\+Sensors/\+O\+S\+Api\+Student/\+C\+D\+S/Sensor\+Reader.\+hpp\item 
-Coin\+Detecting\+Sensors/\+O\+S\+Api\+Student/\+C\+D\+S/Sensor\+Reader.\+cpp\end{DoxyCompactItemize}
+Coin\+Detecting\+Sensors/\+O\+S\+Api\+Student/\+C\+D\+S/\mbox{\hyperlink{SensorReader_8hpp}{Sensor\+Reader.\+hpp}}\item 
+Coin\+Detecting\+Sensors/\+O\+S\+Api\+Student/\+C\+D\+S/\mbox{\hyperlink{SensorReader_8cpp}{Sensor\+Reader.\+cpp}}\end{DoxyCompactItemize}

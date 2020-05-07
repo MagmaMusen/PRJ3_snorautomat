@@ -69,68 +69,68 @@ $(function() {
 <div class="title">Thread.cpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &lt;unistd.h&gt;</span></div>
+<a href="linux_2Thread_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &lt;unistd.h&gt;</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;errno.h&gt;</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;osapi/Thread.hpp&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="Thread_8hpp.html">osapi/Thread.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span>osapi</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceosapi.html">osapi</a></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;  Thread::Thread(ThreadFunctor* tf,</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;                 Thread::ThreadPriority priority, </div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="classosapi_1_1Thread.html#a6b96884f4d39f6134bf8d3d53f0d695b">    9</a></span>&#160;  <a class="code" href="classosapi_1_1Thread.html#a6b96884f4d39f6134bf8d3d53f0d695b">Thread::Thread</a>(<a class="code" href="classosapi_1_1ThreadFunctor.html">ThreadFunctor</a>* tf,</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;                 <a class="code" href="classosapi_1_1Thread.html#a29f9912dd4113cad7eba161835a5c114">Thread::ThreadPriority</a> priority, </div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;                 <span class="keyword">const</span> std::string&amp; name,</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;                 <span class="keywordtype">bool</span> autoStart)</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    : tf_(tf), priority_(priority), name_(name), attached_(true)</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  {</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keywordflow">if</span>(autoStart)</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;      start();</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;      <a class="code" href="classosapi_1_1Thread.html#a5409235d68889397cb5bfe092582cd72">start</a>();</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  }</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  Thread::~Thread()</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="classosapi_1_1Thread.html#a65b3257241469c89c61a769bdac96a76">   20</a></span>&#160;  <a class="code" href="classosapi_1_1Thread.html#a65b3257241469c89c61a769bdac96a76">Thread::~Thread</a>()</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  {</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    detach();</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="classosapi_1_1Thread.html#a57764da6e88f008e90952f7273f7c70d">detach</a>();</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  }</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <span class="keywordtype">void</span> Thread::start()</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="classosapi_1_1Thread.html#a5409235d68889397cb5bfe092582cd72">   25</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classosapi_1_1Thread.html#a5409235d68889397cb5bfe092582cd72">Thread::start</a>()</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  {</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordflow">if</span>(getuid() == 0) <span class="comment">// Check to see if we are root</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    {</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;      <span class="comment">/* Steps to go through */</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;      pthread_attr_t  attr;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;      <span class="keywordflow">if</span>(pthread_attr_init(&amp;attr) != 0) <span class="keywordflow">throw</span> ThreadError();                                        <span class="comment">// Init attr</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;      <span class="keywordflow">if</span>(pthread_attr_init(&amp;attr) != 0) <span class="keywordflow">throw</span> <a class="code" href="classosapi_1_1ThreadError.html">ThreadError</a>();                                        <span class="comment">// Init attr</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;      sched_param sched_p;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;      <span class="keywordflow">if</span>(pthread_attr_setschedpolicy(&amp;attr, SCHED_RR) != 0) <span class="keywordflow">throw</span> ThreadError();                    <span class="comment">// Set RR scheduling (RT, timesliced)</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;      <span class="keywordflow">if</span>(pthread_attr_setinheritsched(&amp;attr, PTHREAD_EXPLICIT_SCHED) != 0) <span class="keywordflow">throw</span> ThreadError(); <span class="comment">// Create thread with explicit (non-inherited) scheduling - setting priority will not work otherwise!</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;      sched_p.sched_priority = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(priority_);                         <span class="comment">// Set priority</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;      <span class="keywordflow">if</span>(pthread_attr_setschedparam(&amp;attr, &amp;sched_p) != 0) <span class="keywordflow">throw</span> ThreadError();                 <span class="comment">// Use the priority        </span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;      <span class="keywordflow">if</span>(pthread_attr_setschedpolicy(&amp;attr, SCHED_RR) != 0) <span class="keywordflow">throw</span> <a class="code" href="classosapi_1_1ThreadError.html">ThreadError</a>();                    <span class="comment">// Set RR scheduling (RT, timesliced)</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;      <span class="keywordflow">if</span>(pthread_attr_setinheritsched(&amp;attr, PTHREAD_EXPLICIT_SCHED) != 0) <span class="keywordflow">throw</span> <a class="code" href="classosapi_1_1ThreadError.html">ThreadError</a>(); <span class="comment">// Create thread with explicit (non-inherited) scheduling - setting priority will not work otherwise!</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;      sched_p.sched_priority = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(<a class="code" href="classosapi_1_1Thread.html#a6aa288ec3487ed5f4b1abe88cddc6aea">priority_</a>);                         <span class="comment">// Set priority</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;      <span class="keywordflow">if</span>(pthread_attr_setschedparam(&amp;attr, &amp;sched_p) != 0) <span class="keywordflow">throw</span> <a class="code" href="classosapi_1_1ThreadError.html">ThreadError</a>();                 <span class="comment">// Use the priority        </span></div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;      <span class="comment">/* Missing thread creation */</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;      <span class="keywordflow">if</span> (pthread_create(&amp;threadId_, &amp;attr, ThreadFunctor::threadMapper, tf_) != 0)</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keywordflow">throw</span> ThreadError();</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;      <span class="keywordflow">if</span> (pthread_create(&amp;<a class="code" href="classosapi_1_1Thread.html#a6c450469c9e28cbdfafba93df44dfc11">threadId_</a>, &amp;attr, <a class="code" href="classosapi_1_1ThreadFunctor.html#a26b0ae3a3f8c2d8319f6631b4dc3942e">ThreadFunctor::threadMapper</a>, <a class="code" href="classosapi_1_1Thread.html#acf6075bfe777ce3db39f40464b7548b5">tf_</a>) != 0)</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keywordflow">throw</span> <a class="code" href="classosapi_1_1ThreadError.html">ThreadError</a>();</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;      </div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;      pthread_attr_destroy(&amp;attr);</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    }</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    {</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;      <span class="comment">/* Missing thread creation */</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;      <span class="keywordflow">if</span> (pthread_create(&amp;threadId_, NULL, ThreadFunctor::threadMapper, tf_) != 0)</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keywordflow">throw</span> ThreadError();</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;      <span class="keywordflow">if</span> (pthread_create(&amp;<a class="code" href="classosapi_1_1Thread.html#a6c450469c9e28cbdfafba93df44dfc11">threadId_</a>, NULL, <a class="code" href="classosapi_1_1ThreadFunctor.html#a26b0ae3a3f8c2d8319f6631b4dc3942e">ThreadFunctor::threadMapper</a>, <a class="code" href="classosapi_1_1Thread.html#acf6075bfe777ce3db39f40464b7548b5">tf_</a>) != 0)</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keywordflow">throw</span> <a class="code" href="classosapi_1_1ThreadError.html">ThreadError</a>();</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    }</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="comment">// If ok no exception was thrown thus we have a valid thread and its attached!</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    attached_ = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="code" href="classosapi_1_1Thread.html#a06c0734f798f7589ae24130c8ff8e3b9">attached_</a> = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  }</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keywordtype">void</span> Thread::setPriority(Thread::ThreadPriority priority)</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="classosapi_1_1Thread.html#a986ca922d21233b02a167ba1075bca5b">   56</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classosapi_1_1Thread.html#a986ca922d21233b02a167ba1075bca5b">Thread::setPriority</a>(<a class="code" href="classosapi_1_1Thread.html#a29f9912dd4113cad7eba161835a5c114">Thread::ThreadPriority</a> priority)</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  {</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordflow">if</span>(!attached_) <span class="keywordflow">throw</span> ThreadError();</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordflow">if</span>(!<a class="code" href="classosapi_1_1Thread.html#a06c0734f798f7589ae24130c8ff8e3b9">attached_</a>) <span class="keywordflow">throw</span> <a class="code" href="classosapi_1_1ThreadError.html">ThreadError</a>();</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordflow">if</span>(getuid() == 0) <span class="comment">// Check to see if we are root</span></div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    {        </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;      <span class="keywordflow">if</span>(pthread_setschedprio(threadId_, <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(priority)) != 0) <span class="keywordflow">throw</span> ThreadError();</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;      priority_ = priority;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;      <span class="keywordflow">if</span>(pthread_setschedprio(<a class="code" href="classosapi_1_1Thread.html#a6c450469c9e28cbdfafba93df44dfc11">threadId_</a>, <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(priority)) != 0) <span class="keywordflow">throw</span> <a class="code" href="classosapi_1_1ThreadError.html">ThreadError</a>();</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;      <a class="code" href="classosapi_1_1Thread.html#a6aa288ec3487ed5f4b1abe88cddc6aea">priority_</a> = priority;</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    }</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    {</div>
@@ -139,34 +139,55 @@ $(function() {
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  }</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  Thread::ThreadPriority Thread::getPriority()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="classosapi_1_1Thread.html#a5eb2bf6bb954f812a60d8a53391af46a">   71</a></span>&#160;  <a class="code" href="classosapi_1_1Thread.html#a29f9912dd4113cad7eba161835a5c114">Thread::ThreadPriority</a> <a class="code" href="classosapi_1_1Thread.html#a5eb2bf6bb954f812a60d8a53391af46a">Thread::getPriority</a>()<span class="keyword"> const</span></div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="keyword">  </span>{</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordflow">return</span> priority_;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classosapi_1_1Thread.html#a6aa288ec3487ed5f4b1abe88cddc6aea">priority_</a>;</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  }</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="comment">/* Missing method... */</span></div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  std::string Thread::getName()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="classosapi_1_1Thread.html#a72df831524a737e7ed602b70c6e4dc3f">   77</a></span>&#160;  std::string <a class="code" href="classosapi_1_1Thread.html#a72df831524a737e7ed602b70c6e4dc3f">Thread::getName</a>()<span class="keyword"> const</span></div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="keyword">  </span>{</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordflow">return</span> name_;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classosapi_1_1Thread.html#a75bc13f67c5eb1af9ffa9653f2af5643">name_</a>;</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  } </div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <span class="keywordtype">void</span> Thread::join()</div>
+<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="classosapi_1_1Thread.html#a5017a4146002d0ba61cbd268f8b795b2">   83</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classosapi_1_1Thread.html#a5017a4146002d0ba61cbd268f8b795b2">Thread::join</a>()</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  {</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordflow">if</span>(!attached_) <span class="keywordflow">throw</span> ThreadError();</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    tf_-&gt;threadDone_.wait();</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordflow">if</span>(!<a class="code" href="classosapi_1_1Thread.html#a06c0734f798f7589ae24130c8ff8e3b9">attached_</a>) <span class="keywordflow">throw</span> <a class="code" href="classosapi_1_1ThreadError.html">ThreadError</a>();</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <a class="code" href="classosapi_1_1Thread.html#acf6075bfe777ce3db39f40464b7548b5">tf_</a>-&gt;<a class="code" href="classosapi_1_1ThreadFunctor.html#a04d2b95bc023d30ee08386758c33e8ba">threadDone_</a>.<a class="code" href="classosapi_1_1Completion.html#af8a7bd1386bf1f50f4b81e003f394494">wait</a>();</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  }</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <span class="keywordtype">void</span> Thread::detach()</div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="classosapi_1_1Thread.html#a57764da6e88f008e90952f7273f7c70d">   89</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classosapi_1_1Thread.html#a57764da6e88f008e90952f7273f7c70d">Thread::detach</a>()</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  {</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordflow">if</span>(!attached_) <span class="keywordflow">throw</span> ThreadError();</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    attached_ = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    tf_ = NULL;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    pthread_detach(threadId_);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordflow">if</span>(!<a class="code" href="classosapi_1_1Thread.html#a06c0734f798f7589ae24130c8ff8e3b9">attached_</a>) <span class="keywordflow">throw</span> <a class="code" href="classosapi_1_1ThreadError.html">ThreadError</a>();</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <a class="code" href="classosapi_1_1Thread.html#a06c0734f798f7589ae24130c8ff8e3b9">attached_</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <a class="code" href="classosapi_1_1Thread.html#acf6075bfe777ce3db39f40464b7548b5">tf_</a> = NULL;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    pthread_detach(<a class="code" href="classosapi_1_1Thread.html#a6c450469c9e28cbdfafba93df44dfc11">threadId_</a>);</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  }</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    </div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclassosapi_1_1ThreadError_html"><div class="ttname"><a href="classosapi_1_1ThreadError.html">osapi::ThreadError</a></div><div class="ttdef"><b>Definition:</b> <a href="ThreadError_8hpp_source.html#l00008">ThreadError.hpp:9</a></div></div>
+<div class="ttc" id="aclassosapi_1_1Thread_html_a5017a4146002d0ba61cbd268f8b795b2"><div class="ttname"><a href="classosapi_1_1Thread.html#a5017a4146002d0ba61cbd268f8b795b2">osapi::Thread::join</a></div><div class="ttdeci">void join()</div><div class="ttdef"><b>Definition:</b> <a href="linux_2Thread_8cpp_source.html#l00083">Thread.cpp:83</a></div></div>
+<div class="ttc" id="aclassosapi_1_1Thread_html_a5eb2bf6bb954f812a60d8a53391af46a"><div class="ttname"><a href="classosapi_1_1Thread.html#a5eb2bf6bb954f812a60d8a53391af46a">osapi::Thread::getPriority</a></div><div class="ttdeci">ThreadPriority getPriority() const</div><div class="ttdef"><b>Definition:</b> <a href="linux_2Thread_8cpp_source.html#l00071">Thread.cpp:71</a></div></div>
+<div class="ttc" id="aclassosapi_1_1ThreadFunctor_html_a04d2b95bc023d30ee08386758c33e8ba"><div class="ttname"><a href="classosapi_1_1ThreadFunctor.html#a04d2b95bc023d30ee08386758c33e8ba">osapi::ThreadFunctor::threadDone_</a></div><div class="ttdeci">Completion threadDone_</div><div class="ttdef"><b>Definition:</b> <a href="linux_2ThreadFunctor_8hpp_source.html#l00020">ThreadFunctor.hpp:20</a></div></div>
+<div class="ttc" id="aclassosapi_1_1Thread_html_a65b3257241469c89c61a769bdac96a76"><div class="ttname"><a href="classosapi_1_1Thread.html#a65b3257241469c89c61a769bdac96a76">osapi::Thread::~Thread</a></div><div class="ttdeci">virtual ~Thread()</div><div class="ttdef"><b>Definition:</b> <a href="linux_2Thread_8cpp_source.html#l00020">Thread.cpp:20</a></div></div>
+<div class="ttc" id="aclassosapi_1_1Thread_html_a6b96884f4d39f6134bf8d3d53f0d695b"><div class="ttname"><a href="classosapi_1_1Thread.html#a6b96884f4d39f6134bf8d3d53f0d695b">osapi::Thread::Thread</a></div><div class="ttdeci">Thread(ThreadFunctor *tf, ThreadPriority p=PRIORITY_NORMAL, const std::string &amp;name=&quot;&quot;, bool autoStart=false)</div><div class="ttdef"><b>Definition:</b> <a href="linux_2Thread_8cpp_source.html#l00009">Thread.cpp:9</a></div></div>
+<div class="ttc" id="aclassosapi_1_1Thread_html_a29f9912dd4113cad7eba161835a5c114"><div class="ttname"><a href="classosapi_1_1Thread.html#a29f9912dd4113cad7eba161835a5c114">osapi::Thread::ThreadPriority</a></div><div class="ttdeci">ThreadPriority</div><div class="ttdef"><b>Definition:</b> <a href="linux_2Thread_8hpp_source.html#l00017">Thread.hpp:18</a></div></div>
+<div class="ttc" id="anamespaceosapi_html"><div class="ttname"><a href="namespaceosapi.html">osapi</a></div><div class="ttdef"><b>Definition:</b> <a href="Completion_8cpp_source.html#l00004">Completion.cpp:5</a></div></div>
+<div class="ttc" id="aclassosapi_1_1Completion_html_af8a7bd1386bf1f50f4b81e003f394494"><div class="ttname"><a href="classosapi_1_1Completion.html#af8a7bd1386bf1f50f4b81e003f394494">osapi::Completion::wait</a></div><div class="ttdeci">void wait()</div><div class="ttdef"><b>Definition:</b> <a href="Completion_8cpp_source.html#l00012">Completion.cpp:12</a></div></div>
+<div class="ttc" id="aclassosapi_1_1Thread_html_a6aa288ec3487ed5f4b1abe88cddc6aea"><div class="ttname"><a href="classosapi_1_1Thread.html#a6aa288ec3487ed5f4b1abe88cddc6aea">osapi::Thread::priority_</a></div><div class="ttdeci">ThreadPriority priority_</div><div class="ttdef"><b>Definition:</b> <a href="linux_2Thread_8hpp_source.html#l00041">Thread.hpp:41</a></div></div>
+<div class="ttc" id="aclassosapi_1_1Thread_html_a72df831524a737e7ed602b70c6e4dc3f"><div class="ttname"><a href="classosapi_1_1Thread.html#a72df831524a737e7ed602b70c6e4dc3f">osapi::Thread::getName</a></div><div class="ttdeci">std::string getName() const</div><div class="ttdef"><b>Definition:</b> <a href="linux_2Thread_8cpp_source.html#l00077">Thread.cpp:77</a></div></div>
+<div class="ttc" id="aclassosapi_1_1Thread_html_a06c0734f798f7589ae24130c8ff8e3b9"><div class="ttname"><a href="classosapi_1_1Thread.html#a06c0734f798f7589ae24130c8ff8e3b9">osapi::Thread::attached_</a></div><div class="ttdeci">bool attached_</div><div class="ttdef"><b>Definition:</b> <a href="linux_2Thread_8hpp_source.html#l00044">Thread.hpp:44</a></div></div>
+<div class="ttc" id="aclassosapi_1_1Thread_html_a57764da6e88f008e90952f7273f7c70d"><div class="ttname"><a href="classosapi_1_1Thread.html#a57764da6e88f008e90952f7273f7c70d">osapi::Thread::detach</a></div><div class="ttdeci">void detach()</div><div class="ttdef"><b>Definition:</b> <a href="linux_2Thread_8cpp_source.html#l00089">Thread.cpp:89</a></div></div>
+<div class="ttc" id="aclassosapi_1_1Thread_html_acf6075bfe777ce3db39f40464b7548b5"><div class="ttname"><a href="classosapi_1_1Thread.html#acf6075bfe777ce3db39f40464b7548b5">osapi::Thread::tf_</a></div><div class="ttdeci">ThreadFunctor * tf_</div><div class="ttdef"><b>Definition:</b> <a href="linux_2Thread_8hpp_source.html#l00040">Thread.hpp:40</a></div></div>
+<div class="ttc" id="aclassosapi_1_1ThreadFunctor_html"><div class="ttname"><a href="classosapi_1_1ThreadFunctor.html">osapi::ThreadFunctor</a></div><div class="ttdef"><b>Definition:</b> <a href="linux_2ThreadFunctor_8hpp_source.html#l00009">ThreadFunctor.hpp:10</a></div></div>
+<div class="ttc" id="aclassosapi_1_1Thread_html_a75bc13f67c5eb1af9ffa9653f2af5643"><div class="ttname"><a href="classosapi_1_1Thread.html#a75bc13f67c5eb1af9ffa9653f2af5643">osapi::Thread::name_</a></div><div class="ttdeci">std::string name_</div><div class="ttdef"><b>Definition:</b> <a href="linux_2Thread_8hpp_source.html#l00042">Thread.hpp:42</a></div></div>
+<div class="ttc" id="aclassosapi_1_1Thread_html_a6c450469c9e28cbdfafba93df44dfc11"><div class="ttname"><a href="classosapi_1_1Thread.html#a6c450469c9e28cbdfafba93df44dfc11">osapi::Thread::threadId_</a></div><div class="ttdeci">pthread_t threadId_</div><div class="ttdef"><b>Definition:</b> <a href="linux_2Thread_8hpp_source.html#l00043">Thread.hpp:43</a></div></div>
+<div class="ttc" id="aThread_8hpp_html"><div class="ttname"><a href="Thread_8hpp.html">Thread.hpp</a></div></div>
+<div class="ttc" id="aclassosapi_1_1Thread_html_a5409235d68889397cb5bfe092582cd72"><div class="ttname"><a href="classosapi_1_1Thread.html#a5409235d68889397cb5bfe092582cd72">osapi::Thread::start</a></div><div class="ttdeci">void start()</div><div class="ttdef"><b>Definition:</b> <a href="linux_2Thread_8cpp_source.html#l00025">Thread.cpp:25</a></div></div>
+<div class="ttc" id="aclassosapi_1_1Thread_html_a986ca922d21233b02a167ba1075bca5b"><div class="ttname"><a href="classosapi_1_1Thread.html#a986ca922d21233b02a167ba1075bca5b">osapi::Thread::setPriority</a></div><div class="ttdeci">void setPriority(Thread::ThreadPriority p)</div><div class="ttdef"><b>Definition:</b> <a href="linux_2Thread_8cpp_source.html#l00056">Thread.cpp:56</a></div></div>
+<div class="ttc" id="aclassosapi_1_1ThreadFunctor_html_a26b0ae3a3f8c2d8319f6631b4dc3942e"><div class="ttname"><a href="classosapi_1_1ThreadFunctor.html#a26b0ae3a3f8c2d8319f6631b4dc3942e">osapi::ThreadFunctor::threadMapper</a></div><div class="ttdeci">static void * threadMapper(void *p)</div><div class="ttdef"><b>Definition:</b> <a href="linux_2ThreadFunctor_8cpp_source.html#l00005">ThreadFunctor.cpp:5</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

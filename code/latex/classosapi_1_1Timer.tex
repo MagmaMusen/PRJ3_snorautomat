@@ -9,35 +9,31 @@ Inheritance diagram for osapi\+::Timer\+:\begin{figure}[H]
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classosapi_1_1Timer_abd23931bbebf6751c5b1a921f331a7b1}\label{classosapi_1_1Timer_abd23931bbebf6751c5b1a921f331a7b1}} 
-void {\bfseries arm} (\mbox{\hyperlink{classosapi_1_1ITimerId}{I\+Timer\+Id}} $\ast$iti, const \mbox{\hyperlink{classosapi_1_1Time}{Time}} \&t)
+\mbox{\hyperlink{classosapi_1_1Timer_a158099ddcc91e6a1e034907d24193a62}{Timer}} ()
 \item 
-\mbox{\Hypertarget{classosapi_1_1Timer_a7e9063324a0b252afd6a1b679a3e86f4}\label{classosapi_1_1Timer_a7e9063324a0b252afd6a1b679a3e86f4}} 
-void {\bfseries dis\+Arm} (\mbox{\hyperlink{classosapi_1_1ITimerId}{I\+Timer\+Id}} $\ast$ti)
+void \mbox{\hyperlink{classosapi_1_1Timer_abd23931bbebf6751c5b1a921f331a7b1}{arm}} (\mbox{\hyperlink{classosapi_1_1ITimerId}{I\+Timer\+Id}} $\ast$iti, const \mbox{\hyperlink{classosapi_1_1Time}{Time}} \&t)
+\item 
+void \mbox{\hyperlink{classosapi_1_1Timer_a7e9063324a0b252afd6a1b679a3e86f4}{dis\+Arm}} (\mbox{\hyperlink{classosapi_1_1ITimerId}{I\+Timer\+Id}} $\ast$ti)
+\item 
+\mbox{\hyperlink{classosapi_1_1Timer_ab46e4eb6408f1e7c340e7f02f06258c9}{$\sim$\+Timer}} ()
 \end{DoxyCompactItemize}
 \doxysubsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classosapi_1_1Timer_aaef24dbb0e90740984ee2c1980c69513}\label{classosapi_1_1Timer_aaef24dbb0e90740984ee2c1980c69513}} 
-void {\bfseries run} ()
+void \mbox{\hyperlink{classosapi_1_1Timer_aaef24dbb0e90740984ee2c1980c69513}{run}} ()
 \item 
-\mbox{\Hypertarget{classosapi_1_1Timer_adc485fe7fbeda1e9a26ed237815e4809}\label{classosapi_1_1Timer_adc485fe7fbeda1e9a26ed237815e4809}} 
-void {\bfseries internal\+Dis\+Arm} (\mbox{\hyperlink{classosapi_1_1TimerId}{Timer\+Id}} $\ast$ti)
+void \mbox{\hyperlink{classosapi_1_1Timer_adc485fe7fbeda1e9a26ed237815e4809}{internal\+Dis\+Arm}} (\mbox{\hyperlink{classosapi_1_1TimerId}{Timer\+Id}} $\ast$ti)
 \end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classosapi_1_1Timer_ae37ffd6f4c385ac0bf392f96c8a8af07}\label{classosapi_1_1Timer_ae37ffd6f4c385ac0bf392f96c8a8af07}} 
-bool {\bfseries running\+\_\+}
+bool \mbox{\hyperlink{classosapi_1_1Timer_ae37ffd6f4c385ac0bf392f96c8a8af07}{running\+\_\+}}
 \item 
-\mbox{\Hypertarget{classosapi_1_1Timer_ab15326c856d0254aa1aab3056e710c07}\label{classosapi_1_1Timer_ab15326c856d0254aa1aab3056e710c07}} 
-\mbox{\hyperlink{classosapi_1_1Mutex}{Mutex}} {\bfseries mut\+\_\+}
+\mbox{\hyperlink{classosapi_1_1Mutex}{Mutex}} \mbox{\hyperlink{classosapi_1_1Timer_ab15326c856d0254aa1aab3056e710c07}{mut\+\_\+}}
 \item 
-\mbox{\Hypertarget{classosapi_1_1Timer_a192e378dd3eb2f95f5eeb4fa2bd77852}\label{classosapi_1_1Timer_a192e378dd3eb2f95f5eeb4fa2bd77852}} 
-\mbox{\hyperlink{classosapi_1_1Conditional}{Conditional}} {\bfseries cond\+\_\+}
+\mbox{\hyperlink{classosapi_1_1Conditional}{Conditional}} \mbox{\hyperlink{classosapi_1_1Timer_a192e378dd3eb2f95f5eeb4fa2bd77852}{cond\+\_\+}}
 \item 
-\mbox{\Hypertarget{classosapi_1_1Timer_a104815f289df826b0897e86c6137abb1}\label{classosapi_1_1Timer_a104815f289df826b0897e86c6137abb1}} 
-detail\+::\+Container {\bfseries container\+\_\+}
+\mbox{\hyperlink{namespaceosapi_1_1detail_afe8a325e3f718f6d41a50450c5963128}{detail\+::\+Container}} \mbox{\hyperlink{classosapi_1_1Timer_a104815f289df826b0897e86c6137abb1}{container\+\_\+}}
 \end{DoxyCompactItemize}
 \doxysubsection*{Additional Inherited Members}
 
@@ -49,6 +45,213 @@ Definition at line 163 of file Timer.\+cpp.
 
 
 
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classosapi_1_1Timer_a158099ddcc91e6a1e034907d24193a62}\label{classosapi_1_1Timer_a158099ddcc91e6a1e034907d24193a62}} 
+\index{osapi::Timer@{osapi::Timer}!Timer@{Timer}}
+\index{Timer@{Timer}!osapi::Timer@{osapi::Timer}}
+\doxysubsubsection{\texorpdfstring{Timer()}{Timer()}}
+{\footnotesize\ttfamily osapi\+::\+Timer\+::\+Timer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 186 of file Timer.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{187     : \mbox{\hyperlink{classosapi_1_1Timer_ae37ffd6f4c385ac0bf392f96c8a8af07}{running\_}}(\textcolor{keyword}{true})}
+\DoxyCodeLine{188   \{}
+\DoxyCodeLine{189     \textcolor{comment}{// Initialize posix stuff}}
+\DoxyCodeLine{190   \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classosapi_1_1Timer_ab46e4eb6408f1e7c340e7f02f06258c9}\label{classosapi_1_1Timer_ab46e4eb6408f1e7c340e7f02f06258c9}} 
+\index{osapi::Timer@{osapi::Timer}!````~Timer@{$\sim$Timer}}
+\index{````~Timer@{$\sim$Timer}!osapi::Timer@{osapi::Timer}}
+\doxysubsubsection{\texorpdfstring{$\sim$Timer()}{~Timer()}}
+{\footnotesize\ttfamily osapi\+::\+Timer\+::$\sim$\+Timer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 193 of file Timer.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{194   \{}
+\DoxyCodeLine{195     \textcolor{comment}{// Send signal that we must terminate}}
+\DoxyCodeLine{196     \mbox{\hyperlink{classosapi_1_1Timer_ae37ffd6f4c385ac0bf392f96c8a8af07}{running\_}}=\textcolor{keyword}{false};}
+\DoxyCodeLine{197     \mbox{\hyperlink{classosapi_1_1Timer_a192e378dd3eb2f95f5eeb4fa2bd77852}{cond\_}}.\mbox{\hyperlink{classosapi_1_1Conditional_a778b0370bcbf2da90e81d92035e436b7}{signal}}();}
+\DoxyCodeLine{198   \}  }
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classosapi_1_1Timer_abd23931bbebf6751c5b1a921f331a7b1}\label{classosapi_1_1Timer_abd23931bbebf6751c5b1a921f331a7b1}} 
+\index{osapi::Timer@{osapi::Timer}!arm@{arm}}
+\index{arm@{arm}!osapi::Timer@{osapi::Timer}}
+\doxysubsubsection{\texorpdfstring{arm()}{arm()}}
+{\footnotesize\ttfamily void osapi\+::\+Timer\+::arm (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classosapi_1_1ITimerId}{I\+Timer\+Id}} $\ast$}]{iti,  }\item[{const \mbox{\hyperlink{classosapi_1_1Time}{Time}} \&}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classosapi_1_1ITimer_a3dc19620f2f57fa6c09bf31b211cd6d4}{osapi\+::\+I\+Timer}}.
+
+
+
+Definition at line 234 of file Timer.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{235   \{}
+\DoxyCodeLine{236     TimerId* ti = \textcolor{keyword}{static\_cast<}TimerId*\textcolor{keyword}{>}(iti);    }
+\DoxyCodeLine{237     \{}
+\DoxyCodeLine{238       ScopedLock sl(\mbox{\hyperlink{classosapi_1_1Timer_ab15326c856d0254aa1aab3056e710c07}{mut\_}});}
+\DoxyCodeLine{239 }
+\DoxyCodeLine{240       ti-\/>getContainerPos() = \mbox{\hyperlink{namespaceosapi_1_1detail_a5a7a4edb86a1799d9cc8b1ff460cd30f}{detail::OptionalIterator}}(std::make\_pair(\mbox{\hyperlink{classosapi_1_1Timer_a104815f289df826b0897e86c6137abb1}{container\_}}.insert(std::make\_pair(t, ti)), \textcolor{keyword}{true}));}
+\DoxyCodeLine{241     \}}
+\DoxyCodeLine{242     }
+\DoxyCodeLine{243     \mbox{\hyperlink{classosapi_1_1Timer_a192e378dd3eb2f95f5eeb4fa2bd77852}{cond\_}}.\mbox{\hyperlink{classosapi_1_1Conditional_a778b0370bcbf2da90e81d92035e436b7}{signal}}();}
+\DoxyCodeLine{244   \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classosapi_1_1Timer_a7e9063324a0b252afd6a1b679a3e86f4}\label{classosapi_1_1Timer_a7e9063324a0b252afd6a1b679a3e86f4}} 
+\index{osapi::Timer@{osapi::Timer}!disArm@{disArm}}
+\index{disArm@{disArm}!osapi::Timer@{osapi::Timer}}
+\doxysubsubsection{\texorpdfstring{disArm()}{disArm()}}
+{\footnotesize\ttfamily void osapi\+::\+Timer\+::dis\+Arm (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classosapi_1_1ITimerId}{I\+Timer\+Id}} $\ast$}]{ti }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classosapi_1_1ITimer_a93b0cf4d235c27969de2bd66282da299}{osapi\+::\+I\+Timer}}.
+
+
+
+Definition at line 257 of file Timer.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{258   \{}
+\DoxyCodeLine{259     ScopedLock sl(\mbox{\hyperlink{classosapi_1_1Timer_ab15326c856d0254aa1aab3056e710c07}{mut\_}});}
+\DoxyCodeLine{260     \mbox{\hyperlink{classosapi_1_1Timer_adc485fe7fbeda1e9a26ed237815e4809}{internalDisArm}}(\textcolor{keyword}{static\_cast<}TimerId*\textcolor{keyword}{>}(iti));}
+\DoxyCodeLine{261     }
+\DoxyCodeLine{262     \mbox{\hyperlink{classosapi_1_1Timer_a192e378dd3eb2f95f5eeb4fa2bd77852}{cond\_}}.\mbox{\hyperlink{classosapi_1_1Conditional_a778b0370bcbf2da90e81d92035e436b7}{signal}}(); \textcolor{comment}{// Ensure that timer thread is informed that certain changes have been performed.}}
+\DoxyCodeLine{263   \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classosapi_1_1Timer_adc485fe7fbeda1e9a26ed237815e4809}\label{classosapi_1_1Timer_adc485fe7fbeda1e9a26ed237815e4809}} 
+\index{osapi::Timer@{osapi::Timer}!internalDisArm@{internalDisArm}}
+\index{internalDisArm@{internalDisArm}!osapi::Timer@{osapi::Timer}}
+\doxysubsubsection{\texorpdfstring{internalDisArm()}{internalDisArm()}}
+{\footnotesize\ttfamily void osapi\+::\+Timer\+::internal\+Dis\+Arm (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classosapi_1_1TimerId}{Timer\+Id}} $\ast$}]{ti }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 247 of file Timer.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{248   \{}
+\DoxyCodeLine{249     \textcolor{keywordflow}{if}(ti-\/>getContainerPos().second)}
+\DoxyCodeLine{250     \{}
+\DoxyCodeLine{251       \mbox{\hyperlink{classosapi_1_1Timer_a104815f289df826b0897e86c6137abb1}{container\_}}.erase(ti-\/>getContainerPos().first);}
+\DoxyCodeLine{252       ti-\/>getContainerPos() = \mbox{\hyperlink{namespaceosapi_1_1detail_a5a7a4edb86a1799d9cc8b1ff460cd30f}{detail::OptionalIterator}}(detail::Container::iterator(), \textcolor{keyword}{false});}
+\DoxyCodeLine{253     \}}
+\DoxyCodeLine{254   \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classosapi_1_1Timer_aaef24dbb0e90740984ee2c1980c69513}\label{classosapi_1_1Timer_aaef24dbb0e90740984ee2c1980c69513}} 
+\index{osapi::Timer@{osapi::Timer}!run@{run}}
+\index{run@{run}!osapi::Timer@{osapi::Timer}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void osapi\+::\+Timer\+::run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classosapi_1_1ThreadFunctor_a823fdf26390662df38ac9b2639277ecd}{osapi\+::\+Thread\+Functor}}.
+
+
+
+Definition at line 201 of file Timer.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{202   \{}
+\DoxyCodeLine{203     ScopedLock sl(\mbox{\hyperlink{classosapi_1_1Timer_ab15326c856d0254aa1aab3056e710c07}{mut\_}});}
+\DoxyCodeLine{204     \textcolor{keywordflow}{for}(;;)}
+\DoxyCodeLine{205     \{}
+\DoxyCodeLine{206       \textcolor{comment}{// Wait until there is a timer...}}
+\DoxyCodeLine{207       \textcolor{keywordflow}{while}(\mbox{\hyperlink{classosapi_1_1Timer_a104815f289df826b0897e86c6137abb1}{container\_}}.empty() \&\& \mbox{\hyperlink{classosapi_1_1Timer_ae37ffd6f4c385ac0bf392f96c8a8af07}{running\_}})}
+\DoxyCodeLine{208         \mbox{\hyperlink{classosapi_1_1Timer_a192e378dd3eb2f95f5eeb4fa2bd77852}{cond\_}}.\mbox{\hyperlink{classosapi_1_1Conditional_a7386a8805625068c595b277fd3641759}{wait}}(\mbox{\hyperlink{classosapi_1_1Timer_ab15326c856d0254aa1aab3056e710c07}{mut\_}});}
+\DoxyCodeLine{209 }
+\DoxyCodeLine{210       \textcolor{keywordflow}{if}(!\mbox{\hyperlink{classosapi_1_1Timer_ae37ffd6f4c385ac0bf392f96c8a8af07}{running\_}})}
+\DoxyCodeLine{211         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{212 }
+\DoxyCodeLine{213       \textcolor{comment}{// Get timeout for first timeout }}
+\DoxyCodeLine{214       Time deadline = \mbox{\hyperlink{classosapi_1_1Timer_a104815f289df826b0897e86c6137abb1}{container\_}}.begin()-\/>first;}
+\DoxyCodeLine{215       deadline -\/= \mbox{\hyperlink{namespaceosapi_a97db4c68ee6d057030e07ce4187607f0}{getCurrentMonotonicTime}}();}
+\DoxyCodeLine{216 }
+\DoxyCodeLine{217       \textcolor{comment}{// Wait for timeout or plain old signal}}
+\DoxyCodeLine{218       \textcolor{keywordflow}{if} ((deadline < 0) || (\mbox{\hyperlink{classosapi_1_1Timer_a192e378dd3eb2f95f5eeb4fa2bd77852}{cond\_}}.\mbox{\hyperlink{classosapi_1_1Conditional_ab26e25c14866e6bb335e2423bc784e89}{waitTimed}}(\mbox{\hyperlink{classosapi_1_1Timer_ab15326c856d0254aa1aab3056e710c07}{mut\_}}, \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{long}\textcolor{keyword}{>}(deadline.totalMSecs())) == \mbox{\hyperlink{classosapi_1_1Conditional_a6989311f524a2b74e9d72b27b29d0640aab3d24199f0d68b32c9230e21c9fbc92}{Conditional::TIMEDOUT}}))}
+\DoxyCodeLine{219       \{}
+\DoxyCodeLine{220         \textcolor{comment}{// Verify that what we waited is still legit and sending a timeout message is valid}}
+\DoxyCodeLine{221         \textcolor{keywordtype}{int} i = 0;}
+\DoxyCodeLine{222         \textcolor{keywordflow}{while}(!\mbox{\hyperlink{classosapi_1_1Timer_a104815f289df826b0897e86c6137abb1}{container\_}}.empty() \&\& (\mbox{\hyperlink{classosapi_1_1Timer_a104815f289df826b0897e86c6137abb1}{container\_}}.begin()-\/>first <= \mbox{\hyperlink{namespaceosapi_a97db4c68ee6d057030e07ce4187607f0}{getCurrentMonotonicTime}}()))}
+\DoxyCodeLine{223         \{}
+\DoxyCodeLine{224           \mbox{\hyperlink{classosapi_1_1Timer_a104815f289df826b0897e86c6137abb1}{container\_}}.begin()-\/>second-\/>sendTimerMsg();}
+\DoxyCodeLine{225           \mbox{\hyperlink{classosapi_1_1Timer_adc485fe7fbeda1e9a26ed237815e4809}{internalDisArm}}(\mbox{\hyperlink{classosapi_1_1Timer_a104815f289df826b0897e86c6137abb1}{container\_}}.begin()-\/>second);}
+\DoxyCodeLine{226           ++i;}
+\DoxyCodeLine{227         \}  }
+\DoxyCodeLine{228 }
+\DoxyCodeLine{229       \}}
+\DoxyCodeLine{230     \}}
+\DoxyCodeLine{231   \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classosapi_1_1Timer_a192e378dd3eb2f95f5eeb4fa2bd77852}\label{classosapi_1_1Timer_a192e378dd3eb2f95f5eeb4fa2bd77852}} 
+\index{osapi::Timer@{osapi::Timer}!cond\_@{cond\_}}
+\index{cond\_@{cond\_}!osapi::Timer@{osapi::Timer}}
+\doxysubsubsection{\texorpdfstring{cond\_}{cond\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classosapi_1_1Conditional}{Conditional}} osapi\+::\+Timer\+::cond\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 180 of file Timer.\+cpp.
+
+\mbox{\Hypertarget{classosapi_1_1Timer_a104815f289df826b0897e86c6137abb1}\label{classosapi_1_1Timer_a104815f289df826b0897e86c6137abb1}} 
+\index{osapi::Timer@{osapi::Timer}!container\_@{container\_}}
+\index{container\_@{container\_}!osapi::Timer@{osapi::Timer}}
+\doxysubsubsection{\texorpdfstring{container\_}{container\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceosapi_1_1detail_afe8a325e3f718f6d41a50450c5963128}{detail\+::\+Container}} osapi\+::\+Timer\+::container\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 182 of file Timer.\+cpp.
+
+\mbox{\Hypertarget{classosapi_1_1Timer_ab15326c856d0254aa1aab3056e710c07}\label{classosapi_1_1Timer_ab15326c856d0254aa1aab3056e710c07}} 
+\index{osapi::Timer@{osapi::Timer}!mut\_@{mut\_}}
+\index{mut\_@{mut\_}!osapi::Timer@{osapi::Timer}}
+\doxysubsubsection{\texorpdfstring{mut\_}{mut\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classosapi_1_1Mutex}{Mutex}} osapi\+::\+Timer\+::mut\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 179 of file Timer.\+cpp.
+
+\mbox{\Hypertarget{classosapi_1_1Timer_ae37ffd6f4c385ac0bf392f96c8a8af07}\label{classosapi_1_1Timer_ae37ffd6f4c385ac0bf392f96c8a8af07}} 
+\index{osapi::Timer@{osapi::Timer}!running\_@{running\_}}
+\index{running\_@{running\_}!osapi::Timer@{osapi::Timer}}
+\doxysubsubsection{\texorpdfstring{running\_}{running\_}}
+{\footnotesize\ttfamily bool osapi\+::\+Timer\+::running\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 178 of file Timer.\+cpp.
+
+
+
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-Coin\+Detecting\+Sensors/\+O\+S\+Api\+Student/common/Timer.\+cpp\end{DoxyCompactItemize}
+Coin\+Detecting\+Sensors/\+O\+S\+Api\+Student/common/\mbox{\hyperlink{Timer_8cpp}{Timer.\+cpp}}\end{DoxyCompactItemize}

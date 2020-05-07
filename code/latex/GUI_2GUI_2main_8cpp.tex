@@ -1,0 +1,38 @@
+\hypertarget{GUI_2GUI_2main_8cpp}{}\doxysection{G\+U\+I/\+G\+U\+I/main.cpp File Reference}
+\label{GUI_2GUI_2main_8cpp}\index{GUI/GUI/main.cpp@{GUI/GUI/main.cpp}}
+{\ttfamily \#include \char`\"{}mainwindow.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$Q\+Application$>$}\newline
+{\ttfamily \#include $<$X11/\+X.\+h$>$}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{GUI_2GUI_2main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}{main}} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{GUI_2GUI_2main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}\label{GUI_2GUI_2main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}} 
+\index{main.cpp@{main.cpp}!main@{main}}
+\index{main@{main}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 4 of file main.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{5 \{}
+\DoxyCodeLine{6     QCoreApplication::setAttribute(Qt::AA\_ShareOpenGLContexts);}
+\DoxyCodeLine{7     QApplication a(argc, argv);}
+\DoxyCodeLine{8     \mbox{\hyperlink{classMainWindow}{MainWindow}} w;}
+\DoxyCodeLine{9     w.show();}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12    \textcolor{comment}{/* paymentWindow g;}}
+\DoxyCodeLine{13 \textcolor{comment}{    g.show();}}
+\DoxyCodeLine{14 \textcolor{comment}{    */}\textcolor{keywordflow}{return} a.exec();}
+\DoxyCodeLine{15 \}}
+
+\end{DoxyCode}

@@ -1,0 +1,41 @@
+\hypertarget{Timer_8cpp}{}\doxysection{Coin\+Detecting\+Sensors/\+O\+S\+Api\+Student/common/\+Timer.cpp File Reference}
+\label{Timer_8cpp}\index{CoinDetectingSensors/OSApiStudent/common/Timer.cpp@{CoinDetectingSensors/OSApiStudent/common/Timer.cpp}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$osapi/\+Message.\+hpp$>$}\newline
+{\ttfamily \#include $<$osapi/\+Time.\+hpp$>$}\newline
+{\ttfamily \#include $<$osapi/\+Clock\+Time.\+hpp$>$}\newline
+{\ttfamily \#include $<$osapi/\+Timer.\+hpp$>$}\newline
+{\ttfamily \#include $<$osapi/\+Scoped\+Lock.\+hpp$>$}\newline
+{\ttfamily \#include $<$osapi/\+Thread\+Functor.\+hpp$>$}\newline
+{\ttfamily \#include $<$osapi/\+Thread.\+hpp$>$}\newline
+{\ttfamily \#include $<$osapi/\+Log.\+hpp$>$}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classosapi_1_1ITimer}{osapi\+::\+I\+Timer}}
+\item 
+class \mbox{\hyperlink{classosapi_1_1TimerId}{osapi\+::\+Timer\+Id}}
+\item 
+class \mbox{\hyperlink{classosapi_1_1Timer}{osapi\+::\+Timer}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespaceosapi}{osapi}}
+\item 
+ \mbox{\hyperlink{namespaceosapi_1_1detail}{osapi\+::detail}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::multimap$<$ \+::\mbox{\hyperlink{classosapi_1_1Time}{osapi\+::\+Time}}, Timer\+Id $\ast$ $>$ \mbox{\hyperlink{namespaceosapi_1_1detail_afe8a325e3f718f6d41a50450c5963128}{osapi\+::detail\+::\+Container}}
+\item 
+typedef std\+::pair$<$ Container\+::iterator, bool $>$ \mbox{\hyperlink{namespaceosapi_1_1detail_a5a7a4edb86a1799d9cc8b1ff460cd30f}{osapi\+::detail\+::\+Optional\+Iterator}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\+::\mbox{\hyperlink{classosapi_1_1ITimer}{osapi\+::\+I\+Timer}} $\ast$ \mbox{\hyperlink{namespaceosapi_1_1detail_a0db2835d611c18370b74f262933a5ae1}{osapi\+::detail\+::get\+Instance}} ()
+\item 
+I\+Timer\+Id $\ast$ \mbox{\hyperlink{namespaceosapi_a0e494ea43da266f31568003f6ce4704a}{osapi\+::create\+New\+Timer}} (Msg\+Queue $\ast$mq, unsigned long id)
+\end{DoxyCompactItemize}

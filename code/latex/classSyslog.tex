@@ -9,14 +9,13 @@ Inheritance diagram for Syslog\+:\begin{figure}[H]
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classSyslog_ad1b2b8b8c6097e259aaacdf3f7514e64}\label{classSyslog_ad1b2b8b8c6097e259aaacdf3f7514e64}} 
-{\bfseries Syslog} (const std\+::string \&ident, int option=L\+O\+G\+\_\+\+P\+ID)
+\mbox{\hyperlink{classSyslog_ad1b2b8b8c6097e259aaacdf3f7514e64}{Syslog}} (const std\+::string \&ident, int option=L\+O\+G\+\_\+\+P\+ID)
 \item 
-\mbox{\Hypertarget{classSyslog_a0a966d2f4886c3f651a0feac7764d91c}\label{classSyslog_a0a966d2f4886c3f651a0feac7764d91c}} 
-{\bfseries Syslog} (const std\+::string \&ident, int option, int facility)
+\mbox{\hyperlink{classSyslog_a0a966d2f4886c3f651a0feac7764d91c}{Syslog}} (const std\+::string \&ident, int option, int facility)
 \item 
-\mbox{\Hypertarget{classSyslog_afc53d2612c45d468cc5780dc38d79064}\label{classSyslog_afc53d2612c45d468cc5780dc38d79064}} 
-virtual void {\bfseries log} (osapi\+::\+Level lvl, const char $\ast$file\+Name, int line\+No, const char $\ast$function\+Name, \mbox{\hyperlink{classosapi_1_1Time}{osapi\+::\+Time}} time\+Stamp, const std\+::string \&log\+String)
+virtual void \mbox{\hyperlink{classSyslog_afc53d2612c45d468cc5780dc38d79064}{log}} (\mbox{\hyperlink{namespaceosapi_a14699808c3cc5f95b6eaef678d1f8dcc}{osapi\+::\+Level}} lvl, const char $\ast$file\+Name, int line\+No, const char $\ast$function\+Name, \mbox{\hyperlink{classosapi_1_1Time}{osapi\+::\+Time}} time\+Stamp, const std\+::string \&log\+String)
+\item 
+\mbox{\hyperlink{classSyslog_a2d94df81dab89f695634ccbaf96f97d0}{$\sim$\+Syslog}} ()
 \end{DoxyCompactItemize}
 
 
@@ -27,6 +26,126 @@ Definition at line 10 of file Test\+Log.\+cpp.
 
 
 
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classSyslog_ad1b2b8b8c6097e259aaacdf3f7514e64}\label{classSyslog_ad1b2b8b8c6097e259aaacdf3f7514e64}} 
+\index{Syslog@{Syslog}!Syslog@{Syslog}}
+\index{Syslog@{Syslog}!Syslog@{Syslog}}
+\doxysubsubsection{\texorpdfstring{Syslog()}{Syslog()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Syslog\+::\+Syslog (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{ident,  }\item[{int}]{option = {\ttfamily LOG\+\_\+PID} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 27 of file Test\+Log.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{28 \{}
+\DoxyCodeLine{29   openlog(ident.c\_str(), option, LOG\_USER);}
+\DoxyCodeLine{30 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classSyslog_a0a966d2f4886c3f651a0feac7764d91c}\label{classSyslog_a0a966d2f4886c3f651a0feac7764d91c}} 
+\index{Syslog@{Syslog}!Syslog@{Syslog}}
+\index{Syslog@{Syslog}!Syslog@{Syslog}}
+\doxysubsubsection{\texorpdfstring{Syslog()}{Syslog()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Syslog\+::\+Syslog (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{ident,  }\item[{int}]{option,  }\item[{int}]{facility }\end{DoxyParamCaption})}
+
+
+
+Definition at line 33 of file Test\+Log.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{34 \{}
+\DoxyCodeLine{35   openlog(ident.c\_str(), option, facility);  }
+\DoxyCodeLine{36 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classSyslog_a2d94df81dab89f695634ccbaf96f97d0}\label{classSyslog_a2d94df81dab89f695634ccbaf96f97d0}} 
+\index{Syslog@{Syslog}!````~Syslog@{$\sim$Syslog}}
+\index{````~Syslog@{$\sim$Syslog}!Syslog@{Syslog}}
+\doxysubsubsection{\texorpdfstring{$\sim$Syslog()}{~Syslog()}}
+{\footnotesize\ttfamily Syslog\+::$\sim$\+Syslog (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 92 of file Test\+Log.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{93 \{}
+\DoxyCodeLine{94   closelog();}
+\DoxyCodeLine{95 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSyslog_afc53d2612c45d468cc5780dc38d79064}\label{classSyslog_afc53d2612c45d468cc5780dc38d79064}} 
+\index{Syslog@{Syslog}!log@{log}}
+\index{log@{log}!Syslog@{Syslog}}
+\doxysubsubsection{\texorpdfstring{log()}{log()}}
+{\footnotesize\ttfamily void Syslog\+::log (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceosapi_a14699808c3cc5f95b6eaef678d1f8dcc}{osapi\+::\+Level}}}]{lvl,  }\item[{const char $\ast$}]{file\+Name,  }\item[{int}]{line\+No,  }\item[{const char $\ast$}]{function\+Name,  }\item[{\mbox{\hyperlink{classosapi_1_1Time}{osapi\+::\+Time}}}]{time\+Stamp,  }\item[{const std\+::string \&}]{log\+String }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classosapi_1_1ILogOutput_ad563ae55f59236adb1c3134c0abde153}{osapi\+::\+I\+Log\+Output}}.
+
+
+
+Definition at line 39 of file Test\+Log.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{45 \{}
+\DoxyCodeLine{46   \textcolor{keywordtype}{int} syslogLevel = LOG\_DEBUG;}
+\DoxyCodeLine{47 }
+\DoxyCodeLine{48   \textcolor{keywordflow}{switch}(lvl)}
+\DoxyCodeLine{49   \{}
+\DoxyCodeLine{50     \textcolor{keywordflow}{case} \mbox{\hyperlink{namespaceosapi_a14699808c3cc5f95b6eaef678d1f8dccabf1430c65fefe3a09c169f12ee9d049b}{osapi::Emergency}}:}
+\DoxyCodeLine{51       syslogLevel = LOG\_EMERG;}
+\DoxyCodeLine{52       \textcolor{keywordflow}{break};}
+\DoxyCodeLine{53       }
+\DoxyCodeLine{54     \textcolor{keywordflow}{case} \mbox{\hyperlink{namespaceosapi_a14699808c3cc5f95b6eaef678d1f8dccae762d0fcd19060730176f9ffe796e7fd}{osapi::Alert}}:}
+\DoxyCodeLine{55       syslogLevel = LOG\_ALERT;}
+\DoxyCodeLine{56       \textcolor{keywordflow}{break};}
+\DoxyCodeLine{57 }
+\DoxyCodeLine{58     \textcolor{keywordflow}{case} \mbox{\hyperlink{namespaceosapi_a14699808c3cc5f95b6eaef678d1f8dcca761aec726aa7c936c145a0128ccc4655}{osapi::Critical}}:}
+\DoxyCodeLine{59       syslogLevel = LOG\_CRIT;}
+\DoxyCodeLine{60       \textcolor{keywordflow}{break};}
+\DoxyCodeLine{61 }
+\DoxyCodeLine{62     \textcolor{keywordflow}{case} \mbox{\hyperlink{namespaceosapi_a14699808c3cc5f95b6eaef678d1f8dcca0838b38800b1b44523ab224c82597a00}{osapi::Error}}:}
+\DoxyCodeLine{63       syslogLevel = LOG\_ERR;}
+\DoxyCodeLine{64       \textcolor{keywordflow}{break};}
+\DoxyCodeLine{65 }
+\DoxyCodeLine{66     \textcolor{keywordflow}{case} \mbox{\hyperlink{namespaceosapi_a14699808c3cc5f95b6eaef678d1f8dcca16fb8e672263f0b887fc2badbe4a7da3}{osapi::Warning}}:}
+\DoxyCodeLine{67       syslogLevel = LOG\_WARNING;}
+\DoxyCodeLine{68       \textcolor{keywordflow}{break};}
+\DoxyCodeLine{69 }
+\DoxyCodeLine{70     \textcolor{keywordflow}{case} \mbox{\hyperlink{namespaceosapi_a14699808c3cc5f95b6eaef678d1f8dcca14ba47ed4ac2c9d3ab8c450d3939a013}{osapi::Notice}}:}
+\DoxyCodeLine{71       syslogLevel = LOG\_NOTICE;}
+\DoxyCodeLine{72       \textcolor{keywordflow}{break};}
+\DoxyCodeLine{73 }
+\DoxyCodeLine{74     \textcolor{keywordflow}{case} \mbox{\hyperlink{namespaceosapi_a14699808c3cc5f95b6eaef678d1f8dcca3f16cd2afcaab52a6e22d0c3ea6814af}{osapi::Informational}}:}
+\DoxyCodeLine{75       syslogLevel = LOG\_INFO;}
+\DoxyCodeLine{76       \textcolor{keywordflow}{break};}
+\DoxyCodeLine{77 }
+\DoxyCodeLine{78     \textcolor{keywordflow}{case} \mbox{\hyperlink{namespaceosapi_a14699808c3cc5f95b6eaef678d1f8dccab2bbedb207102a30b5a5e6fed844afbe}{osapi::Debug}}:}
+\DoxyCodeLine{79       syslogLevel = LOG\_DEBUG;}
+\DoxyCodeLine{80       \textcolor{keywordflow}{break};}
+\DoxyCodeLine{81   \}}
+\DoxyCodeLine{82 }
+\DoxyCodeLine{83   std::stringstream ss;}
+\DoxyCodeLine{84   }
+\DoxyCodeLine{85   ss << \textcolor{stringliteral}{" ("} << fileName << \textcolor{stringliteral}{":"} << lineNo << \textcolor{stringliteral}{" -\/ "} << functionName << \textcolor{stringliteral}{") "} }
+\DoxyCodeLine{86      << logString;}
+\DoxyCodeLine{87   }
+\DoxyCodeLine{88   syslog(syslogLevel, \textcolor{stringliteral}{"\%s"}, ss.str().c\_str());}
+\DoxyCodeLine{89 \}}
+
+\end{DoxyCode}
+
+
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-Coin\+Detecting\+Sensors/\+O\+S\+Api\+Student/test/Test\+Log.\+cpp\end{DoxyCompactItemize}
+Coin\+Detecting\+Sensors/\+O\+S\+Api\+Student/test/\mbox{\hyperlink{TestLog_8cpp}{Test\+Log.\+cpp}}\end{DoxyCompactItemize}

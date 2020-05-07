@@ -1,5 +1,9 @@
 \hypertarget{classosapi_1_1details_1_1Conditional}{}\doxysection{osapi\+::details\+::Conditional Class Reference}
 \label{classosapi_1_1details_1_1Conditional}\index{osapi::details::Conditional@{osapi::details::Conditional}}
+
+
+{\ttfamily \#include $<$Conditional.\+hpp$>$}
+
 Inheritance diagram for osapi\+::details\+::Conditional\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -9,32 +13,31 @@ Inheritance diagram for osapi\+::details\+::Conditional\+:\begin{figure}[H]
 \doxysubsection*{Public Types}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classosapi_1_1details_1_1Conditional_ac8bef1c1330dfc7b0ab031d3a31db75d}\label{classosapi_1_1details_1_1Conditional_ac8bef1c1330dfc7b0ab031d3a31db75d}} 
-enum {\bfseries Awoken} \{ {\bfseries S\+I\+G\+N\+A\+L\+ED} =0, 
-{\bfseries T\+I\+M\+E\+D\+O\+UT} =1
+enum \mbox{\hyperlink{classosapi_1_1details_1_1Conditional_ac8bef1c1330dfc7b0ab031d3a31db75d}{Awoken}} \{ \mbox{\hyperlink{classosapi_1_1details_1_1Conditional_ac8bef1c1330dfc7b0ab031d3a31db75da3da0cc715d9f87f150a4b0686dd0d8d6}{S\+I\+G\+N\+A\+L\+ED}} =0, 
+\mbox{\hyperlink{classosapi_1_1details_1_1Conditional_ac8bef1c1330dfc7b0ab031d3a31db75da3f1cd48087091e53329f0e47e1451b45}{T\+I\+M\+E\+D\+O\+UT}} =1
  \}
 \end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classosapi_1_1details_1_1Conditional_a4cd22d078e7820e68a2de20efdc8c431}\label{classosapi_1_1details_1_1Conditional_a4cd22d078e7820e68a2de20efdc8c431}} 
-void {\bfseries signal} ()
+\mbox{\hyperlink{classosapi_1_1details_1_1Conditional_a5e53a8f630326543faa823e24efac7f0}{Conditional}} ()
 \item 
-\mbox{\Hypertarget{classosapi_1_1details_1_1Conditional_a8d802b9b6b1e4ad81b75f09ef3b495a3}\label{classosapi_1_1details_1_1Conditional_a8d802b9b6b1e4ad81b75f09ef3b495a3}} 
-void {\bfseries broadcast} ()
+void \mbox{\hyperlink{classosapi_1_1details_1_1Conditional_a4cd22d078e7820e68a2de20efdc8c431}{signal}} ()
 \item 
-\mbox{\Hypertarget{classosapi_1_1details_1_1Conditional_a1c608c750bf619b26e82e4a5083e71a2}\label{classosapi_1_1details_1_1Conditional_a1c608c750bf619b26e82e4a5083e71a2}} 
-void {\bfseries wait} (\mbox{\hyperlink{classosapi_1_1details_1_1Mutex}{Mutex}} \&mut)
+void \mbox{\hyperlink{classosapi_1_1details_1_1Conditional_a8d802b9b6b1e4ad81b75f09ef3b495a3}{broadcast}} ()
 \item 
-\mbox{\Hypertarget{classosapi_1_1details_1_1Conditional_a639d561fec27886a290ead42ec991c1f}\label{classosapi_1_1details_1_1Conditional_a639d561fec27886a290ead42ec991c1f}} 
-Awoken {\bfseries wait\+Timed} (\mbox{\hyperlink{classosapi_1_1details_1_1Mutex}{Mutex}} \&mut, unsigned long timeout)
+void \mbox{\hyperlink{classosapi_1_1details_1_1Conditional_a1c608c750bf619b26e82e4a5083e71a2}{wait}} (\mbox{\hyperlink{classosapi_1_1details_1_1Mutex}{Mutex}} \&mut)
+\item 
+\mbox{\hyperlink{classosapi_1_1details_1_1Conditional_ac8bef1c1330dfc7b0ab031d3a31db75d}{Awoken}} \mbox{\hyperlink{classosapi_1_1details_1_1Conditional_a639d561fec27886a290ead42ec991c1f}{wait\+Timed}} (\mbox{\hyperlink{classosapi_1_1details_1_1Mutex}{Mutex}} \&mut, unsigned long timeout)
+\item 
+\mbox{\hyperlink{classosapi_1_1details_1_1Conditional_a2522fc5a46fea3fc358e56176190a39b}{$\sim$\+Conditional}} ()
 \end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classosapi_1_1details_1_1Conditional_a69eba9f305c0d05ed308862fba0e9c66}\label{classosapi_1_1details_1_1Conditional_a69eba9f305c0d05ed308862fba0e9c66}} 
-C\+O\+N\+D\+I\+T\+I\+O\+N\+\_\+\+V\+A\+R\+I\+A\+B\+LE {\bfseries cond\+\_\+}
+C\+O\+N\+D\+I\+T\+I\+O\+N\+\_\+\+V\+A\+R\+I\+A\+B\+LE \mbox{\hyperlink{classosapi_1_1details_1_1Conditional_a69eba9f305c0d05ed308862fba0e9c66}{cond\+\_\+}}
 \end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
 
 
 \doxysubsection{Detailed Description}
@@ -44,7 +47,168 @@ Definition at line 13 of file Conditional.\+hpp.
 
 
 
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{classosapi_1_1details_1_1Conditional_ac8bef1c1330dfc7b0ab031d3a31db75d}\label{classosapi_1_1details_1_1Conditional_ac8bef1c1330dfc7b0ab031d3a31db75d}} 
+\index{osapi::details::Conditional@{osapi::details::Conditional}!Awoken@{Awoken}}
+\index{Awoken@{Awoken}!osapi::details::Conditional@{osapi::details::Conditional}}
+\doxysubsubsection{\texorpdfstring{Awoken}{Awoken}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{classosapi_1_1details_1_1Conditional_ac8bef1c1330dfc7b0ab031d3a31db75d}{osapi\+::details\+::\+Conditional\+::\+Awoken}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SIGNALED@{SIGNALED}!osapi::details::Conditional@{osapi::details::Conditional}}\index{osapi::details::Conditional@{osapi::details::Conditional}!SIGNALED@{SIGNALED}}}\mbox{\Hypertarget{classosapi_1_1details_1_1Conditional_ac8bef1c1330dfc7b0ab031d3a31db75da3da0cc715d9f87f150a4b0686dd0d8d6}\label{classosapi_1_1details_1_1Conditional_ac8bef1c1330dfc7b0ab031d3a31db75da3da0cc715d9f87f150a4b0686dd0d8d6}} 
+S\+I\+G\+N\+A\+L\+ED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIMEDOUT@{TIMEDOUT}!osapi::details::Conditional@{osapi::details::Conditional}}\index{osapi::details::Conditional@{osapi::details::Conditional}!TIMEDOUT@{TIMEDOUT}}}\mbox{\Hypertarget{classosapi_1_1details_1_1Conditional_ac8bef1c1330dfc7b0ab031d3a31db75da3f1cd48087091e53329f0e47e1451b45}\label{classosapi_1_1details_1_1Conditional_ac8bef1c1330dfc7b0ab031d3a31db75da3f1cd48087091e53329f0e47e1451b45}} 
+T\+I\+M\+E\+D\+O\+UT&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 16 of file Conditional.\+hpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{16                   \{}
+\DoxyCodeLine{17           \mbox{\hyperlink{classosapi_1_1details_1_1Conditional_ac8bef1c1330dfc7b0ab031d3a31db75da3da0cc715d9f87f150a4b0686dd0d8d6}{SIGNALED}}=0,}
+\DoxyCodeLine{18           \mbox{\hyperlink{classosapi_1_1details_1_1Conditional_ac8bef1c1330dfc7b0ab031d3a31db75da3f1cd48087091e53329f0e47e1451b45}{TIMEDOUT}}=1}
+\DoxyCodeLine{19       \};}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classosapi_1_1details_1_1Conditional_a5e53a8f630326543faa823e24efac7f0}\label{classosapi_1_1details_1_1Conditional_a5e53a8f630326543faa823e24efac7f0}} 
+\index{osapi::details::Conditional@{osapi::details::Conditional}!Conditional@{Conditional}}
+\index{Conditional@{Conditional}!osapi::details::Conditional@{osapi::details::Conditional}}
+\doxysubsubsection{\texorpdfstring{Conditional()}{Conditional()}}
+{\footnotesize\ttfamily osapi\+::details\+::\+Conditional\+::\+Conditional (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 9 of file Conditional\+Details.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{10     \{}
+\DoxyCodeLine{11       InitializeConditionVariable(\&\mbox{\hyperlink{classosapi_1_1details_1_1Conditional_a69eba9f305c0d05ed308862fba0e9c66}{cond\_}});}
+\DoxyCodeLine{12     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classosapi_1_1details_1_1Conditional_a2522fc5a46fea3fc358e56176190a39b}\label{classosapi_1_1details_1_1Conditional_a2522fc5a46fea3fc358e56176190a39b}} 
+\index{osapi::details::Conditional@{osapi::details::Conditional}!````~Conditional@{$\sim$Conditional}}
+\index{````~Conditional@{$\sim$Conditional}!osapi::details::Conditional@{osapi::details::Conditional}}
+\doxysubsubsection{\texorpdfstring{$\sim$Conditional()}{~Conditional()}}
+{\footnotesize\ttfamily osapi\+::details\+::\+Conditional\+::$\sim$\+Conditional (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 48 of file Conditional\+Details.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{49     \{}
+\DoxyCodeLine{50       \textcolor{comment}{// No note in msdn about delete a conditional variable}}
+\DoxyCodeLine{51     \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classosapi_1_1details_1_1Conditional_a8d802b9b6b1e4ad81b75f09ef3b495a3}\label{classosapi_1_1details_1_1Conditional_a8d802b9b6b1e4ad81b75f09ef3b495a3}} 
+\index{osapi::details::Conditional@{osapi::details::Conditional}!broadcast@{broadcast}}
+\index{broadcast@{broadcast}!osapi::details::Conditional@{osapi::details::Conditional}}
+\doxysubsubsection{\texorpdfstring{broadcast()}{broadcast()}}
+{\footnotesize\ttfamily void osapi\+::details\+::\+Conditional\+::broadcast (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 21 of file Conditional\+Details.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{22     \{}
+\DoxyCodeLine{23       WakeAllConditionVariable(\&\mbox{\hyperlink{classosapi_1_1details_1_1Conditional_a69eba9f305c0d05ed308862fba0e9c66}{cond\_}});}
+\DoxyCodeLine{24     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classosapi_1_1details_1_1Conditional_a4cd22d078e7820e68a2de20efdc8c431}\label{classosapi_1_1details_1_1Conditional_a4cd22d078e7820e68a2de20efdc8c431}} 
+\index{osapi::details::Conditional@{osapi::details::Conditional}!signal@{signal}}
+\index{signal@{signal}!osapi::details::Conditional@{osapi::details::Conditional}}
+\doxysubsubsection{\texorpdfstring{signal()}{signal()}}
+{\footnotesize\ttfamily void osapi\+::details\+::\+Conditional\+::signal (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 15 of file Conditional\+Details.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{16     \{}
+\DoxyCodeLine{17       WakeConditionVariable(\&\mbox{\hyperlink{classosapi_1_1details_1_1Conditional_a69eba9f305c0d05ed308862fba0e9c66}{cond\_}});}
+\DoxyCodeLine{18     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classosapi_1_1details_1_1Conditional_a1c608c750bf619b26e82e4a5083e71a2}\label{classosapi_1_1details_1_1Conditional_a1c608c750bf619b26e82e4a5083e71a2}} 
+\index{osapi::details::Conditional@{osapi::details::Conditional}!wait@{wait}}
+\index{wait@{wait}!osapi::details::Conditional@{osapi::details::Conditional}}
+\doxysubsubsection{\texorpdfstring{wait()}{wait()}}
+{\footnotesize\ttfamily void osapi\+::details\+::\+Conditional\+::wait (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classosapi_1_1details_1_1Mutex}{Mutex}} \&}]{mut }\end{DoxyParamCaption})}
+
+
+
+Definition at line 27 of file Conditional\+Details.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{28     \{}
+\DoxyCodeLine{29       \textcolor{keywordflow}{if}(!SleepConditionVariableCS (\&\mbox{\hyperlink{classosapi_1_1details_1_1Conditional_a69eba9f305c0d05ed308862fba0e9c66}{cond\_}}, \&mut.nativeHandle(), INFINITE)) \textcolor{keywordflow}{throw} ConditionalError();}
+\DoxyCodeLine{30     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classosapi_1_1details_1_1Conditional_a639d561fec27886a290ead42ec991c1f}\label{classosapi_1_1details_1_1Conditional_a639d561fec27886a290ead42ec991c1f}} 
+\index{osapi::details::Conditional@{osapi::details::Conditional}!waitTimed@{waitTimed}}
+\index{waitTimed@{waitTimed}!osapi::details::Conditional@{osapi::details::Conditional}}
+\doxysubsubsection{\texorpdfstring{waitTimed()}{waitTimed()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classosapi_1_1details_1_1Conditional_ac8bef1c1330dfc7b0ab031d3a31db75d}{Conditional\+::\+Awoken}} osapi\+::details\+::\+Conditional\+::wait\+Timed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classosapi_1_1details_1_1Mutex}{Mutex}} \&}]{mut,  }\item[{unsigned long}]{timeout }\end{DoxyParamCaption})}
+
+
+
+Definition at line 33 of file Conditional\+Details.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{34     \{}
+\DoxyCodeLine{35       \textcolor{keywordflow}{if}(SleepConditionVariableCS (\&\mbox{\hyperlink{classosapi_1_1details_1_1Conditional_a69eba9f305c0d05ed308862fba0e9c66}{cond\_}}, \&mut.nativeHandle(), timeout))}
+\DoxyCodeLine{36         \textcolor{keywordflow}{return} \mbox{\hyperlink{classosapi_1_1details_1_1Conditional_ac8bef1c1330dfc7b0ab031d3a31db75da3da0cc715d9f87f150a4b0686dd0d8d6}{SIGNALED}};}
+\DoxyCodeLine{37       \textcolor{keywordflow}{else}}
+\DoxyCodeLine{38       \{}
+\DoxyCodeLine{39         \textcolor{keywordtype}{int} res = GetLastError();}
+\DoxyCodeLine{40         \textcolor{keywordflow}{if}((res == WAIT\_TIMEOUT) || (res == ERROR\_TIMEOUT))}
+\DoxyCodeLine{41           \textcolor{keywordflow}{return} \mbox{\hyperlink{classosapi_1_1details_1_1Conditional_ac8bef1c1330dfc7b0ab031d3a31db75da3f1cd48087091e53329f0e47e1451b45}{TIMEDOUT}};}
+\DoxyCodeLine{42         \textcolor{keywordflow}{else}}
+\DoxyCodeLine{43           \textcolor{keywordflow}{throw} ConditionalError();}
+\DoxyCodeLine{44       \}}
+\DoxyCodeLine{45     \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classosapi_1_1details_1_1Conditional_a69eba9f305c0d05ed308862fba0e9c66}\label{classosapi_1_1details_1_1Conditional_a69eba9f305c0d05ed308862fba0e9c66}} 
+\index{osapi::details::Conditional@{osapi::details::Conditional}!cond\_@{cond\_}}
+\index{cond\_@{cond\_}!osapi::details::Conditional@{osapi::details::Conditional}}
+\doxysubsubsection{\texorpdfstring{cond\_}{cond\_}}
+{\footnotesize\ttfamily C\+O\+N\+D\+I\+T\+I\+O\+N\+\_\+\+V\+A\+R\+I\+A\+B\+LE osapi\+::details\+::\+Conditional\+::cond\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 27 of file Conditional.\+hpp.
+
+
+
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-Coin\+Detecting\+Sensors/\+O\+S\+Api\+Student/inc/osapi/winx86/details/Conditional.\+hpp\item 
-Coin\+Detecting\+Sensors/\+O\+S\+Api\+Student/winx86/details/Conditional\+Details.\+cpp\end{DoxyCompactItemize}
+Coin\+Detecting\+Sensors/\+O\+S\+Api\+Student/inc/osapi/winx86/details/\mbox{\hyperlink{winx86_2details_2Conditional_8hpp}{Conditional.\+hpp}}\item 
+Coin\+Detecting\+Sensors/\+O\+S\+Api\+Student/winx86/details/\mbox{\hyperlink{ConditionalDetails_8cpp}{Conditional\+Details.\+cpp}}\end{DoxyCompactItemize}

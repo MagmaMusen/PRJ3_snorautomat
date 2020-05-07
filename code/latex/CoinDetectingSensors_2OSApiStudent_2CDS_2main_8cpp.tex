@@ -1,0 +1,75 @@
+\hypertarget{CoinDetectingSensors_2OSApiStudent_2CDS_2main_8cpp}{}\doxysection{Coin\+Detecting\+Sensors/\+O\+S\+Api\+Student/\+C\+D\+S/main.cpp File Reference}
+\label{CoinDetectingSensors_2OSApiStudent_2CDS_2main_8cpp}\index{CoinDetectingSensors/OSApiStudent/CDS/main.cpp@{CoinDetectingSensors/OSApiStudent/CDS/main.cpp}}
+{\ttfamily \#include \char`\"{}Coin\+Identifier.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Sensor\+Reader.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Fake\+Receiver.\+hpp\char`\"{}}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$osapi/\+Thread.\+hpp$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{CoinDetectingSensors_2OSApiStudent_2CDS_2main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}{main}} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{CoinDetectingSensors_2OSApiStudent_2CDS_2main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}\label{CoinDetectingSensors_2OSApiStudent_2CDS_2main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}} 
+\index{main.cpp@{main.cpp}!main@{main}}
+\index{main@{main}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 8 of file main.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{9 \{}
+\DoxyCodeLine{10   }
+\DoxyCodeLine{11   \textcolor{keywordflow}{if} (argc > 1)}
+\DoxyCodeLine{12   \{}
+\DoxyCodeLine{13     std::cout << \textcolor{stringliteral}{"Sensor main() called with millimeter calibration: "} << *argv[1]}
+\DoxyCodeLine{14               << std::endl;}
+\DoxyCodeLine{15     }
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17   \}}
+\DoxyCodeLine{18   \textcolor{keywordflow}{else}}
+\DoxyCodeLine{19   \{}
+\DoxyCodeLine{20     std::cout << \textcolor{stringliteral}{"Sensor main() called without calibration argument which "}}
+\DoxyCodeLine{21                  \textcolor{stringliteral}{"hopefully works!"}}
+\DoxyCodeLine{22               << std::endl;}
+\DoxyCodeLine{23     std::cout << \textcolor{stringliteral}{"First argument can be used to increase or decrease expected "}}
+\DoxyCodeLine{24                  \textcolor{stringliteral}{"coin widths."}}
+\DoxyCodeLine{25               << std::endl;}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{27     }
+\DoxyCodeLine{28     }
+\DoxyCodeLine{29   \}}
+\DoxyCodeLine{30 }
+\DoxyCodeLine{31   \mbox{\hyperlink{classFakeReceiver}{FakeReceiver}} myReceiver;}
+\DoxyCodeLine{32   }
+\DoxyCodeLine{33 }
+\DoxyCodeLine{34   \mbox{\hyperlink{classCoinIdentifier}{CoinIdentifier}} myCoinIdentifier(myReceiver.\mbox{\hyperlink{classFakeReceiver_a7360451327ec7da539aebae0403503e8}{getMsgQueue}}());}
+\DoxyCodeLine{35 }
+\DoxyCodeLine{36   \mbox{\hyperlink{classSensorReader}{SensorReader}} mySensorReader(\&myCoinIdentifier);}
+\DoxyCodeLine{37 }
+\DoxyCodeLine{38   \mbox{\hyperlink{classosapi_1_1Thread}{osapi::Thread}} receiverThread(\&myReceiver);}
+\DoxyCodeLine{39   \mbox{\hyperlink{classosapi_1_1Thread}{osapi::Thread}} identifierThread(\&myCoinIdentifier);}
+\DoxyCodeLine{40   \mbox{\hyperlink{classosapi_1_1Thread}{osapi::Thread}} readerThread(\&mySensorReader);}
+\DoxyCodeLine{41 }
+\DoxyCodeLine{42   receiverThread.start();}
+\DoxyCodeLine{43   identifierThread.start();}
+\DoxyCodeLine{44   readerThread.start();}
+\DoxyCodeLine{45 }
+\DoxyCodeLine{46   receiverThread.join();}
+\DoxyCodeLine{47   identifierThread.join();}
+\DoxyCodeLine{48   readerThread.join();}
+\DoxyCodeLine{49 }
+\DoxyCodeLine{50   std::cout << \textcolor{stringliteral}{"Exited read function in main()"} << std::endl;}
+\DoxyCodeLine{51 }
+\DoxyCodeLine{52   \textcolor{keywordflow}{return} 1;}
+\DoxyCodeLine{53 \}}
+
+\end{DoxyCode}

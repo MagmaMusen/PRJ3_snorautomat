@@ -9,8 +9,7 @@ Inheritance diagram for Test\+Thread\+:\begin{figure}[H]
 \doxysubsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classTestThread_a5ad1cddf48ad138c7064e86f0f4772cf}\label{classTestThread_a5ad1cddf48ad138c7064e86f0f4772cf}} 
-virtual void {\bfseries run} ()
+virtual void \mbox{\hyperlink{classTestThread_a5ad1cddf48ad138c7064e86f0f4772cf}{run}} ()
 \end{DoxyCompactItemize}
 
 
@@ -21,6 +20,40 @@ Definition at line 5 of file Test\+Thread.\+cpp.
 
 
 
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classTestThread_a5ad1cddf48ad138c7064e86f0f4772cf}\label{classTestThread_a5ad1cddf48ad138c7064e86f0f4772cf}} 
+\index{TestThread@{TestThread}!run@{run}}
+\index{run@{run}!TestThread@{TestThread}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily virtual void Test\+Thread\+::run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classosapi_1_1ThreadFunctor_a823fdf26390662df38ac9b2639277ecd}{osapi\+::\+Thread\+Functor}}.
+
+
+
+Definition at line 9 of file Test\+Thread.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{10   \{}
+\DoxyCodeLine{11     \textcolor{keywordtype}{int} count = 0;}
+\DoxyCodeLine{12     }
+\DoxyCodeLine{13     \textcolor{keywordflow}{for}(;;)}
+\DoxyCodeLine{14     \{}
+\DoxyCodeLine{15       std::cout << \textcolor{stringliteral}{"Iteration : "} << count << std::endl;}
+\DoxyCodeLine{16       ++count;}
+\DoxyCodeLine{17       \textcolor{keywordflow}{if}(count > 5)}
+\DoxyCodeLine{18         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{19       \mbox{\hyperlink{namespaceosapi_aeed8c6f1372f57481ea48bcf2a672c82}{osapi::sleep}}(1000);}
+\DoxyCodeLine{20     \}}
+\DoxyCodeLine{21     }
+\DoxyCodeLine{22   \}}
+
+\end{DoxyCode}
+
+
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-Coin\+Detecting\+Sensors/\+O\+S\+Api\+Student/test/Test\+Thread.\+cpp\end{DoxyCompactItemize}
+Coin\+Detecting\+Sensors/\+O\+S\+Api\+Student/test/\mbox{\hyperlink{TestThread_8cpp}{Test\+Thread.\+cpp}}\end{DoxyCompactItemize}

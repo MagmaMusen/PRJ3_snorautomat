@@ -69,13 +69,13 @@ $(function() {
 <div class="title">Conditional.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef OSAPI_WINX86_COND_HPP</span></div>
+<a href="winx86_2Conditional_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef OSAPI_WINX86_COND_HPP</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define OSAPI_WINX86_COND_HPP</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;osapi/Utility.hpp&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;osapi/Mutex.hpp&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="Utility_8hpp.html">osapi/Utility.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="Mutex_8hpp.html">osapi/Mutex.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span>osapi</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceosapi.html">osapi</a></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;  <span class="keyword">namespace </span>details</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;  {</div>
@@ -85,19 +85,19 @@ $(function() {
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  <span class="keyword">class </span>Conditional : <span class="keyword">private</span> Notcopyable</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  {</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keyword">enum</span> Awoken {</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;      SIGNALED=0,</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;      TIMEDOUT=1</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="classosapi_1_1Conditional.html#a6989311f524a2b74e9d72b27b29d0640">   17</a></span>&#160;    <span class="keyword">enum</span> <a class="code" href="classosapi_1_1Conditional.html#a6989311f524a2b74e9d72b27b29d0640">Awoken</a> {</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;      <a class="code" href="classosapi_1_1Conditional.html#a6989311f524a2b74e9d72b27b29d0640a8793f487f9ffe6e65c383a6af2d372e5">SIGNALED</a>=0,</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;      <a class="code" href="classosapi_1_1Conditional.html#a6989311f524a2b74e9d72b27b29d0640aab3d24199f0d68b32c9230e21c9fbc92">TIMEDOUT</a>=1</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    };    </div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    Conditional();</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">void</span> signal();</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordtype">void</span> broadcast();</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordtype">void</span> wait(Mutex&amp; mut);</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    Awoken waitTimed(Mutex&amp; mut, <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> timeout);</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    ~Conditional();</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="classosapi_1_1Conditional.html#ae6ba231d8590584735dea09b3fe2fa6d">   22</a></span>&#160;    <a class="code" href="classosapi_1_1Conditional.html#ae6ba231d8590584735dea09b3fe2fa6d">Conditional</a>();</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="classosapi_1_1Conditional.html#a778b0370bcbf2da90e81d92035e436b7">   23</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classosapi_1_1Conditional.html#a778b0370bcbf2da90e81d92035e436b7">signal</a>();</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="classosapi_1_1Conditional.html#a206779a0d1c28828626c5f063d120d2b">   24</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classosapi_1_1Conditional.html#a206779a0d1c28828626c5f063d120d2b">broadcast</a>();</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="classosapi_1_1Conditional.html#a7386a8805625068c595b277fd3641759">   25</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classosapi_1_1Conditional.html#a7386a8805625068c595b277fd3641759">wait</a>(<a class="code" href="classosapi_1_1Mutex.html">Mutex</a>&amp; mut);</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="classosapi_1_1Conditional.html#ae7f50c1885208346ae0c6f38df8e2e12">   26</a></span>&#160;    <a class="code" href="classosapi_1_1Conditional.html#a6989311f524a2b74e9d72b27b29d0640">Awoken</a> <a class="code" href="classosapi_1_1Conditional.html#ae7f50c1885208346ae0c6f38df8e2e12">waitTimed</a>(<a class="code" href="classosapi_1_1Mutex.html">Mutex</a>&amp; mut, <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> timeout);</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="classosapi_1_1Conditional.html#ab63bd33c1aafb309df1de681e7bcf47c">   27</a></span>&#160;    <a class="code" href="classosapi_1_1Conditional.html#ab63bd33c1aafb309df1de681e7bcf47c">~Conditional</a>();</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    details::Conditional*  cond_;</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="classosapi_1_1Conditional.html#ad4c57e6189603fa9c0e360f31b4fe271">   29</a></span>&#160;    <a class="code" href="classosapi_1_1details_1_1Conditional.html">details::Conditional</a>*  <a class="code" href="classosapi_1_1Conditional.html#ad4c57e6189603fa9c0e360f31b4fe271">cond_</a>;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  };</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;}</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
@@ -105,6 +105,21 @@ $(function() {
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclassosapi_1_1details_1_1Conditional_html"><div class="ttname"><a href="classosapi_1_1details_1_1Conditional.html">osapi::details::Conditional</a></div><div class="ttdef"><b>Definition:</b> <a href="winx86_2details_2Conditional_8hpp_source.html#l00013">Conditional.hpp:14</a></div></div>
+<div class="ttc" id="aclassosapi_1_1Conditional_html_a6989311f524a2b74e9d72b27b29d0640aab3d24199f0d68b32c9230e21c9fbc92"><div class="ttname"><a href="classosapi_1_1Conditional.html#a6989311f524a2b74e9d72b27b29d0640aab3d24199f0d68b32c9230e21c9fbc92">osapi::Conditional::TIMEDOUT</a></div><div class="ttdeci">@ TIMEDOUT</div><div class="ttdef"><b>Definition:</b> <a href="linux_2Conditional_8hpp_source.html#l00017">Conditional.hpp:16</a></div></div>
+<div class="ttc" id="anamespaceosapi_html"><div class="ttname"><a href="namespaceosapi.html">osapi</a></div><div class="ttdef"><b>Definition:</b> <a href="Completion_8cpp_source.html#l00004">Completion.cpp:5</a></div></div>
+<div class="ttc" id="aclassosapi_1_1Conditional_html_ab63bd33c1aafb309df1de681e7bcf47c"><div class="ttname"><a href="classosapi_1_1Conditional.html#ab63bd33c1aafb309df1de681e7bcf47c">osapi::Conditional::~Conditional</a></div><div class="ttdeci">~Conditional()</div></div>
+<div class="ttc" id="aclassosapi_1_1Conditional_html_ae6ba231d8590584735dea09b3fe2fa6d"><div class="ttname"><a href="classosapi_1_1Conditional.html#ae6ba231d8590584735dea09b3fe2fa6d">osapi::Conditional::Conditional</a></div><div class="ttdeci">Conditional()</div></div>
+<div class="ttc" id="aMutex_8hpp_html"><div class="ttname"><a href="Mutex_8hpp.html">Mutex.hpp</a></div></div>
+<div class="ttc" id="aclassosapi_1_1Conditional_html_a778b0370bcbf2da90e81d92035e436b7"><div class="ttname"><a href="classosapi_1_1Conditional.html#a778b0370bcbf2da90e81d92035e436b7">osapi::Conditional::signal</a></div><div class="ttdeci">void signal()</div></div>
+<div class="ttc" id="aUtility_8hpp_html"><div class="ttname"><a href="Utility_8hpp.html">Utility.hpp</a></div></div>
+<div class="ttc" id="aclassosapi_1_1Conditional_html_a6989311f524a2b74e9d72b27b29d0640a8793f487f9ffe6e65c383a6af2d372e5"><div class="ttname"><a href="classosapi_1_1Conditional.html#a6989311f524a2b74e9d72b27b29d0640a8793f487f9ffe6e65c383a6af2d372e5">osapi::Conditional::SIGNALED</a></div><div class="ttdeci">@ SIGNALED</div><div class="ttdef"><b>Definition:</b> <a href="linux_2Conditional_8hpp_source.html#l00015">Conditional.hpp:15</a></div></div>
+<div class="ttc" id="aclassosapi_1_1Mutex_html"><div class="ttname"><a href="classosapi_1_1Mutex.html">osapi::Mutex</a></div><div class="ttdef"><b>Definition:</b> <a href="linux_2Mutex_8hpp_source.html#l00010">Mutex.hpp:11</a></div></div>
+<div class="ttc" id="aclassosapi_1_1Conditional_html_ae7f50c1885208346ae0c6f38df8e2e12"><div class="ttname"><a href="classosapi_1_1Conditional.html#ae7f50c1885208346ae0c6f38df8e2e12">osapi::Conditional::waitTimed</a></div><div class="ttdeci">Awoken waitTimed(Mutex &amp;mut, unsigned long timeout)</div></div>
+<div class="ttc" id="aclassosapi_1_1Conditional_html_a7386a8805625068c595b277fd3641759"><div class="ttname"><a href="classosapi_1_1Conditional.html#a7386a8805625068c595b277fd3641759">osapi::Conditional::wait</a></div><div class="ttdeci">void wait(Mutex &amp;mut)</div></div>
+<div class="ttc" id="aclassosapi_1_1Conditional_html_a6989311f524a2b74e9d72b27b29d0640"><div class="ttname"><a href="classosapi_1_1Conditional.html#a6989311f524a2b74e9d72b27b29d0640">osapi::Conditional::Awoken</a></div><div class="ttdeci">Awoken</div><div class="ttdef"><b>Definition:</b> <a href="linux_2Conditional_8hpp_source.html#l00014">Conditional.hpp:14</a></div></div>
+<div class="ttc" id="aclassosapi_1_1Conditional_html_ad4c57e6189603fa9c0e360f31b4fe271"><div class="ttname"><a href="classosapi_1_1Conditional.html#ad4c57e6189603fa9c0e360f31b4fe271">osapi::Conditional::cond_</a></div><div class="ttdeci">details::Conditional * cond_</div><div class="ttdef"><b>Definition:</b> <a href="winx86_2Conditional_8hpp_source.html#l00029">Conditional.hpp:29</a></div></div>
+<div class="ttc" id="aclassosapi_1_1Conditional_html_a206779a0d1c28828626c5f063d120d2b"><div class="ttname"><a href="classosapi_1_1Conditional.html#a206779a0d1c28828626c5f063d120d2b">osapi::Conditional::broadcast</a></div><div class="ttdeci">void broadcast()</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

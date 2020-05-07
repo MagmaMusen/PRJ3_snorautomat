@@ -69,37 +69,37 @@ $(function() {
 <div class="title">ClockTime.cpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<a href="linux_2ClockTime_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;time.h&gt;</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;osapi/ClockTime.hpp&gt;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="ClockTime_8hpp.html">osapi/ClockTime.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">namespace </span>osapi</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceosapi.html">osapi</a></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;{</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;  Time getCurrentMonotonicTime()</div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="namespaceosapi.html#a97db4c68ee6d057030e07ce4187607f0">    7</a></span>&#160;  <a class="code" href="classosapi_1_1Time.html">Time</a> <a class="code" href="namespaceosapi.html#a97db4c68ee6d057030e07ce4187607f0">getCurrentMonotonicTime</a>()</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;  {</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <span class="keyword">struct </span>timespec ts;</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="comment">// Get monotonic time</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    clock_gettime(CLOCK_MONOTONIC, &amp;ts);</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    </div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keywordflow">return</span> Time(ts.tv_sec, ts.tv_nsec/1000000L);</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classosapi_1_1Time.html">Time</a>(ts.tv_sec, ts.tv_nsec/1000000L);</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  }</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  Time getCurrentTime()</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="namespaceosapi.html#a58c5e43a8ae9cf6848c7fbbe2d929d2d">   17</a></span>&#160;  <a class="code" href="classosapi_1_1Time.html">Time</a> <a class="code" href="namespaceosapi.html#a58c5e43a8ae9cf6848c7fbbe2d929d2d">getCurrentTime</a>()</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  {</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">struct </span>timespec ts;</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="comment">// Get monotonic time</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    clock_gettime(CLOCK_REALTIME, &amp;ts);</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordflow">return</span> Time(ts.tv_sec, ts.tv_nsec/1000000L);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classosapi_1_1Time.html">Time</a>(ts.tv_sec, ts.tv_nsec/1000000L);</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  }</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  std::string timeToStr(<span class="keyword">const</span> Time&amp; t, <span class="keyword">const</span> std::string&amp; format)</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="namespaceosapi.html#aaccf58b826b11fd458aaca705046b354">   27</a></span>&#160;  std::string <a class="code" href="namespaceosapi.html#aaccf58b826b11fd458aaca705046b354">timeToStr</a>(<span class="keyword">const</span> <a class="code" href="classosapi_1_1Time.html">Time</a>&amp; t, <span class="keyword">const</span> std::string&amp; format)</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  {</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> MAX_RESULT=64;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keyword">struct </span>tm timeStruct;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    time_t tt = t.secs();</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    time_t tt = t.<a class="code" href="classosapi_1_1Time.html#a6c62276998b943a3ecd8d281afc4cd8f">secs</a>();</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    gmtime_r(&amp;tt, &amp;timeStruct);</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    std::string result;</div>
@@ -113,6 +113,13 @@ $(function() {
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  </div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aClockTime_8hpp_html"><div class="ttname"><a href="ClockTime_8hpp.html">ClockTime.hpp</a></div></div>
+<div class="ttc" id="anamespaceosapi_html_aaccf58b826b11fd458aaca705046b354"><div class="ttname"><a href="namespaceosapi.html#aaccf58b826b11fd458aaca705046b354">osapi::timeToStr</a></div><div class="ttdeci">std::string timeToStr(const Time &amp;t, const std::string &amp;format)</div><div class="ttdef"><b>Definition:</b> <a href="linux_2ClockTime_8cpp_source.html#l00027">ClockTime.cpp:27</a></div></div>
+<div class="ttc" id="anamespaceosapi_html"><div class="ttname"><a href="namespaceosapi.html">osapi</a></div><div class="ttdef"><b>Definition:</b> <a href="Completion_8cpp_source.html#l00004">Completion.cpp:5</a></div></div>
+<div class="ttc" id="anamespaceosapi_html_a58c5e43a8ae9cf6848c7fbbe2d929d2d"><div class="ttname"><a href="namespaceosapi.html#a58c5e43a8ae9cf6848c7fbbe2d929d2d">osapi::getCurrentTime</a></div><div class="ttdeci">Time getCurrentTime()</div><div class="ttdef"><b>Definition:</b> <a href="linux_2ClockTime_8cpp_source.html#l00017">ClockTime.cpp:17</a></div></div>
+<div class="ttc" id="anamespaceosapi_html_a97db4c68ee6d057030e07ce4187607f0"><div class="ttname"><a href="namespaceosapi.html#a97db4c68ee6d057030e07ce4187607f0">osapi::getCurrentMonotonicTime</a></div><div class="ttdeci">Time getCurrentMonotonicTime()</div><div class="ttdef"><b>Definition:</b> <a href="linux_2ClockTime_8cpp_source.html#l00007">ClockTime.cpp:7</a></div></div>
+<div class="ttc" id="aclassosapi_1_1Time_html_a6c62276998b943a3ecd8d281afc4cd8f"><div class="ttname"><a href="classosapi_1_1Time.html#a6c62276998b943a3ecd8d281afc4cd8f">osapi::Time::secs</a></div><div class="ttdeci">signed long long secs() const</div><div class="ttdef"><b>Definition:</b> <a href="Time_8cpp_source.html#l00059">Time.cpp:59</a></div></div>
+<div class="ttc" id="aclassosapi_1_1Time_html"><div class="ttname"><a href="classosapi_1_1Time.html">osapi::Time</a></div><div class="ttdef"><b>Definition:</b> <a href="Time_8hpp_source.html#l00006">Time.hpp:7</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">
