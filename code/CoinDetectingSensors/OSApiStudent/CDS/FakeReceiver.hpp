@@ -11,6 +11,7 @@
 #include <stdio.h>
 
 class CoinIdentifier;
+class SensorReader;
 struct Coin;
 
 class FakeReceiver : public osapi::ThreadFunctor
@@ -20,6 +21,8 @@ public:
     FakeReceiver();
     osapi::MsgQueue* getMsgQueue();
     enum {
+        ID_READ_IND,
+        ID_IDENTIFY_IND,
         ID_COIN_IND
     };
 

@@ -34,7 +34,11 @@ public:
     CoinIdentifier(osapi::MsgQueue* receiverMq);
 
     //! Event message ID's. Used to cast wrapper structs. They are received as their base-class Message and therefore need to be identified and casted. 
-    enum {ID_IDENTIFY_IND, ID_COIN_IND};
+    enum {
+        ID_READ_IND,
+        ID_IDENTIFY_IND,
+        ID_COIN_IND
+    };
 
     //! Returns message queue of the class.
     osapi::MsgQueue* getMsgQueue();
@@ -59,25 +63,25 @@ private:
     void CoinIdentifierHandleIdentify(CoinTimings* timing);
 
     //! Lower boundary value in millimeters for one-crown. If a lower value is registered, the coin i undefined.
-    float boundaryWidthOneLower = 9.41;
+    float boundaryWidthOneLower = 18.82;
 
     //! Boundary value in millimeters between one-crown (lower) and fify-oere (upper). 
-    float boundaryWidthOneFifty = 9.85;
+    float boundaryWidthOneFifty = 19.71;
 
     //! Boundary value in millimeters between fifty-oere (lower) and ten-crown (upper).
-    float boundaryWidthFiftyTen = 10.39;
+    float boundaryWidthFiftyTen = 20.77;
 
     //! Boundary value in millimeters between ten-crown (lower) and two-crown (upper).
-    float boundaryWidthTenTwo = 10.88;
+    float boundaryWidthTenTwo = 21.77;
 
     //! Boundary value in millimeters between two-crown (lower) and twenty-crown (upper).
-    float boundaryWidthTwoTwenty = 11.45; 
+    float boundaryWidthTwoTwenty = 22.90; 
 
     //! Boundary value in millimeters between twenty-crown (lower) and five-crown (upper).
-    float boundaryWidthTwentyFive = 12.05;
+    float boundaryWidthTwentyFive = 24.10;
 
     //! Upper boundary value in millimeters for five-crown. If a higher value is registered, the coin is undefined.
-    float boundaryWidthFiveUpper = 12.49;
+    float boundaryWidthFiveUpper = 24.97;
     
     //! Distance in millimeters between sensors in the direction of coin-movement.
     float sensorDistanceMillimeter_ = 5;

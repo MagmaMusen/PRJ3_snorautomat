@@ -12,6 +12,7 @@ osapi::MsgQueue *SensorReader::getMsgQueue() { return &mq_; }
 
 void SensorReader::run()
 {
+  startRead();
   std::cout << "Event loop in SensorReader started running!" << std::endl;
   while (running_)
   {
@@ -54,6 +55,7 @@ void SensorReader::sensorReaderHandleRead()
 
       // Send to identifier.
       identifier_->getMsgQueue()->send(ID_IDENTIFY_IND, capture);
+      std::cout << "SensorReader sent a capture to identifier." << std::endl;
       // identifier_->Identify(capturedTimeA_, capturedTimeB_);
     }
 
@@ -77,4 +79,11 @@ void SensorReader::extractTimes(std::string line, std::string delimiter, CoinTim
   timings->timeDifferenceRising = std::stol(line.substr(0, pos), &sz);
   line.erase(0, pos + delimiter_.length());
   timings->timeDifferenceEnterExit = std::stol(line, &sz);
+
+  std::cout << "Result from extractTimes: " << timings->timeDifferenceRising << "   " << timings->timeDifferenceEnterExit << std::endl;
+}
+
+void SensorReader::startRead()
+{
+  mq_.send(ID_READ_IND);
 }
