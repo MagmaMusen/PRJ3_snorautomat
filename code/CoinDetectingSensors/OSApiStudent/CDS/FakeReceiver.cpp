@@ -7,6 +7,8 @@ FakeReceiver::FakeReceiver(): mq_(MAX_QUEUE_SIZE), running_(true) {}
 void FakeReceiver::run()
 {
   std::cout << "Event loop in FakeReceiver started running!" << std::endl;
+
+  
   while(running_)
   {
     unsigned long int id;

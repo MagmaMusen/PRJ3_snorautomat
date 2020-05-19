@@ -18,7 +18,7 @@ BIN_DIR=bin/target
 endif
 
 # Quick and dirty (does not handle changes in h-file)
-SRCS=main.cpp SensorReader.cpp CoinIdentifier.cpp FakeReceiver.cpp
+SRCS=mainCDS.cpp SensorReader.cpp CoinIdentifier.cpp FakeReceiver.cpp
 OBJS=$(SRCS:.cpp=.o)
 BASEPATH=..
 # Determine whether this is a debug build or not

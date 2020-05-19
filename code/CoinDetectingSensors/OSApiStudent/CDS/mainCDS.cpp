@@ -5,34 +5,10 @@
 #include <osapi/Thread.hpp>
 #include <stdlib.h>
 
-int main(int argc, char *argv[])
+int main()
 {
-  
-  if (argc > 1)
-  {
-    std::cout << "Sensor main() called with millimeter calibration: " << *argv[1]
-              << std::endl;
-    
-
-  }
-  else
-  {
-    std::cout << "Sensor main() called without calibration argument which "
-                 "hopefully works!"
-              << std::endl;
-    std::cout << "First argument can be used to increase or decrease expected "
-                 "coin widths."
-              << std::endl;
-
-    
-    
-  }
-
-  FakeReceiver myReceiver;
-  
-
+  FakeReceiver myReceiver; 
   CoinIdentifier myCoinIdentifier(myReceiver.getMsgQueue());
-
   SensorReader mySensorReader(&myCoinIdentifier);
 
   osapi::Thread receiverThread(&myReceiver);
