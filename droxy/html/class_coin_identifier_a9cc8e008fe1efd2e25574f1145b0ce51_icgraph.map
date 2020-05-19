@@ -1,0 +1,6 @@
+<map id="CoinIdentifier::widthToValue" name="CoinIdentifier::widthToValue">
+<area shape="rect" id="node1" title="Calculate coin value based on its width, using the coin boundaries in the CoinIdentifier." alt="" coords="629,13,811,39"/>
+<area shape="rect" id="node2" href="$class_coin_identifier.html#a72ecb038aee585d4f3d978d60b739688" title="Identifies a coin based on it&#39;s timesignature, then sends the appropriate coin value indication event..." alt="" coords="403,5,581,47"/>
+<area shape="rect" id="node3" href="$class_coin_identifier.html#a0570927883c6e25632fcfed8e129bedc" title="Indentifies messages on received on CoinIdentifier&#39;s message queue, casts the message if needed and s..." alt="" coords="176,5,355,47"/>
+<area shape="rect" id="node4" href="$class_coin_identifier.html#aa8a415eb776528e7ceb577e9e40b4017" title=" " alt="" coords="5,13,128,39"/>
+</map>

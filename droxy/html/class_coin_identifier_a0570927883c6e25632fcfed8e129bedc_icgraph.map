@@ -1,0 +1,4 @@
+<map id="CoinIdentifier::CoinIdentifierHandler" name="CoinIdentifier::CoinIdentifierHandler">
+<area shape="rect" id="node1" title="Indentifies messages on received on CoinIdentifier&#39;s message queue, casts the message if needed and s..." alt="" coords="176,5,355,47"/>
+<area shape="rect" id="node2" href="$class_coin_identifier.html#aa8a415eb776528e7ceb577e9e40b4017" title=" " alt="" coords="5,13,128,39"/>
+</map>

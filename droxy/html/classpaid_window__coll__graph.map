@@ -1,4 +1,6 @@
 <map id="paidWindow" name="paidWindow">
-<area shape="rect" id="node1" title=" " alt="" coords="11,80,103,107"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,5,108,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="55,171,147,197"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,81,108,108"/>
+<area shape="rect" id="node3" href="$class_ui_1_1paid_window.html" title=" " alt="" coords="133,81,245,108"/>
+<area shape="rect" id="node4" href="$class_ui__paid_window.html" title=" " alt="" coords="133,5,244,32"/>
 </map>

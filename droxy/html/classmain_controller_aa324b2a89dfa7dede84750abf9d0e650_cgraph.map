@@ -1,0 +1,8 @@
+<map id="mainController::mainControllerHandler" name="mainController::mainControllerHandler">
+<area shape="rect" id="node1" title="The dispatcher of the class. It receives an id and a message. According to the id it calls a differen..." alt="" coords="5,64,201,105"/>
+<area shape="rect" id="node2" href="$classmain_controller.html#a3ba8b7237e5625ea4586269cd639db16" title=" " alt="" coords="249,5,431,47"/>
+<area shape="rect" id="node3" href="$classmain_controller.html#aa3721e6bf38f65ec2afdcf0ad8cd60d2" title="When receiving a coin input the coinHandle updates the amoutPaid_ and send it to GUI." alt="" coords="479,101,656,127"/>
+<area shape="rect" id="node6" href="$classmain_controller.html#a90a49dc0e63d853a61c4b504df2c6002" title="When the class receives the finalRopeLength from GUI it sets finalRopeLength_ equal to finalRopeLengt..." alt="" coords="257,123,423,164"/>
+<area shape="rect" id="node4" href="$classmain_controller.html#a5e209ad1a93311028dc0eaee5048b88c" title="If priceForRope_ &lt;= amoutPaid_ then it sends finalRopeLength_ to snorHaandtering." alt="" coords="704,93,888,135"/>
+<area shape="rect" id="node5" href="$classi2c.html#a74992c4494bcccf99bdffad173ed3ad7" title="It sends a char buffer from master to slave by I2C." alt="" coords="936,101,1031,127"/>
+</map>

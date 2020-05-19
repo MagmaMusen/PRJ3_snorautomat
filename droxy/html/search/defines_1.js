@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['cds_5fmajor_838',['CDS_MAJOR',['../_c_d_sdriver_8c.html#a39adb198a60a3e01cf0e267ec3cbbb87',1,'CDSdriver.c']]],
-  ['cds_5fminor_839',['CDS_MINOR',['../_c_d_sdriver_8c.html#ab809d25022e9c7dcf4030b68fe72f6a8',1,'CDSdriver.c']]]
+  ['boost_5ftest_5fmodule_1983',['BOOST_TEST_MODULE',['../_test_time_8cpp.html#a6b2a3852db8bb19ab6909bac01859985',1,'TestTime.cpp']]],
+  ['bufsize_1984',['BufSize',['../_doserings__main_8c.html#ab709b7d4be70f1cf6498fdc3ecf9f288',1,'Doserings_main.c']]]
 ];

@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['firstwindowsinals_5fh_840',['FIRSTWINDOWSINALS_H',['../firstwindowsinals_8h.html#a6090e0520f35b7b512ca883dbf6803cb',1,'firstwindowsinals.h']]]
+  ['cds_5fmajor_1985',['CDS_MAJOR',['../_c_d_sdriver_8c.html#a39adb198a60a3e01cf0e267ec3cbbb87',1,'CDSdriver.c']]],
+  ['cds_5fminor_1986',['CDS_MINOR',['../_c_d_sdriver_8c.html#ab809d25022e9c7dcf4030b68fe72f6a8',1,'CDSdriver.c']]]
 ];

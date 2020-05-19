@@ -1,0 +1,4 @@
+<map id="SensorReader::sensorReaderHandler" name="SensorReader::sensorReaderHandler">
+<area shape="rect" id="node1" title="Indentifies messages on received on SensorReader&#39;s message queue, casts the message if needed and sta..." alt="" coords="184,5,376,47"/>
+<area shape="rect" id="node2" href="$class_sensor_reader.html#a23ed6518af32a6ddaf062767f36e612a" title=" " alt="" coords="5,13,136,39"/>
+</map>

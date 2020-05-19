@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['wrbuf_802',['wrBuf',['../_doserings__main_8c.html#ae29b53a64f22bd0b400f5e800cc06143',1,'Doserings_main.c']]]
+  ['name_5f_1503',['name_',['../classosapi_1_1_thread.html#a75bc13f67c5eb1af9ffa9653f2af5643',1,'osapi::Thread::name_()'],['../classosapi_1_1details_1_1_thread.html#a58b38b8222c2260491ea47815e955cdd',1,'osapi::details::Thread::name_()']]]
 ];

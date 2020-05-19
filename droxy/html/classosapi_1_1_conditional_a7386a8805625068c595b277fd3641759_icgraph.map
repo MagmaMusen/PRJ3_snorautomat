@@ -1,7 +1,8 @@
 <map id="osapi::Conditional::wait" name="osapi::Conditional::wait">
-<area shape="rect" id="node1" title=" " alt="" coords="504,35,629,76"/>
-<area shape="rect" id="node2" href="$classosapi_1_1_completion.html#af8a7bd1386bf1f50f4b81e003f394494" title=" " alt="" coords="299,42,456,69"/>
-<area shape="rect" id="node3" href="$classosapi_1_1details_1_1_thread.html#a7e066cdab5ca65f4af8cdf0a64a9800f" title=" " alt="" coords="104,5,251,47"/>
-<area shape="rect" id="node4" href="$classosapi_1_1_thread.html#a5017a4146002d0ba61cbd268f8b795b2" title=" " alt="" coords="113,71,241,98"/>
-<area shape="rect" id="node5" href="$_coin_detecting_sensors_2_o_s_api_student_2_c_d_s_2main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,71,56,98"/>
+<area shape="rect" id="node1" title=" " alt="" coords="504,23,629,65"/>
+<area shape="rect" id="node2" href="$classosapi_1_1_timer.html#aaef24dbb0e90740984ee2c1980c69513" title=" " alt="" coords="318,5,437,32"/>
+<area shape="rect" id="node3" href="$classosapi_1_1_completion.html#af8a7bd1386bf1f50f4b81e003f394494" title=" " alt="" coords="299,56,456,83"/>
+<area shape="rect" id="node4" href="$classosapi_1_1details_1_1_thread.html#a7e066cdab5ca65f4af8cdf0a64a9800f" title=" " alt="" coords="104,19,251,61"/>
+<area shape="rect" id="node5" href="$classosapi_1_1_thread.html#a5017a4146002d0ba61cbd268f8b795b2" title=" " alt="" coords="113,85,241,112"/>
+<area shape="rect" id="node6" href="$main_c_d_s_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,85,56,112"/>
 </map>

@@ -1,4 +1,9 @@
 <map id="i2c::i2cSend" name="i2c::i2cSend">
-<area shape="rect" id="node1" title=" " alt="" coords="104,5,199,32"/>
-<area shape="rect" id="node2" href="$rpi_2_i2_c_virtual_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,56,32"/>
+<area shape="rect" id="node1" title="It sends a char buffer from master to slave by I2C." alt="" coords="1100,71,1195,98"/>
+<area shape="rect" id="node2" href="$classmain_controller.html#a5e209ad1a93311028dc0eaee5048b88c" title="If priceForRope_ &lt;= amoutPaid_ then it sends finalRopeLength_ to snorHaandtering." alt="" coords="868,35,1052,76"/>
+<area shape="rect" id="node7" href="$rpi_2_i2_c_virtual_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="935,101,985,127"/>
+<area shape="rect" id="node3" href="$classmain_controller.html#aa3721e6bf38f65ec2afdcf0ad8cd60d2" title="When receiving a coin input the coinHandle updates the amoutPaid_ and send it to GUI." alt="" coords="643,42,820,69"/>
+<area shape="rect" id="node4" href="$classmain_controller.html#a90a49dc0e63d853a61c4b504df2c6002" title="When the class receives the finalRopeLength from GUI it sets finalRopeLength_ equal to finalRopeLengt..." alt="" coords="428,5,595,47"/>
+<area shape="rect" id="node5" href="$classmain_controller.html#aa324b2a89dfa7dede84750abf9d0e650" title="The dispatcher of the class. It receives an id and a message. According to the id it calls a differen..." alt="" coords="184,35,380,76"/>
+<area shape="rect" id="node6" href="$classmain_controller.html#ab54861025ba116dd36b44e205bcae943" title="The event&#45;loop of the class. It receives a message, call the dispatcher with an id and a message and ..." alt="" coords="5,42,136,69"/>
 </map>

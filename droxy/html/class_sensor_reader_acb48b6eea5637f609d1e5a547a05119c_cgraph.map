@@ -1,0 +1,4 @@
+<map id="SensorReader::startRead" name="SensorReader::startRead">
+<area shape="rect" id="node1" title="Starts the read loop." alt="" coords="5,13,173,39"/>
+<area shape="rect" id="node2" href="$classosapi_1_1_basic_msg_queue.html#a8d82ffda45ea8a1d8878f356e5d1284b" title=" " alt="" coords="221,5,379,47"/>
+</map>

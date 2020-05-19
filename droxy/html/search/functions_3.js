@@ -1,14 +1,21 @@
 var searchData=
 [
-  ['cancelbuttonclicked_603',['cancelButtonClicked',['../classpayment_window.html#a13f178676c832ca1e8375d52b4cd646e',1,'paymentWindow']]],
-  ['cds_5fopen_604',['CDS_open',['../_c_d_sdriver_8c.html#abc60d06b01d381b76006f773979a5e95',1,'CDSdriver.c']]],
-  ['cds_5fread_605',['CDS_read',['../_c_d_sdriver_8c.html#a90cc19095d89a8a27eac12e30859dde9',1,'CDSdriver.c']]],
-  ['cds_5frelease_606',['CDS_release',['../_c_d_sdriver_8c.html#a59dce6f17487fa45ec2890cce4e37444',1,'CDSdriver.c']]],
-  ['clickedbutton_607',['clickedButton',['../class_main_window.html#a6a9edf83825d63c8f7667485751b99b8',1,'MainWindow']]],
-  ['coinidentifier_608',['CoinIdentifier',['../class_coin_identifier.html#ae925a2fe3821bb02cda27c948e222307',1,'CoinIdentifier']]],
-  ['completion_609',['Completion',['../classosapi_1_1_completion.html#a4672af6849e81915e836bf2d128e3d39',1,'osapi::Completion']]],
-  ['conditional_610',['Conditional',['../classosapi_1_1_conditional.html#ae6ba231d8590584735dea09b3fe2fa6d',1,'osapi::Conditional::Conditional()'],['../classosapi_1_1_conditional.html#ae6ba231d8590584735dea09b3fe2fa6d',1,'osapi::Conditional::Conditional()'],['../classosapi_1_1details_1_1_conditional.html#a5e53a8f630326543faa823e24efac7f0',1,'osapi::details::Conditional::Conditional()']]],
-  ['conditionalerror_611',['ConditionalError',['../classosapi_1_1_conditional_error.html#aceaaf9cd8dc0fecd3a97787842c1674c',1,'osapi::ConditionalError']]],
-  ['convertstrtolvl_612',['convertStrToLvl',['../namespaceosapi.html#a8abdb6d4733b0987754b50e00a1fec93',1,'osapi']]],
-  ['createnewtimer_613',['createNewTimer',['../namespaceosapi.html#a0e494ea43da266f31568003f6ce4704a',1,'osapi']]]
+  ['cancelbuttonclicked_1211',['cancelButtonClicked',['../classpayment_window.html#a13f178676c832ca1e8375d52b4cd646e',1,'paymentWindow::cancelButtonClicked()'],['../classpayment_window.html#a13f178676c832ca1e8375d52b4cd646e',1,'paymentWindow::cancelButtonClicked()'],['../classpayment_window.html#a13f178676c832ca1e8375d52b4cd646e',1,'paymentWindow::cancelButtonClicked()']]],
+  ['cancelbuttonclickedcommunicationtomaincontrollerclass_1212',['cancelButtonClickedCommunicationToMainControllerClass',['../classpayment_window.html#a978c134b924588d2aef39c6b9547750a',1,'paymentWindow']]],
+  ['cancelfromguihandle_1213',['cancelFromGUIHandle',['../classmain_controller.html#a3ba8b7237e5625ea4586269cd639db16',1,'mainController']]],
+  ['cds_5fopen_1214',['CDS_open',['../_c_d_sdriver_8c.html#abc60d06b01d381b76006f773979a5e95',1,'CDSdriver.c']]],
+  ['cds_5fread_1215',['CDS_read',['../_c_d_sdriver_8c.html#a90cc19095d89a8a27eac12e30859dde9',1,'CDSdriver.c']]],
+  ['cds_5frelease_1216',['CDS_release',['../_c_d_sdriver_8c.html#a59dce6f17487fa45ec2890cce4e37444',1,'CDSdriver.c']]],
+  ['checkifpricereached_1217',['checkIfPriceReached',['../classmain_controller.html#a5e209ad1a93311028dc0eaee5048b88c',1,'mainController']]],
+  ['clickedbutton_1218',['clickedButton',['../class_main_window.html#a6a9edf83825d63c8f7667485751b99b8',1,'MainWindow']]],
+  ['coinhandle_1219',['coinHandle',['../classmain_controller.html#aa3721e6bf38f65ec2afdcf0ad8cd60d2',1,'mainController']]],
+  ['coinidentifier_1220',['CoinIdentifier',['../class_coin_identifier.html#ae925a2fe3821bb02cda27c948e222307',1,'CoinIdentifier']]],
+  ['coinidentifierhandleidentify_1221',['CoinIdentifierHandleIdentify',['../class_coin_identifier.html#a72ecb038aee585d4f3d978d60b739688',1,'CoinIdentifier']]],
+  ['coinidentifierhandler_1222',['CoinIdentifierHandler',['../class_coin_identifier.html#a0570927883c6e25632fcfed8e129bedc',1,'CoinIdentifier']]],
+  ['communicationtomaincontroller_1223',['communicationToMainController',['../classcommunication_to_main_controller.html#a1c7569a2c87268d9f7ace7bcffd110e1',1,'communicationToMainController::communicationToMainController()'],['../classcommunication_to_main_controller.html#a1c7569a2c87268d9f7ace7bcffd110e1',1,'communicationToMainController::communicationToMainController()']]],
+  ['completion_1224',['Completion',['../classosapi_1_1_completion.html#a4672af6849e81915e836bf2d128e3d39',1,'osapi::Completion::Completion()'],['../classosapi_1_1_completion.html#a4672af6849e81915e836bf2d128e3d39',1,'osapi::Completion::Completion()']]],
+  ['conditional_1225',['Conditional',['../classosapi_1_1_conditional.html#ae6ba231d8590584735dea09b3fe2fa6d',1,'osapi::Conditional::Conditional()'],['../classosapi_1_1_conditional.html#ae6ba231d8590584735dea09b3fe2fa6d',1,'osapi::Conditional::Conditional()'],['../classosapi_1_1details_1_1_conditional.html#a5e53a8f630326543faa823e24efac7f0',1,'osapi::details::Conditional::Conditional()'],['../classosapi_1_1_conditional.html#ae6ba231d8590584735dea09b3fe2fa6d',1,'osapi::Conditional::Conditional()'],['../classosapi_1_1_conditional.html#ae6ba231d8590584735dea09b3fe2fa6d',1,'osapi::Conditional::Conditional()']]],
+  ['conditionalerror_1226',['ConditionalError',['../classosapi_1_1_conditional_error.html#aceaaf9cd8dc0fecd3a97787842c1674c',1,'osapi::ConditionalError::ConditionalError()'],['../classosapi_1_1_conditional_error.html#aceaaf9cd8dc0fecd3a97787842c1674c',1,'osapi::ConditionalError::ConditionalError()']]],
+  ['convertstrtolvl_1227',['convertStrToLvl',['../namespaceosapi.html#a8abdb6d4733b0987754b50e00a1fec93',1,'osapi']]],
+  ['createnewtimer_1228',['createNewTimer',['../namespaceosapi.html#a0e494ea43da266f31568003f6ce4704a',1,'osapi']]]
 ];

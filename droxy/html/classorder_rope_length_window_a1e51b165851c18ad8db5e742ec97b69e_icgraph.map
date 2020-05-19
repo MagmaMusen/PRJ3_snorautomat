@@ -1,0 +1,5 @@
+<map id="orderRopeLengthWindow::valueReset" name="orderRopeLengthWindow::valueReset">
+<area shape="rect" id="node1" title="It is the signal that register the value has resat it is implemented in slot void buttonCancelClicked..." alt="" coords="435,35,601,76"/>
+<area shape="rect" id="node2" href="$classorder_rope_length_window.html#a2930be095b17dcbc152e91828cfcc052" title="It emits valueReset by setting ropeLength = 0." alt="" coords="220,5,387,47"/>
+<area shape="rect" id="node3" href="$classorder_rope_length_window.html#ad6ea9dcbe0fc1096dc89d480ebdbbb7c" title=" " alt="" coords="5,35,172,76"/>
+</map>

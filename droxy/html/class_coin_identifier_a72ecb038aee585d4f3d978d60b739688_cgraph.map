@@ -1,0 +1,5 @@
+<map id="CoinIdentifier::CoinIdentifierHandleIdentify" name="CoinIdentifier::CoinIdentifierHandleIdentify">
+<area shape="rect" id="node1" title="Identifies a coin based on it&#39;s timesignature, then sends the appropriate coin value indication event..." alt="" coords="5,35,184,76"/>
+<area shape="rect" id="node2" href="$classosapi_1_1_basic_msg_queue.html#a8d82ffda45ea8a1d8878f356e5d1284b" title=" " alt="" coords="244,5,401,47"/>
+<area shape="rect" id="node3" href="$class_coin_identifier.html#a9cc8e008fe1efd2e25574f1145b0ce51" title="Calculate coin value based on its width, using the coin boundaries in the CoinIdentifier." alt="" coords="232,71,413,98"/>
+</map>

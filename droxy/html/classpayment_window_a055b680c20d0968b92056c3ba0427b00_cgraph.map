@@ -1,5 +1,5 @@
 <map id="paymentWindow::paymentWindow" name="paymentWindow::paymentWindow">
-<area shape="rect" id="node1" title=" " alt="" coords="5,242,228,269"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,274,228,301"/>
 <area shape="rect" id="node2" href="$classpayment_window.html#a93089475da5cb564cd060e8ab1556289" title=" " alt="" coords="297,5,483,47"/>
 <area shape="rect" id="node3" href="$classpayment_window.html#a894c28bcf64362d2c7126b647c8cdbb7" title=" " alt="" coords="297,71,483,112"/>
 <area shape="rect" id="node4" href="$classpayment_window.html#a7836da053afa35950362b8148f2af2f6" title=" " alt="" coords="297,136,483,177"/>
@@ -8,4 +8,5 @@
 <area shape="rect" id="node7" href="$classpayment_window.html#a4f7ca61d7798a185230ec9b40e87ab6e" title=" " alt="" coords="297,332,483,373"/>
 <area shape="rect" id="node8" href="$classpayment_window.html#ad8014ed2372313053d87bee54fe1b232" title=" " alt="" coords="276,398,504,425"/>
 <area shape="rect" id="node9" href="$classpayment_window.html#a664a63353a1c109fab5b642fc659a6ef" title=" " alt="" coords="277,449,503,475"/>
+<area shape="rect" id="node10" href="$class_ui__payment_window.html#a0e481d6e9a2a8d59d8007daa6e82feac" title=" " alt="" coords="295,499,485,526"/>
 </map>

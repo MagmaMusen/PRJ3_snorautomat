@@ -1,0 +1,6 @@
+<map id="SensorReader::extractTimes" name="SensorReader::extractTimes">
+<area shape="rect" id="node1" title="Turns the string from read from the CDS&#45;driver into captured timings in the specified CoinTimings str..." alt="" coords="664,13,851,39"/>
+<area shape="rect" id="node2" href="$class_sensor_reader.html#ad50d7a03d46b8a9b8b6a69d1704bc797" title="Reads from /dev/CDS file which is the sensor character drivers node. Reading from the file returns ti..." alt="" coords="424,5,616,47"/>
+<area shape="rect" id="node3" href="$class_sensor_reader.html#abfd6546a9e7d2f5ac3405ccae9be1441" title="Indentifies messages on received on SensorReader&#39;s message queue, casts the message if needed and sta..." alt="" coords="184,5,376,47"/>
+<area shape="rect" id="node4" href="$class_sensor_reader.html#a23ed6518af32a6ddaf062767f36e612a" title=" " alt="" coords="5,13,136,39"/>
+</map>

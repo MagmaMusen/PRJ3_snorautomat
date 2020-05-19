@@ -1,0 +1,5 @@
+<map id="mainController::coinHandle" name="mainController::coinHandle">
+<area shape="rect" id="node1" title="When receiving a coin input the coinHandle updates the amoutPaid_ and send it to GUI." alt="" coords="5,13,183,39"/>
+<area shape="rect" id="node2" href="$classmain_controller.html#a5e209ad1a93311028dc0eaee5048b88c" title="If priceForRope_ &lt;= amoutPaid_ then it sends finalRopeLength_ to snorHaandtering." alt="" coords="231,5,415,47"/>
+<area shape="rect" id="node3" href="$classi2c.html#a74992c4494bcccf99bdffad173ed3ad7" title="It sends a char buffer from master to slave by I2C." alt="" coords="463,13,557,39"/>
+</map>

@@ -77,36 +77,22 @@ $(function() {
 <code>#include &lt;iostream&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
 <code>#include &lt;sstream&gt;</code><br />
-<code>#include &lt;<a class="el" href="_log_8hpp_source.html">osapi/Log.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_i_log_output_8hpp_source.html">osapi/ILogOutput.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_utility_8hpp_source.html">osapi/Utility.hpp</a>&gt;</code><br />
+<code>#include &lt;osapi/Log.hpp&gt;</code><br />
+<code>#include &lt;osapi/ILogOutput.hpp&gt;</code><br />
+<code>#include &lt;osapi/Utility.hpp&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for TestLog.cpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="_test_log_8cpp__incl.png" border="0" usemap="#_c_1_2_users_2_andreas_2_documents_2_git_hub_2_p_r_j3__snorautomat_2code_2_coin_detecting_sensors_2_o_s_api_student_2test_2_test_log_8cpp" alt=""/></div>
 <map name="_c_1_2_users_2_andreas_2_documents_2_git_hub_2_p_r_j3__snorautomat_2code_2_coin_detecting_sensors_2_o_s_api_student_2test_2_test_log_8cpp" id="_c_1_2_users_2_andreas_2_documents_2_git_hub_2_p_r_j3__snorautomat_2code_2_coin_detecting_sensors_2_o_s_api_student_2test_2_test_log_8cpp">
-<area shape="rect" title=" " alt="" coords="218,5,429,76"/>
+<area shape="rect" title=" " alt="" coords="206,5,417,76"/>
 <area shape="rect" title=" " alt="" coords="5,124,76,151"/>
 <area shape="rect" title=" " alt="" coords="101,124,173,151"/>
-<area shape="rect" title=" " alt="" coords="241,423,296,449"/>
-<area shape="rect" title=" " alt="" coords="697,199,766,225"/>
-<area shape="rect" href="_log_8hpp.html" title=" " alt="" coords="272,124,375,151"/>
-<area shape="rect" href="_utility_8hpp.html" title=" " alt="" coords="1289,423,1403,449"/>
-<area shape="rect" href="_i_log_output_8hpp.html" title=" " alt="" coords="400,273,545,300"/>
-<area shape="rect" href="_log_types_8hpp.html" title=" " alt="" coords="298,348,437,375"/>
-<area shape="rect" href="details_2_log_system_8hpp.html" title=" " alt="" coords="481,199,672,225"/>
-<area shape="rect" title=" " alt="" coords="328,423,407,449"/>
-<area shape="rect" href="_time_8hpp.html" title=" " alt="" coords="600,348,711,375"/>
-<area shape="rect" href="_thread_8hpp.html" title=" " alt="" coords="672,273,793,300"/>
-<area shape="rect" href="_message_8hpp.html" title=" " alt="" coords="735,348,869,375"/>
-<area shape="rect" href="_msg_queue_8hpp.html" title=" " alt="" coords="916,273,1061,300"/>
-<area shape="rect" title=" " alt="" coords="893,348,951,375"/>
-<area shape="rect" title=" " alt="" coords="975,348,1050,375"/>
-<area shape="rect" href="_mutex_8hpp.html" title=" " alt="" coords="1075,348,1193,375"/>
-<area shape="rect" href="_conditional_8hpp.html" title=" " alt="" coords="1218,348,1365,375"/>
-<area shape="rect" href="_mutex_error_8hpp.html" title=" " alt="" coords="1061,423,1207,449"/>
-<area shape="rect" href="_exceptions_8hpp.html" title=" " alt="" coords="1061,497,1207,524"/>
-<area shape="rect" title=" " alt="" coords="1095,572,1173,599"/>
+<area shape="rect" title=" " alt="" coords="197,124,252,151"/>
+<area shape="rect" title=" " alt="" coords="277,124,346,151"/>
+<area shape="rect" title=" " alt="" coords="371,124,473,151"/>
+<area shape="rect" title=" " alt="" coords="497,124,643,151"/>
+<area shape="rect" title=" " alt="" coords="667,124,782,151"/>
 </map>
 </div>
 </div>
@@ -151,12 +137,12 @@ Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="_test_log_8cpp_source.html#l00098">98</a> of file <a class="el" href="_test_log_8cpp_source.html">TestLog.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;{</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  <a class="code" href="_log_8hpp.html#a7f3a06def08dedac3459ebd6061b20ba">OSAPI_LOG_DBG</a>(<span class="stringliteral">&quot;Hello&quot;</span>);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  <a class="code" href="_coin_detecting_sensors_2_o_s_api_student_2inc_2osapi_2_log_8hpp.html#a7f3a06def08dedac3459ebd6061b20ba">OSAPI_LOG_DBG</a>(<span class="stringliteral">&quot;Hello&quot;</span>);</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  </div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  <a class="code" href="class_syslog.html">Syslog</a>* sys = <span class="keyword">new</span> <a class="code" href="class_syslog.html">Syslog</a>(<span class="stringliteral">&quot;TestLog&quot;</span>);</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  <a class="code" href="namespaceosapi.html#a1cd81643bbde2f22e67f2478dfeb34d4">osapi::logSetNewOutput</a>(sys);</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  <a class="code" href="_log_8hpp.html#a7f3a06def08dedac3459ebd6061b20ba">OSAPI_LOG_DBG</a>(<span class="stringliteral">&quot;Hello&quot;</span>);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  <a class="code" href="_coin_detecting_sensors_2_o_s_api_student_2inc_2osapi_2_log_8hpp.html#a7f3a06def08dedac3459ebd6061b20ba">OSAPI_LOG_DBG</a>(<span class="stringliteral">&quot;Hello&quot;</span>);</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  <a class="code" href="namespaceosapi.html#aeed8c6f1372f57481ea48bcf2a672c82">osapi::sleep</a>(10000);</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;}</div>
@@ -177,10 +163,10 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 </div><!-- contents -->
-<div class="ttc" id="anamespaceosapi_html_aeed8c6f1372f57481ea48bcf2a672c82"><div class="ttname"><a href="namespaceosapi.html#aeed8c6f1372f57481ea48bcf2a672c82">osapi::sleep</a></div><div class="ttdeci">void sleep(unsigned long msecs)</div><div class="ttdef"><b>Definition:</b> <a href="linux_2_utility_8cpp_source.html#l00006">Utility.cpp:6</a></div></div>
+<div class="ttc" id="anamespaceosapi_html_aeed8c6f1372f57481ea48bcf2a672c82"><div class="ttname"><a href="namespaceosapi.html#aeed8c6f1372f57481ea48bcf2a672c82">osapi::sleep</a></div><div class="ttdeci">void sleep(unsigned long msecs)</div><div class="ttdef"><b>Definition:</b> <a href="_coin_detecting_sensors_2_o_s_api_student_2linux_2_utility_8cpp_source.html#l00006">Utility.cpp:6</a></div></div>
 <div class="ttc" id="aclass_syslog_html"><div class="ttname"><a href="class_syslog.html">Syslog</a></div><div class="ttdef"><b>Definition:</b> <a href="_test_log_8cpp_source.html#l00010">TestLog.cpp:11</a></div></div>
-<div class="ttc" id="a_log_8hpp_html_a7f3a06def08dedac3459ebd6061b20ba"><div class="ttname"><a href="_log_8hpp.html#a7f3a06def08dedac3459ebd6061b20ba">OSAPI_LOG_DBG</a></div><div class="ttdeci">#define OSAPI_LOG_DBG(...)</div><div class="ttdef"><b>Definition:</b> <a href="_log_8hpp_source.html#l00031">Log.hpp:30</a></div></div>
-<div class="ttc" id="anamespaceosapi_html_a1cd81643bbde2f22e67f2478dfeb34d4"><div class="ttname"><a href="namespaceosapi.html#a1cd81643bbde2f22e67f2478dfeb34d4">osapi::logSetNewOutput</a></div><div class="ttdeci">void logSetNewOutput(ILogOutput *ilOutput)</div><div class="ttdef"><b>Definition:</b> <a href="_log_8cpp_source.html#l00005">Log.cpp:5</a></div></div>
+<div class="ttc" id="a_coin_detecting_sensors_2_o_s_api_student_2inc_2osapi_2_log_8hpp_html_a7f3a06def08dedac3459ebd6061b20ba"><div class="ttname"><a href="_coin_detecting_sensors_2_o_s_api_student_2inc_2osapi_2_log_8hpp.html#a7f3a06def08dedac3459ebd6061b20ba">OSAPI_LOG_DBG</a></div><div class="ttdeci">#define OSAPI_LOG_DBG(...)</div><div class="ttdef"><b>Definition:</b> <a href="_coin_detecting_sensors_2_o_s_api_student_2inc_2osapi_2_log_8hpp_source.html#l00031">Log.hpp:30</a></div></div>
+<div class="ttc" id="anamespaceosapi_html_a1cd81643bbde2f22e67f2478dfeb34d4"><div class="ttname"><a href="namespaceosapi.html#a1cd81643bbde2f22e67f2478dfeb34d4">osapi::logSetNewOutput</a></div><div class="ttdeci">void logSetNewOutput(ILogOutput *ilOutput)</div><div class="ttdef"><b>Definition:</b> <a href="_coin_detecting_sensors_2_o_s_api_student_2common_2_log_8cpp_source.html#l00005">Log.cpp:5</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

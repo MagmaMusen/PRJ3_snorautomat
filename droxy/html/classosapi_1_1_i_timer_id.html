@@ -74,7 +74,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="_timer_8hpp_source.html">Timer.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="_coin_detecting_sensors_2_o_s_api_student_2inc_2osapi_2_timer_8hpp_source.html">Timer.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for osapi::ITimerId:</div>
 <div class="dyncontent">
@@ -97,13 +97,23 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aed06a8a80b14c57d3db50ac9d5ebfed9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a39d4e55dd875ba102b1911c71dfa091b"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1_i_timer_id.html#a39d4e55dd875ba102b1911c71dfa091b">~ITimerId</a> ()</td></tr>
 <tr class="separator:a39d4e55dd875ba102b1911c71dfa091b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a820b8e6da1825ac0d43046a89f896d07"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1_i_timer_id.html#a820b8e6da1825ac0d43046a89f896d07">arm</a> (unsigned long timeout, <a class="el" href="classosapi_1_1_message.html">Message</a> *m=NULL)=0</td></tr>
+<tr class="separator:a820b8e6da1825ac0d43046a89f896d07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31df51bdbf5d45c2c36e3f1a9a13302b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1_i_timer_id.html#a31df51bdbf5d45c2c36e3f1a9a13302b">reArm</a> (<a class="el" href="classosapi_1_1_message.html">Message</a> *m=NULL)=0</td></tr>
+<tr class="separator:a31df51bdbf5d45c2c36e3f1a9a13302b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0653752139f56f5833007673105a300d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1_i_timer_id.html#a0653752139f56f5833007673105a300d">disArm</a> ()=0</td></tr>
+<tr class="separator:a0653752139f56f5833007673105a300d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed06a8a80b14c57d3db50ac9d5ebfed9"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1_i_timer_id.html#aed06a8a80b14c57d3db50ac9d5ebfed9">isCanceled</a> () const =0</td></tr>
+<tr class="separator:aed06a8a80b14c57d3db50ac9d5ebfed9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39d4e55dd875ba102b1911c71dfa091b"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1_i_timer_id.html#a39d4e55dd875ba102b1911c71dfa091b">~ITimerId</a> ()</td></tr>
+<tr class="separator:a39d4e55dd875ba102b1911c71dfa091b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_timer_8hpp_source.html#l00010">10</a> of file <a class="el" href="_timer_8hpp_source.html">Timer.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_coin_detecting_sensors_2_o_s_api_student_2inc_2osapi_2_timer_8hpp_source.html#l00010">10</a> of file <a class="el" href="_coin_detecting_sensors_2_o_s_api_student_2inc_2osapi_2_timer_8hpp_source.html">Timer.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a39d4e55dd875ba102b1911c71dfa091b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a39d4e55dd875ba102b1911c71dfa091b">&#9670;&nbsp;</a></span>~ITimerId()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a39d4e55dd875ba102b1911c71dfa091b">&#9670;&nbsp;</a></span>~ITimerId() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -125,14 +135,42 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_timer_8hpp_source.html#l00018">18</a> of file <a class="el" href="_timer_8hpp_source.html">Timer.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_coin_detecting_sensors_2_o_s_api_student_2inc_2osapi_2_timer_8hpp_source.html#l00018">18</a> of file <a class="el" href="_coin_detecting_sensors_2_o_s_api_student_2inc_2osapi_2_timer_8hpp_source.html">Timer.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{ }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a39d4e55dd875ba102b1911c71dfa091b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39d4e55dd875ba102b1911c71dfa091b">&#9670;&nbsp;</a></span>~ITimerId() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual osapi::ITimerId::~ITimerId </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="rpi_2_o_s_api_student_2inc_2osapi_2_timer_8hpp_source.html#l00018">18</a> of file <a class="el" href="rpi_2_o_s_api_student_2inc_2osapi_2_timer_8hpp_source.html">Timer.hpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{ }</div>
 </div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a820b8e6da1825ac0d43046a89f896d07"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a820b8e6da1825ac0d43046a89f896d07">&#9670;&nbsp;</a></span>arm()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a820b8e6da1825ac0d43046a89f896d07">&#9670;&nbsp;</a></span>arm() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -165,12 +203,59 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classosapi_1_1_timer_id.html#a01b4670fc169a617b0475225bb753b2e">osapi::TimerId</a>.</p>
+<p>Implemented in <a class="el" href="classosapi_1_1_timer_id.html#a01b4670fc169a617b0475225bb753b2e">osapi::TimerId</a>, and <a class="el" href="classosapi_1_1_timer_id.html#a01b4670fc169a617b0475225bb753b2e">osapi::TimerId</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classosapi_1_1_i_timer_id_a820b8e6da1825ac0d43046a89f896d07_icgraph.png" border="0" usemap="#classosapi_1_1_i_timer_id_a820b8e6da1825ac0d43046a89f896d07_icgraph" alt=""/></div>
+<map name="classosapi_1_1_i_timer_id_a820b8e6da1825ac0d43046a89f896d07_icgraph" id="classosapi_1_1_i_timer_id_a820b8e6da1825ac0d43046a89f896d07_icgraph">
+<area shape="rect" title=" " alt="" coords="159,5,295,32"/>
+<area shape="rect" href="class_test_timer.html#ab02e580330062634c0a3b2b21899f1c6" title=" " alt="" coords="5,5,111,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a820b8e6da1825ac0d43046a89f896d07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a820b8e6da1825ac0d43046a89f896d07">&#9670;&nbsp;</a></span>arm() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void osapi::ITimerId::arm </td>
+          <td>(</td>
+          <td class="paramtype">unsigned long&#160;</td>
+          <td class="paramname"><em>timeout</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classosapi_1_1_message.html">Message</a> *&#160;</td>
+          <td class="paramname"><em>m</em> = <code>NULL</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="classosapi_1_1_timer_id.html#a01b4670fc169a617b0475225bb753b2e">osapi::TimerId</a>, and <a class="el" href="classosapi_1_1_timer_id.html#a01b4670fc169a617b0475225bb753b2e">osapi::TimerId</a>.</p>
 
 </div>
 </div>
 <a id="a0653752139f56f5833007673105a300d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0653752139f56f5833007673105a300d">&#9670;&nbsp;</a></span>disArm()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a0653752139f56f5833007673105a300d">&#9670;&nbsp;</a></span>disArm() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -192,12 +277,48 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classosapi_1_1_timer_id.html#a69246c76edcc25b3648ac3014c5312b0">osapi::TimerId</a>.</p>
+<p>Implemented in <a class="el" href="classosapi_1_1_timer_id.html#a69246c76edcc25b3648ac3014c5312b0">osapi::TimerId</a>, and <a class="el" href="classosapi_1_1_timer_id.html#a69246c76edcc25b3648ac3014c5312b0">osapi::TimerId</a>.</p>
+
+</div>
+</div>
+<a id="a0653752139f56f5833007673105a300d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0653752139f56f5833007673105a300d">&#9670;&nbsp;</a></span>disArm() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void osapi::ITimerId::disArm </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="classosapi_1_1_timer_id.html#a69246c76edcc25b3648ac3014c5312b0">osapi::TimerId</a>, and <a class="el" href="classosapi_1_1_timer_id.html#a69246c76edcc25b3648ac3014c5312b0">osapi::TimerId</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classosapi_1_1_i_timer_id_a0653752139f56f5833007673105a300d_icgraph.png" border="0" usemap="#classosapi_1_1_i_timer_id_a0653752139f56f5833007673105a300d_icgraph" alt=""/></div>
+<map name="classosapi_1_1_i_timer_id_a0653752139f56f5833007673105a300d_icgraph" id="classosapi_1_1_i_timer_id_a0653752139f56f5833007673105a300d_icgraph">
+<area shape="rect" title=" " alt="" coords="159,5,313,32"/>
+<area shape="rect" href="class_test_timer.html#ab02e580330062634c0a3b2b21899f1c6" title=" " alt="" coords="5,5,111,32"/>
+</map>
+</div>
 
 </div>
 </div>
 <a id="aed06a8a80b14c57d3db50ac9d5ebfed9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aed06a8a80b14c57d3db50ac9d5ebfed9">&#9670;&nbsp;</a></span>isCanceled()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aed06a8a80b14c57d3db50ac9d5ebfed9">&#9670;&nbsp;</a></span>isCanceled() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -219,12 +340,39 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classosapi_1_1_timer_id.html#a589abff9c94edc45dcbbbf7715814312">osapi::TimerId</a>.</p>
+<p>Implemented in <a class="el" href="classosapi_1_1_timer_id.html#a589abff9c94edc45dcbbbf7715814312">osapi::TimerId</a>, and <a class="el" href="classosapi_1_1_timer_id.html#a589abff9c94edc45dcbbbf7715814312">osapi::TimerId</a>.</p>
+
+</div>
+</div>
+<a id="aed06a8a80b14c57d3db50ac9d5ebfed9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed06a8a80b14c57d3db50ac9d5ebfed9">&#9670;&nbsp;</a></span>isCanceled() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool osapi::ITimerId::isCanceled </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="classosapi_1_1_timer_id.html#a589abff9c94edc45dcbbbf7715814312">osapi::TimerId</a>, and <a class="el" href="classosapi_1_1_timer_id.html#a589abff9c94edc45dcbbbf7715814312">osapi::TimerId</a>.</p>
 
 </div>
 </div>
 <a id="a31df51bdbf5d45c2c36e3f1a9a13302b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a31df51bdbf5d45c2c36e3f1a9a13302b">&#9670;&nbsp;</a></span>reArm()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a31df51bdbf5d45c2c36e3f1a9a13302b">&#9670;&nbsp;</a></span>reArm() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -247,12 +395,53 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classosapi_1_1_timer_id.html#aa7acf7ad271408c3c86edd73d8cd331b">osapi::TimerId</a>.</p>
+<p>Implemented in <a class="el" href="classosapi_1_1_timer_id.html#aa7acf7ad271408c3c86edd73d8cd331b">osapi::TimerId</a>, and <a class="el" href="classosapi_1_1_timer_id.html#aa7acf7ad271408c3c86edd73d8cd331b">osapi::TimerId</a>.</p>
+
+</div>
+</div>
+<a id="a31df51bdbf5d45c2c36e3f1a9a13302b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31df51bdbf5d45c2c36e3f1a9a13302b">&#9670;&nbsp;</a></span>reArm() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void osapi::ITimerId::reArm </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classosapi_1_1_message.html">Message</a> *&#160;</td>
+          <td class="paramname"><em>m</em> = <code>NULL</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="classosapi_1_1_timer_id.html#aa7acf7ad271408c3c86edd73d8cd331b">osapi::TimerId</a>, and <a class="el" href="classosapi_1_1_timer_id.html#aa7acf7ad271408c3c86edd73d8cd331b">osapi::TimerId</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classosapi_1_1_i_timer_id_a31df51bdbf5d45c2c36e3f1a9a13302b_icgraph.png" border="0" usemap="#classosapi_1_1_i_timer_id_a31df51bdbf5d45c2c36e3f1a9a13302b_icgraph" alt=""/></div>
+<map name="classosapi_1_1_i_timer_id_a31df51bdbf5d45c2c36e3f1a9a13302b_icgraph" id="classosapi_1_1_i_timer_id_a31df51bdbf5d45c2c36e3f1a9a13302b_icgraph">
+<area shape="rect" title=" " alt="" coords="565,56,715,83"/>
+<area shape="rect" href="class_test_timer.html#a547285505c06d68a474f3b84fbfe7b98" title=" " alt="" coords="336,5,517,32"/>
+<area shape="rect" href="class_test_timer.html#ae31c55060fa729a5fd66c9ced334caad" title=" " alt="" coords="336,56,517,83"/>
+<area shape="rect" href="class_test_timer.html#a33fb70511e037fb23f7114b4d1ba628a" title=" " alt="" coords="336,107,517,133"/>
+<area shape="rect" href="class_test_timer.html#a40ec8771cfa05b79af72580d99e87df0" title=" " alt="" coords="159,56,288,83"/>
+<area shape="rect" href="class_test_timer.html#ab02e580330062634c0a3b2b21899f1c6" title=" " alt="" coords="5,56,111,83"/>
+</map>
+</div>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>C:/Users/Andreas/Documents/GitHub/PRJ3_snorautomat/code/CoinDetectingSensors/OSApiStudent/inc/osapi/<a class="el" href="_timer_8hpp_source.html">Timer.hpp</a></li>
+<li>C:/Users/Andreas/Documents/GitHub/PRJ3_snorautomat/code/CoinDetectingSensors/OSApiStudent/inc/osapi/<a class="el" href="_coin_detecting_sensors_2_o_s_api_student_2inc_2osapi_2_timer_8hpp_source.html">Timer.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

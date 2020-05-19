@@ -71,8 +71,8 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <a href="_mutex_details_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="_exceptions_8hpp.html">osapi/Exceptions.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="winx86_2details_2_mutex_8hpp.html">osapi/winx86/details/Mutex.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;osapi/Exceptions.hpp&gt;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="_coin_detecting_sensors_2_o_s_api_student_2inc_2osapi_2winx86_2details_2_mutex_8hpp.html">osapi/winx86/details/Mutex.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceosapi.html">osapi</a></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;{</div>
@@ -81,28 +81,28 @@ $(function() {
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    </div>
 <div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="classosapi_1_1details_1_1_mutex.html#afcaaa216b4abdaed04c002bc3c10fa31">   10</a></span>&#160;    <a class="code" href="classosapi_1_1details_1_1_mutex.html#afcaaa216b4abdaed04c002bc3c10fa31">Mutex::Mutex</a>()</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    {</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;      InitializeCriticalSection(&amp;cs_);</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;      InitializeCriticalSection(&amp;<a class="code" href="classosapi_1_1details_1_1_mutex.html#a3a014c5e4303e3ae24ebfe2394a23d8c">cs_</a>);</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    }</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
 <div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="classosapi_1_1details_1_1_mutex.html#a22a98d0557915764e72291199b88bdf5">   15</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classosapi_1_1details_1_1_mutex.html#a22a98d0557915764e72291199b88bdf5">Mutex::lock</a>()</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    {</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;      EnterCriticalSection(&amp;cs_);    </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;      EnterCriticalSection(&amp;<a class="code" href="classosapi_1_1details_1_1_mutex.html#a3a014c5e4303e3ae24ebfe2394a23d8c">cs_</a>);    </div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    }</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
 <div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="classosapi_1_1details_1_1_mutex.html#ac31724af2f42ddd0f5b9ab006f28f507">   20</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classosapi_1_1details_1_1_mutex.html#ac31724af2f42ddd0f5b9ab006f28f507">Mutex::unlock</a>()</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    {</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;      LeaveCriticalSection (&amp;cs_);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;      LeaveCriticalSection (&amp;<a class="code" href="classosapi_1_1details_1_1_mutex.html#a3a014c5e4303e3ae24ebfe2394a23d8c">cs_</a>);</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    }</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
 <div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="classosapi_1_1details_1_1_mutex.html#a7b53ddee8080ee57776a9d694e26b4fa">   25</a></span>&#160;    CRITICAL_SECTION&amp; <a class="code" href="classosapi_1_1details_1_1_mutex.html#a7b53ddee8080ee57776a9d694e26b4fa">Mutex::nativeHandle</a>()</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    {</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;      <span class="keywordflow">return</span> cs_;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classosapi_1_1details_1_1_mutex.html#a3a014c5e4303e3ae24ebfe2394a23d8c">cs_</a>;</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    }</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  </div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
 <div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classosapi_1_1details_1_1_mutex.html#a9d031f69342ef55fcf8d6b64506f75aa">   31</a></span>&#160;    <a class="code" href="classosapi_1_1details_1_1_mutex.html#a9d031f69342ef55fcf8d6b64506f75aa">Mutex::~Mutex</a>()</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    {</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;      DeleteCriticalSection(&amp;cs_); <span class="comment">// Ignores return value, may not through an exception anyway</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;      DeleteCriticalSection(&amp;<a class="code" href="classosapi_1_1details_1_1_mutex.html#a3a014c5e4303e3ae24ebfe2394a23d8c">cs_</a>); <span class="comment">// Ignores return value, may not through an exception anyway</span></div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    }</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  </div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  }</div>
@@ -112,9 +112,9 @@ $(function() {
 <div class="ttc" id="aclassosapi_1_1details_1_1_mutex_html_ac31724af2f42ddd0f5b9ab006f28f507"><div class="ttname"><a href="classosapi_1_1details_1_1_mutex.html#ac31724af2f42ddd0f5b9ab006f28f507">osapi::details::Mutex::unlock</a></div><div class="ttdeci">void unlock()</div><div class="ttdef"><b>Definition:</b> <a href="_mutex_details_8cpp_source.html#l00020">MutexDetails.cpp:20</a></div></div>
 <div class="ttc" id="aclassosapi_1_1details_1_1_mutex_html_a22a98d0557915764e72291199b88bdf5"><div class="ttname"><a href="classosapi_1_1details_1_1_mutex.html#a22a98d0557915764e72291199b88bdf5">osapi::details::Mutex::lock</a></div><div class="ttdeci">void lock()</div><div class="ttdef"><b>Definition:</b> <a href="_mutex_details_8cpp_source.html#l00015">MutexDetails.cpp:15</a></div></div>
 <div class="ttc" id="aclassosapi_1_1details_1_1_mutex_html_afcaaa216b4abdaed04c002bc3c10fa31"><div class="ttname"><a href="classosapi_1_1details_1_1_mutex.html#afcaaa216b4abdaed04c002bc3c10fa31">osapi::details::Mutex::Mutex</a></div><div class="ttdeci">Mutex()</div><div class="ttdef"><b>Definition:</b> <a href="_mutex_details_8cpp_source.html#l00010">MutexDetails.cpp:10</a></div></div>
-<div class="ttc" id="anamespaceosapi_html"><div class="ttname"><a href="namespaceosapi.html">osapi</a></div><div class="ttdef"><b>Definition:</b> <a href="_completion_8cpp_source.html#l00004">Completion.cpp:5</a></div></div>
-<div class="ttc" id="awinx86_2details_2_mutex_8hpp_html"><div class="ttname"><a href="winx86_2details_2_mutex_8hpp.html">Mutex.hpp</a></div></div>
-<div class="ttc" id="a_exceptions_8hpp_html"><div class="ttname"><a href="_exceptions_8hpp.html">Exceptions.hpp</a></div></div>
+<div class="ttc" id="anamespaceosapi_html"><div class="ttname"><a href="namespaceosapi.html">osapi</a></div><div class="ttdef"><b>Definition:</b> <a href="_coin_detecting_sensors_2_o_s_api_student_2common_2_completion_8cpp_source.html#l00004">Completion.cpp:5</a></div></div>
+<div class="ttc" id="a_coin_detecting_sensors_2_o_s_api_student_2inc_2osapi_2winx86_2details_2_mutex_8hpp_html"><div class="ttname"><a href="_coin_detecting_sensors_2_o_s_api_student_2inc_2osapi_2winx86_2details_2_mutex_8hpp.html">Mutex.hpp</a></div></div>
+<div class="ttc" id="aclassosapi_1_1details_1_1_mutex_html_a3a014c5e4303e3ae24ebfe2394a23d8c"><div class="ttname"><a href="classosapi_1_1details_1_1_mutex.html#a3a014c5e4303e3ae24ebfe2394a23d8c">osapi::details::Mutex::cs_</a></div><div class="ttdeci">CRITICAL_SECTION cs_</div><div class="ttdef"><b>Definition:</b> <a href="_coin_detecting_sensors_2_o_s_api_student_2inc_2osapi_2winx86_2details_2_mutex_8hpp_source.html#l00019">Mutex.hpp:19</a></div></div>
 <div class="ttc" id="aclassosapi_1_1details_1_1_mutex_html_a7b53ddee8080ee57776a9d694e26b4fa"><div class="ttname"><a href="classosapi_1_1details_1_1_mutex.html#a7b53ddee8080ee57776a9d694e26b4fa">osapi::details::Mutex::nativeHandle</a></div><div class="ttdeci">CRITICAL_SECTION &amp; nativeHandle()</div><div class="ttdef"><b>Definition:</b> <a href="_mutex_details_8cpp_source.html#l00025">MutexDetails.cpp:25</a></div></div>
 <div class="ttc" id="aclassosapi_1_1details_1_1_mutex_html_a9d031f69342ef55fcf8d6b64506f75aa"><div class="ttname"><a href="classosapi_1_1details_1_1_mutex.html#a9d031f69342ef55fcf8d6b64506f75aa">osapi::details::Mutex::~Mutex</a></div><div class="ttdeci">~Mutex()</div><div class="ttdef"><b>Definition:</b> <a href="_mutex_details_8cpp_source.html#l00031">MutexDetails.cpp:31</a></div></div>
 <!-- start footer part -->

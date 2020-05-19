@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['log_842',['LOG',['../_log_8hpp.html#aabadde7d5f8f3525736c00118b4949e5',1,'Log.hpp']]],
-  ['log_5fdetail_843',['LOG_DETAIL',['../_log_8hpp.html#a0b6f86fe45254dbf6b67760a921119a2',1,'Log.hpp']]]
+  ['i2c_5fioctl_1988',['I2C_IOCTL',['../_i2_c_virtual_8cpp.html#a19b682b84b1b25bf5c1bcac72c7c77f7',1,'I2CVirtual.cpp']]]
 ];

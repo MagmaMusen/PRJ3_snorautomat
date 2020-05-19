@@ -1,4 +1,8 @@
 <map id="CoinIdentifier::run" name="CoinIdentifier::run">
-<area shape="rect" id="node1" title=" " alt="" coords="5,13,128,39"/>
-<area shape="rect" id="node2" href="$classosapi_1_1_basic_msg_queue.html#a7e1dcee4a1c9e6d966bb5d33b5c472cb" title=" " alt="" coords="176,5,333,47"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,75,128,102"/>
+<area shape="rect" id="node2" href="$class_coin_identifier.html#a0570927883c6e25632fcfed8e129bedc" title="Indentifies messages on received on CoinIdentifier&#39;s message queue, casts the message if needed and s..." alt="" coords="176,35,355,76"/>
+<area shape="rect" id="node6" href="$classosapi_1_1_basic_msg_queue.html#a7e1dcee4a1c9e6d966bb5d33b5c472cb" title=" " alt="" coords="187,100,344,141"/>
+<area shape="rect" id="node3" href="$class_coin_identifier.html#a72ecb038aee585d4f3d978d60b739688" title="Identifies a coin based on it&#39;s timesignature, then sends the appropriate coin value indication event..." alt="" coords="403,35,581,76"/>
+<area shape="rect" id="node4" href="$classosapi_1_1_basic_msg_queue.html#a8d82ffda45ea8a1d8878f356e5d1284b" title=" " alt="" coords="641,5,799,47"/>
+<area shape="rect" id="node5" href="$class_coin_identifier.html#a9cc8e008fe1efd2e25574f1145b0ce51" title="Calculate coin value based on its width, using the coin boundaries in the CoinIdentifier." alt="" coords="629,71,811,98"/>
 </map>

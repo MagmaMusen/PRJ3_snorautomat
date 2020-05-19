@@ -1,0 +1,6 @@
+<map id="mainController::finalRopeLengthFromGUIHandle" name="mainController::finalRopeLengthFromGUIHandle">
+<area shape="rect" id="node1" title="When the class receives the finalRopeLength from GUI it sets finalRopeLength_ equal to finalRopeLengt..." alt="" coords="5,5,172,47"/>
+<area shape="rect" id="node2" href="$classmain_controller.html#aa3721e6bf38f65ec2afdcf0ad8cd60d2" title="When receiving a coin input the coinHandle updates the amoutPaid_ and send it to GUI." alt="" coords="220,13,397,39"/>
+<area shape="rect" id="node3" href="$classmain_controller.html#a5e209ad1a93311028dc0eaee5048b88c" title="If priceForRope_ &lt;= amoutPaid_ then it sends finalRopeLength_ to snorHaandtering." alt="" coords="445,5,629,47"/>
+<area shape="rect" id="node4" href="$classi2c.html#a74992c4494bcccf99bdffad173ed3ad7" title="It sends a char buffer from master to slave by I2C." alt="" coords="677,13,772,39"/>
+</map>

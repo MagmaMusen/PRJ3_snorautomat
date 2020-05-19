@@ -1,8 +1,7 @@
 var searchData=
 [
-  ['paidwindow_685',['paidWindow',['../classpaid_window.html#a6aa4b724fef754b032f86de27f2b3d2c',1,'paidWindow::paidWindow(QWidget *parent=nullptr)'],['../classpaid_window.html#a6aa4b724fef754b032f86de27f2b3d2c',1,'paidWindow::paidWindow(QWidget *parent=nullptr)']]],
-  ['paymentwindow_686',['paymentWindow',['../classpayment_window.html#a055b680c20d0968b92056c3ba0427b00',1,'paymentWindow::paymentWindow(QWidget *parent=nullptr)'],['../classpayment_window.html#a055b680c20d0968b92056c3ba0427b00',1,'paymentWindow::paymentWindow(QWidget *parent=nullptr)']]],
-  ['plusfiveclicked_687',['plusFiveClicked',['../classorder_rope_length.html#aaddeccb20b8a65adaeda9e05599f224e',1,'orderRopeLength']]],
-  ['presentorderropelength_688',['presentOrderRopeLength',['../class_main_window.html#ab9928bc96718a857bdc4b87990c81c6c',1,'MainWindow']]],
-  ['print_689',['print',['../classtekst2.html#a24e42457d857dc438ecbb2745087df47',1,'tekst2']]]
+  ['nativehandle_1296',['nativeHandle',['../classosapi_1_1details_1_1_mutex.html#a7b53ddee8080ee57776a9d694e26b4fa',1,'osapi::details::Mutex']]],
+  ['newwindow_1297',['NewWindow',['../class_new_window.html#ae9cf37a1c14ce9d379c98501ecbd9856',1,'NewWindow']]],
+  ['newwindow2_1298',['newWindow2',['../classnew_window2.html#a9da07a5177565ca3e977514e1e9a933e',1,'newWindow2']]],
+  ['notcopyable_1299',['Notcopyable',['../classosapi_1_1_notcopyable.html#ace1f9f3daf92b6904397a5ade94a8672',1,'osapi::Notcopyable::Notcopyable()'],['../classosapi_1_1_notcopyable.html#a2feafa4f9127c224a0997081061d2af0',1,'osapi::Notcopyable::Notcopyable(const Notcopyable &amp;)'],['../classosapi_1_1_notcopyable.html#ace1f9f3daf92b6904397a5ade94a8672',1,'osapi::Notcopyable::Notcopyable()'],['../classosapi_1_1_notcopyable.html#a2feafa4f9127c224a0997081061d2af0',1,'osapi::Notcopyable::Notcopyable(const Notcopyable &amp;)']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['slaveaddr_853',['SlaveAddr',['../_doserings__main_8c.html#acd5cb8538338c7de4d4581ff177f3edd',1,'Doserings_main.c']]]
+  ['nbr_5fminors_1993',['NBR_MINORS',['../_c_d_sdriver_8c.html#aa0f4a746a7099e3694341e294141a89c',1,'CDSdriver.c']]]
 ];

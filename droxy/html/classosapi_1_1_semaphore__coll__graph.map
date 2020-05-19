@@ -1,4 +1,5 @@
 <map id="osapi::Semaphore" name="osapi::Semaphore">
-<area shape="rect" id="node1" title=" " alt="" coords="9,80,135,107"/>
-<area shape="rect" id="node2" href="$classosapi_1_1_notcopyable.html" title=" " alt="" coords="5,5,139,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,171,132,197"/>
+<area shape="rect" id="node2" href="$classosapi_1_1_notcopyable.html" title=" " alt="" coords="19,5,153,32"/>
+<area shape="rect" id="node3" href="$classosapi_1_1details_1_1_semaphore.html" title=" " alt="" coords="85,81,258,108"/>
 </map>

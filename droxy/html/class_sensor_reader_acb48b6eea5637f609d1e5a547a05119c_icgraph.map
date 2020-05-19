@@ -1,0 +1,4 @@
+<map id="SensorReader::startRead" name="SensorReader::startRead">
+<area shape="rect" id="node1" title="Starts the read loop." alt="" coords="184,5,352,32"/>
+<area shape="rect" id="node2" href="$class_sensor_reader.html#a23ed6518af32a6ddaf062767f36e612a" title=" " alt="" coords="5,5,136,32"/>
+</map>

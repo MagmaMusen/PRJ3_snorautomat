@@ -1,4 +1,6 @@
 <map id="FakeReceiver::run" name="FakeReceiver::run">
-<area shape="rect" id="node1" title=" " alt="" coords="5,13,132,39"/>
-<area shape="rect" id="node2" href="$classosapi_1_1_basic_msg_queue.html#a7e1dcee4a1c9e6d966bb5d33b5c472cb" title=" " alt="" coords="180,5,337,47"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,46,132,73"/>
+<area shape="rect" id="node2" href="$class_fake_receiver.html#af092fa7dde145a8e0673e69b79103b23" title="Indentifies messages on received on FakeReceiver&#39;s message queue, casts the message if needed and sta..." alt="" coords="180,5,367,47"/>
+<area shape="rect" id="node4" href="$classosapi_1_1_basic_msg_queue.html#a7e1dcee4a1c9e6d966bb5d33b5c472cb" title=" " alt="" coords="195,71,352,112"/>
+<area shape="rect" id="node3" href="$class_fake_receiver.html#aa6c18883c74616376354e742867fab05" title="Prints received coin value to console." alt="" coords="415,5,601,47"/>
 </map>

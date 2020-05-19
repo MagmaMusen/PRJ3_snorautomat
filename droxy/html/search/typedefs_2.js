@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['optionaliterator_805',['OptionalIterator',['../namespaceosapi_1_1detail.html#a5a7a4edb86a1799d9cc8b1ff460cd30f',1,'osapi::detail']]]
+  ['optionaliterator_1564',['OptionalIterator',['../namespaceosapi_1_1detail.html#a9b2eef1c9b693f957ff4d9a762acbbd5',1,'osapi::detail']]]
 ];

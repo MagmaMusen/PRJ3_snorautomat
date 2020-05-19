@@ -1,0 +1,6 @@
+<map id="SensorReader::sensorReaderHandleRead" name="SensorReader::sensorReaderHandleRead">
+<area shape="rect" id="node1" title="Reads from /dev/CDS file which is the sensor character drivers node. Reading from the file returns ti..." alt="" coords="5,49,197,90"/>
+<area shape="rect" id="node2" href="$class_sensor_reader.html#a4794e2c710f6f39c44562e4e413f2afd" title="Turns the string from read from the CDS&#45;driver into captured timings in the specified CoinTimings str..." alt="" coords="245,5,432,32"/>
+<area shape="rect" id="node3" href="$class_coin_identifier.html#a6a93d1e39be515da841054d5033d5669" title="Returns message queue of the class." alt="" coords="246,56,431,83"/>
+<area shape="rect" id="node4" href="$classosapi_1_1_basic_msg_queue.html#a8d82ffda45ea8a1d8878f356e5d1284b" title=" " alt="" coords="260,107,417,149"/>
+</map>

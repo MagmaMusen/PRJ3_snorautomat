@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['log_5flevels_823',['LOG_LEVELS',['../namespaceosapi.html#a311867d5b96da34e4a53740752676f92a68cfefd619005783b137f01ba554d7d9',1,'osapi']]]
+  ['log_5flevels_1591',['LOG_LEVELS',['../namespaceosapi.html#aa92a81a80b7a935689d8f853bd15cc8ea452ab4a2750cc0a1b61ee0fb040b4b56',1,'osapi']]]
 ];

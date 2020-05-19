@@ -1,5 +1,8 @@
 <map id="osapi::details::LogSystem::setNewOutput" name="osapi::details::LogSystem::setNewOutput">
-<area shape="rect" id="node1" title=" " alt="" coords="315,5,488,47"/>
-<area shape="rect" id="node2" href="$namespaceosapi.html#a1cd81643bbde2f22e67f2478dfeb34d4" title=" " alt="" coords="104,13,267,39"/>
-<area shape="rect" id="node3" href="$_test_log_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,13,56,39"/>
+<area shape="rect" id="node1" title=" " alt="" coords="695,35,868,76"/>
+<area shape="rect" id="node2" href="$classosapi_1_1details_1_1_log_system.html#a1474e1f3f8baefd8cff0f7bf4ddf7a08" title=" " alt="" coords="473,5,647,47"/>
+<area shape="rect" id="node5" href="$namespaceosapi.html#a1cd81643bbde2f22e67f2478dfeb34d4" title=" " alt="" coords="479,71,641,98"/>
+<area shape="rect" id="node3" href="$classosapi_1_1details_1_1_log_system.html#afa5c7790280deb466233473a0dfdcce5" title=" " alt="" coords="252,5,425,47"/>
+<area shape="rect" id="node4" href="$classosapi_1_1details_1_1_log_system.html#a336d84b80fbc90a608bcae80235a702b" title=" " alt="" coords="5,13,204,39"/>
+<area shape="rect" id="node6" href="$_test_log_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="313,71,364,98"/>
 </map>

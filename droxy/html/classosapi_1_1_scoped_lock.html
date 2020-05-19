@@ -68,13 +68,25 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classosapi_1_1_scoped_lock-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">osapi::ScopedLock Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="_scoped_lock_8hpp_source.html">ScopedLock.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="_coin_detecting_sensors_2_o_s_api_student_2inc_2osapi_2_scoped_lock_8hpp_source.html">ScopedLock.hpp</a>&gt;</code></p>
+<div class="dynheader">
+Collaboration diagram for osapi::ScopedLock:</div>
+<div class="dyncontent">
+<div class="center"><img src="classosapi_1_1_scoped_lock__coll__graph.png" border="0" usemap="#osapi_1_1_scoped_lock_coll__map" alt="Collaboration graph"/></div>
+<map name="osapi_1_1_scoped_lock_coll__map" id="osapi_1_1_scoped_lock_coll__map">
+<area shape="rect" title=" " alt="" coords="10,260,143,287"/>
+<area shape="rect" href="classosapi_1_1_mutex.html" title=" " alt="" coords="28,171,125,197"/>
+<area shape="rect" href="classosapi_1_1details_1_1_mutex.html" title=" " alt="" coords="5,81,148,108"/>
+<area shape="rect" href="classosapi_1_1_notcopyable.html" title=" " alt="" coords="10,5,143,32"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -86,13 +98,28 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a9d961efd711548e65d28982f56ed7376"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e61df52e73dfa5357e7dc9e1cfeed89"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1_scoped_lock.html#a1e61df52e73dfa5357e7dc9e1cfeed89">~ScopedLock</a> ()</td></tr>
 <tr class="separator:a1e61df52e73dfa5357e7dc9e1cfeed89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdc470a8e1302bb81b630a55191abc5b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1_scoped_lock.html#acdc470a8e1302bb81b630a55191abc5b">ScopedLock</a> (<a class="el" href="classosapi_1_1_mutex.html">Mutex</a> &amp;mut)</td></tr>
+<tr class="separator:acdc470a8e1302bb81b630a55191abc5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae878bd9ad00c1d0291dfd608f586fd01"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1_scoped_lock.html#ae878bd9ad00c1d0291dfd608f586fd01">unlock</a> ()</td></tr>
+<tr class="separator:ae878bd9ad00c1d0291dfd608f586fd01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d961efd711548e65d28982f56ed7376"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1_scoped_lock.html#a9d961efd711548e65d28982f56ed7376">lock</a> ()</td></tr>
+<tr class="separator:a9d961efd711548e65d28982f56ed7376"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e61df52e73dfa5357e7dc9e1cfeed89"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1_scoped_lock.html#a1e61df52e73dfa5357e7dc9e1cfeed89">~ScopedLock</a> ()</td></tr>
+<tr class="separator:a1e61df52e73dfa5357e7dc9e1cfeed89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a3b08ee81cac51e8cdc86f63f6c7c5a84"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classosapi_1_1_mutex.html">Mutex</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1_scoped_lock.html#a3b08ee81cac51e8cdc86f63f6c7c5a84">mut_</a></td></tr>
+<tr class="separator:a3b08ee81cac51e8cdc86f63f6c7c5a84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e8a92c1f6c3c3b4b987f89c24a15509"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1_scoped_lock.html#a8e8a92c1f6c3c3b4b987f89c24a15509">taken_</a></td></tr>
+<tr class="separator:a8e8a92c1f6c3c3b4b987f89c24a15509"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_scoped_lock_8hpp_source.html#l00009">9</a> of file <a class="el" href="_scoped_lock_8hpp_source.html">ScopedLock.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_coin_detecting_sensors_2_o_s_api_student_2inc_2osapi_2_scoped_lock_8hpp_source.html#l00009">9</a> of file <a class="el" href="_coin_detecting_sensors_2_o_s_api_student_2inc_2osapi_2_scoped_lock_8hpp_source.html">ScopedLock.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="acdc470a8e1302bb81b630a55191abc5b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acdc470a8e1302bb81b630a55191abc5b">&#9670;&nbsp;</a></span>ScopedLock()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#acdc470a8e1302bb81b630a55191abc5b">&#9670;&nbsp;</a></span>ScopedLock() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -115,10 +142,10 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_scoped_lock_8hpp_source.html#l00012">12</a> of file <a class="el" href="_scoped_lock_8hpp_source.html">ScopedLock.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;      : mut_(mut), taken_(<span class="keyword">true</span>)</div>
+<p class="definition">Definition at line <a class="el" href="_coin_detecting_sensors_2_o_s_api_student_2inc_2osapi_2_scoped_lock_8hpp_source.html#l00012">12</a> of file <a class="el" href="_coin_detecting_sensors_2_o_s_api_student_2inc_2osapi_2_scoped_lock_8hpp_source.html">ScopedLock.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;      : <a class="code" href="classosapi_1_1_scoped_lock.html#a3b08ee81cac51e8cdc86f63f6c7c5a84">mut_</a>(mut), <a class="code" href="classosapi_1_1_scoped_lock.html#a8e8a92c1f6c3c3b4b987f89c24a15509">taken_</a>(<span class="keyword">true</span>)</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    {</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;      mut_.<a class="code" href="classosapi_1_1_mutex.html#ad7bc7579c8d59a57da08e0f385d899f9">lock</a>();</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;      <a class="code" href="classosapi_1_1_scoped_lock.html#a3b08ee81cac51e8cdc86f63f6c7c5a84">mut_</a>.<a class="code" href="classosapi_1_1_mutex.html#ad7bc7579c8d59a57da08e0f385d899f9">lock</a>();</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    }</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -133,7 +160,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="a1e61df52e73dfa5357e7dc9e1cfeed89"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1e61df52e73dfa5357e7dc9e1cfeed89">&#9670;&nbsp;</a></span>~ScopedLock()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e61df52e73dfa5357e7dc9e1cfeed89">&#9670;&nbsp;</a></span>~ScopedLock() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -155,10 +182,91 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_scoped_lock_8hpp_source.html#l00030">30</a> of file <a class="el" href="_scoped_lock_8hpp_source.html">ScopedLock.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_coin_detecting_sensors_2_o_s_api_student_2inc_2osapi_2_scoped_lock_8hpp_source.html#l00030">30</a> of file <a class="el" href="_coin_detecting_sensors_2_o_s_api_student_2inc_2osapi_2_scoped_lock_8hpp_source.html">ScopedLock.hpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    {</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;      <span class="keywordflow">if</span>(taken_)</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        mut_.<a class="code" href="classosapi_1_1_mutex.html#a538c4b70ce00e605e9b2b9076de4497b">unlock</a>();</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;      <span class="keywordflow">if</span>(<a class="code" href="classosapi_1_1_scoped_lock.html#a8e8a92c1f6c3c3b4b987f89c24a15509">taken_</a>)</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <a class="code" href="classosapi_1_1_scoped_lock.html#a3b08ee81cac51e8cdc86f63f6c7c5a84">mut_</a>.<a class="code" href="classosapi_1_1_mutex.html#a538c4b70ce00e605e9b2b9076de4497b">unlock</a>();</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    }</div>
+</div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classosapi_1_1_scoped_lock_a1e61df52e73dfa5357e7dc9e1cfeed89_cgraph.png" border="0" usemap="#classosapi_1_1_scoped_lock_a1e61df52e73dfa5357e7dc9e1cfeed89_cgraph" alt=""/></div>
+<map name="classosapi_1_1_scoped_lock_a1e61df52e73dfa5357e7dc9e1cfeed89_cgraph" id="classosapi_1_1_scoped_lock_a1e61df52e73dfa5357e7dc9e1cfeed89_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,147,47"/>
+<area shape="rect" href="classosapi_1_1_mutex.html#a538c4b70ce00e605e9b2b9076de4497b" title=" " alt="" coords="195,13,337,39"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="acdc470a8e1302bb81b630a55191abc5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acdc470a8e1302bb81b630a55191abc5b">&#9670;&nbsp;</a></span>ScopedLock() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">osapi::ScopedLock::ScopedLock </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classosapi_1_1_mutex.html">Mutex</a> &amp;&#160;</td>
+          <td class="paramname"><em>mut</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="rpi_2_o_s_api_student_2inc_2osapi_2_scoped_lock_8hpp_source.html#l00012">12</a> of file <a class="el" href="rpi_2_o_s_api_student_2inc_2osapi_2_scoped_lock_8hpp_source.html">ScopedLock.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;      : <a class="code" href="classosapi_1_1_scoped_lock.html#a3b08ee81cac51e8cdc86f63f6c7c5a84">mut_</a>(mut), <a class="code" href="classosapi_1_1_scoped_lock.html#a8e8a92c1f6c3c3b4b987f89c24a15509">taken_</a>(<span class="keyword">true</span>)</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    {</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;      <a class="code" href="classosapi_1_1_scoped_lock.html#a3b08ee81cac51e8cdc86f63f6c7c5a84">mut_</a>.<a class="code" href="classosapi_1_1_mutex.html#ad7bc7579c8d59a57da08e0f385d899f9">lock</a>();</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    }</div>
+</div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classosapi_1_1_scoped_lock_acdc470a8e1302bb81b630a55191abc5b_cgraph.png" border="0" usemap="#classosapi_1_1_scoped_lock_acdc470a8e1302bb81b630a55191abc5b_cgraph" alt=""/></div>
+<map name="classosapi_1_1_scoped_lock_acdc470a8e1302bb81b630a55191abc5b_cgraph" id="classosapi_1_1_scoped_lock_acdc470a8e1302bb81b630a55191abc5b_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,147,47"/>
+<area shape="rect" href="classosapi_1_1_mutex.html#ad7bc7579c8d59a57da08e0f385d899f9" title=" " alt="" coords="195,13,324,39"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a1e61df52e73dfa5357e7dc9e1cfeed89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e61df52e73dfa5357e7dc9e1cfeed89">&#9670;&nbsp;</a></span>~ScopedLock() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">osapi::ScopedLock::~ScopedLock </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="rpi_2_o_s_api_student_2inc_2osapi_2_scoped_lock_8hpp_source.html#l00030">30</a> of file <a class="el" href="rpi_2_o_s_api_student_2inc_2osapi_2_scoped_lock_8hpp_source.html">ScopedLock.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    {</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;      <span class="keywordflow">if</span>(<a class="code" href="classosapi_1_1_scoped_lock.html#a8e8a92c1f6c3c3b4b987f89c24a15509">taken_</a>)</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <a class="code" href="classosapi_1_1_scoped_lock.html#a3b08ee81cac51e8cdc86f63f6c7c5a84">mut_</a>.<a class="code" href="classosapi_1_1_mutex.html#a538c4b70ce00e605e9b2b9076de4497b">unlock</a>();</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    }</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -174,7 +282,7 @@ Here is the call graph for this function:</div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a9d961efd711548e65d28982f56ed7376"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9d961efd711548e65d28982f56ed7376">&#9670;&nbsp;</a></span>lock()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d961efd711548e65d28982f56ed7376">&#9670;&nbsp;</a></span>lock() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -196,10 +304,50 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_scoped_lock_8hpp_source.html#l00024">24</a> of file <a class="el" href="_scoped_lock_8hpp_source.html">ScopedLock.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_coin_detecting_sensors_2_o_s_api_student_2inc_2osapi_2_scoped_lock_8hpp_source.html#l00024">24</a> of file <a class="el" href="_coin_detecting_sensors_2_o_s_api_student_2inc_2osapi_2_scoped_lock_8hpp_source.html">ScopedLock.hpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    {</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;      mut_.<a class="code" href="classosapi_1_1_mutex.html#ad7bc7579c8d59a57da08e0f385d899f9">lock</a>();</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;      taken_ = <span class="keyword">true</span>;      </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;      <a class="code" href="classosapi_1_1_scoped_lock.html#a3b08ee81cac51e8cdc86f63f6c7c5a84">mut_</a>.<a class="code" href="classosapi_1_1_mutex.html#ad7bc7579c8d59a57da08e0f385d899f9">lock</a>();</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;      <a class="code" href="classosapi_1_1_scoped_lock.html#a8e8a92c1f6c3c3b4b987f89c24a15509">taken_</a> = <span class="keyword">true</span>;      </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    }</div>
+</div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classosapi_1_1_scoped_lock_a9d961efd711548e65d28982f56ed7376_cgraph.png" border="0" usemap="#classosapi_1_1_scoped_lock_a9d961efd711548e65d28982f56ed7376_cgraph" alt=""/></div>
+<map name="classosapi_1_1_scoped_lock_a9d961efd711548e65d28982f56ed7376_cgraph" id="classosapi_1_1_scoped_lock_a9d961efd711548e65d28982f56ed7376_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,171,32"/>
+<area shape="rect" href="classosapi_1_1_mutex.html#ad7bc7579c8d59a57da08e0f385d899f9" title=" " alt="" coords="219,5,348,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a9d961efd711548e65d28982f56ed7376"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d961efd711548e65d28982f56ed7376">&#9670;&nbsp;</a></span>lock() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void osapi::ScopedLock::lock </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="rpi_2_o_s_api_student_2inc_2osapi_2_scoped_lock_8hpp_source.html#l00024">24</a> of file <a class="el" href="rpi_2_o_s_api_student_2inc_2osapi_2_scoped_lock_8hpp_source.html">ScopedLock.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    {</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;      <a class="code" href="classosapi_1_1_scoped_lock.html#a3b08ee81cac51e8cdc86f63f6c7c5a84">mut_</a>.<a class="code" href="classosapi_1_1_mutex.html#ad7bc7579c8d59a57da08e0f385d899f9">lock</a>();</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;      <a class="code" href="classosapi_1_1_scoped_lock.html#a8e8a92c1f6c3c3b4b987f89c24a15509">taken_</a> = <span class="keyword">true</span>;      </div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    }</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -214,7 +362,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="ae878bd9ad00c1d0291dfd608f586fd01"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae878bd9ad00c1d0291dfd608f586fd01">&#9670;&nbsp;</a></span>unlock()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae878bd9ad00c1d0291dfd608f586fd01">&#9670;&nbsp;</a></span>unlock() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -236,10 +384,10 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_scoped_lock_8hpp_source.html#l00018">18</a> of file <a class="el" href="_scoped_lock_8hpp_source.html">ScopedLock.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rpi_2_o_s_api_student_2inc_2osapi_2_scoped_lock_8hpp_source.html#l00018">18</a> of file <a class="el" href="rpi_2_o_s_api_student_2inc_2osapi_2_scoped_lock_8hpp_source.html">ScopedLock.hpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    {</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;      mut_.<a class="code" href="classosapi_1_1_mutex.html#a538c4b70ce00e605e9b2b9076de4497b">unlock</a>();</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;      taken_ = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;      <a class="code" href="classosapi_1_1_scoped_lock.html#a3b08ee81cac51e8cdc86f63f6c7c5a84">mut_</a>.<a class="code" href="classosapi_1_1_mutex.html#a538c4b70ce00e605e9b2b9076de4497b">unlock</a>();</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;      <a class="code" href="classosapi_1_1_scoped_lock.html#a8e8a92c1f6c3c3b4b987f89c24a15509">taken_</a> = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    }</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -253,12 +401,103 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
+<a id="ae878bd9ad00c1d0291dfd608f586fd01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae878bd9ad00c1d0291dfd608f586fd01">&#9670;&nbsp;</a></span>unlock() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void osapi::ScopedLock::unlock </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_coin_detecting_sensors_2_o_s_api_student_2inc_2osapi_2_scoped_lock_8hpp_source.html#l00018">18</a> of file <a class="el" href="_coin_detecting_sensors_2_o_s_api_student_2inc_2osapi_2_scoped_lock_8hpp_source.html">ScopedLock.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    {</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;      <a class="code" href="classosapi_1_1_scoped_lock.html#a3b08ee81cac51e8cdc86f63f6c7c5a84">mut_</a>.<a class="code" href="classosapi_1_1_mutex.html#a538c4b70ce00e605e9b2b9076de4497b">unlock</a>();</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;      <a class="code" href="classosapi_1_1_scoped_lock.html#a8e8a92c1f6c3c3b4b987f89c24a15509">taken_</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    }</div>
+</div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classosapi_1_1_scoped_lock_ae878bd9ad00c1d0291dfd608f586fd01_cgraph.png" border="0" usemap="#classosapi_1_1_scoped_lock_ae878bd9ad00c1d0291dfd608f586fd01_cgraph" alt=""/></div>
+<map name="classosapi_1_1_scoped_lock_ae878bd9ad00c1d0291dfd608f586fd01_cgraph" id="classosapi_1_1_scoped_lock_ae878bd9ad00c1d0291dfd608f586fd01_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,147,47"/>
+<area shape="rect" href="classosapi_1_1_mutex.html#a538c4b70ce00e605e9b2b9076de4497b" title=" " alt="" coords="195,13,337,39"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a3b08ee81cac51e8cdc86f63f6c7c5a84"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b08ee81cac51e8cdc86f63f6c7c5a84">&#9670;&nbsp;</a></span>mut_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classosapi_1_1_mutex.html">Mutex</a> &amp; osapi::ScopedLock::mut_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_coin_detecting_sensors_2_o_s_api_student_2inc_2osapi_2_scoped_lock_8hpp_source.html#l00038">38</a> of file <a class="el" href="_coin_detecting_sensors_2_o_s_api_student_2inc_2osapi_2_scoped_lock_8hpp_source.html">ScopedLock.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a8e8a92c1f6c3c3b4b987f89c24a15509"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e8a92c1f6c3c3b4b987f89c24a15509">&#9670;&nbsp;</a></span>taken_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool osapi::ScopedLock::taken_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_coin_detecting_sensors_2_o_s_api_student_2inc_2osapi_2_scoped_lock_8hpp_source.html#l00039">39</a> of file <a class="el" href="_coin_detecting_sensors_2_o_s_api_student_2inc_2osapi_2_scoped_lock_8hpp_source.html">ScopedLock.hpp</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>C:/Users/Andreas/Documents/GitHub/PRJ3_snorautomat/code/CoinDetectingSensors/OSApiStudent/inc/osapi/<a class="el" href="_scoped_lock_8hpp_source.html">ScopedLock.hpp</a></li>
+<li>C:/Users/Andreas/Documents/GitHub/PRJ3_snorautomat/code/CoinDetectingSensors/OSApiStudent/inc/osapi/<a class="el" href="_coin_detecting_sensors_2_o_s_api_student_2inc_2osapi_2_scoped_lock_8hpp_source.html">ScopedLock.hpp</a></li>
 </ul>
 </div><!-- contents -->
-<div class="ttc" id="aclassosapi_1_1_mutex_html_ad7bc7579c8d59a57da08e0f385d899f9"><div class="ttname"><a href="classosapi_1_1_mutex.html#ad7bc7579c8d59a57da08e0f385d899f9">osapi::Mutex::lock</a></div><div class="ttdeci">void lock()</div><div class="ttdef"><b>Definition:</b> <a href="linux_2_mutex_8cpp_source.html#l00010">Mutex.cpp:10</a></div></div>
-<div class="ttc" id="aclassosapi_1_1_mutex_html_a538c4b70ce00e605e9b2b9076de4497b"><div class="ttname"><a href="classosapi_1_1_mutex.html#a538c4b70ce00e605e9b2b9076de4497b">osapi::Mutex::unlock</a></div><div class="ttdeci">void unlock()</div><div class="ttdef"><b>Definition:</b> <a href="linux_2_mutex_8cpp_source.html#l00015">Mutex.cpp:15</a></div></div>
+<div class="ttc" id="aclassosapi_1_1_mutex_html_ad7bc7579c8d59a57da08e0f385d899f9"><div class="ttname"><a href="classosapi_1_1_mutex.html#ad7bc7579c8d59a57da08e0f385d899f9">osapi::Mutex::lock</a></div><div class="ttdeci">void lock()</div><div class="ttdef"><b>Definition:</b> <a href="_coin_detecting_sensors_2_o_s_api_student_2linux_2_mutex_8cpp_source.html#l00010">Mutex.cpp:10</a></div></div>
+<div class="ttc" id="aclassosapi_1_1_scoped_lock_html_a3b08ee81cac51e8cdc86f63f6c7c5a84"><div class="ttname"><a href="classosapi_1_1_scoped_lock.html#a3b08ee81cac51e8cdc86f63f6c7c5a84">osapi::ScopedLock::mut_</a></div><div class="ttdeci">Mutex &amp; mut_</div><div class="ttdef"><b>Definition:</b> <a href="_coin_detecting_sensors_2_o_s_api_student_2inc_2osapi_2_scoped_lock_8hpp_source.html#l00038">ScopedLock.hpp:38</a></div></div>
+<div class="ttc" id="aclassosapi_1_1_mutex_html_a538c4b70ce00e605e9b2b9076de4497b"><div class="ttname"><a href="classosapi_1_1_mutex.html#a538c4b70ce00e605e9b2b9076de4497b">osapi::Mutex::unlock</a></div><div class="ttdeci">void unlock()</div><div class="ttdef"><b>Definition:</b> <a href="_coin_detecting_sensors_2_o_s_api_student_2linux_2_mutex_8cpp_source.html#l00015">Mutex.cpp:15</a></div></div>
+<div class="ttc" id="aclassosapi_1_1_scoped_lock_html_a8e8a92c1f6c3c3b4b987f89c24a15509"><div class="ttname"><a href="classosapi_1_1_scoped_lock.html#a8e8a92c1f6c3c3b4b987f89c24a15509">osapi::ScopedLock::taken_</a></div><div class="ttdeci">bool taken_</div><div class="ttdef"><b>Definition:</b> <a href="_coin_detecting_sensors_2_o_s_api_student_2inc_2osapi_2_scoped_lock_8hpp_source.html#l00039">ScopedLock.hpp:39</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">
