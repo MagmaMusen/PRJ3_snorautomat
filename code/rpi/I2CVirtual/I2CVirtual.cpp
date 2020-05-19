@@ -1,6 +1,8 @@
 #include "I2CVirtual.hpp"
-#define I2C_IOCTL 0x0703 // sytem call
+
 //#define I2C_SLAVE 0x48
+
+#define I2C_IOCTL 0x0703 // sytem call
 int fd_i2c;
 i2c::i2c(int adresse)
 {
@@ -10,22 +12,25 @@ i2c::i2c(int adresse)
 
     if((fd_i2c = open (filename, O_RDWR)) < 0)
     {
-        printf("Failed to open i2c\n"); // Printing out a error message if /dev/i2c wasn't able to be openned
+        printf("Failed to open i2c\n"); // Printing out an error message if /dev/i2c wasn't able to be openned
     }
 
     if(ioctl(fd_i2c, I2C_IOCTL, adresse_) < 0)
     {
-        printf("Failed to open IOCTL\n"); // Printing out a error message if IOCTL wasn't able to be openned
+        printf("Failed to open IOCTL\n"); // Printing out an error message if IOCTL wasn't able to be openned
     }       
 }
 void i2c::i2cSend(char buffer1)
 {
-    // Write bytes
-    //buffer[1] = 0b00000001; // Opportunity to expand
-    int length = 2; // Number of bytes to send
-    char bufferArray[60];
+   
+    
+    // Number of bytes to send
+    int length = 3;
+    // Size of the bufferArray
+    char bufferArray[3];
     bufferArray[0] = buffer1;
-    //bufferArray[1] = buffer2;
+    
+    // write I2C from master to slave.
     if(write(fd_i2c, bufferArray, length) != length)
     {
         printf("Failed to send I2C bus\n");
@@ -39,6 +44,7 @@ char i2c::i2cReceive()
         char bufferReceive;
         char bufferReceiveArray[60] = {0};
         //bufferReceiveArray[0] = bufferReceive;
+        //Read I2C from slave to master
         if (read(fd_i2c, bufferReceiveArray, length) != length)
         {
             
