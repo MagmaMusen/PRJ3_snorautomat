@@ -1,0 +1,5 @@
+<map id="osapi::ILogOutput" name="osapi::ILogOutput">
+<area shape="rect" id="node1" title=" " alt="" coords="93,5,217,32"/>
+<area shape="rect" id="node2" href="$classosapi_1_1_log_output_std_out.html" title=" " alt="" coords="5,80,168,107"/>
+<area shape="rect" id="node3" href="$class_syslog.html" title=" " alt="" coords="193,80,255,107"/>
+</map>

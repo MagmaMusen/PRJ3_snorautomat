@@ -1,0 +1,6 @@
+<map id="osapi::BasicMsgQueue::receive" name="osapi::BasicMsgQueue::receive">
+<area shape="rect" id="node1" title=" " alt="" coords="184,49,341,90"/>
+<area shape="rect" id="node2" href="$class_fake_receiver.html#a2c7d52c3cb993363af0c9d2bc21375d4" title=" " alt="" coords="7,5,134,32"/>
+<area shape="rect" id="node3" href="$class_sensor_reader.html#a23ed6518af32a6ddaf062767f36e612a" title=" " alt="" coords="5,56,136,83"/>
+<area shape="rect" id="node4" href="$class_coin_identifier.html#aa8a415eb776528e7ceb577e9e40b4017" title=" " alt="" coords="9,107,132,133"/>
+</map>

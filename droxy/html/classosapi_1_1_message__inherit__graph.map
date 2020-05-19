@@ -1,0 +1,9 @@
+<map id="osapi::Message" name="osapi::Message">
+<area shape="rect" id="node1" title=" " alt="" coords="5,132,120,159"/>
+<area shape="rect" id="node2" href="$struct_coin.html" title="Wrapper message for the value of a coin. Can be sent to message queues." alt="" coords="239,5,287,32"/>
+<area shape="rect" id="node3" href="$struct_coin_timings.html" title="Wrapper message for the timesignature of a coin. Can be sent to message queues." alt="" coords="217,56,310,83"/>
+<area shape="rect" id="node4" href="$struct_log_ind.html" title=" " alt="" coords="233,107,293,133"/>
+<area shape="rect" id="node5" href="$structosapi_1_1details_1_1_log.html" title=" " alt="" coords="199,157,327,184"/>
+<area shape="rect" id="node6" href="$structosapi_1_1details_1_1_set_log_lvl.html" title=" " alt="" coords="182,208,345,235"/>
+<area shape="rect" id="node7" href="$structosapi_1_1details_1_1_set_new_output.html" title=" " alt="" coords="168,259,359,285"/>
+</map>
