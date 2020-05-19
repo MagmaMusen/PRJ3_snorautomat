@@ -15,26 +15,32 @@ void initI2C(void);
 void udrulning(void);
 
 /*! \mainpage Snor Maskine
+ *  This is the documentation for the SnorAutomat software.
+ *  It is possible too see the different main files for both the c++ and c programs for this project. For the project compiled to linux interfaced RPI, there is also a makefile.
+ *  In the pages there is the different files for the different parts of this projects.
+ *  For futher documentation on the libarys used, it is possible to see all the used files under files.
+ * - \subpage SnorAutomat_Snor "SnorHaandtering PSoC"
  *
- * This project helps user to draw shapes.
- * Currently two types of shapes can be drawn:
- * - \subpage Snor "Main fra snorhåndtering PSoC"
- *
- * - \subpage Dosering "Main fra dosering PSoC"
+ * - \subpage SnorAutomat_Dosering "Dosering PSoC"
  *
  */ 
 
-/*! \page Snor Main fra snorhåndtering PSoC
+/*! \page SnorAutomat_Snor SnorHaandtering PSoC
  *
- * så bobbe det virker
- * \include <main.c
+ *  This is for the PSoC, it is the main file wich also contains all the functions that is run in the main.
+ *  The program is for microcontroller PSoC CYCKIT-059 from cypress. For this to be implemented on the PSoC there is also a set up file for pins, I2C buss and so on, this is found in the ducumentation under ducumentation PSoC and you need PSoC creater to open it.
+ *  
+ * \include <SnorHaandtering_main.c
+ *. 
  *
  */
 
-/*! \page Dosering Main fra dosering PSoC
+/*! \page SnorAutomat_Dosering Dosering PSoC
  *
+ *  This is for the PSoC, it is the main file wich also contains all the functions that is run in the main.
+ *  The program is for microcontroller PSoC CYCKIT-059 from cypress. For this to be implemented on the PSoC there is also a set up file for pins, I2C buss and so on, this is found in the ducumentation under ducumentation PSoC and you need PSoC creater to open it.
  *
- * \include <Doserings_main.c
+ *  \include <Doserings_main.c
  */
 
 

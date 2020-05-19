@@ -11,7 +11,7 @@ var indexSectionsWithContent =
   8: "acdeilmnpstw",
   9: "cdo",
   10: "_bcfilmnoqsuw",
-  11: "ms"
+  11: "ds"
 };
 
 var indexSectionNames =

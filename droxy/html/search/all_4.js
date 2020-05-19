@@ -12,5 +12,6 @@ var searchData=
   ['done_5f_488',['done_',['../classosapi_1_1_completion.html#a282f958f4b946a26ee23defacc2c5c8a',1,'osapi::Completion']]],
   ['dosering_489',['Dosering',['../_doserings__main_8c.html#a34b8eb6e472ea6ac111dad1f87b8dae5',1,'Doserings_main.c']]],
   ['doserings_5fmain_2ec_490',['Doserings_main.c',['../_doserings__main_8c.html',1,'']]],
-  ['thread_491',['Thread',['../classosapi_1_1_thread_functor.html#aea35f352c7b4b8f68b3efb559a4086d3',1,'osapi::ThreadFunctor']]]
+  ['dosering_20psoc_491',['Dosering PSoC',['../_snor_automat__dosering.html',1,'index']]],
+  ['thread_492',['Thread',['../classosapi_1_1_thread_functor.html#aea35f352c7b4b8f68b3efb559a4086d3',1,'osapi::ThreadFunctor']]]
 ];
