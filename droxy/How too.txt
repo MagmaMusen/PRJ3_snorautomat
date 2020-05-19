@@ -1,0 +1,2 @@
+In the folder html there is the full documentation on software, if you open the index file.
+You will have to open it in a browser.

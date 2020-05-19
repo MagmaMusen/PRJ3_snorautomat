@@ -1,0 +1,8 @@
+<map id="osapi::SystemError" name="osapi::SystemError">
+<area shape="rect" id="node1" title=" " alt="" coords="260,80,395,107"/>
+<area shape="rect" id="node3" href="$classosapi_1_1_conditional_error.html" title=" " alt="" coords="5,155,159,181"/>
+<area shape="rect" id="node4" href="$classosapi_1_1_mutex_error.html" title=" " alt="" coords="183,155,309,181"/>
+<area shape="rect" id="node5" href="$classosapi_1_1_semaphore_error.html" title=" " alt="" coords="333,155,487,181"/>
+<area shape="rect" id="node6" href="$classosapi_1_1_thread_error.html" title=" " alt="" coords="511,155,639,181"/>
+<area shape="rect" id="node2" title=" " alt="" coords="265,5,389,32"/>
+</map>
