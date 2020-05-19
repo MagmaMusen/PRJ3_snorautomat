@@ -22,13 +22,17 @@ struct FinalRopeLength  :   public osapi::Message
 class communicationToMainController : public osapi::ThreadFunctor
 {
 public:
-    //!The constructor of the class with a parameter id
+    
+//!The constructor of the class with a parameter id
     communicationToMainController(unsigned long id);
-    //! The size of the messagequeue
+
+//! The size of the messagequeue
     static const int MAX_QUEUE_SIZE = 10;
-    //! Returns the messagequeue of the class
+
+//! Returns the messagequeue of the class
     osapi::MsgQueue* getMsgQueue();
-    //! Enum contains different message id's. 
+    
+//! Enum contains different message id's. 
     enum
     {
       ID_START_IND,
@@ -54,7 +58,8 @@ protected:
 private:
     //! The class' messagequeue attribute. It stores message's in the messagequeue when receiving events.
     osapi::MsgQueue mq_;
-    //! The 
+    
+    //! The id of the constructor 
     unsigned long id_;
     //! The event-loop run while it is set to true
     bool running_;

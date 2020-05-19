@@ -26,7 +26,6 @@ DEFINES += QT_DEPRECATED_WARNINGS OS_LINUX
 CONFIG += c++11
 
 SOURCES += \
-        main.cpp \
         mainwindow.cpp \
     orderropelengthwindow.cpp \
     globals.cpp \
@@ -47,7 +46,8 @@ SOURCES += \
     ../../common/LogTypes.cpp \
     ../../common/Time.cpp \
     ../../common/Timer.cpp \
-    fakereceivergui.cpp
+    fakereceivergui.cpp \
+    mainGUI2.cpp
 
 HEADERS += \
         mainwindow.h \
