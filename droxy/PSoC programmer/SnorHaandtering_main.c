@@ -23,6 +23,7 @@ void udrulning(void);
  *
  * - \subpage SnorAutomat_Dosering "Dosering PSoC"
  *
+ * - \subpage SnorAutomat_Snor_H "SnorHaandtering PSoC og Hardware"
  */ 
 
 /*! \page SnorAutomat_Snor SnorHaandtering PSoC
@@ -43,6 +44,14 @@ void udrulning(void);
  *  \include <Doserings_main.c
  */
 
+/*! \page SnorAutomat_Snor_H SnorHaandtering PSoC og Hardware
+*   
+*   
+*   This is the main for the PSoC that isn't used but it shows how we would make it. The code isn't tested fully because we don't have the hardware to make it, but it is tested with the first ans smaller stepper motor.
+*   The program is for microcontroller PSoC CYCKIT-059 from cypress. For this to be implemented on the PSoC there is also a set up file for pins, I2C buss and so on, this is found in the ducumentation under ducumentation PSoC and you need PSoC creater to open it.
+*
+*  \include <SnorHaandteringMedHardware_main.c
+*/
 
 
 /*!

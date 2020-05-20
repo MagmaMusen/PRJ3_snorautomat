@@ -17,18 +17,41 @@ void initI2C(void);
 void udrulningStart(void);
 void udrulningRunning(void);
 
-
+/*
+*   Same as the main program with I2C
+*/
 uint8 buffer[BUFFER_SIZE];
-int rot = 0; //Rotation
+/*
+*   Used in the delay buffer, can be ajusted to how fast the motor can go.
+*/
 int speed = 1; //speed 
+/*
+*   State used if you want more than one state in the driver system.
+*/
 int state = 0; //state
+/*
+*   Depending if it will run, is turned on and of in the software for the motor control.
+*/
 int start = 0; // start
+/*
+*   If changed it will go the opesit direction, it is used if we put antother motor in or changed the side, that we run the motor from.
+*/
 int dir = 0; //direction
+/*
+*   Same as the main program with I2C
+*/
 int BUFFER_SIZE = 6;
+/*
+*   Used to remember how many 1/4 rotations we have left 
+*/
 uint8 dispense = 0;
-
+/*
+*   
+*/
 int rotate = 0;//rotate
-
+/*
+*   Is used for the waveform we use, but it can contaion 3 more, if you need more power or steps from the motor.
+*/
 int stateArray[3][8][4] = //waveArray
                         {{{1,0,0,0},
                          {0,1,0,0},
@@ -39,6 +62,9 @@ int stateArray[3][8][4] = //waveArray
                          {0,0,1,0},
                          {0,0,0,1}}};
 
+/*
+*   In main the system is initialized and the program part is in the forever foor loop. In the foor loop there is a function to start the motors and one to run the motor.
+*/
 int main(void)
 {
     CyGlobalIntEnable; /* Enable global interrupts. */
@@ -56,26 +82,9 @@ int main(void)
 }
 
 
-//void udrulning(uint8 rot)
-//{
-//         
-//            start = 0;
-//            CyDelay(1000);
-//            rotate = 1;
-//            //rot;
-//          
-//            Pin_test_Write(1);
-//            dir = 0;
-//            state = 0;
-//            start = 1;
-//}
-
-
-
-
-
-
-
+/*
+*   Same as the main program with I2C
+*/
 void initI2C(void)
 {
     I2C_Start();
@@ -84,6 +93,9 @@ void initI2C(void)
     I2C_SlaveClearWriteBuf();
 }
 
+/*
+*   This function checks if the I2C have recived anything. If there is anything it takes the number and times it with 2025, the mumber is to be ajusted for the lenght of the command for every number. After this number of rotations is asigned to the global parameter it sends the I2C bus too sleep. 2025 is 10 centimeters with another and smaller motor, wich was tested but too small.
+*/
 void udrulningStart(void)
 {
 
@@ -97,6 +109,10 @@ void udrulningStart(void)
     }
 }
 
+
+/*
+*   If the previusly function is activated this functions starts to deliver the cord to the customer. When it is done it wakes up the I2C bus. It is in this function that the speed and rotation is used.
+*/
 void udrulningRunning(void)
 {
     if (start == 1)
@@ -127,7 +143,6 @@ void udrulningRunning(void)
             {
                 start = 0;
                 rotate = 0;
-                UART_PutString("Rotation stoppet");
             }
             I2C_Wakeup();
         }
