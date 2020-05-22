@@ -26,7 +26,14 @@ DEFINES += QT_DEPRECATED_WARNINGS OS_LINUX
 CONFIG += c++11
 
 SOURCES += \
-<<<<<<< HEAD
+<<<<<<< HEAD \
+    communicationtomaincontroller.cpp \
+    globals.cpp \
+    main.cpp \
+    mainGUI2.cpp \
+    orderropelengthwindow.cpp \
+    paymentwindow.cpp \
+    paidwindow.cpp
         main.cpp \
 =======
 >>>>>>> bdd8e8cbcd18b77bc720f20416d4838459aa89bb
