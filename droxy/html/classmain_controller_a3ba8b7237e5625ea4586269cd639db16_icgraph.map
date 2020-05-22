@@ -1,0 +1,5 @@
+<map id="mainController::cancelFromGUIHandle" name="mainController::cancelFromGUIHandle">
+<area shape="rect" id="node1" title=" " alt="" coords="428,5,609,47"/>
+<area shape="rect" id="node2" href="$classmain_controller.html#aa324b2a89dfa7dede84750abf9d0e650" title="The dispatcher of the class. It receives an id and a message. According to the id it calls a differen..." alt="" coords="184,5,380,47"/>
+<area shape="rect" id="node3" href="$classmain_controller.html#ab54861025ba116dd36b44e205bcae943" title="The event&#45;loop of the class. It receives a message, call the dispatcher with an id and a message and ..." alt="" coords="5,13,136,39"/>
+</map>

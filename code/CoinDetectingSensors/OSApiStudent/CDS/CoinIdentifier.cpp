@@ -26,12 +26,18 @@ void CoinIdentifier::CoinIdentifierHandler(unsigned int id, osapi::Message* msg)
   switch(id)
   {
     case ID_IDENTIFY_IND:
+      std::cout << "Received a time signature in identifer, running handler!" << std::endl;
       CoinIdentifierHandleIdentify(static_cast<CoinTimings*>(msg));
+      break;
+    default:
+      std::cout << "Unidentified ID in Identifier handler." << std::endl;
+      break;
   }
 }
 
 void CoinIdentifier::CoinIdentifierHandleIdentify(CoinTimings* timing)
 {
+  std::cout << "CoinTimings contains Rising:" << timing->timeDifferenceRising << " EnterExit: " << timing->timeDifferenceEnterExit << std::endl;
   // Physics! The distance covered divided by the time it took.
   float speed = sensorDistanceMillimeter_ / timing->timeDifferenceRising;
 
@@ -48,6 +54,7 @@ void CoinIdentifier::CoinIdentifierHandleIdentify(CoinTimings* timing)
 
   // Send message.
   receiver_->send(ID_COIN_IND, coin);
+  std::cout << "Sent coin event to receiver from identifier!" << std::endl;
 }
 
 float CoinIdentifier::widthToValue(float width)

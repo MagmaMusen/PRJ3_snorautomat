@@ -1,0 +1,4 @@
+<map id="FakeReceiver::FakeReceiverHandler" name="FakeReceiver::FakeReceiverHandler">
+<area shape="rect" id="node1" title="Indentifies messages on received on FakeReceiver&#39;s message queue, casts the message if needed and sta..." alt="" coords="180,5,367,47"/>
+<area shape="rect" id="node2" href="$class_fake_receiver.html#a2c7d52c3cb993363af0c9d2bc21375d4" title=" " alt="" coords="5,13,132,39"/>
+</map>

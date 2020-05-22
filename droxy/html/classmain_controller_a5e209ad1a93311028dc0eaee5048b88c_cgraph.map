@@ -1,0 +1,4 @@
+<map id="mainController::checkIfPriceReached" name="mainController::checkIfPriceReached">
+<area shape="rect" id="node1" title="If priceForRope_ &lt;= amoutPaid_ then it sends finalRopeLength_ to snorHaandtering." alt="" coords="5,5,189,47"/>
+<area shape="rect" id="node2" href="$classi2c.html#a74992c4494bcccf99bdffad173ed3ad7" title="It sends a char buffer from master to slave by I2C." alt="" coords="237,13,332,39"/>
+</map>

@@ -1,0 +1,12 @@
+<map id="osapi::details::LogSystem" name="osapi::details::LogSystem">
+<area shape="rect" id="node1" title=" " alt="" coords="175,468,348,495"/>
+<area shape="rect" id="node2" href="$classosapi_1_1_thread_functor.html" title=" " alt="" coords="31,379,175,405"/>
+<area shape="rect" id="node3" href="$classosapi_1_1_completion.html" title=" " alt="" coords="67,282,194,309"/>
+<area shape="rect" id="node4" href="$classosapi_1_1_conditional.html" title=" " alt="" coords="103,171,228,197"/>
+<area shape="rect" id="node10" href="$classosapi_1_1_basic_msg_queue.html" title=" " alt="" coords="265,275,423,316"/>
+<area shape="rect" id="node5" href="$classosapi_1_1_notcopyable.html" title=" " alt="" coords="147,5,280,32"/>
+<area shape="rect" id="node6" href="$classosapi_1_1details_1_1_conditional.html" title=" " alt="" coords="5,81,176,108"/>
+<area shape="rect" id="node8" href="$classosapi_1_1details_1_1_mutex.html" title=" " alt="" coords="251,81,394,108"/>
+<area shape="rect" id="node7" href="$classosapi_1_1_mutex.html" title=" " alt="" coords="274,171,371,197"/>
+<area shape="rect" id="node9" href="$classosapi_1_1_i_log_output.html" title=" " alt="" coords="199,379,323,405"/>
+</map>

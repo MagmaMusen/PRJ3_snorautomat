@@ -1,0 +1,11 @@
+<map id="osapi::Timer" name="osapi::Timer">
+<area shape="rect" id="node1" title=" " alt="" coords="148,501,241,528"/>
+<area shape="rect" id="node2" href="$classosapi_1_1_i_timer.html" title=" " alt="" coords="147,425,243,452"/>
+<area shape="rect" id="node3" href="$classosapi_1_1_thread_functor.html" title=" " alt="" coords="123,349,267,376"/>
+<area shape="rect" id="node4" href="$classosapi_1_1_completion.html" title=" " alt="" coords="131,260,258,287"/>
+<area shape="rect" id="node5" href="$classosapi_1_1_conditional.html" title=" " alt="" coords="5,171,131,197"/>
+<area shape="rect" id="node6" href="$classosapi_1_1_notcopyable.html" title=" " alt="" coords="48,5,181,32"/>
+<area shape="rect" id="node7" href="$classosapi_1_1details_1_1_conditional.html" title=" " alt="" coords="29,81,200,108"/>
+<area shape="rect" id="node9" href="$classosapi_1_1details_1_1_mutex.html" title=" " alt="" coords="225,81,367,108"/>
+<area shape="rect" id="node8" href="$classosapi_1_1_mutex.html" title=" " alt="" coords="247,171,345,197"/>
+</map>

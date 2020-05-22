@@ -1,0 +1,12 @@
+<map id="osapi::TimerId" name="osapi::TimerId">
+<area shape="rect" id="node1" title=" " alt="" coords="319,364,422,391"/>
+<area shape="rect" id="node2" href="$classosapi_1_1_i_timer_id.html" title=" " alt="" coords="5,275,112,301"/>
+<area shape="rect" id="node3" href="$classosapi_1_1_message.html" title=" " alt="" coords="136,275,251,301"/>
+<area shape="rect" id="node4" href="$classosapi_1_1_basic_msg_queue.html" title=" " alt="" coords="275,275,467,301"/>
+<area shape="rect" id="node5" href="$classosapi_1_1_conditional.html" title=" " alt="" coords="280,171,405,197"/>
+<area shape="rect" id="node6" href="$classosapi_1_1_notcopyable.html" title=" " alt="" coords="276,5,409,32"/>
+<area shape="rect" id="node7" href="$classosapi_1_1details_1_1_conditional.html" title=" " alt="" coords="257,81,428,108"/>
+<area shape="rect" id="node9" href="$classosapi_1_1details_1_1_mutex.html" title=" " alt="" coords="453,81,595,108"/>
+<area shape="rect" id="node8" href="$classosapi_1_1_mutex.html" title=" " alt="" coords="466,171,563,197"/>
+<area shape="rect" id="node10" href="$classosapi_1_1_time.html" title=" " alt="" coords="573,275,662,301"/>
+</map>

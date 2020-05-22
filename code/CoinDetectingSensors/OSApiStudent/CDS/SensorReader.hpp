@@ -26,8 +26,9 @@ public:
 
     //! Event message ID's. Used to cast wrapper structs. They are received as their base-class Message and therefore need to be identified and casted. 
     enum {
-        ID_READ_IND, 
-        ID_IDENTIFY_IND
+        ID_READ_IND,
+        ID_IDENTIFY_IND,
+        ID_COIN_IND
     };
 
     //! Returns message queue of the class.
@@ -50,6 +51,8 @@ private:
     //! Event loop exit if set to false.
     bool running_;
 
+    //! Starts the read loop.
+    void startRead();
 
     //! SensorReader's FIFO message queue where received events are stored.
     osapi::MsgQueue mq_;

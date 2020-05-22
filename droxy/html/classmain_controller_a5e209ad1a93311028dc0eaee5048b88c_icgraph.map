@@ -1,0 +1,7 @@
+<map id="mainController::checkIfPriceReached" name="mainController::checkIfPriceReached">
+<area shape="rect" id="node1" title="If priceForRope_ &lt;= amoutPaid_ then it sends finalRopeLength_ to snorHaandtering." alt="" coords="868,35,1052,76"/>
+<area shape="rect" id="node2" href="$classmain_controller.html#aa3721e6bf38f65ec2afdcf0ad8cd60d2" title="When receiving a coin input the coinHandle updates the amoutPaid_ and send it to GUI." alt="" coords="643,42,820,69"/>
+<area shape="rect" id="node3" href="$classmain_controller.html#a90a49dc0e63d853a61c4b504df2c6002" title="When the class receives the finalRopeLength from GUI it sets finalRopeLength_ equal to finalRopeLengt..." alt="" coords="428,5,595,47"/>
+<area shape="rect" id="node4" href="$classmain_controller.html#aa324b2a89dfa7dede84750abf9d0e650" title="The dispatcher of the class. It receives an id and a message. According to the id it calls a differen..." alt="" coords="184,35,380,76"/>
+<area shape="rect" id="node5" href="$classmain_controller.html#ab54861025ba116dd36b44e205bcae943" title="The event&#45;loop of the class. It receives a message, call the dispatcher with an id and a message and ..." alt="" coords="5,42,136,69"/>
+</map>
