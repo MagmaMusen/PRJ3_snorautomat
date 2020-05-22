@@ -24,6 +24,8 @@ void udrulning(void);
  * - \subpage SnorAutomat_Dosering "Dosering PSoC"
  *
  * - \subpage SnorAutomat_Snor_H "SnorHaandtering PSoC og Hardware"
+ * 
+ * - \subpage SnorAutomat_Monttaeller "Moenttaeller software"
  */ 
 
 /*! \page SnorAutomat_Snor SnorHaandtering PSoC
@@ -52,6 +54,18 @@ void udrulning(void);
 *
 *  \include <SnorHaandteringMedHardware_main.c
 */
+
+/*! \page SnorAutomat_Monttaeller Moenttaeller software
+ *
+ *  This page is quick way to access the most important parts of the moenttaeller software.
+ *
+ *  \include <mainCDS.cpp
+ *  \include <SensorReader.hpp
+ *  \include <SensorReader.cpp
+ *  \include <CoinIdentifier.hpp
+ *  \include <CoinIdentifier.cpp
+ *  \include <CDSdriver.c
+ */
 
 
 /*!
