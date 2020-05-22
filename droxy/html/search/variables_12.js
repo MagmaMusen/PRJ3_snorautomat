@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['value_1556',['value',['../struct_coin.html#a1e9fc1455bc37a567868f541e5f135d7',1,'Coin']]]
+  ['value_1424',['value',['../struct_coin.html#a1e9fc1455bc37a567868f541e5f135d7',1,'Coin']]]
 ];

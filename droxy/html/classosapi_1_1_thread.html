@@ -405,7 +405,7 @@ Here is the call graph for this function:</div>
 <map name="classosapi_1_1_thread_a6b96884f4d39f6134bf8d3d53f0d695b_cgraph" id="classosapi_1_1_thread_a6b96884f4d39f6134bf8d3d53f0d695b_cgraph">
 <area shape="rect" title=" " alt="" coords="5,35,152,61"/>
 <area shape="rect" href="classosapi_1_1_thread.html#a5409235d68889397cb5bfe092582cd72" title=" " alt="" coords="200,35,335,61"/>
-<area shape="rect" href="classosapi_1_1_thread_functor.html#a4bd2626d7ff251a9a09ec4a7c019cef6" title=" " alt="" coords="383,27,527,69"/>
+<area shape="rect" href="classosapi_1_1_thread_functor.html#a26b0ae3a3f8c2d8319f6631b4dc3942e" title=" " alt="" coords="383,27,527,69"/>
 <area shape="rect" href="classosapi_1_1_thread_functor.html#a823fdf26390662df38ac9b2639277ecd" title=" " alt="" coords="575,5,745,32"/>
 <area shape="rect" href="classosapi_1_1_completion.html#abf5a792e0ba4bc3f32c1a463545399cd" title=" " alt="" coords="593,57,727,98"/>
 <area shape="rect" href="classosapi_1_1_conditional.html#a206779a0d1c28828626c5f063d120d2b" title=" " alt="" coords="793,57,919,98"/>
@@ -867,7 +867,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="classosapi_1_1_thread_a986ca922d21233b02a167ba1075bca5b_icgraph.png" border="0" usemap="#classosapi_1_1_thread_a986ca922d21233b02a167ba1075bca5b_icgraph" alt=""/></div>
 <map name="classosapi_1_1_thread_a986ca922d21233b02a167ba1075bca5b_icgraph" id="classosapi_1_1_thread_a986ca922d21233b02a167ba1075bca5b_icgraph">
 <area shape="rect" title=" " alt="" coords="104,5,271,32"/>
-<area shape="rect" href="_test_thread_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,5,56,32"/>
+<area shape="rect" href="_coin_detecting_sensors_2_o_s_api_student_2test_2_test_thread_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,5,56,32"/>
 </map>
 </div>
 
@@ -956,7 +956,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;      <span class="keywordflow">if</span>(pthread_attr_setschedparam(&amp;attr, &amp;sched_p) != 0) <span class="keywordflow">throw</span> ThreadError();                 <span class="comment">// Use the priority        </span></div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;      <span class="comment">/* Missing thread creation */</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;      <span class="keywordflow">if</span> (pthread_create(&amp;<a class="code" href="classosapi_1_1_thread.html#a6c450469c9e28cbdfafba93df44dfc11">threadId_</a>, &amp;attr, <a class="code" href="classosapi_1_1_thread_functor.html#a4bd2626d7ff251a9a09ec4a7c019cef6">ThreadFunctor::threadMapper</a>, <a class="code" href="classosapi_1_1_thread.html#a2db34d14e11d2b2ef680e426358ba81d">tf_</a>) != 0)</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;      <span class="keywordflow">if</span> (pthread_create(&amp;<a class="code" href="classosapi_1_1_thread.html#a6c450469c9e28cbdfafba93df44dfc11">threadId_</a>, &amp;attr, <a class="code" href="classosapi_1_1_thread_functor.html#a26b0ae3a3f8c2d8319f6631b4dc3942e">ThreadFunctor::threadMapper</a>, <a class="code" href="classosapi_1_1_thread.html#a2db34d14e11d2b2ef680e426358ba81d">tf_</a>) != 0)</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keywordflow">throw</span> ThreadError();</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;      </div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;      pthread_attr_destroy(&amp;attr);</div>
@@ -964,7 +964,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    {</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;      <span class="comment">/* Missing thread creation */</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;      <span class="keywordflow">if</span> (pthread_create(&amp;<a class="code" href="classosapi_1_1_thread.html#a6c450469c9e28cbdfafba93df44dfc11">threadId_</a>, NULL, <a class="code" href="classosapi_1_1_thread_functor.html#a4bd2626d7ff251a9a09ec4a7c019cef6">ThreadFunctor::threadMapper</a>, <a class="code" href="classosapi_1_1_thread.html#a2db34d14e11d2b2ef680e426358ba81d">tf_</a>) != 0)</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;      <span class="keywordflow">if</span> (pthread_create(&amp;<a class="code" href="classosapi_1_1_thread.html#a6c450469c9e28cbdfafba93df44dfc11">threadId_</a>, NULL, <a class="code" href="classosapi_1_1_thread_functor.html#a26b0ae3a3f8c2d8319f6631b4dc3942e">ThreadFunctor::threadMapper</a>, <a class="code" href="classosapi_1_1_thread.html#a2db34d14e11d2b2ef680e426358ba81d">tf_</a>) != 0)</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keywordflow">throw</span> ThreadError();</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    }</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="comment">// If ok no exception was thrown thus we have a valid thread and its attached!</span></div>
@@ -976,7 +976,7 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="classosapi_1_1_thread_a5409235d68889397cb5bfe092582cd72_cgraph.png" border="0" usemap="#classosapi_1_1_thread_a5409235d68889397cb5bfe092582cd72_cgraph" alt=""/></div>
 <map name="classosapi_1_1_thread_a5409235d68889397cb5bfe092582cd72_cgraph" id="classosapi_1_1_thread_a5409235d68889397cb5bfe092582cd72_cgraph">
 <area shape="rect" title=" " alt="" coords="5,35,140,61"/>
-<area shape="rect" href="classosapi_1_1_thread_functor.html#a4bd2626d7ff251a9a09ec4a7c019cef6" title=" " alt="" coords="188,27,332,69"/>
+<area shape="rect" href="classosapi_1_1_thread_functor.html#a26b0ae3a3f8c2d8319f6631b4dc3942e" title=" " alt="" coords="188,27,332,69"/>
 <area shape="rect" href="classosapi_1_1_thread_functor.html#a823fdf26390662df38ac9b2639277ecd" title=" " alt="" coords="380,5,551,32"/>
 <area shape="rect" href="classosapi_1_1_completion.html#abf5a792e0ba4bc3f32c1a463545399cd" title=" " alt="" coords="398,57,533,98"/>
 <area shape="rect" href="classosapi_1_1_conditional.html#a206779a0d1c28828626c5f063d120d2b" title=" " alt="" coords="599,57,724,98"/>
@@ -1168,6 +1168,7 @@ Here is the caller graph for this function:</div>
 <div class="ttc" id="aclassosapi_1_1_thread_html_a75bc13f67c5eb1af9ffa9653f2af5643"><div class="ttname"><a href="classosapi_1_1_thread.html#a75bc13f67c5eb1af9ffa9653f2af5643">osapi::Thread::name_</a></div><div class="ttdeci">std::string name_</div><div class="ttdef"><b>Definition:</b> <a href="_coin_detecting_sensors_2_o_s_api_student_2inc_2osapi_2linux_2_thread_8hpp_source.html#l00042">Thread.hpp:42</a></div></div>
 <div class="ttc" id="aclassosapi_1_1_completion_html_af8a7bd1386bf1f50f4b81e003f394494"><div class="ttname"><a href="classosapi_1_1_completion.html#af8a7bd1386bf1f50f4b81e003f394494">osapi::Completion::wait</a></div><div class="ttdeci">void wait()</div><div class="ttdef"><b>Definition:</b> <a href="_coin_detecting_sensors_2_o_s_api_student_2common_2_completion_8cpp_source.html#l00012">Completion.cpp:12</a></div></div>
 <div class="ttc" id="aclassosapi_1_1_thread_html_a29f9912dd4113cad7eba161835a5c114a16a4382f55a1827d83c6ac2ced571dd8"><div class="ttname"><a href="classosapi_1_1_thread.html#a29f9912dd4113cad7eba161835a5c114a16a4382f55a1827d83c6ac2ced571dd8">osapi::Thread::PRIORITY_NORMAL</a></div><div class="ttdeci">@ PRIORITY_NORMAL</div><div class="ttdef"><b>Definition:</b> <a href="_coin_detecting_sensors_2_o_s_api_student_2inc_2osapi_2linux_2_thread_8hpp_source.html#l00021">Thread.hpp:21</a></div></div>
+<div class="ttc" id="aclassosapi_1_1_thread_functor_html_a26b0ae3a3f8c2d8319f6631b4dc3942e"><div class="ttname"><a href="classosapi_1_1_thread_functor.html#a26b0ae3a3f8c2d8319f6631b4dc3942e">osapi::ThreadFunctor::threadMapper</a></div><div class="ttdeci">static void * threadMapper(void *p)</div><div class="ttdef"><b>Definition:</b> <a href="_coin_detecting_sensors_2_o_s_api_student_2linux_2_thread_functor_8cpp_source.html#l00005">ThreadFunctor.cpp:5</a></div></div>
 <div class="ttc" id="aclassosapi_1_1_thread_html_a29f9912dd4113cad7eba161835a5c114a19d5e344d128aac14e44d82cabc9424c"><div class="ttname"><a href="classosapi_1_1_thread.html#a29f9912dd4113cad7eba161835a5c114a19d5e344d128aac14e44d82cabc9424c">osapi::Thread::PRIORITY_LOW</a></div><div class="ttdeci">@ PRIORITY_LOW</div><div class="ttdef"><b>Definition:</b> <a href="_coin_detecting_sensors_2_o_s_api_student_2inc_2osapi_2linux_2_thread_8hpp_source.html#l00019">Thread.hpp:19</a></div></div>
 <div class="ttc" id="aclassosapi_1_1_thread_html_a6c450469c9e28cbdfafba93df44dfc11"><div class="ttname"><a href="classosapi_1_1_thread.html#a6c450469c9e28cbdfafba93df44dfc11">osapi::Thread::threadId_</a></div><div class="ttdeci">pthread_t threadId_</div><div class="ttdef"><b>Definition:</b> <a href="_coin_detecting_sensors_2_o_s_api_student_2inc_2osapi_2linux_2_thread_8hpp_source.html#l00043">Thread.hpp:43</a></div></div>
 <div class="ttc" id="aclassosapi_1_1_thread_functor_html_a04d2b95bc023d30ee08386758c33e8ba"><div class="ttname"><a href="classosapi_1_1_thread_functor.html#a04d2b95bc023d30ee08386758c33e8ba">osapi::ThreadFunctor::threadDone_</a></div><div class="ttdeci">Completion threadDone_</div><div class="ttdef"><b>Definition:</b> <a href="_coin_detecting_sensors_2_o_s_api_student_2inc_2osapi_2linux_2_thread_functor_8hpp_source.html#l00020">ThreadFunctor.hpp:20</a></div></div>
@@ -1176,7 +1177,6 @@ Here is the caller graph for this function:</div>
 <div class="ttc" id="aclassosapi_1_1_thread_html_a06c0734f798f7589ae24130c8ff8e3b9"><div class="ttname"><a href="classosapi_1_1_thread.html#a06c0734f798f7589ae24130c8ff8e3b9">osapi::Thread::attached_</a></div><div class="ttdeci">bool attached_</div><div class="ttdef"><b>Definition:</b> <a href="_coin_detecting_sensors_2_o_s_api_student_2inc_2osapi_2linux_2_thread_8hpp_source.html#l00044">Thread.hpp:44</a></div></div>
 <div class="ttc" id="aclassosapi_1_1_thread_html_a6aa288ec3487ed5f4b1abe88cddc6aea"><div class="ttname"><a href="classosapi_1_1_thread.html#a6aa288ec3487ed5f4b1abe88cddc6aea">osapi::Thread::priority_</a></div><div class="ttdeci">ThreadPriority priority_</div><div class="ttdef"><b>Definition:</b> <a href="_coin_detecting_sensors_2_o_s_api_student_2inc_2osapi_2linux_2_thread_8hpp_source.html#l00041">Thread.hpp:41</a></div></div>
 <div class="ttc" id="aclassosapi_1_1_thread_html_a29f9912dd4113cad7eba161835a5c114aca12d024bd249f78326b794cb2d0b8d6"><div class="ttname"><a href="classosapi_1_1_thread.html#a29f9912dd4113cad7eba161835a5c114aca12d024bd249f78326b794cb2d0b8d6">osapi::Thread::PRIORITY_ABOVE_NORMAL</a></div><div class="ttdeci">@ PRIORITY_ABOVE_NORMAL</div><div class="ttdef"><b>Definition:</b> <a href="_coin_detecting_sensors_2_o_s_api_student_2inc_2osapi_2linux_2_thread_8hpp_source.html#l00022">Thread.hpp:22</a></div></div>
-<div class="ttc" id="aclassosapi_1_1_thread_functor_html_a4bd2626d7ff251a9a09ec4a7c019cef6"><div class="ttname"><a href="classosapi_1_1_thread_functor.html#a4bd2626d7ff251a9a09ec4a7c019cef6">osapi::ThreadFunctor::threadMapper</a></div><div class="ttdeci">static void * threadMapper(void *p)</div><div class="ttdef"><b>Definition:</b> <a href="_coin_detecting_sensors_2_o_s_api_student_2linux_2_thread_functor_8cpp_source.html#l00005">ThreadFunctor.cpp:5</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

@@ -98,6 +98,8 @@ Collaboration diagram for TestThread:</div>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:a5ad1cddf48ad138c7064e86f0f4772cf"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_test_thread.html#a5ad1cddf48ad138c7064e86f0f4772cf">run</a> ()</td></tr>
 <tr class="separator:a5ad1cddf48ad138c7064e86f0f4772cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ad1cddf48ad138c7064e86f0f4772cf"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_test_thread.html#a5ad1cddf48ad138c7064e86f0f4772cf">run</a> ()</td></tr>
+<tr class="separator:a5ad1cddf48ad138c7064e86f0f4772cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classosapi_1_1_thread_functor"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classosapi_1_1_thread_functor')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classosapi_1_1_thread_functor.html">osapi::ThreadFunctor</a></td></tr>
 <tr class="memitem:a63bba637710b3741b08aaacf8837382d inherit pro_methods_classosapi_1_1_thread_functor"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1_thread_functor.html#a63bba637710b3741b08aaacf8837382d">~ThreadFunctor</a> ()</td></tr>
 <tr class="separator:a63bba637710b3741b08aaacf8837382d inherit pro_methods_classosapi_1_1_thread_functor"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -106,10 +108,10 @@ Protected Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_test_thread_8cpp_source.html#l00005">5</a> of file <a class="el" href="_test_thread_8cpp_source.html">TestThread.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_coin_detecting_sensors_2_o_s_api_student_2test_2_test_thread_8cpp_source.html#l00005">5</a> of file <a class="el" href="_coin_detecting_sensors_2_o_s_api_student_2test_2_test_thread_8cpp_source.html">TestThread.cpp</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a5ad1cddf48ad138c7064e86f0f4772cf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5ad1cddf48ad138c7064e86f0f4772cf">&#9670;&nbsp;</a></span>run()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ad1cddf48ad138c7064e86f0f4772cf">&#9670;&nbsp;</a></span>run() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -133,7 +135,58 @@ Protected Member Functions</h2></td></tr>
 
 <p>Implements <a class="el" href="classosapi_1_1_thread_functor.html#a823fdf26390662df38ac9b2639277ecd">osapi::ThreadFunctor</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_test_thread_8cpp_source.html#l00009">9</a> of file <a class="el" href="_test_thread_8cpp_source.html">TestThread.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_coin_detecting_sensors_2_o_s_api_student_2test_2_test_thread_8cpp_source.html#l00009">9</a> of file <a class="el" href="_coin_detecting_sensors_2_o_s_api_student_2test_2_test_thread_8cpp_source.html">TestThread.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;  {</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="keywordtype">int</span> count = 0;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keywordflow">for</span>(;;)</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    {</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;      std::cout &lt;&lt; <span class="stringliteral">&quot;Iteration : &quot;</span> &lt;&lt; count &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;      ++count;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;      <span class="keywordflow">if</span>(count &gt; 5)</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;      <a class="code" href="namespaceosapi.html#aeed8c6f1372f57481ea48bcf2a672c82">osapi::sleep</a>(1000);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    }</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  }</div>
+</div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_test_thread_a5ad1cddf48ad138c7064e86f0f4772cf_cgraph.png" border="0" usemap="#class_test_thread_a5ad1cddf48ad138c7064e86f0f4772cf_cgraph" alt=""/></div>
+<map name="class_test_thread_a5ad1cddf48ad138c7064e86f0f4772cf_cgraph" id="class_test_thread_a5ad1cddf48ad138c7064e86f0f4772cf_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,117,32"/>
+<area shape="rect" href="namespaceosapi.html#aeed8c6f1372f57481ea48bcf2a672c82" title=" " alt="" coords="165,5,257,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a5ad1cddf48ad138c7064e86f0f4772cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ad1cddf48ad138c7064e86f0f4772cf">&#9670;&nbsp;</a></span>run() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void TestThread::run </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classosapi_1_1_thread_functor.html#a823fdf26390662df38ac9b2639277ecd">osapi::ThreadFunctor</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="rpi_2_o_s_api_student_2test_2_test_thread_8cpp_source.html#l00009">9</a> of file <a class="el" href="rpi_2_o_s_api_student_2test_2_test_thread_8cpp_source.html">TestThread.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;  {</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="keywordtype">int</span> count = 0;</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    </div>
@@ -160,7 +213,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>C:/Users/Andreas/Documents/GitHub/PRJ3_snorautomat/code/CoinDetectingSensors/OSApiStudent/test/<a class="el" href="_test_thread_8cpp_source.html">TestThread.cpp</a></li>
+<li>C:/Users/Andreas/Documents/GitHub/PRJ3_snorautomat/code/CoinDetectingSensors/OSApiStudent/test/<a class="el" href="_coin_detecting_sensors_2_o_s_api_student_2test_2_test_thread_8cpp_source.html">TestThread.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <div class="ttc" id="anamespaceosapi_html_aeed8c6f1372f57481ea48bcf2a672c82"><div class="ttname"><a href="namespaceosapi.html#aeed8c6f1372f57481ea48bcf2a672c82">osapi::sleep</a></div><div class="ttdeci">void sleep(unsigned long msecs)</div><div class="ttdef"><b>Definition:</b> <a href="_coin_detecting_sensors_2_o_s_api_student_2linux_2_utility_8cpp_source.html#l00006">Utility.cpp:6</a></div></div>

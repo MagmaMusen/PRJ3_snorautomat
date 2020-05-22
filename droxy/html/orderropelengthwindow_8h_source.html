@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.18"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Snorautomat: C:/Users/Andreas/Documents/GitHub/PRJ3_snorautomat/code/rpi/OSApiStudent/GUI1/orderropelengthwindow.h Source File</title>
+<title>Snorautomat: C:/Users/Andreas/Documents/GitHub/PRJ3_snorautomat/code/rpi/OSApiStudent/GUI2/GUI2/orderropelengthwindow.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Snorautomat
-   &#160;<span id="projectnumber">0.1</span>
+   &#160;<span id="projectnumber">1.0</span>
    </div>
   </td>
  </tr>
@@ -62,7 +62,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_050edd66366d13764f98250ef6db77f6.html">code</a></li><li class="navelem"><a class="el" href="dir_2c43f987661cccc1704702133d5ebf16.html">rpi</a></li><li class="navelem"><a class="el" href="dir_dc8fa9311b065964e2d966d02819053b.html">OSApiStudent</a></li><li class="navelem"><a class="el" href="dir_5ba7cee6b8b241818b832eceb49215ca.html">GUI1</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_050edd66366d13764f98250ef6db77f6.html">code</a></li><li class="navelem"><a class="el" href="dir_2c43f987661cccc1704702133d5ebf16.html">rpi</a></li><li class="navelem"><a class="el" href="dir_dc8fa9311b065964e2d966d02819053b.html">OSApiStudent</a></li><li class="navelem"><a class="el" href="dir_fb1e01d758a0df1a279588b373b23c0a.html">GUI2</a></li><li class="navelem"><a class="el" href="dir_9c21e1afc94d2e55232cd9d07ecbe6a9.html">GUI2</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -74,29 +74,123 @@ $(function() {
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define ORDERROPELENGTHWINDOW_H</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;QWizardPage&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_ui.html">Ui</a> {</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">class </span><a class="code" href="classorder_rope_length_window.html">orderRopeLengthWindow</a>;</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;}</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="classorder_rope_length_window.html">   10</a></span>&#160;<span class="keyword">class </span><a class="code" href="classorder_rope_length_window.html">orderRopeLengthWindow</a> : <span class="keyword">public</span> QWizardPage</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    Q_OBJECT</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classorder_rope_length_window.html#a4878b94e77545d0126549ce119dce999">orderRopeLengthWindow</a>(QWidget *parent = <span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <a class="code" href="classorder_rope_length_window.html#ae0160791588beadb071b2b1b030d1a1f">~orderRopeLengthWindow</a>();</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    Ui::orderRopeLengthWindow *ui;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;};</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#endif // ORDERROPELENGTHWINDOW_H</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;QLineEdit&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;QPushButton&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;QSpinBox&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="rpi_2_o_s_api_student_2_g_u_i2_2_g_u_i2_2globals_8h.html">globals.h</a>&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_ui.html">Ui</a> {</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">class </span><a class="code" href="classorder_rope_length_window.html">orderRopeLengthWindow</a>;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;}</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="classorder_rope_length_window.html">   16</a></span>&#160;<span class="keyword">class </span><a class="code" href="classorder_rope_length_window.html">orderRopeLengthWindow</a> : <span class="keyword">public</span> QWizardPage</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    Q_OBJECT</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classorder_rope_length_window.html#a4878b94e77545d0126549ce119dce999">orderRopeLengthWindow</a>(QWidget *parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="classorder_rope_length_window.html#ae0160791588beadb071b2b1b030d1a1f">~orderRopeLengthWindow</a>();</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classorder_rope_length_window.html#aab4c6ce369b156a1f2ff77c03b5c7a27">acceptButtonClicked</a>();</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classorder_rope_length_window.html#a0e0704233989ae0c42714054e109dcfa">plusFiveClicked</a>();</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;   </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classorder_rope_length_window.html#a72651d167253ee75e48720096b4d2450">minusFiveClicked</a>();</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classorder_rope_length_window.html#ad6ea9dcbe0fc1096dc89d480ebdbbb7c">declineClicked</a>();</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="classorder_rope_length_window.html#a749dbeaae8e0ad3c2a507c6d6625b4ae">   53</a></span>&#160;    <a class="code" href="class_ui_1_1order_rope_length_window.html">Ui::orderRopeLengthWindow</a> *<a class="code" href="classorder_rope_length_window.html#a749dbeaae8e0ad3c2a507c6d6625b4ae">ui</a>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="classorder_rope_length_window.html#a33482a911712b13e5c313468f819e17f">   56</a></span>&#160;    QLineEdit *<a class="code" href="classorder_rope_length_window.html#a33482a911712b13e5c313468f819e17f">LE1_</a>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    </div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="classorder_rope_length_window.html#a507a3127d20f1f65060970d69671189a">   59</a></span>&#160;    QPushButton *<a class="code" href="classorder_rope_length_window.html#a507a3127d20f1f65060970d69671189a">buttonFivePositive_</a>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    </div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="classorder_rope_length_window.html#a6414d38107eb06b3aa6a453cea2a5cb6">   62</a></span>&#160;    QPushButton *<a class="code" href="classorder_rope_length_window.html#a6414d38107eb06b3aa6a453cea2a5cb6">buttonFiveNegative_</a>;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    </div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="classorder_rope_length_window.html#a2ebd75046c8be871bca656c9deb6bf06">   66</a></span>&#160;    QPushButton *<a class="code" href="classorder_rope_length_window.html#a2ebd75046c8be871bca656c9deb6bf06">buttonAccept_</a>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="classorder_rope_length_window.html#a317744bd4b250d25c60b8df98d529958">   69</a></span>&#160;    QPushButton *<a class="code" href="classorder_rope_length_window.html#a317744bd4b250d25c60b8df98d529958">buttonDecline_</a>;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="classorder_rope_length_window.html#ad3d38179d8be283dc41f526e75a93fa0">   72</a></span>&#160;    QSpinBox *<a class="code" href="classorder_rope_length_window.html#ad3d38179d8be283dc41f526e75a93fa0">ropeLength_</a>;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;signals:</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classorder_rope_length_window.html#a83ab12d1a9d250c9a74d3e6f02a405b9">valueChangedPositive</a>(<span class="keywordtype">int</span>);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classorder_rope_length_window.html#ab4d2ebd0c5e71206ece9faecab306bd9">valueChangedNegative</a>(<span class="keywordtype">int</span>);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;     <span class="keywordtype">void</span> <a class="code" href="classorder_rope_length_window.html#a1e51b165851c18ad8db5e742ec97b69e">valueReset</a>(<span class="keywordtype">int</span>);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="keyword">public</span> slots:</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classorder_rope_length_window.html#a12ee0398cd923386a627003a2e1c5cce">openPaymentWindow</a>();</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
+<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="classorder_rope_length_window.html#ae53f918a623942141b71fc9f7a60c190">   96</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classorder_rope_length_window.html#ae53f918a623942141b71fc9f7a60c190">buttonFivePositiveClicked</a>()</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    {</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="_g_u_i_2_g_u_i000_2globals_8cpp.html#ad8d7e7d7ebf1c7b287644f79bbb40eff">ropeLength</a> &lt; <a class="code" href="_g_u_i_2_g_u_i000_2globals_8cpp.html#a623d2bdc179ae7aef136ef59ed812119">maximumRopeLength</a>)</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;            emit <a class="code" href="classorder_rope_length_window.html#a83ab12d1a9d250c9a74d3e6f02a405b9">valueChangedPositive</a>(<a class="code" href="_g_u_i_2_g_u_i000_2globals_8cpp.html#ad8d7e7d7ebf1c7b287644f79bbb40eff">ropeLength</a> = <a class="code" href="_g_u_i_2_g_u_i000_2globals_8cpp.html#ad8d7e7d7ebf1c7b287644f79bbb40eff">ropeLength</a> + <a class="code" href="_g_u_i_2_g_u_i000_2globals_8cpp.html#ab5b7be5a23afbac6d25b340d4d5fdc6c">ropeLengthAdded</a>);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        {}</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    }</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
+<div class="line"><a name="l00106"></a><span class="lineno"><a class="line" href="classorder_rope_length_window.html#a73aa41e3186ae96edd97d1f228789df3">  106</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classorder_rope_length_window.html#a73aa41e3186ae96edd97d1f228789df3">buttonFiveNegativeClicked</a>()</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    {</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        <span class="comment">// Securing that the customer can&#39;t order a negative size rope</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="_g_u_i_2_g_u_i000_2globals_8cpp.html#ad8d7e7d7ebf1c7b287644f79bbb40eff">ropeLength</a> &gt;= <a class="code" href="_g_u_i_2_g_u_i000_2globals_8cpp.html#aeba3ed687933c24e36554ba3d20e6ceb">minimumRopeLength</a>)</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        {</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;            emit <a class="code" href="classorder_rope_length_window.html#ab4d2ebd0c5e71206ece9faecab306bd9">valueChangedNegative</a>(<a class="code" href="_g_u_i_2_g_u_i000_2globals_8cpp.html#ad8d7e7d7ebf1c7b287644f79bbb40eff">ropeLength</a>=<a class="code" href="_g_u_i_2_g_u_i000_2globals_8cpp.html#ad8d7e7d7ebf1c7b287644f79bbb40eff">ropeLength</a> - <a class="code" href="_g_u_i_2_g_u_i000_2globals_8cpp.html#ab5b7be5a23afbac6d25b340d4d5fdc6c">ropeLengthAdded</a>);</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        }</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        {}</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    }</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
+<div class="line"><a name="l00118"></a><span class="lineno"><a class="line" href="classorder_rope_length_window.html#a2930be095b17dcbc152e91828cfcc052">  118</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classorder_rope_length_window.html#a2930be095b17dcbc152e91828cfcc052">buttonCancelClicked</a>()</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    {</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        emit <a class="code" href="classorder_rope_length_window.html#a1e51b165851c18ad8db5e742ec97b69e">valueReset</a>(<a class="code" href="_g_u_i_2_g_u_i000_2globals_8cpp.html#ad8d7e7d7ebf1c7b287644f79bbb40eff">ropeLength</a> = 0);</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    }</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classorder_rope_length_window.html#ab1f67e05bc1fa23881d17b4b2f67d11a">sendRopeLength</a>();</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;};</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160; </div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="preprocessor">#endif // ORDERROPELENGTHWINDOW_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclassorder_rope_length_window_html_ae0160791588beadb071b2b1b030d1a1f"><div class="ttname"><a href="classorder_rope_length_window.html#ae0160791588beadb071b2b1b030d1a1f">orderRopeLengthWindow::~orderRopeLengthWindow</a></div><div class="ttdeci">~orderRopeLengthWindow()</div><div class="ttdef"><b>Definition:</b> <a href="orderropelengthwindow_8cpp_source.html#l00011">orderropelengthwindow.cpp:11</a></div></div>
-<div class="ttc" id="aclassorder_rope_length_window_html"><div class="ttname"><a href="classorder_rope_length_window.html">orderRopeLengthWindow</a></div><div class="ttdef"><b>Definition:</b> <a href="orderropelengthwindow_8h_source.html#l00010">orderropelengthwindow.h:11</a></div></div>
-<div class="ttc" id="anamespace_ui_html"><div class="ttname"><a href="namespace_ui.html">Ui</a></div><div class="ttdef"><b>Definition:</b> <a href="_g_u_i_2mainwindow_8h_source.html#l00008">mainwindow.h:8</a></div></div>
-<div class="ttc" id="aclassorder_rope_length_window_html_a4878b94e77545d0126549ce119dce999"><div class="ttname"><a href="classorder_rope_length_window.html#a4878b94e77545d0126549ce119dce999">orderRopeLengthWindow::orderRopeLengthWindow</a></div><div class="ttdeci">orderRopeLengthWindow(QWidget *parent=nullptr)</div><div class="ttdef"><b>Definition:</b> <a href="orderropelengthwindow_8cpp_source.html#l00004">orderropelengthwindow.cpp:4</a></div></div>
+<div class="ttc" id="aclassorder_rope_length_window_html_a2930be095b17dcbc152e91828cfcc052"><div class="ttname"><a href="classorder_rope_length_window.html#a2930be095b17dcbc152e91828cfcc052">orderRopeLengthWindow::buttonCancelClicked</a></div><div class="ttdeci">void buttonCancelClicked()</div><div class="ttdoc">It emits valueReset by setting ropeLength = 0.</div><div class="ttdef"><b>Definition:</b> <a href="orderropelengthwindow_8h_source.html#l00118">orderropelengthwindow.h:118</a></div></div>
+<div class="ttc" id="arpi_2_o_s_api_student_2_g_u_i2_2_g_u_i2_2globals_8h_html"><div class="ttname"><a href="rpi_2_o_s_api_student_2_g_u_i2_2_g_u_i2_2globals_8h.html">globals.h</a></div></div>
+<div class="ttc" id="a_g_u_i_2_g_u_i000_2globals_8cpp_html_a623d2bdc179ae7aef136ef59ed812119"><div class="ttname"><a href="_g_u_i_2_g_u_i000_2globals_8cpp.html#a623d2bdc179ae7aef136ef59ed812119">maximumRopeLength</a></div><div class="ttdeci">int maximumRopeLength</div><div class="ttdef"><b>Definition:</b> <a href="_g_u_i_2_g_u_i000_2globals_8cpp_source.html#l00007">globals.cpp:7</a></div></div>
+<div class="ttc" id="aclassorder_rope_length_window_html_a12ee0398cd923386a627003a2e1c5cce"><div class="ttname"><a href="classorder_rope_length_window.html#a12ee0398cd923386a627003a2e1c5cce">orderRopeLengthWindow::openPaymentWindow</a></div><div class="ttdeci">void openPaymentWindow()</div><div class="ttdef"><b>Definition:</b> <a href="orderropelengthwindow_8cpp_source.html#l00056">orderropelengthwindow.cpp:56</a></div></div>
+<div class="ttc" id="aclass_ui_1_1order_rope_length_window_html"><div class="ttname"><a href="class_ui_1_1order_rope_length_window.html">Ui::orderRopeLengthWindow</a></div><div class="ttdef"><b>Definition:</b> <a href="build-_g_u_i2-_desktop-_debug_2ui__orderropelengthwindow_8h_source.html#l00041">ui_orderropelengthwindow.h:41</a></div></div>
+<div class="ttc" id="aclassorder_rope_length_window_html_a73aa41e3186ae96edd97d1f228789df3"><div class="ttname"><a href="classorder_rope_length_window.html#a73aa41e3186ae96edd97d1f228789df3">orderRopeLengthWindow::buttonFiveNegativeClicked</a></div><div class="ttdeci">void buttonFiveNegativeClicked()</div><div class="ttdef"><b>Definition:</b> <a href="orderropelengthwindow_8h_source.html#l00106">orderropelengthwindow.h:106</a></div></div>
+<div class="ttc" id="a_g_u_i_2_g_u_i000_2globals_8cpp_html_ad8d7e7d7ebf1c7b287644f79bbb40eff"><div class="ttname"><a href="_g_u_i_2_g_u_i000_2globals_8cpp.html#ad8d7e7d7ebf1c7b287644f79bbb40eff">ropeLength</a></div><div class="ttdeci">int ropeLength</div><div class="ttdef"><b>Definition:</b> <a href="_g_u_i_2_g_u_i000_2globals_8cpp_source.html#l00004">globals.cpp:4</a></div></div>
+<div class="ttc" id="a_g_u_i_2_g_u_i000_2globals_8cpp_html_ab5b7be5a23afbac6d25b340d4d5fdc6c"><div class="ttname"><a href="_g_u_i_2_g_u_i000_2globals_8cpp.html#ab5b7be5a23afbac6d25b340d4d5fdc6c">ropeLengthAdded</a></div><div class="ttdeci">int ropeLengthAdded</div><div class="ttdef"><b>Definition:</b> <a href="_g_u_i_2_g_u_i000_2globals_8cpp_source.html#l00009">globals.cpp:9</a></div></div>
+<div class="ttc" id="aclassorder_rope_length_window_html_a83ab12d1a9d250c9a74d3e6f02a405b9"><div class="ttname"><a href="classorder_rope_length_window.html#a83ab12d1a9d250c9a74d3e6f02a405b9">orderRopeLengthWindow::valueChangedPositive</a></div><div class="ttdeci">void valueChangedPositive(int)</div><div class="ttdoc">It is the signal that register the value has changed Postive which is implemented in the slot void bu...</div><div class="ttdef"><b>Definition:</b> <a href="build-_g_u_i2-_desktop-_debug_2moc__orderropelengthwindow_8cpp_source.html#l00177">moc_orderropelengthwindow.cpp:177</a></div></div>
+<div class="ttc" id="aclassorder_rope_length_window_html_ae0160791588beadb071b2b1b030d1a1f"><div class="ttname"><a href="classorder_rope_length_window.html#ae0160791588beadb071b2b1b030d1a1f">orderRopeLengthWindow::~orderRopeLengthWindow</a></div><div class="ttdeci">~orderRopeLengthWindow()</div><div class="ttdoc">The destructor of the class</div><div class="ttdef"><b>Definition:</b> <a href="orderropelengthwindow_8cpp_source.html#l00051">orderropelengthwindow.cpp:51</a></div></div>
+<div class="ttc" id="aclassorder_rope_length_window_html_a749dbeaae8e0ad3c2a507c6d6625b4ae"><div class="ttname"><a href="classorder_rope_length_window.html#a749dbeaae8e0ad3c2a507c6d6625b4ae">orderRopeLengthWindow::ui</a></div><div class="ttdeci">Ui::orderRopeLengthWindow * ui</div><div class="ttdef"><b>Definition:</b> <a href="orderropelengthwindow_8h_source.html#l00053">orderropelengthwindow.h:53</a></div></div>
+<div class="ttc" id="aclassorder_rope_length_window_html_a72651d167253ee75e48720096b4d2450"><div class="ttname"><a href="classorder_rope_length_window.html#a72651d167253ee75e48720096b4d2450">orderRopeLengthWindow::minusFiveClicked</a></div><div class="ttdeci">void minusFiveClicked()</div><div class="ttdef"><b>Definition:</b> <a href="orderropelengthwindow_8cpp_source.html#l00092">orderropelengthwindow.cpp:92</a></div></div>
+<div class="ttc" id="aclassorder_rope_length_window_html_a2ebd75046c8be871bca656c9deb6bf06"><div class="ttname"><a href="classorder_rope_length_window.html#a2ebd75046c8be871bca656c9deb6bf06">orderRopeLengthWindow::buttonAccept_</a></div><div class="ttdeci">QPushButton * buttonAccept_</div><div class="ttdoc">It is the button the customer press when it is satisfied with the ropeLength.</div><div class="ttdef"><b>Definition:</b> <a href="orderropelengthwindow_8h_source.html#l00066">orderropelengthwindow.h:66</a></div></div>
+<div class="ttc" id="aclassorder_rope_length_window_html_a33482a911712b13e5c313468f819e17f"><div class="ttname"><a href="classorder_rope_length_window.html#a33482a911712b13e5c313468f819e17f">orderRopeLengthWindow::LE1_</a></div><div class="ttdeci">QLineEdit * LE1_</div><div class="ttdoc">It is the textline which says &quot;Indtast den onsket laengde snor&quot;.</div><div class="ttdef"><b>Definition:</b> <a href="orderropelengthwindow_8h_source.html#l00056">orderropelengthwindow.h:56</a></div></div>
+<div class="ttc" id="aclassorder_rope_length_window_html"><div class="ttname"><a href="classorder_rope_length_window.html">orderRopeLengthWindow</a></div><div class="ttdef"><b>Definition:</b> <a href="orderropelengthwindow_8h_source.html#l00016">orderropelengthwindow.h:17</a></div></div>
+<div class="ttc" id="aclassorder_rope_length_window_html_a6414d38107eb06b3aa6a453cea2a5cb6"><div class="ttname"><a href="classorder_rope_length_window.html#a6414d38107eb06b3aa6a453cea2a5cb6">orderRopeLengthWindow::buttonFiveNegative_</a></div><div class="ttdeci">QPushButton * buttonFiveNegative_</div><div class="ttdoc">It is the button the customer press to order a smaller size of rope.</div><div class="ttdef"><b>Definition:</b> <a href="orderropelengthwindow_8h_source.html#l00062">orderropelengthwindow.h:62</a></div></div>
+<div class="ttc" id="aclassorder_rope_length_window_html_a1e51b165851c18ad8db5e742ec97b69e"><div class="ttname"><a href="classorder_rope_length_window.html#a1e51b165851c18ad8db5e742ec97b69e">orderRopeLengthWindow::valueReset</a></div><div class="ttdeci">void valueReset(int)</div><div class="ttdoc">It is the signal that register the value has resat it is implemented in slot void buttonCancelClicked...</div><div class="ttdef"><b>Definition:</b> <a href="build-_g_u_i2-_desktop-_debug_2moc__orderropelengthwindow_8cpp_source.html#l00191">moc_orderropelengthwindow.cpp:191</a></div></div>
+<div class="ttc" id="aclassorder_rope_length_window_html_ad3d38179d8be283dc41f526e75a93fa0"><div class="ttname"><a href="classorder_rope_length_window.html#ad3d38179d8be283dc41f526e75a93fa0">orderRopeLengthWindow::ropeLength_</a></div><div class="ttdeci">QSpinBox * ropeLength_</div><div class="ttdoc">It is the spinbox the customer can continually see how much rope it is ordering.</div><div class="ttdef"><b>Definition:</b> <a href="orderropelengthwindow_8h_source.html#l00072">orderropelengthwindow.h:72</a></div></div>
+<div class="ttc" id="a_g_u_i_2_g_u_i000_2globals_8cpp_html_aeba3ed687933c24e36554ba3d20e6ceb"><div class="ttname"><a href="_g_u_i_2_g_u_i000_2globals_8cpp.html#aeba3ed687933c24e36554ba3d20e6ceb">minimumRopeLength</a></div><div class="ttdeci">int minimumRopeLength</div><div class="ttdef"><b>Definition:</b> <a href="_g_u_i_2_g_u_i000_2globals_8cpp_source.html#l00008">globals.cpp:8</a></div></div>
+<div class="ttc" id="aclassorder_rope_length_window_html_ab4d2ebd0c5e71206ece9faecab306bd9"><div class="ttname"><a href="classorder_rope_length_window.html#ab4d2ebd0c5e71206ece9faecab306bd9">orderRopeLengthWindow::valueChangedNegative</a></div><div class="ttdeci">void valueChangedNegative(int)</div><div class="ttdoc">It is the signal that register the value has changed negative which is implemented in the slot void b...</div><div class="ttdef"><b>Definition:</b> <a href="build-_g_u_i2-_desktop-_debug_2moc__orderropelengthwindow_8cpp_source.html#l00184">moc_orderropelengthwindow.cpp:184</a></div></div>
+<div class="ttc" id="aclassorder_rope_length_window_html_aab4c6ce369b156a1f2ff77c03b5c7a27"><div class="ttname"><a href="classorder_rope_length_window.html#aab4c6ce369b156a1f2ff77c03b5c7a27">orderRopeLengthWindow::acceptButtonClicked</a></div><div class="ttdeci">void acceptButtonClicked()</div><div class="ttdef"><b>Definition:</b> <a href="orderropelengthwindow_8cpp_source.html#l00070">orderropelengthwindow.cpp:70</a></div></div>
+<div class="ttc" id="anamespace_ui_html"><div class="ttname"><a href="namespace_ui.html">Ui</a></div><div class="ttdef"><b>Definition:</b> <a href="_g_u_i_2_g_u_i000_2mainwindow_8h_source.html#l00006">mainwindow.h:6</a></div></div>
+<div class="ttc" id="aclassorder_rope_length_window_html_a0e0704233989ae0c42714054e109dcfa"><div class="ttname"><a href="classorder_rope_length_window.html#a0e0704233989ae0c42714054e109dcfa">orderRopeLengthWindow::plusFiveClicked</a></div><div class="ttdeci">void plusFiveClicked()</div><div class="ttdef"><b>Definition:</b> <a href="orderropelengthwindow_8cpp_source.html#l00083">orderropelengthwindow.cpp:83</a></div></div>
+<div class="ttc" id="aclassorder_rope_length_window_html_a317744bd4b250d25c60b8df98d529958"><div class="ttname"><a href="classorder_rope_length_window.html#a317744bd4b250d25c60b8df98d529958">orderRopeLengthWindow::buttonDecline_</a></div><div class="ttdeci">QPushButton * buttonDecline_</div><div class="ttdoc">It is the button the customer press if it wants to cancel the rope length</div><div class="ttdef"><b>Definition:</b> <a href="orderropelengthwindow_8h_source.html#l00069">orderropelengthwindow.h:69</a></div></div>
+<div class="ttc" id="aclassorder_rope_length_window_html_a507a3127d20f1f65060970d69671189a"><div class="ttname"><a href="classorder_rope_length_window.html#a507a3127d20f1f65060970d69671189a">orderRopeLengthWindow::buttonFivePositive_</a></div><div class="ttdeci">QPushButton * buttonFivePositive_</div><div class="ttdoc">It is the button the customer press to order a larger size of rope</div><div class="ttdef"><b>Definition:</b> <a href="orderropelengthwindow_8h_source.html#l00059">orderropelengthwindow.h:59</a></div></div>
+<div class="ttc" id="aclassorder_rope_length_window_html_ad6ea9dcbe0fc1096dc89d480ebdbbb7c"><div class="ttname"><a href="classorder_rope_length_window.html#ad6ea9dcbe0fc1096dc89d480ebdbbb7c">orderRopeLengthWindow::declineClicked</a></div><div class="ttdeci">void declineClicked()</div><div class="ttdef"><b>Definition:</b> <a href="orderropelengthwindow_8cpp_source.html#l00099">orderropelengthwindow.cpp:99</a></div></div>
+<div class="ttc" id="aclassorder_rope_length_window_html_ab1f67e05bc1fa23881d17b4b2f67d11a"><div class="ttname"><a href="classorder_rope_length_window.html#ab1f67e05bc1fa23881d17b4b2f67d11a">orderRopeLengthWindow::sendRopeLength</a></div><div class="ttdeci">void sendRopeLength()</div><div class="ttdoc">It is calling the function orderRopeLengthFromGUIHandle() to tell communicationToMainController that ...</div><div class="ttdef"><b>Definition:</b> <a href="orderropelengthwindow_8cpp_source.html#l00062">orderropelengthwindow.cpp:62</a></div></div>
+<div class="ttc" id="aclassorder_rope_length_window_html_a4878b94e77545d0126549ce119dce999"><div class="ttname"><a href="classorder_rope_length_window.html#a4878b94e77545d0126549ce119dce999">orderRopeLengthWindow::orderRopeLengthWindow</a></div><div class="ttdeci">orderRopeLengthWindow(QWidget *parent=nullptr)</div><div class="ttdef"><b>Definition:</b> <a href="orderropelengthwindow_8cpp_source.html#l00005">orderropelengthwindow.cpp:5</a></div></div>
+<div class="ttc" id="aclassorder_rope_length_window_html_ae53f918a623942141b71fc9f7a60c190"><div class="ttname"><a href="classorder_rope_length_window.html#ae53f918a623942141b71fc9f7a60c190">orderRopeLengthWindow::buttonFivePositiveClicked</a></div><div class="ttdeci">void buttonFivePositiveClicked()</div><div class="ttdef"><b>Definition:</b> <a href="orderropelengthwindow_8h_source.html#l00096">orderropelengthwindow.h:96</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

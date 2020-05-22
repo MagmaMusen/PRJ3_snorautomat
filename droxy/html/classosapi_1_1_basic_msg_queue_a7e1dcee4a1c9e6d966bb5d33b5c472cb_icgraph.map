@@ -1,11 +1,10 @@
 <map id="osapi::BasicMsgQueue::receive" name="osapi::BasicMsgQueue::receive">
-<area shape="rect" id="node1" title=" " alt="" coords="252,175,409,217"/>
-<area shape="rect" id="node2" href="$classfake_receiver_g_u_i.html#ac83cc55b784481b14ce7ccd20c672dd9" title=" " alt="" coords="33,5,176,32"/>
-<area shape="rect" id="node3" href="$class_fake_receiver.html#a2c7d52c3cb993363af0c9d2bc21375d4" title=" " alt="" coords="41,56,168,83"/>
-<area shape="rect" id="node4" href="$class_log_system.html#a336d84b80fbc90a608bcae80235a702b" title=" " alt="" coords="47,107,162,133"/>
-<area shape="rect" id="node5" href="$class_sensor_reader.html#a23ed6518af32a6ddaf062767f36e612a" title=" " alt="" coords="39,157,170,184"/>
-<area shape="rect" id="node6" href="$class_test_timer.html#ab02e580330062634c0a3b2b21899f1c6" title=" " alt="" coords="52,208,157,235"/>
-<area shape="rect" id="node7" href="$class_coin_identifier.html#aa8a415eb776528e7ceb577e9e40b4017" title=" " alt="" coords="43,259,166,285"/>
-<area shape="rect" id="node8" href="$classmain_controller.html#ab54861025ba116dd36b44e205bcae943" title="The event&#45;loop of the class. It receives a message, call the dispatcher with an id and a message and ..." alt="" coords="39,309,170,336"/>
-<area shape="rect" id="node9" href="$classosapi_1_1details_1_1_log_system.html#a336d84b80fbc90a608bcae80235a702b" title=" " alt="" coords="5,360,204,387"/>
+<area shape="rect" id="node1" title=" " alt="" coords="252,150,409,191"/>
+<area shape="rect" id="node2" href="$class_fake_receiver.html#a2c7d52c3cb993363af0c9d2bc21375d4" title=" " alt="" coords="41,5,168,32"/>
+<area shape="rect" id="node3" href="$class_log_system.html#a336d84b80fbc90a608bcae80235a702b" title=" " alt="" coords="47,56,162,83"/>
+<area shape="rect" id="node4" href="$class_sensor_reader.html#a23ed6518af32a6ddaf062767f36e612a" title=" " alt="" coords="39,107,170,133"/>
+<area shape="rect" id="node5" href="$class_test_timer.html#ab02e580330062634c0a3b2b21899f1c6" title=" " alt="" coords="52,157,157,184"/>
+<area shape="rect" id="node6" href="$class_coin_identifier.html#aa8a415eb776528e7ceb577e9e40b4017" title=" " alt="" coords="43,208,166,235"/>
+<area shape="rect" id="node7" href="$classmain_controller.html#ab54861025ba116dd36b44e205bcae943" title="The event&#45;loop of the class. It receives a message, call the dispatcher with an id and a message and ..." alt="" coords="39,259,170,285"/>
+<area shape="rect" id="node8" href="$classosapi_1_1details_1_1_log_system.html#a336d84b80fbc90a608bcae80235a702b" title=" " alt="" coords="5,309,204,336"/>
 </map>

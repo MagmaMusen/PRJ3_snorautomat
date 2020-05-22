@@ -1,4 +1,5 @@
 <map id="orderRopeLengthWindow::buttonCancelClicked" name="orderRopeLengthWindow::buttonCancelClicked">
-<area shape="rect" id="node1" title="It emits valueReset by setting ropeLength = 0." alt="" coords="220,5,387,47"/>
-<area shape="rect" id="node2" href="$classorder_rope_length_window.html#ad6ea9dcbe0fc1096dc89d480ebdbbb7c" title=" " alt="" coords="5,5,172,47"/>
+<area shape="rect" id="node1" title="It emits valueReset by setting ropeLength = 0." alt="" coords="443,5,609,47"/>
+<area shape="rect" id="node2" href="$classorder_rope_length_window.html#ad6ea9dcbe0fc1096dc89d480ebdbbb7c" title=" " alt="" coords="228,5,395,47"/>
+<area shape="rect" id="node3" href="$classorder_rope_length_window.html#a4878b94e77545d0126549ce119dce999" title=" " alt="" coords="5,5,180,47"/>
 </map>

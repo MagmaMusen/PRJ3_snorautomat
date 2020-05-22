@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['i2c_5fioctl_1987',['I2C_IOCTL',['../_i2_c_virtual_8cpp.html#a19b682b84b1b25bf5c1bcac72c7c77f7',1,'I2CVirtual.cpp']]]
+  ['linux_1855',['linux',['../build-_g_u_i2-_desktop-_debug_2moc__predefs_8h.html#aa092b0d4c1d4d4407b97024f6cb2820c',1,'linux():&#160;moc_predefs.h'],['../_g_u_i2_2moc__predefs_8h.html#aa092b0d4c1d4d4407b97024f6cb2820c',1,'linux():&#160;moc_predefs.h']]],
+  ['log_1856',['LOG',['../_coin_detecting_sensors_2_o_s_api_student_2inc_2osapi_2_log_8hpp.html#aabadde7d5f8f3525736c00118b4949e5',1,'LOG():&#160;Log.hpp'],['../rpi_2_o_s_api_student_2inc_2osapi_2_log_8hpp.html#aabadde7d5f8f3525736c00118b4949e5',1,'LOG():&#160;Log.hpp']]],
+  ['log_5fdetail_1857',['LOG_DETAIL',['../_coin_detecting_sensors_2_o_s_api_student_2inc_2osapi_2_log_8hpp.html#a0b6f86fe45254dbf6b67760a921119a2',1,'LOG_DETAIL():&#160;Log.hpp'],['../rpi_2_o_s_api_student_2inc_2osapi_2_log_8hpp.html#a0b6f86fe45254dbf6b67760a921119a2',1,'LOG_DETAIL():&#160;Log.hpp']]]
 ];

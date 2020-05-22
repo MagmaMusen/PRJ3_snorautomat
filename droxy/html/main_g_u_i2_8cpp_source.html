@@ -70,45 +70,26 @@ $(function() {
 <div class="title">mainGUI2.cpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="main_g_u_i2_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="rpi_2_o_s_api_student_2_g_u_i7_2_g_u_i7_2mainwindow_8h.html">mainwindow.h</a>&quot;</span></div>
+<a href="main_g_u_i2_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="rpi_2_o_s_api_student_2_g_u_i2_2_g_u_i2_2mainwindow_8h.html">mainwindow.h</a>&quot;</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;QApplication&gt;</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="rpi_2_o_s_api_student_2_g_u_i2_2_g_u_i2_2paymentwindow_8h.html">paymentwindow.h</a>&quot;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="fakereceivergui_8h.html">fakereceivergui.h</a>&quot;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_g_u_i4_2communicationtomaincontroller_8h.html">communicationtomaincontroller.h</a>&quot;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;osapi/Thread.hpp&gt;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="main_g_u_i2_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">    7</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="main_g_u_i2_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">main</a>(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> *argv[])</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    QApplication a(argc, argv);</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <a class="code" href="class_main_window.html">MainWindow</a> w;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    QPushButton hej(<span class="stringliteral">&quot;HELLO THERE&quot;</span>);</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    hej.setGeometry(100,100,100,100);</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    hej.show();</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="comment">//w.show();</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <a class="code" href="classfake_receiver_g_u_i.html">fakeReceiverGUI</a> fR;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="classcommunication_to_main_controller.html">communicationToMainController</a> *cM;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="classosapi_1_1_thread.html">osapi::Thread</a> *threads;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="classosapi_1_1_thread.html">osapi::Thread</a> g1(&amp;fR);</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    g1.<a class="code" href="classosapi_1_1_thread.html#a5409235d68889397cb5bfe092582cd72">start</a>();</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    g1.<a class="code" href="classosapi_1_1_thread.html#a5017a4146002d0ba61cbd268f8b795b2">join</a>();</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordflow">return</span> a.exec();</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;}</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="communicationtomaincontroller_8h.html">communicationtomaincontroller.h</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;osapi/Thread.hpp&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="main_g_u_i2_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">    6</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="main_g_u_i2_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">main</a>(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> *argv[])</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    QApplication a(argc, argv);</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <a class="code" href="class_main_window.html">MainWindow</a> w;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    w.show();</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keywordflow">return</span> a.exec();</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclassosapi_1_1_thread_html"><div class="ttname"><a href="classosapi_1_1_thread.html">osapi::Thread</a></div><div class="ttdef"><b>Definition:</b> <a href="_coin_detecting_sensors_2_o_s_api_student_2inc_2osapi_2linux_2_thread_8hpp_source.html#l00014">Thread.hpp:15</a></div></div>
-<div class="ttc" id="arpi_2_o_s_api_student_2_g_u_i7_2_g_u_i7_2mainwindow_8h_html"><div class="ttname"><a href="rpi_2_o_s_api_student_2_g_u_i7_2_g_u_i7_2mainwindow_8h.html">mainwindow.h</a></div></div>
-<div class="ttc" id="aclassfake_receiver_g_u_i_html"><div class="ttname"><a href="classfake_receiver_g_u_i.html">fakeReceiverGUI</a></div><div class="ttdef"><b>Definition:</b> <a href="fakereceivergui_8h_source.html#l00008">fakereceivergui.h:9</a></div></div>
-<div class="ttc" id="a_g_u_i4_2communicationtomaincontroller_8h_html"><div class="ttname"><a href="_g_u_i4_2communicationtomaincontroller_8h.html">communicationtomaincontroller.h</a></div></div>
-<div class="ttc" id="aclassosapi_1_1_thread_html_a5017a4146002d0ba61cbd268f8b795b2"><div class="ttname"><a href="classosapi_1_1_thread.html#a5017a4146002d0ba61cbd268f8b795b2">osapi::Thread::join</a></div><div class="ttdeci">void join()</div><div class="ttdef"><b>Definition:</b> <a href="_coin_detecting_sensors_2_o_s_api_student_2linux_2_thread_8cpp_source.html#l00083">Thread.cpp:83</a></div></div>
-<div class="ttc" id="aclasscommunication_to_main_controller_html"><div class="ttname"><a href="classcommunication_to_main_controller.html">communicationToMainController</a></div><div class="ttdef"><b>Definition:</b> <a href="_g_u_i3_2communicationtomaincontroller_8h_source.html#l00005">communicationtomaincontroller.h:6</a></div></div>
-<div class="ttc" id="aclassosapi_1_1_thread_html_a5409235d68889397cb5bfe092582cd72"><div class="ttname"><a href="classosapi_1_1_thread.html#a5409235d68889397cb5bfe092582cd72">osapi::Thread::start</a></div><div class="ttdeci">void start()</div><div class="ttdef"><b>Definition:</b> <a href="_coin_detecting_sensors_2_o_s_api_student_2linux_2_thread_8cpp_source.html#l00025">Thread.cpp:25</a></div></div>
-<div class="ttc" id="amain_g_u_i2_8cpp_html_a0ddf1224851353fc92bfbff6f499fa97"><div class="ttname"><a href="main_g_u_i2_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">main</a></div><div class="ttdeci">int main(int argc, char *argv[])</div><div class="ttdef"><b>Definition:</b> <a href="main_g_u_i2_8cpp_source.html#l00007">mainGUI2.cpp:7</a></div></div>
+<div class="ttc" id="arpi_2_o_s_api_student_2_g_u_i2_2_g_u_i2_2mainwindow_8h_html"><div class="ttname"><a href="rpi_2_o_s_api_student_2_g_u_i2_2_g_u_i2_2mainwindow_8h.html">mainwindow.h</a></div></div>
+<div class="ttc" id="acommunicationtomaincontroller_8h_html"><div class="ttname"><a href="communicationtomaincontroller_8h.html">communicationtomaincontroller.h</a></div></div>
+<div class="ttc" id="amain_g_u_i2_8cpp_html_a0ddf1224851353fc92bfbff6f499fa97"><div class="ttname"><a href="main_g_u_i2_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">main</a></div><div class="ttdeci">int main(int argc, char *argv[])</div><div class="ttdef"><b>Definition:</b> <a href="main_g_u_i2_8cpp_source.html#l00006">mainGUI2.cpp:6</a></div></div>
 <div class="ttc" id="arpi_2_o_s_api_student_2_g_u_i2_2_g_u_i2_2paymentwindow_8h_html"><div class="ttname"><a href="rpi_2_o_s_api_student_2_g_u_i2_2_g_u_i2_2paymentwindow_8h.html">paymentwindow.h</a></div></div>
-<div class="ttc" id="afakereceivergui_8h_html"><div class="ttname"><a href="fakereceivergui_8h.html">fakereceivergui.h</a></div></div>
-<div class="ttc" id="aclass_main_window_html"><div class="ttname"><a href="class_main_window.html">MainWindow</a></div><div class="ttdef"><b>Definition:</b> <a href="_g_u_i_2_g_u_i_2mainwindow_8h_source.html#l00012">mainwindow.h:13</a></div></div>
+<div class="ttc" id="aclass_main_window_html"><div class="ttname"><a href="class_main_window.html">MainWindow</a></div><div class="ttdef"><b>Definition:</b> <a href="_g_u_i_2_g_u_i000_2mainwindow_8h_source.html#l00010">mainwindow.h:11</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

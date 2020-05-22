@@ -1,5 +1,5 @@
 <map id="paymentWindow::buttonFiveCrownClicked" name="paymentWindow::buttonFiveCrownClicked">
-<area shape="rect" id="node1" title=" " alt="" coords="276,35,461,76"/>
-<area shape="rect" id="node2" href="$classpayment_window.html#af4793a8d889405c078d113f97852ded7" title=" " alt="" coords="27,5,207,47"/>
-<area shape="rect" id="node3" href="$classpayment_window.html#a055b680c20d0968b92056c3ba0427b00" title=" " alt="" coords="5,71,228,98"/>
+<area shape="rect" id="node1" title=" " alt="" coords="504,5,689,47"/>
+<area shape="rect" id="node2" href="$classpayment_window.html#af4793a8d889405c078d113f97852ded7" title=" " alt="" coords="276,5,456,47"/>
+<area shape="rect" id="node3" href="$classpayment_window.html#a055b680c20d0968b92056c3ba0427b00" title=" " alt="" coords="5,13,228,39"/>
 </map>

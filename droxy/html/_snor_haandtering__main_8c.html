@@ -120,13 +120,13 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <p>To init the I2C function, firstly we start the I2C that we placed in the topdesign. Secondly the I2C Write Buf is initialized, this is the buf that the master writes too. It is the previously made buffer, this program will only use the first one, but this funtion is made so it can be implemented in our other PSoC programs. The last line do clear the buffer, the PSoC can have problems with it's topdesigns if you dont clear them. </p>
 
-<p class="definition">Definition at line <a class="el" href="_snor_haandtering__main_8c_source.html#l00089">89</a> of file <a class="el" href="_snor_haandtering__main_8c_source.html">SnorHaandtering_main.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;{</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    I2C_1_Start();</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    uint8 *buf = &amp;<a class="code" href="_snor_haandtering__main_8c.html#ad4dcdb22218160cac13ab166b824ef23">buffer</a>[0];</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    I2C_1_SlaveInitWriteBuf(buf, <a class="code" href="_snor_haandtering__main_8c.html#acd8d62179f75714af34ae50caa397a73">BUFFER_SIZE</a>);</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    I2C_1_SlaveClearWriteBuf();</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="_snor_haandtering__main_8c_source.html#l00154">154</a> of file <a class="el" href="_snor_haandtering__main_8c_source.html">SnorHaandtering_main.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;{</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    I2C_1_Start();</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    uint8 *buf = &amp;<a class="code" href="_snor_haandtering__main_8c.html#ad4dcdb22218160cac13ab166b824ef23">buffer</a>[0];</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    I2C_1_SlaveInitWriteBuf(buf, <a class="code" href="_snor_haandtering__main_8c.html#acd8d62179f75714af34ae50caa397a73">BUFFER_SIZE</a>);</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    I2C_1_SlaveClearWriteBuf();</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -156,17 +156,17 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <p>In main the program is put together in the start the function <a class="el" href="_snor_haandtering__main_8c.html#abe2a495f8fb12203f43fa52b6d012ed7">initI2C()</a> is called. After that there is an infinity for loop wich runs the <a class="el" href="_snor_haandtering__main_8c.html#a925b8d6c96b66ccb4e2d7ba890804990">udrulning()</a> function. </p>
 
-<p class="definition">Definition at line <a class="el" href="_snor_haandtering__main_8c_source.html#l00071">71</a> of file <a class="el" href="_snor_haandtering__main_8c_source.html">SnorHaandtering_main.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;{</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    CyGlobalIntEnable; <span class="comment">/* Enable global interrupts. */</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    </div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <a class="code" href="_snor_haandtering__main_8c.html#abe2a495f8fb12203f43fa52b6d012ed7">initI2C</a>();</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    </div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordflow">for</span>(;;)</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    {</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <a class="code" href="_snor_haandtering__main_8c.html#a925b8d6c96b66ccb4e2d7ba890804990">udrulning</a>();</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    }</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="_snor_haandtering__main_8c_source.html#l00136">136</a> of file <a class="el" href="_snor_haandtering__main_8c_source.html">SnorHaandtering_main.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;{</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    CyGlobalIntEnable; <span class="comment">/* Enable global interrupts. */</span></div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    </div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    <a class="code" href="_snor_haandtering__main_8c.html#abe2a495f8fb12203f43fa52b6d012ed7">initI2C</a>();</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    </div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    <span class="keywordflow">for</span>(;;)</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    {</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;        <a class="code" href="_snor_haandtering__main_8c.html#a925b8d6c96b66ccb4e2d7ba890804990">udrulning</a>();</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    }</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -197,22 +197,22 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 <p>This function will first tjek on the write slave flag, if it is low nothing will happen but the function will be runned agin. If it is high,the function will turn on the motor for 5 second for every number recived in the first byte. To turn on the motor the PWM in the topdesign will be used. When the motor is done running, the slave buf and flag will be cleared. </p>
 
-<p class="definition">Definition at line <a class="el" href="_snor_haandtering__main_8c_source.html#l00101">101</a> of file <a class="el" href="_snor_haandtering__main_8c_source.html">SnorHaandtering_main.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;{</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    </div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keywordflow">if</span>(I2C_1_SlaveStatus() &amp; I2C_1_SSTAT_WR_CMPLT)</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        {</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;            uint8 i = 0;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;            <span class="keywordflow">for</span>(i = 0;i &lt; <a class="code" href="_snor_haandtering__main_8c.html#ad4dcdb22218160cac13ab166b824ef23">buffer</a>[0];++i)</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;            {</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;                PWM_1_Start();</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;                CyDelay(5000);</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                PWM_1_Stop();</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;            }</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;            I2C_1_SlaveClearWriteBuf();</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;            I2C_1_SlaveClearWriteStatus();</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        }</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="_snor_haandtering__main_8c_source.html#l00166">166</a> of file <a class="el" href="_snor_haandtering__main_8c_source.html">SnorHaandtering_main.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;{</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    </div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    <span class="keywordflow">if</span>(I2C_1_SlaveStatus() &amp; I2C_1_SSTAT_WR_CMPLT)</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        {</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;            uint8 i = 0;</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;            <span class="keywordflow">for</span>(i = 0;i &lt; <a class="code" href="_snor_haandtering__main_8c.html#ad4dcdb22218160cac13ab166b824ef23">buffer</a>[0];++i)</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;            {</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;                PWM_1_Start();</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;                CyDelay(5000);</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;                PWM_1_Stop();</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;            }</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;            I2C_1_SlaveClearWriteBuf();</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;            I2C_1_SlaveClearWriteStatus();</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;        }</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -239,7 +239,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <p>Here is the buffer set, it is the one that <a class="el" href="_snor_haandtering__main_8c.html#abe2a495f8fb12203f43fa52b6d012ed7">initI2C(void)</a> uses. It is preset to have six spots of 0, because when you use microprocessers, you cant use dynamic allocation as usualæ </p>
 
-<p class="definition">Definition at line <a class="el" href="_snor_haandtering__main_8c_source.html#l00065">65</a> of file <a class="el" href="_snor_haandtering__main_8c_source.html">SnorHaandtering_main.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_snor_haandtering__main_8c_source.html#l00130">130</a> of file <a class="el" href="_snor_haandtering__main_8c_source.html">SnorHaandtering_main.c</a>.</p>
 
 </div>
 </div>
@@ -254,17 +254,20 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>\paeg SnorAutomat_GUI 2. udkast - med messageQueue</p>
+<p>This is the GUI that are using osapi library</p>
+<p>communicationtomaincontroller.hpp globals.hpp mainwindow.hpp orderropelengthwindow.hpp paymentwindow.hpp paidwindow.hpp <a class="el" href="communicationtomaincontroller_8cpp.html">communicationtomaincontroller.cpp</a> globals.cpp mainwindow.cpp <a class="el" href="orderropelengthwindow_8cpp.html">orderropelengthwindow.cpp</a> paymentwindow.cpp paidwindow.cpp mainGUI.cpp mainwindow.ui orderopelengthwindow.ui paymentwindow.ui paidwindow.ui</p>
 <p>Decleration of the buffer size which is used in thee function void <a class="el" href="_snor_haandtering__main_8c.html#abe2a495f8fb12203f43fa52b6d012ed7">initI2C(void)</a>. It is written as a global variable so it can be used every where in the program later. </p>
 
-<p class="definition">Definition at line <a class="el" href="_snor_haandtering__main_8c_source.html#l00060">60</a> of file <a class="el" href="_snor_haandtering__main_8c_source.html">SnorHaandtering_main.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_snor_haandtering__main_8c_source.html#l00125">125</a> of file <a class="el" href="_snor_haandtering__main_8c_source.html">SnorHaandtering_main.c</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
-<div class="ttc" id="a_snor_haandtering__main_8c_html_a925b8d6c96b66ccb4e2d7ba890804990"><div class="ttname"><a href="_snor_haandtering__main_8c.html#a925b8d6c96b66ccb4e2d7ba890804990">udrulning</a></div><div class="ttdeci">void udrulning(void)</div><div class="ttdef"><b>Definition:</b> <a href="_snor_haandtering__main_8c_source.html#l00101">SnorHaandtering_main.c:101</a></div></div>
-<div class="ttc" id="a_snor_haandtering__main_8c_html_abe2a495f8fb12203f43fa52b6d012ed7"><div class="ttname"><a href="_snor_haandtering__main_8c.html#abe2a495f8fb12203f43fa52b6d012ed7">initI2C</a></div><div class="ttdeci">void initI2C(void)</div><div class="ttdef"><b>Definition:</b> <a href="_snor_haandtering__main_8c_source.html#l00089">SnorHaandtering_main.c:89</a></div></div>
-<div class="ttc" id="a_snor_haandtering__main_8c_html_acd8d62179f75714af34ae50caa397a73"><div class="ttname"><a href="_snor_haandtering__main_8c.html#acd8d62179f75714af34ae50caa397a73">BUFFER_SIZE</a></div><div class="ttdeci">int BUFFER_SIZE</div><div class="ttdef"><b>Definition:</b> <a href="_snor_haandtering__main_8c_source.html#l00060">SnorHaandtering_main.c:60</a></div></div>
-<div class="ttc" id="a_snor_haandtering__main_8c_html_ad4dcdb22218160cac13ab166b824ef23"><div class="ttname"><a href="_snor_haandtering__main_8c.html#ad4dcdb22218160cac13ab166b824ef23">buffer</a></div><div class="ttdeci">uint8 buffer[]</div><div class="ttdef"><b>Definition:</b> <a href="_snor_haandtering__main_8c_source.html#l00065">SnorHaandtering_main.c:65</a></div></div>
+<div class="ttc" id="a_snor_haandtering__main_8c_html_a925b8d6c96b66ccb4e2d7ba890804990"><div class="ttname"><a href="_snor_haandtering__main_8c.html#a925b8d6c96b66ccb4e2d7ba890804990">udrulning</a></div><div class="ttdeci">void udrulning(void)</div><div class="ttdef"><b>Definition:</b> <a href="_snor_haandtering__main_8c_source.html#l00166">SnorHaandtering_main.c:166</a></div></div>
+<div class="ttc" id="a_snor_haandtering__main_8c_html_abe2a495f8fb12203f43fa52b6d012ed7"><div class="ttname"><a href="_snor_haandtering__main_8c.html#abe2a495f8fb12203f43fa52b6d012ed7">initI2C</a></div><div class="ttdeci">void initI2C(void)</div><div class="ttdef"><b>Definition:</b> <a href="_snor_haandtering__main_8c_source.html#l00154">SnorHaandtering_main.c:154</a></div></div>
+<div class="ttc" id="a_snor_haandtering__main_8c_html_acd8d62179f75714af34ae50caa397a73"><div class="ttname"><a href="_snor_haandtering__main_8c.html#acd8d62179f75714af34ae50caa397a73">BUFFER_SIZE</a></div><div class="ttdeci">int BUFFER_SIZE</div><div class="ttdef"><b>Definition:</b> <a href="_snor_haandtering__main_8c_source.html#l00125">SnorHaandtering_main.c:125</a></div></div>
+<div class="ttc" id="a_snor_haandtering__main_8c_html_ad4dcdb22218160cac13ab166b824ef23"><div class="ttname"><a href="_snor_haandtering__main_8c.html#ad4dcdb22218160cac13ab166b824ef23">buffer</a></div><div class="ttdeci">uint8 buffer[]</div><div class="ttdef"><b>Definition:</b> <a href="_snor_haandtering__main_8c_source.html#l00130">SnorHaandtering_main.c:130</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

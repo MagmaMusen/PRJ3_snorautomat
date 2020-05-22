@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['dosering_5fmain_2ec_1075',['Dosering_main.c',['../_dosering__main_8c.html',1,'']]]
+  ['exceptions_2ehpp_1002',['Exceptions.hpp',['../_coin_detecting_sensors_2_o_s_api_student_2inc_2osapi_2_exceptions_8hpp.html',1,'(Global Namespace)'],['../rpi_2_o_s_api_student_2inc_2osapi_2_exceptions_8hpp.html',1,'(Global Namespace)']]]
 ];

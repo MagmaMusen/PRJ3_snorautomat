@@ -1,4 +1,12 @@
 var searchData=
 [
-  ['raii_1025',['RAII',['../classosapi_1_1_r_a_i_i.html',1,'osapi']]]
+  ['scopedlock_957',['ScopedLock',['../classosapi_1_1_scoped_lock.html',1,'osapi']]],
+  ['secondwindowsignal_958',['secondWindowSignal',['../classsecond_window_signal.html',1,'']]],
+  ['semaphore_959',['Semaphore',['../classosapi_1_1_semaphore.html',1,'osapi::Semaphore'],['../classosapi_1_1details_1_1_semaphore.html',1,'osapi::details::Semaphore']]],
+  ['semaphoreerror_960',['SemaphoreError',['../classosapi_1_1_semaphore_error.html',1,'osapi']]],
+  ['sensorreader_961',['SensorReader',['../class_sensor_reader.html',1,'']]],
+  ['setloglvl_962',['SetLogLvl',['../structosapi_1_1details_1_1_set_log_lvl.html',1,'osapi::details']]],
+  ['setnewoutput_963',['SetNewOutput',['../structosapi_1_1details_1_1_set_new_output.html',1,'osapi::details']]],
+  ['syslog_964',['Syslog',['../class_syslog.html',1,'']]],
+  ['systemerror_965',['SystemError',['../classosapi_1_1_system_error.html',1,'osapi']]]
 ];
