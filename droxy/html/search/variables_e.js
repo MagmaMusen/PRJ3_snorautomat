@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['rdbuf_1510',['rdBuf',['../_dosering__main_8c.html#a0bc510e3a656d7e3285265c8041e4240',1,'Dosering_main.c']]],
   ['reader_5f_1511',['reader_',['../classosapi_1_1_basic_msg_queue.html#a8cc8fb644c8614010b2aa8186dbbf617',1,'osapi::BasicMsgQueue']]],
   ['receiver_5f_1512',['receiver_',['../class_coin_identifier.html#a2e3691865e1038feaa1283b441f84d5d',1,'CoinIdentifier']]],
   ['ropeback_5f_1513',['ropeBack_',['../classpaid_window.html#a3dd3376d249d98f1f1c564c4908a3d1f',1,'paidWindow']]],

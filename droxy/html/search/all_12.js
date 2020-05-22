@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['raii_771',['RAII',['../classosapi_1_1_r_a_i_i.html',1,'osapi::RAII&lt; T &gt;'],['../classosapi_1_1_r_a_i_i.html#ad3b3b4f4f66050b980868e3edf4b79f1',1,'osapi::RAII::RAII(T *t)'],['../classosapi_1_1_r_a_i_i.html#ad3b3b4f4f66050b980868e3edf4b79f1',1,'osapi::RAII::RAII(T *t)']]],
+  ['raii_770',['RAII',['../classosapi_1_1_r_a_i_i.html',1,'osapi::RAII&lt; T &gt;'],['../classosapi_1_1_r_a_i_i.html#ad3b3b4f4f66050b980868e3edf4b79f1',1,'osapi::RAII::RAII(T *t)'],['../classosapi_1_1_r_a_i_i.html#ad3b3b4f4f66050b980868e3edf4b79f1',1,'osapi::RAII::RAII(T *t)']]],
+  ['rdbuf_771',['rdBuf',['../_dosering__main_8c.html#a0bc510e3a656d7e3285265c8041e4240',1,'Dosering_main.c']]],
   ['reader_5f_772',['reader_',['../classosapi_1_1_basic_msg_queue.html#a8cc8fb644c8614010b2aa8186dbbf617',1,'osapi::BasicMsgQueue']]],
   ['rearm_773',['reArm',['../classosapi_1_1_timer_id.html#aa7acf7ad271408c3c86edd73d8cd331b',1,'osapi::TimerId::reArm()'],['../classosapi_1_1_i_timer_id.html#a31df51bdbf5d45c2c36e3f1a9a13302b',1,'osapi::ITimerId::reArm()'],['../classosapi_1_1_timer_id.html#aa7acf7ad271408c3c86edd73d8cd331b',1,'osapi::TimerId::reArm()'],['../classosapi_1_1_i_timer_id.html#a31df51bdbf5d45c2c36e3f1a9a13302b',1,'osapi::ITimerId::reArm()']]],
   ['receive_774',['receive',['../classosapi_1_1_basic_msg_queue.html#a7e1dcee4a1c9e6d966bb5d33b5c472cb',1,'osapi::BasicMsgQueue::receive(unsigned long &amp;id)'],['../classosapi_1_1_basic_msg_queue.html#a7e1dcee4a1c9e6d966bb5d33b5c472cb',1,'osapi::BasicMsgQueue::receive(unsigned long &amp;id)']]],

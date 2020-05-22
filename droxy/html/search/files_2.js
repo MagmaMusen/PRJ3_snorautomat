@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['doserings_5fmain_2ec_1075',['Doserings_main.c',['../_doserings__main_8c.html',1,'']]]
+  ['dosering_5fmain_2ec_1075',['Dosering_main.c',['../_dosering__main_8c.html',1,'']]]
 ];

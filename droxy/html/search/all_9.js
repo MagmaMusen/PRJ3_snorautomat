@@ -29,14 +29,13 @@ var searchData=
   ['iloutput_5f_582',['ilOutput_',['../structosapi_1_1details_1_1_set_new_output.html#a32c5bbd8788408ce58a66456e4220e32',1,'osapi::details::SetNewOutput']]],
   ['informational_583',['Informational',['../namespaceosapi.html#a14699808c3cc5f95b6eaef678d1f8dcca5bdd9888863ac41236e534a047773ae0',1,'osapi']]],
   ['initi2c_584',['initI2C',['../_snor_haandtering__main_8c.html#abe2a495f8fb12203f43fa52b6d012ed7',1,'initI2C(void):&#160;SnorHaandtering_main.c'],['../_snor_haandtering_med_hardware__main_8c.html#abe2a495f8fb12203f43fa52b6d012ed7',1,'initI2C(void):&#160;SnorHaandteringMedHardware_main.c']]],
-  ['initializepwm_585',['InitializePWM',['../_doserings__main_8c.html#a833ae5df42b94980166b3b815a14b91a',1,'Doserings_main.c']]],
-  ['initializesystem_586',['InitializeSystem',['../_doserings__main_8c.html#a6fcae6ac5c66199840fe21526701cd10',1,'Doserings_main.c']]],
-  ['internaldisarm_587',['internalDisArm',['../classosapi_1_1_timer.html#adc485fe7fbeda1e9a26ed237815e4809',1,'osapi::Timer::internalDisArm(TimerId *ti)'],['../classosapi_1_1_timer.html#adc485fe7fbeda1e9a26ed237815e4809',1,'osapi::Timer::internalDisArm(TimerId *ti)']]],
-  ['iscanceled_588',['isCanceled',['../classosapi_1_1_timer_id.html#a589abff9c94edc45dcbbbf7715814312',1,'osapi::TimerId::isCanceled()'],['../classosapi_1_1_i_timer_id.html#aed06a8a80b14c57d3db50ac9d5ebfed9',1,'osapi::ITimerId::isCanceled()'],['../classosapi_1_1_timer_id.html#a589abff9c94edc45dcbbbf7715814312',1,'osapi::TimerId::isCanceled()'],['../classosapi_1_1_i_timer_id.html#aed06a8a80b14c57d3db50ac9d5ebfed9',1,'osapi::ITimerId::isCanceled()']]],
-  ['isr_5fsensoronegpio_5fvalue_589',['isr_sensorOneGpio_value',['../_c_d_sdriver_8c.html#a731e12d83741c66c3f53de3455bb82db',1,'CDSdriver.c']]],
-  ['isr_5fsensortwogpio_5fvalue_590',['isr_sensorTwoGpio_value',['../_c_d_sdriver_8c.html#abc260dfbd3d4aecd52b761ce2bb9329f',1,'CDSdriver.c']]],
-  ['isr_5ftimespec_591',['isr_timespec',['../_c_d_sdriver_8c.html#a01d33c6057cb83be0611832ee2a0d31d',1,'CDSdriver.c']]],
-  ['item_592',['Item',['../structosapi_1_1_basic_msg_queue_1_1_item.html',1,'osapi::BasicMsgQueue&lt; M &gt;::Item'],['../structosapi_1_1_basic_msg_queue_1_1_item.html#a773d21321fdc8a05b25fc04af5e71320',1,'osapi::BasicMsgQueue::Item::Item(unsigned long id, M m)'],['../structosapi_1_1_basic_msg_queue_1_1_item.html#a773d21321fdc8a05b25fc04af5e71320',1,'osapi::BasicMsgQueue::Item::Item(unsigned long id, M m)']]],
-  ['itimer_593',['ITimer',['../classosapi_1_1_i_timer.html',1,'osapi']]],
-  ['itimerid_594',['ITimerId',['../classosapi_1_1_i_timer_id.html',1,'osapi']]]
+  ['initializesystem_585',['InitializeSystem',['../_dosering__main_8c.html#a6fcae6ac5c66199840fe21526701cd10',1,'Dosering_main.c']]],
+  ['internaldisarm_586',['internalDisArm',['../classosapi_1_1_timer.html#adc485fe7fbeda1e9a26ed237815e4809',1,'osapi::Timer::internalDisArm(TimerId *ti)'],['../classosapi_1_1_timer.html#adc485fe7fbeda1e9a26ed237815e4809',1,'osapi::Timer::internalDisArm(TimerId *ti)']]],
+  ['iscanceled_587',['isCanceled',['../classosapi_1_1_timer_id.html#a589abff9c94edc45dcbbbf7715814312',1,'osapi::TimerId::isCanceled()'],['../classosapi_1_1_i_timer_id.html#aed06a8a80b14c57d3db50ac9d5ebfed9',1,'osapi::ITimerId::isCanceled()'],['../classosapi_1_1_timer_id.html#a589abff9c94edc45dcbbbf7715814312',1,'osapi::TimerId::isCanceled()'],['../classosapi_1_1_i_timer_id.html#aed06a8a80b14c57d3db50ac9d5ebfed9',1,'osapi::ITimerId::isCanceled()']]],
+  ['isr_5fsensoronegpio_5fvalue_588',['isr_sensorOneGpio_value',['../_c_d_sdriver_8c.html#a731e12d83741c66c3f53de3455bb82db',1,'CDSdriver.c']]],
+  ['isr_5fsensortwogpio_5fvalue_589',['isr_sensorTwoGpio_value',['../_c_d_sdriver_8c.html#abc260dfbd3d4aecd52b761ce2bb9329f',1,'CDSdriver.c']]],
+  ['isr_5ftimespec_590',['isr_timespec',['../_c_d_sdriver_8c.html#a01d33c6057cb83be0611832ee2a0d31d',1,'CDSdriver.c']]],
+  ['item_591',['Item',['../structosapi_1_1_basic_msg_queue_1_1_item.html',1,'osapi::BasicMsgQueue&lt; M &gt;::Item'],['../structosapi_1_1_basic_msg_queue_1_1_item.html#a773d21321fdc8a05b25fc04af5e71320',1,'osapi::BasicMsgQueue::Item::Item(unsigned long id, M m)'],['../structosapi_1_1_basic_msg_queue_1_1_item.html#a773d21321fdc8a05b25fc04af5e71320',1,'osapi::BasicMsgQueue::Item::Item(unsigned long id, M m)']]],
+  ['itimer_592',['ITimer',['../classosapi_1_1_i_timer.html',1,'osapi']]],
+  ['itimerid_593',['ITimerId',['../classosapi_1_1_i_timer_id.html',1,'osapi']]]
 ];
