@@ -26,6 +26,12 @@ void udrulning(void);
  * - \subpage SnorAutomat_Snor_H "SnorHaandtering PSoC og Hardware"
  * 
  * - \subpage SnorAutomat_Monttaeller "Moenttaeller software"
+ *
+ * - \subpage SnorAutomat_I2C "I2C"
+ *
+ * - \subpage SnorAutomat_mainController "mainController"
+ *
+ * - \subpage SnorAutomat_GUI "2. udkast - med messageQueue"	
  */ 
 
 /*! \page SnorAutomat_Snor SnorHaandtering PSoC
@@ -67,6 +73,51 @@ void udrulning(void);
  *  \include <CDSdriver.c
  */
 
+/*! \page SnorAutomat_I2C I2C
+*
+*	The code to the i2c class
+*	
+*	\include <I2CVirtual.hpp
+*	\include <I2CVirtual.cpp
+*	\include <mainI2CVirtual.cpp
+*
+*/
+
+
+/*! \page SnorAutomat_mainController mainController
+*
+*	mainController's event-loop
+*
+*	\include <mainController.hpp
+*	\include <mainController.cpp
+*	\include <mainMainController.cpp
+* 
+*/
+
+
+/*! \paeg SnorAutomat_GUI 2. udkast - med messageQueue
+*
+*	This is the GUI that are using osapi library
+*
+*	\include <communicationtomaincontroller.hpp
+*	\include <globals.hpp
+*	\include <mainwindow.hpp
+*	\include <orderropelengthwindow.hpp
+*	\include <paymentwindow.hpp
+*	\include <paidwindow.hpp
+*	\include <communicationtomaincontroller.cpp
+*	\include <globals.cpp
+*	\include <mainwindow.cpp
+*	\include <orderropelengthwindow.cpp
+*	\include <paymentwindow.cpp
+*	\include <paidwindow.cpp
+*	\include <mainGUI.cpp
+*	\include <mainwindow.ui
+*	\include <orderopelengthwindow.ui
+*	\include <paymentwindow.ui
+*	\include <paidwindow.ui
+*
+*/
 
 /*!
 *Decleration of the buffer size which is used in thee function void initI2C(void). It is written as a global variable so it can be used every where in the program later.
