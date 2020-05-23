@@ -1,1 +1,0 @@
-#include "secondwindowsignal.h"
