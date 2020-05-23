@@ -13,11 +13,6 @@ paymentWindow::paymentWindow(QWidget *parent) :
     price = ropeLength *2;
     youNeedToPay_ = new QLineEdit("Du mangler at betale",this);
 
-    //QPushButton *test = new QPushButton("test", this);
-    //test->setGeometry(400, 400, 30, 30);
-
-    //secondWindowSignal *sWS = new secondWindowSignal;
-
      //Creating a SpinBox to show how much money the customer is missing to pay for the rope
     whatYouAreMissingToPay_ = new QDoubleSpinBox(this);
 
@@ -48,6 +43,7 @@ paymentWindow::paymentWindow(QWidget *parent) :
 
 
     amountReached();
+    amountToPay();
 
 }
 
@@ -77,15 +73,21 @@ void paymentWindow::openPaidWindow()
     }
 
 }
+void paymentWindow::amountToPay()
+{
+    connect(whatYouAreMissingToPay_, SIGNAL(valueChanged(double)),
+            this, SLOT(setValue(double)));
+}
 void paymentWindow::cancelButtonClickedCommunicationToMainControllerClass()
 {
-    //communicationToMainController *cTMC = new communicationToMainController;
-    //cTMC->cancelFromGUIHandle();
+    communicationToMainController *cTMC;
+    cTMC->cancelFromGUIHandle();
 }
 void paymentWindow::cancelButtonClicked()
 {
     connect(decline_, SIGNAL(clicked()),
             this, SLOT(openOrderRopeLengthWindow()));
+    
     connect(decline_, SIGNAL(clicked()),
             this, SLOT(cancelButtonClickedCommunicationToMainControllerClass()));
 }
@@ -94,4 +96,5 @@ void paymentWindow::amountReached()
     connect(whatYouAreMissingToPay_, SIGNAL(valueChanged(double)),
                 this, SLOT(openPaidWindow()));
 }
+
 

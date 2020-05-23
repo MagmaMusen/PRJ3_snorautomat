@@ -33,7 +33,9 @@ SOURCES += \
     mainGUI2.cpp \
     orderropelengthwindow.cpp \
     paymentwindow.cpp \
-    paidwindow.cpp
+    paidwindow.cpp \
+    mainwindow.cpp \
+    mainwindow.cpp
         main.cpp \
 =======
 >>>>>>> bdd8e8cbcd18b77bc720f20416d4838459aa89bb
@@ -94,7 +96,8 @@ HEADERS += \
     ../../inc/osapi/Time.hpp \
     ../../inc/osapi/Timer.hpp \
     ../../inc/osapi/Utility.hpp \
-    fakereceivergui.h
+    fakereceivergui.h \
+    mainwindow.cpp.autosave
 
 FORMS += \
         mainwindow.ui \

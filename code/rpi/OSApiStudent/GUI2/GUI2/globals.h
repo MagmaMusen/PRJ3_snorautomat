@@ -2,33 +2,25 @@
 #define GLOBALS_H
 
 
-/*
- * @int ropeLength  global variabel which is the value of the rope length the customer order
- */
+//! Global variabel which is the value of the rope length the customer order
 extern int ropeLength;
-/*
- * @double price    the price the customer has to pay for the rope
- */
+
+//! The price the customer has to pay for the rope
 extern double price;
-/*
- * @double priceBack    The amount the customer has to get back after it has paid for the rope
- */
+
+//! The amount the customer has to get back after it has paid for the rope
 extern double priceBack;
-/*
- *  @int maximumRopeLength  The maximum rope length a customer can order at the machine
- */
+
+//! The maximum rope length a customer can order at the machine
 extern int maximumRopeLength;
-/*
- * @int minimumRopeLength   The minimum rope length a customer can order at the machine
- */
+
+//! The minimum rope length a customer can order at the machine
 extern int minimumRopeLength;
-/*
- * @int ropeLengthAdded     The rope length the customer add to the current global variabel ropeLength
- */
+
+//! The rope length the customer add to the current global variabel ropeLength
 extern int ropeLengthAdded;
 
+//! If the customer have choosen its ropeLength sendRopeLength is set to true
 extern bool sendRopeLength;
-/*
- * @bool sendRopeLength     Sets
- */
+
 #endif // GLOBALS_H

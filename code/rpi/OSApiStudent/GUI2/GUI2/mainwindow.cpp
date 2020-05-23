@@ -6,15 +6,18 @@ MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
 {
-    ui->setupUi(this);
-    //orderRopeLengthWindow *m = new orderRopeLengthWindow;
-    //m->show();
-    //paymentWindow *w = new paymentWindow;
-    //w->show();
+    ui->setupUi(this);    
+    showOrderRopeLengthWindow();
 
 }
 
 MainWindow::~MainWindow()
 {
     delete ui;
+}
+void MainWindow::showOrderRopeLengthWindow()
+{
+
+    orderRopeLengthWindow *m = new orderRopeLengthWindow;
+    m->show();
 }
