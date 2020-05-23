@@ -40,8 +40,15 @@ void udrulning(void);
  *  The program is for microcontroller PSoC CYCKIT-059 from cypress. For this to be implemented on the PSoC there is also a set up file for pins, I2C buss and so on, this is found in the ducumentation under ducumentation PSoC and you need PSoC creater to open it.
  *  
  * \include <SnorHaandtering_main.c
- *. 
  *
+ *  \include <header1.h
+ *
+ *  \include <Header111.h
+ *
+ *   \include <globals.h
+*
+*   \include <mainwindow.cpp
+*
  */
 
 /*! \page SnorAutomat_Dosering Dosering PSoC
@@ -66,10 +73,15 @@ void udrulning(void);
  *  This page is quick way to access the most important parts of the moenttaeller software.
  *
  *  \include <mainCDS.cpp
+ *
  *  \include <SensorReader.hpp
+ *
  *  \include <SensorReader.cpp
+ *
  *  \include <CoinIdentifier.hpp
+ *
  *  \include <CoinIdentifier.cpp
+ *
  *  \include <CDSdriver.c
  */
 
@@ -78,7 +90,9 @@ void udrulning(void);
 *	The code to the i2c class
 *	
 *	\include <I2CVirtual.hpp
+*
 *	\include <I2CVirtual.cpp
+*
 *	\include <mainI2CVirtual.cpp
 *
 */
@@ -89,32 +103,54 @@ void udrulning(void);
 *	mainController's event-loop
 *
 *	\include <mainController.hpp
+*
 *	\include <mainController.cpp
+*
 *	\include <mainMainController.cpp
 * 
 */
 
 
-/*! \paeg SnorAutomat_GUI 2. udkast - med messageQueue
+/*! \page SnorAutomat_GUI 2. udkast - med messageQueue
 *
 *	This is the GUI that are using osapi library
 *
 *	\include <communicationtomaincontroller.hpp
+*
+*   \include <globals.h
+*
 *	\include <globals.hpp
+*
 *	\include <mainwindow.hpp
+*
+*   \include <globals.h
+*
 *	\include <orderropelengthwindow.hpp
+*
 *	\include <paymentwindow.hpp
+*
 *	\include <paidwindow.hpp
+*
 *	\include <communicationtomaincontroller.cpp
+*
 *	\include <globals.cpp
+*
 *	\include <mainwindow.cpp
+*
 *	\include <orderropelengthwindow.cpp
+*
 *	\include <paymentwindow.cpp
+*
 *	\include <paidwindow.cpp
+*
 *	\include <mainGUI.cpp
+*
 *	\include <mainwindow.ui
+*
 *	\include <orderopelengthwindow.ui
+*
 *	\include <paymentwindow.ui
+*
 *	\include <paidwindow.ui
 *
 */

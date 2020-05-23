@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['dosering_20psoc_1872',['Dosering PSoC',['../_snor_automat__dosering.html',1,'index']]]
+  ['2_2e_20udkast_20_2d_20med_20messagequeue_1873',['2. udkast - med messageQueue',['../_snor_automat__g_u_i.html',1,'index']]]
 ];

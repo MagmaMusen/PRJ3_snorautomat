@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['snor_20maskine_1876',['Snor Maskine',['../index.html',1,'']]],
-  ['snorhaandtering_20psoc_1877',['SnorHaandtering PSoC',['../_snor_automat__snor.html',1,'index']]],
-  ['snorhaandtering_20psoc_20og_20hardware_1878',['SnorHaandtering PSoC og Hardware',['../_snor_automat__snor__h.html',1,'index']]]
+  ['maincontroller_1876',['mainController',['../_snor_automat_main_controller.html',1,'index']]],
+  ['moenttaeller_20software_1877',['Moenttaeller software',['../_snor_automat__monttaeller.html',1,'index']]]
 ];
