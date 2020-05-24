@@ -31,6 +31,8 @@ void udrulning(void);
  *
  * - \subpage SnorAutomat_mainController "mainController"
  *
+ * - \subpage SnorAutomat_GUI "1. udkast - uden messageQueue"
+ * 
  * - \subpage SnorAutomat_GUI "2. udkast - med messageQueue"	
  */ 
 
@@ -111,19 +113,54 @@ void udrulning(void);
 */
 
 
+/*! \page SnorAutomat_GUI 1. udkast - uden messageQueue
+*
+*	This is the GUI where the functionality between the windows will be testing
+*
+*	\include <globals1.hpp
+*
+*	\include <mainwindow1.hpp
+*
+*   \include <globals1.h
+*
+*	\include <orderropelengthwindow1.hpp
+*
+*	\include <paymentwindow1.hpp
+*
+*	\include <paidwindow1.hpp
+*
+*	\include <globals1.cpp
+*
+*	\include <mainwindow1.cpp
+*
+*	\include <orderropelengthwindow1.cpp
+*
+*	\include <paymentwindow1.cpp
+*
+*	\include <paidwindow1.cpp
+*
+*	\include <mainGUI1.cpp
+*
+*	\include <mainwindow1.ui
+*
+*	\include <orderopelengthwindow1.ui
+*
+*	\include <paymentwindow1.ui
+*
+*	\include <paidwindow1.ui
+*
+
+
+
 /*! \page SnorAutomat_GUI 2. udkast - med messageQueue
 *
 *	This is the GUI that are using osapi library
 *
 *	\include <communicationtomaincontroller.hpp
 *
-*   \include <globals.h
-*
 *	\include <globals.hpp
 *
 *	\include <mainwindow.hpp
-*
-*   \include <globals.h
 *
 *	\include <orderropelengthwindow.hpp
 *
