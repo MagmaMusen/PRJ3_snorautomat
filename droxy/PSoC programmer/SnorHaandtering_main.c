@@ -31,9 +31,9 @@ void udrulning(void);
  *
  * - \subpage SnorAutomat_mainController "mainController"
  *
- * - \subpage SnorAutomat_GUI_Uden_MessageQueue "1. udkast"
+ * - \subpage SnorAutomat_GUI_Uden_MessageQueue "1._udkast"
  * 
- * - \subpage SnorAutomat_GUI_Med_MessageQueue "2. udkast"	
+ * - \subpage SnorAutomat_GUI_Med_MessageQueue "2._udkast"	
  */ 
 
 /*! \page SnorAutomat_Snor SnorHaandtering PSoC
@@ -42,14 +42,6 @@ void udrulning(void);
  *  The program is for microcontroller PSoC CYCKIT-059 from cypress. For this to be implemented on the PSoC there is also a set up file for pins, I2C buss and so on, this is found in the ducumentation under ducumentation PSoC and you need PSoC creater to open it.
  *  
  * \include <SnorHaandtering_main.c
- *
- *  \include <header1.h
- *
- *  \include <Header111.h
- *
- *   \include <globals.h
-*
-*   \include <mainwindow.cpp
 *
  */
 
@@ -113,7 +105,7 @@ void udrulning(void);
 */
 
 
-/*! \page SnorAutomat_GUI_Uden_MessageQueue 1. udkast
+/*! \page SnorAutomat_GUI_Uden_MessageQueue 1._udkast
 *
 *	This is the GUI where the functionality between the windows will be testing
 *
@@ -151,11 +143,11 @@ void udrulning(void);
 
 
 
-/*! \page SnorAutomat_GUI_Med_MessageQueue 2. udkast
+/*! \page SnorAutomat_GUI_Med_MessageQueue 2._udkast
 *
 *	This is the GUI that are using osapi library
 *
-*	\include <communicationtomaincontroller.hpp
+*	\include <communicationtomaincontroller.h
 *
 *	\include <globals.h
 *
