@@ -1,0 +1,7 @@
+<map id="communicationToMainController::cancelFromGUIHandle" name="communicationToMainController::cancelFromGUIHandle">
+<area shape="rect" id="node1" title="It sends to the mainController that the customer have choosen to cancel the purchase." alt="" coords="620,43,827,84"/>
+<area shape="rect" id="node2" href="$classpayment_window.html#a978c134b924588d2aef39c6b9547750a" title="It calls the function cancelFromGUIHandle() from communcationToMainController." alt="" coords="287,5,572,47"/>
+<area shape="rect" id="node4" href="$classcommunication_to_main_controller.html#a7d3583ab227dbe657c940e6ef687d95a" title="The dispatcher of the class. It receives an id and a message and decide by the id which method it is ..." alt="" coords="294,71,565,127"/>
+<area shape="rect" id="node3" href="$classpayment_window.html#a13f178676c832ca1e8375d52b4cd646e" title=" " alt="" coords="21,5,223,47"/>
+<area shape="rect" id="node5" href="$classcommunication_to_main_controller.html#a391995a89a9bbd5649eeeca1d5f76fd8" title="The event&#45;loop of the class. It receives a message, call the dispatcher with an id and a message and ..." alt="" coords="5,86,239,113"/>
+</map>

@@ -1,20 +1,7 @@
 <map id="paymentWindow::paymentWindow" name="paymentWindow::paymentWindow">
-<area shape="rect" id="node1" title=" " alt="" coords="5,247,228,273"/>
-<area shape="rect" id="node2" href="$classpayment_window.html#a513ed1eea7b4da4879b851cd15c9adc6" title=" " alt="" coords="279,5,499,32"/>
-<area shape="rect" id="node4" href="$classpayment_window.html#a13f178676c832ca1e8375d52b4cd646e" title=" " alt="" coords="288,59,491,101"/>
-<area shape="rect" id="node6" href="$classpayment_window.html#a29dcb5dc3da47da5f249acc2454f3301" title=" " alt="" coords="284,129,495,156"/>
-<area shape="rect" id="node8" href="$classpayment_window.html#af4793a8d889405c078d113f97852ded7" title=" " alt="" coords="299,181,479,222"/>
-<area shape="rect" id="node10" href="$classpayment_window.html#a53754fc725ca5b184e32e025c68dd72b" title=" " alt="" coords="276,247,503,273"/>
-<area shape="rect" id="node12" href="$class_ui__payment_window.html#a0e481d6e9a2a8d59d8007daa6e82feac" title=" " alt="" coords="295,297,484,324"/>
-<area shape="rect" id="node13" href="$classpayment_window.html#aab1b336455b25600152098d9962ee60c" title=" " alt="" coords="278,348,501,375"/>
-<area shape="rect" id="node15" href="$classpayment_window.html#a65eb9f087653da93ed30383bfadf685e" title=" " alt="" coords="289,399,489,441"/>
-<area shape="rect" id="node17" href="$classpayment_window.html#a5eddda94a12a70aeca9ed41cef3efd43" title=" " alt="" coords="277,468,502,495"/>
-<area shape="rect" id="node3" href="$classpayment_window.html#a664a63353a1c109fab5b642fc659a6ef" title=" " alt="" coords="551,5,777,32"/>
-<area shape="rect" id="node5" href="$classpayment_window.html#a0ea0446cdfe8080283bf29b6d274919d" title=" " alt="" coords="571,57,757,98"/>
-<area shape="rect" id="node7" href="$classpayment_window.html#a93089475da5cb564cd060e8ab1556289" title=" " alt="" coords="571,122,757,163"/>
-<area shape="rect" id="node9" href="$classpayment_window.html#a894c28bcf64362d2c7126b647c8cdbb7" title=" " alt="" coords="571,187,757,229"/>
-<area shape="rect" id="node11" href="$classpayment_window.html#a7836da053afa35950362b8148f2af2f6" title=" " alt="" coords="571,253,757,294"/>
-<area shape="rect" id="node14" href="$classpayment_window.html#a9acd605d736e3a61cf90d807d84c6948" title=" " alt="" coords="573,334,755,375"/>
-<area shape="rect" id="node16" href="$classpayment_window.html#a09cf0c9cb3283dc25b09a9eca07b0982" title=" " alt="" coords="563,399,765,441"/>
-<area shape="rect" id="node18" href="$classpayment_window.html#a4f7ca61d7798a185230ec9b40e87ab6e" title=" " alt="" coords="571,465,757,506"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,56,228,83"/>
+<area shape="rect" id="node2" href="$classpayment_window.html#a513ed1eea7b4da4879b851cd15c9adc6" title=" " alt="" coords="276,5,496,32"/>
+<area shape="rect" id="node4" href="$classpayment_window.html#a99fbe6bf4753b4a6813936c7a4a91c47" title=" " alt="" coords="283,56,489,83"/>
+<area shape="rect" id="node5" href="$class_ui__payment_window.html#a0e481d6e9a2a8d59d8007daa6e82feac" title=" " alt="" coords="291,107,481,133"/>
+<area shape="rect" id="node3" href="$classpayment_window.html#a664a63353a1c109fab5b642fc659a6ef" title="It opens paidWindow and is called in the function amountReached()" alt="" coords="544,5,771,32"/>
 </map>

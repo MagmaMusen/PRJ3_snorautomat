@@ -1,12 +1,12 @@
 <map id="C:/Users/Andreas/Documents/GitHub/PRJ3_snorautomat/code/rpi/OSApiStudent/GUI2/GUI2/mainGUI2.cpp" name="C:/Users/Andreas/Documents/GitHub/PRJ3_snorautomat/code/rpi/OSApiStudent/GUI2/GUI2/mainGUI2.cpp">
 <area shape="rect" id="node1" title=" " alt="" coords="360,5,555,76"/>
-<area shape="rect" id="node2" href="$rpi_2_o_s_api_student_2_g_u_i2_2_g_u_i2_2mainwindow_8h.html" title=" " alt="" coords="49,124,151,151"/>
+<area shape="rect" id="node2" href="$mainwindow_8h.html" title=" " alt="" coords="49,124,151,151"/>
 <area shape="rect" id="node4" title=" " alt="" coords="275,124,371,151"/>
-<area shape="rect" id="node5" href="$rpi_2_o_s_api_student_2_g_u_i2_2_g_u_i2_2paymentwindow_8h.html" title=" " alt="" coords="395,124,520,151"/>
+<area shape="rect" id="node5" href="$paymentwindow_8h.html" title=" " alt="" coords="395,124,520,151"/>
 <area shape="rect" id="node11" href="$communicationtomaincontroller_8h.html" title=" " alt="" coords="711,124,924,151"/>
 <area shape="rect" id="node15" title=" " alt="" coords="949,124,1070,151"/>
 <area shape="rect" id="node3" title=" " alt="" coords="5,199,112,225"/>
-<area shape="rect" id="node6" href="$rpi_2_o_s_api_student_2_g_u_i2_2_g_u_i2_2globals_8h.html" title=" " alt="" coords="136,199,211,225"/>
+<area shape="rect" id="node6" href="$globals_8h.html" title=" " alt="" coords="136,199,211,225"/>
 <area shape="rect" id="node7" title=" " alt="" coords="235,199,338,225"/>
 <area shape="rect" id="node8" title=" " alt="" coords="362,199,441,225"/>
 <area shape="rect" id="node9" title=" " alt="" coords="465,199,565,225"/>

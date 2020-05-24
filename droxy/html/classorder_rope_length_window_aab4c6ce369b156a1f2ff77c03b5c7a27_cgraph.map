@@ -2,4 +2,6 @@
 <area shape="rect" id="node1" title=" " alt="" coords="5,39,172,80"/>
 <area shape="rect" id="node2" href="$classorder_rope_length_window.html#a12ee0398cd923386a627003a2e1c5cce" title=" " alt="" coords="220,5,387,47"/>
 <area shape="rect" id="node3" href="$classorder_rope_length_window.html#ab1f67e05bc1fa23881d17b4b2f67d11a" title="It is calling the function orderRopeLengthFromGUIHandle() to tell communicationToMainController that ..." alt="" coords="220,71,387,112"/>
+<area shape="rect" id="node4" href="$classcommunication_to_main_controller.html#a3ce5fb93b5f9fd7392b06588af2c3f65" title="It sends the decided ropeLength that the customer have choosen to mainController." alt="" coords="435,71,649,112"/>
+<area shape="rect" id="node5" href="$classosapi_1_1_basic_msg_queue.html#a8d82ffda45ea8a1d8878f356e5d1284b" title=" " alt="" coords="697,71,855,112"/>
 </map>

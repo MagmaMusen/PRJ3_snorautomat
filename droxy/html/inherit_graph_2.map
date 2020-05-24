@@ -1,4 +1,12 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,112,32"/>
-<area shape="rect" id="node2" href="$class_main_window.html" title=" " alt="" coords="160,5,256,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,208,108,235"/>
+<area shape="rect" id="node2" href="$classorder_rope_length_window.html" title=" " alt="" coords="163,5,329,32"/>
+<area shape="rect" id="node3" href="$classorder_rope_length_window01.html" title=" " alt="" coords="156,56,336,83"/>
+<area shape="rect" id="node4" href="$classorder_rope_length_window1.html" title=" " alt="" coords="159,107,333,133"/>
+<area shape="rect" id="node5" href="$classpaid_window.html" title=" " alt="" coords="200,157,292,184"/>
+<area shape="rect" id="node6" href="$classpaid_window01.html" title=" " alt="" coords="193,208,299,235"/>
+<area shape="rect" id="node7" href="$classpaid_window1.html" title=" " alt="" coords="197,259,295,285"/>
+<area shape="rect" id="node8" href="$classpayment_window.html" title=" " alt="" coords="187,309,305,336"/>
+<area shape="rect" id="node9" href="$classpayment_window01.html" title=" " alt="" coords="180,360,312,387"/>
+<area shape="rect" id="node10" href="$classpayment_window1.html" title=" " alt="" coords="183,411,309,437"/>
 </map>

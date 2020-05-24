@@ -1,0 +1,4 @@
+<map id="communicationToMainController::cancelFromGUIHandle" name="communicationToMainController::cancelFromGUIHandle">
+<area shape="rect" id="node1" title="It sends to the mainController that the customer have choosen to cancel the purchase." alt="" coords="5,5,212,47"/>
+<area shape="rect" id="node2" href="$classosapi_1_1_basic_msg_queue.html#a8d82ffda45ea8a1d8878f356e5d1284b" title=" " alt="" coords="260,5,417,47"/>
+</map>

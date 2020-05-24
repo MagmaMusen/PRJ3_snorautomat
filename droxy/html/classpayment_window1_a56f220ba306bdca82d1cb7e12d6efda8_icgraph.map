@@ -1,0 +1,5 @@
+<map id="paymentWindow1::buttonOneCrownClicked" name="paymentWindow1::buttonOneCrownClicked">
+<area shape="rect" id="node1" title="The reaktion that the value is falling by 0.5 crowns." alt="" coords="528,5,721,47"/>
+<area shape="rect" id="node2" href="$classpayment_window1.html#ad30b354a09010885d1fb65bae95e32ab" title="When oneCrown_ is clicked the value of the spinbox whatYouAreMissingToPay_ will the value fall by 1 c..." alt="" coords="289,5,480,47"/>
+<area shape="rect" id="node3" href="$classpayment_window1.html#acc4e218d0ea20f34a16368c9693d1a7b" title=" " alt="" coords="5,13,241,39"/>
+</map>

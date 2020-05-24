@@ -1,0 +1,5 @@
+<map id="communicationToMainController::startGUIMsgQueue" name="communicationToMainController::startGUIMsgQueue">
+<area shape="rect" id="node1" title="It begins the entire event&#45;loop of the class." alt="" coords="605,46,812,87"/>
+<area shape="rect" id="node2" href="$classcommunication_to_main_controller.html#a7d3583ab227dbe657c940e6ef687d95a" title="The dispatcher of the class. It receives an id and a message and decide by the id which method it is ..." alt="" coords="287,5,557,61"/>
+<area shape="rect" id="node3" href="$classcommunication_to_main_controller.html#a391995a89a9bbd5649eeeca1d5f76fd8" title="The event&#45;loop of the class. It receives a message, call the dispatcher with an id and a message and ..." alt="" coords="5,53,239,80"/>
+</map>

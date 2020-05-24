@@ -1,14 +1,15 @@
 <map id="osapi::ThreadFunctor" name="osapi::ThreadFunctor">
-<area shape="rect" id="node1" title=" " alt="" coords="5,233,149,260"/>
-<area shape="rect" id="node2" href="$class_coin_identifier.html" title=" " alt="" coords="236,5,332,32"/>
-<area shape="rect" id="node3" href="$class_fake_receiver.html" title=" " alt="" coords="234,56,334,83"/>
-<area shape="rect" id="node4" href="$class_key_board_input.html" title=" " alt="" coords="231,107,337,133"/>
-<area shape="rect" id="node5" href="$class_log_system.html" title=" " alt="" coords="240,157,328,184"/>
-<area shape="rect" id="node6" href="$classmain_controller.html" title=" " alt="" coords="231,208,337,235"/>
-<area shape="rect" id="node7" href="$classosapi_1_1details_1_1_log_system.html" title=" " alt="" coords="197,259,371,285"/>
-<area shape="rect" id="node8" href="$classosapi_1_1_i_timer.html" title=" " alt="" coords="236,309,332,336"/>
-<area shape="rect" id="node10" href="$class_sensor_reader.html" title=" " alt="" coords="232,360,336,387"/>
-<area shape="rect" id="node11" href="$class_test_thread.html" title=" " alt="" coords="241,411,327,437"/>
-<area shape="rect" id="node12" href="$class_test_timer.html" title=" " alt="" coords="245,461,323,488"/>
-<area shape="rect" id="node9" href="$classosapi_1_1_timer.html" title=" " alt="" coords="419,309,512,336"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,259,149,285"/>
+<area shape="rect" id="node2" href="$class_coin_identifier.html" title=" " alt="" coords="253,5,349,32"/>
+<area shape="rect" id="node3" href="$classcommunication_to_main_controller.html" title=" " alt="" coords="197,56,404,83"/>
+<area shape="rect" id="node4" href="$class_fake_receiver.html" title=" " alt="" coords="251,107,351,133"/>
+<area shape="rect" id="node5" href="$class_key_board_input.html" title=" " alt="" coords="247,157,354,184"/>
+<area shape="rect" id="node6" href="$class_log_system.html" title=" " alt="" coords="257,208,345,235"/>
+<area shape="rect" id="node7" href="$classmain_controller.html" title=" " alt="" coords="248,259,353,285"/>
+<area shape="rect" id="node8" href="$classosapi_1_1details_1_1_log_system.html" title=" " alt="" coords="214,309,387,336"/>
+<area shape="rect" id="node9" href="$classosapi_1_1_i_timer.html" title=" " alt="" coords="253,360,349,387"/>
+<area shape="rect" id="node11" href="$class_sensor_reader.html" title=" " alt="" coords="249,411,353,437"/>
+<area shape="rect" id="node12" href="$class_test_thread.html" title=" " alt="" coords="257,461,344,488"/>
+<area shape="rect" id="node13" href="$class_test_timer.html" title=" " alt="" coords="261,512,340,539"/>
+<area shape="rect" id="node10" href="$classosapi_1_1_timer.html" title=" " alt="" coords="452,360,545,387"/>
 </map>

@@ -1,0 +1,5 @@
+<map id="paymentWindow1::cancelButtonClicked" name="paymentWindow1::cancelButtonClicked">
+<area shape="rect" id="node1" title="It connects the action decline_ button clicked to the reaktion openOrderRopeWindow." alt="" coords="5,39,215,80"/>
+<area shape="rect" id="node2" href="$classpayment_window1.html#a7b8d2db2bffd53e9525da7586cdb3d92" title=" " alt="" coords="263,5,456,47"/>
+<area shape="rect" id="node3" href="$classpayment_window1.html#a8aa7ab7fb1cf56b2f7cb0d52368e98c6" title="It opens paidWindow and is called in the function amountReached()" alt="" coords="266,71,453,112"/>
+</map>

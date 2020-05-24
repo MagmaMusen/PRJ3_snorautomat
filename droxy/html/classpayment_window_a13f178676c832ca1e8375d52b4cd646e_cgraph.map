@@ -1,4 +1,7 @@
 <map id="paymentWindow::cancelButtonClicked" name="paymentWindow::cancelButtonClicked">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,208,47"/>
-<area shape="rect" id="node2" href="$classpayment_window.html#a0ea0446cdfe8080283bf29b6d274919d" title=" " alt="" coords="256,5,443,47"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,39,208,80"/>
+<area shape="rect" id="node2" href="$classpayment_window.html#a978c134b924588d2aef39c6b9547750a" title="It calls the function cancelFromGUIHandle() from communcationToMainController." alt="" coords="256,5,541,47"/>
+<area shape="rect" id="node5" href="$classpayment_window.html#a0ea0446cdfe8080283bf29b6d274919d" title=" " alt="" coords="305,71,492,112"/>
+<area shape="rect" id="node3" href="$classcommunication_to_main_controller.html#a531c32f4017fe979ed4355d3b84f6681" title="It sends to the mainController that the customer have choosen to cancel the purchase." alt="" coords="589,5,796,47"/>
+<area shape="rect" id="node4" href="$classosapi_1_1_basic_msg_queue.html#a8d82ffda45ea8a1d8878f356e5d1284b" title=" " alt="" coords="844,5,1001,47"/>
 </map>

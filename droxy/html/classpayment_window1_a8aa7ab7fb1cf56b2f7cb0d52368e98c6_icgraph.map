@@ -1,0 +1,6 @@
+<map id="paymentWindow1::openPaidWindow" name="paymentWindow1::openPaidWindow">
+<area shape="rect" id="node1" title="It opens paidWindow and is called in the function amountReached()" alt="" coords="564,27,751,69"/>
+<area shape="rect" id="node2" href="$classpayment_window1.html#af0abe396169e91486662dc966c822e60" title=" " alt="" coords="289,5,516,32"/>
+<area shape="rect" id="node4" href="$classpayment_window1.html#aeb3dbce0c6cb2da4f1ffd5dbb9bda0ec" title="It connects the action decline_ button clicked to the reaktion openOrderRopeWindow." alt="" coords="298,57,507,98"/>
+<area shape="rect" id="node3" href="$classpayment_window1.html#acc4e218d0ea20f34a16368c9693d1a7b" title=" " alt="" coords="5,35,241,61"/>
+</map>

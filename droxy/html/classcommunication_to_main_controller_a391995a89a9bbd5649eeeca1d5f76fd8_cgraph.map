@@ -1,0 +1,9 @@
+<map id="communicationToMainController::run" name="communicationToMainController::run">
+<area shape="rect" id="node1" title="The event&#45;loop of the class. It receives a message, call the dispatcher with an id and a message and ..." alt="" coords="5,143,239,170"/>
+<area shape="rect" id="node2" href="$classcommunication_to_main_controller.html#a7d3583ab227dbe657c940e6ef687d95a" title="The dispatcher of the class. It receives an id and a message and decide by the id which method it is ..." alt="" coords="287,63,557,119"/>
+<area shape="rect" id="node6" href="$classcommunication_to_main_controller.html#a5a8ccf78514b1654a6ff46421aa3a9c9" title="It begins the entire event&#45;loop of the class." alt="" coords="609,136,816,177"/>
+<area shape="rect" id="node7" href="$classosapi_1_1_basic_msg_queue.html#a7e1dcee4a1c9e6d966bb5d33b5c472cb" title=" " alt="" coords="343,195,501,236"/>
+<area shape="rect" id="node3" href="$classcommunication_to_main_controller.html#a531c32f4017fe979ed4355d3b84f6681" title="It sends to the mainController that the customer have choosen to cancel the purchase." alt="" coords="609,5,816,47"/>
+<area shape="rect" id="node5" href="$classcommunication_to_main_controller.html#a3ce5fb93b5f9fd7392b06588af2c3f65" title="It sends the decided ropeLength that the customer have choosen to mainController." alt="" coords="605,71,820,112"/>
+<area shape="rect" id="node4" href="$classosapi_1_1_basic_msg_queue.html#a8d82ffda45ea8a1d8878f356e5d1284b" title=" " alt="" coords="868,71,1025,112"/>
+</map>

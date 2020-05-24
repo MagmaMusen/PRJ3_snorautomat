@@ -1,0 +1,7 @@
+<map id="communicationToMainController::communicationToMainControllerControllerHandler" name="communicationToMainController::communicationToMainControllerControllerHandler">
+<area shape="rect" id="node1" title="The dispatcher of the class. It receives an id and a message and decide by the id which method it is ..." alt="" coords="5,63,276,119"/>
+<area shape="rect" id="node2" href="$classcommunication_to_main_controller.html#a531c32f4017fe979ed4355d3b84f6681" title="It sends to the mainController that the customer have choosen to cancel the purchase." alt="" coords="328,5,535,47"/>
+<area shape="rect" id="node4" href="$classcommunication_to_main_controller.html#a3ce5fb93b5f9fd7392b06588af2c3f65" title="It sends the decided ropeLength that the customer have choosen to mainController." alt="" coords="324,71,539,112"/>
+<area shape="rect" id="node5" href="$classcommunication_to_main_controller.html#a5a8ccf78514b1654a6ff46421aa3a9c9" title="It begins the entire event&#45;loop of the class." alt="" coords="328,136,535,177"/>
+<area shape="rect" id="node3" href="$classosapi_1_1_basic_msg_queue.html#a8d82ffda45ea8a1d8878f356e5d1284b" title=" " alt="" coords="587,71,744,112"/>
+</map>

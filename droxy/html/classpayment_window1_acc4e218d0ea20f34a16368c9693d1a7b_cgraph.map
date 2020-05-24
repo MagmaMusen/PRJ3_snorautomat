@@ -1,0 +1,19 @@
+<map id="paymentWindow1::paymentWindow1" name="paymentWindow1::paymentWindow1">
+<area shape="rect" id="node1" title=" " alt="" coords="5,242,241,269"/>
+<area shape="rect" id="node2" href="$classpayment_window1.html#af0abe396169e91486662dc966c822e60" title=" " alt="" coords="289,17,516,43"/>
+<area shape="rect" id="node4" href="$classpayment_window1.html#aeb3dbce0c6cb2da4f1ffd5dbb9bda0ec" title="It connects the action decline_ button clicked to the reaktion openOrderRopeWindow." alt="" coords="298,71,507,112"/>
+<area shape="rect" id="node6" href="$classpayment_window1.html#aef224e8ec76501f71f7c97a53c828650" title="When fiftyCents_ is clicked value of the spinbox whatYouAreMissingToPay_ will the value fall by 0...." alt="" coords="315,136,490,177"/>
+<area shape="rect" id="node8" href="$classpayment_window1.html#ab56d1d2a0805327abe32173691f9bf7d" title="When fiveCrowns_ is clicked the value of the spinbox whatYouAreMissingToPay_ will the value fall by 5..." alt="" coords="309,201,496,243"/>
+<area shape="rect" id="node10" href="$classpayment_window1.html#ad30b354a09010885d1fb65bae95e32ab" title="When oneCrown_ is clicked the value of the spinbox whatYouAreMissingToPay_ will the value fall by 1 c..." alt="" coords="307,267,498,308"/>
+<area shape="rect" id="node12" href="$classpayment_window1.html#a9cffa12a4aeb25a075323e98e3e4f99b" title="When tenCrownss_ is clicked the value of the spinbox whatYouAreMissingToPay_ will the value fall by 1..." alt="" coords="309,332,496,373"/>
+<area shape="rect" id="node14" href="$classpayment_window1.html#abc820ab7d9681ed2739d1cb7143e4108" title="When twentyCrowns_ is clicked the value of the spinbox whatYouAreMissingToPay_ withe value fall by 20..." alt="" coords="299,397,506,439"/>
+<area shape="rect" id="node16" href="$classpayment_window1.html#a5a4a3f4cf0d1571c38bdb38d31121a9e" title="When twoCrowns_ is clicked the value of the spinbox whatYouAreMissingToPay_ will the value fall by 2 ..." alt="" coords="308,463,497,504"/>
+<area shape="rect" id="node3" href="$classpayment_window1.html#a8aa7ab7fb1cf56b2f7cb0d52368e98c6" title="It opens paidWindow and is called in the function amountReached()" alt="" coords="576,5,763,47"/>
+<area shape="rect" id="node5" href="$classpayment_window1.html#a7b8d2db2bffd53e9525da7586cdb3d92" title=" " alt="" coords="573,71,766,112"/>
+<area shape="rect" id="node7" href="$classpayment_window1.html#a3b5b1819b096d05f8dd97f3dc482e315" title="The reaktion that the value is falling by 0.5 crowns." alt="" coords="572,136,767,177"/>
+<area shape="rect" id="node9" href="$classpayment_window1.html#a9ccafef16e16231020d6e5d4887c53b8" title="The reaktion that the value is falling by 0.5 crowns." alt="" coords="573,201,765,243"/>
+<area shape="rect" id="node11" href="$classpayment_window1.html#a56f220ba306bdca82d1cb7e12d6efda8" title="The reaktion that the value is falling by 0.5 crowns." alt="" coords="573,267,766,308"/>
+<area shape="rect" id="node13" href="$classpayment_window1.html#ad13fe065c9e499a5829634484381c4b2" title="The reaktion that the value is falling by 0.5 crowns." alt="" coords="574,332,765,373"/>
+<area shape="rect" id="node15" href="$classpayment_window1.html#ab46712190618367c7eb7a2d907f33040" title="The reaktion that the value is falling by 0.5 crowns." alt="" coords="564,397,775,439"/>
+<area shape="rect" id="node17" href="$classpayment_window1.html#aa9825264c3df2d83930a78a87758aace" title="The reaktion that the value is falling by 0.5 crowns." alt="" coords="573,463,765,504"/>
+</map>

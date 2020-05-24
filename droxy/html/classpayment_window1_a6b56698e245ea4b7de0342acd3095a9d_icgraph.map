@@ -1,0 +1,6 @@
+<map id="paymentWindow1::valueChangedNegativeFiftyOre" name="paymentWindow1::valueChangedNegativeFiftyOre">
+<area shape="rect" id="node1" title="The signal that the value is falling by 0.5 crowns." alt="" coords="755,35,968,76"/>
+<area shape="rect" id="node2" href="$classpayment_window1.html#a3b5b1819b096d05f8dd97f3dc482e315" title="The reaktion that the value is falling by 0.5 crowns." alt="" coords="512,5,707,47"/>
+<area shape="rect" id="node3" href="$classpayment_window1.html#aef224e8ec76501f71f7c97a53c828650" title="When fiftyCents_ is clicked value of the spinbox whatYouAreMissingToPay_ will the value fall by 0...." alt="" coords="289,35,464,76"/>
+<area shape="rect" id="node4" href="$classpayment_window1.html#acc4e218d0ea20f34a16368c9693d1a7b" title=" " alt="" coords="5,42,241,69"/>
+</map>

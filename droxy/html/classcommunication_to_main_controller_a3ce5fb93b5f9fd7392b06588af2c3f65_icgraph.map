@@ -1,0 +1,8 @@
+<map id="communicationToMainController::finalRopeLengthFromGUIHandle" name="communicationToMainController::finalRopeLengthFromGUIHandle">
+<area shape="rect" id="node1" title="It sends the decided ropeLength that the customer have choosen to mainController." alt="" coords="828,50,1043,91"/>
+<area shape="rect" id="node2" href="$classcommunication_to_main_controller.html#a7d3583ab227dbe657c940e6ef687d95a" title="The dispatcher of the class. It receives an id and a message and decide by the id which method it is ..." alt="" coords="509,5,780,61"/>
+<area shape="rect" id="node4" href="$classorder_rope_length_window.html#ab1f67e05bc1fa23881d17b4b2f67d11a" title="It is calling the function orderRopeLengthFromGUIHandle() to tell communicationToMainController that ..." alt="" coords="561,86,728,127"/>
+<area shape="rect" id="node3" href="$classcommunication_to_main_controller.html#a391995a89a9bbd5649eeeca1d5f76fd8" title="The event&#45;loop of the class. It receives a message, call the dispatcher with an id and a message and ..." alt="" coords="228,20,461,47"/>
+<area shape="rect" id="node5" href="$classorder_rope_length_window.html#aab4c6ce369b156a1f2ff77c03b5c7a27" title=" " alt="" coords="261,86,428,127"/>
+<area shape="rect" id="node6" href="$classorder_rope_length_window.html#a4878b94e77545d0126549ce119dce999" title=" " alt="" coords="5,86,180,127"/>
+</map>

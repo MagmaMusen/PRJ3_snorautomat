@@ -1,0 +1,5 @@
+<map id="orderRopeLengthWindow::sendRopeLength" name="orderRopeLengthWindow::sendRopeLength">
+<area shape="rect" id="node1" title="It is calling the function orderRopeLengthFromGUIHandle() to tell communicationToMainController that ..." alt="" coords="5,5,172,47"/>
+<area shape="rect" id="node2" href="$classcommunication_to_main_controller.html#a3ce5fb93b5f9fd7392b06588af2c3f65" title="It sends the decided ropeLength that the customer have choosen to mainController." alt="" coords="220,5,435,47"/>
+<area shape="rect" id="node3" href="$classosapi_1_1_basic_msg_queue.html#a8d82ffda45ea8a1d8878f356e5d1284b" title=" " alt="" coords="483,5,640,47"/>
+</map>

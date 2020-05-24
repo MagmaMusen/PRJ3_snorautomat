@@ -1,4 +1,4 @@
 <map id="paymentWindow::amountReached" name="paymentWindow::amountReached">
 <area shape="rect" id="node1" title=" " alt="" coords="5,5,225,32"/>
-<area shape="rect" id="node2" href="$classpayment_window.html#a664a63353a1c109fab5b642fc659a6ef" title=" " alt="" coords="273,5,500,32"/>
+<area shape="rect" id="node2" href="$classpayment_window.html#a664a63353a1c109fab5b642fc659a6ef" title="It opens paidWindow and is called in the function amountReached()" alt="" coords="273,5,500,32"/>
 </map>
