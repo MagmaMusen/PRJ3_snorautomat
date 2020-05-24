@@ -121,8 +121,6 @@ void udrulning(void);
 *
 *	\include <mainwindow1.hpp
 *
-*   \include <globals1.h
-*
 *	\include <orderropelengthwindow1.hpp
 *
 *	\include <paymentwindow1.hpp
@@ -143,12 +141,12 @@ void udrulning(void);
 *
 *	\include <mainwindow1.ui
 *
-*	\include <orderopelengthwindow1.ui
+*	\include <orderropelengthwindow1.ui
 *
 *	\include <paymentwindow1.ui
 *
 *	\include <paidwindow1.ui
-*
+*/
 
 
 
@@ -184,11 +182,12 @@ void udrulning(void);
 *
 *	\include <mainwindow.ui
 *
-*	\include <orderopelengthwindow.ui
+*	\include <orderropelengthwindow.ui
 *
 *	\include <paymentwindow.ui
 *
 *	\include <paidwindow.ui
+
 *
 */
 
