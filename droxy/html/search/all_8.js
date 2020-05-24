@@ -10,8 +10,6 @@ var searchData=
   ['getpriority_515',['getPriority',['../classosapi_1_1_thread.html#a5eb2bf6bb954f812a60d8a53391af46a',1,'osapi::Thread::getPriority()'],['../classosapi_1_1details_1_1_thread.html#a9670c55738b843b847749ee87774525e',1,'osapi::details::Thread::getPriority()'],['../classosapi_1_1_thread.html#af80c6b5b96657d090f116fa2219bf24f',1,'osapi::Thread::getPriority() const'],['../classosapi_1_1_thread.html#af80c6b5b96657d090f116fa2219bf24f',1,'osapi::Thread::getPriority() const']]],
   ['globals_2ecpp_516',['globals.cpp',['../globals_8cpp.html',1,'']]],
   ['globals_2eh_517',['globals.h',['../globals_8h.html',1,'']]],
-  ['globals01_2ecpp_518',['globals01.cpp',['../globals01_8cpp.html',1,'']]],
-  ['globals01_2eh_519',['globals01.h',['../globals01_8h.html',1,'']]],
-  ['globals1_2ecpp_520',['globals1.cpp',['../globals1_8cpp.html',1,'']]],
-  ['globals1_2eh_521',['globals1.h',['../globals1_8h.html',1,'']]]
+  ['globals1_2ecpp_518',['globals1.cpp',['../globals1_8cpp.html',1,'']]],
+  ['globals1_2eh_519',['globals1.h',['../globals1_8h.html',1,'']]]
 ];
