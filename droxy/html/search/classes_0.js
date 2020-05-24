@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['amountleft_932',['AmountLeft',['../struct_amount_left.html',1,'']]]
+  ['amountleft_933',['AmountLeft',['../struct_amount_left.html',1,'']]]
 ];

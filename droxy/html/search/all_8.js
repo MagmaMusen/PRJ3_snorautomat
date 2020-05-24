@@ -1,15 +1,18 @@
 var searchData=
 [
-  ['getcontainerpos_508',['getContainerPos',['../classosapi_1_1_timer_id.html#a8dd31ca6b2883d46f70f8892e86da48c',1,'osapi::TimerId::getContainerPos()'],['../classosapi_1_1_timer_id.html#a21d10f8f640a5ba1dffb21bc836e2911',1,'osapi::TimerId::getContainerPos()']]],
-  ['getcurrentmonotonictime_509',['getCurrentMonotonicTime',['../namespaceosapi.html#a97db4c68ee6d057030e07ce4187607f0',1,'osapi']]],
-  ['getcurrenttime_510',['getCurrentTime',['../namespaceosapi.html#a58c5e43a8ae9cf6848c7fbbe2d929d2d',1,'osapi']]],
-  ['getinstance_511',['getInstance',['../classosapi_1_1details_1_1_log_system.html#a7ad0905786a63ef941fefc021f8c7f58',1,'osapi::details::LogSystem::getInstance()'],['../classosapi_1_1details_1_1_log_system.html#a56740fcf80cf72faa1b0a525accc5c0b',1,'osapi::details::LogSystem::getInstance()'],['../namespaceosapi_1_1detail.html#a0db2835d611c18370b74f262933a5ae1',1,'osapi::detail::getInstance()'],['../namespaceosapi_1_1details.html#acf50b36eb618d659d14086da89a74b19',1,'osapi::details::getInstance()']]],
-  ['getlock_512',['getLock',['../classosapi_1_1_i_timer.html#ac9391ae221367446f96120f5e615d055',1,'osapi::ITimer::getLock()'],['../classosapi_1_1_i_timer.html#ac9391ae221367446f96120f5e615d055',1,'osapi::ITimer::getLock()']]],
-  ['getmsgqueue_513',['getMsgQueue',['../class_coin_identifier.html#a6a93d1e39be515da841054d5033d5669',1,'CoinIdentifier::getMsgQueue()'],['../class_fake_receiver.html#a7360451327ec7da539aebae0403503e8',1,'FakeReceiver::getMsgQueue()'],['../class_sensor_reader.html#a0e493b0e27ba3f3c4ffaf76ec5d253ae',1,'SensorReader::getMsgQueue()'],['../class_log_system.html#a8e565531cbbb9b2d308d0ca320ac88f9',1,'LogSystem::getMsgQueue()'],['../class_test_timer.html#ac1264abb1b811da884b54780ccd74ea4',1,'TestTimer::getMsgQueue()'],['../classcommunication_to_main_controller.html#a0f9abcf98d0eabd9a753e516115520ec',1,'communicationToMainController::getMsgQueue()'],['../classmain_controller.html#a01b8a2ab00ff42b718c5708226d998d1',1,'mainController::getMsgQueue()'],['../class_test_timer.html#ac1264abb1b811da884b54780ccd74ea4',1,'TestTimer::getMsgQueue()']]],
-  ['getname_514',['getName',['../classosapi_1_1_thread.html#a72df831524a737e7ed602b70c6e4dc3f',1,'osapi::Thread::getName()'],['../classosapi_1_1details_1_1_thread.html#a424d97481af4e472c756025e25dcafa1',1,'osapi::details::Thread::getName()'],['../classosapi_1_1_thread.html#a72df831524a737e7ed602b70c6e4dc3f',1,'osapi::Thread::getName() const'],['../classosapi_1_1_thread.html#a72df831524a737e7ed602b70c6e4dc3f',1,'osapi::Thread::getName() const']]],
-  ['getpriority_515',['getPriority',['../classosapi_1_1_thread.html#a5eb2bf6bb954f812a60d8a53391af46a',1,'osapi::Thread::getPriority()'],['../classosapi_1_1details_1_1_thread.html#a9670c55738b843b847749ee87774525e',1,'osapi::details::Thread::getPriority()'],['../classosapi_1_1_thread.html#af80c6b5b96657d090f116fa2219bf24f',1,'osapi::Thread::getPriority() const'],['../classosapi_1_1_thread.html#af80c6b5b96657d090f116fa2219bf24f',1,'osapi::Thread::getPriority() const']]],
-  ['globals_2ecpp_516',['globals.cpp',['../globals_8cpp.html',1,'']]],
-  ['globals_2eh_517',['globals.h',['../globals_8h.html',1,'']]],
-  ['globals1_2ecpp_518',['globals1.cpp',['../globals1_8cpp.html',1,'']]],
-  ['globals1_2eh_519',['globals1.h',['../globals1_8h.html',1,'']]]
+  ['fakereceiver_494',['FakeReceiver',['../class_fake_receiver.html',1,'FakeReceiver'],['../class_fake_receiver.html#a38cff5e82317c5f6f10995004a9b5595',1,'FakeReceiver::FakeReceiver()']]],
+  ['fakereceiver_2ecpp_495',['FakeReceiver.cpp',['../_fake_receiver_8cpp.html',1,'']]],
+  ['fakereceiver_2ehpp_496',['FakeReceiver.hpp',['../_fake_receiver_8hpp.html',1,'']]],
+  ['fakereceiverhandlecoin_497',['FakeReceiverHandleCoin',['../class_fake_receiver.html#aa6c18883c74616376354e742867fab05',1,'FakeReceiver']]],
+  ['fakereceiverhandler_498',['FakeReceiverHandler',['../class_fake_receiver.html#af092fa7dde145a8e0673e69b79103b23',1,'FakeReceiver']]],
+  ['fd_5fi2c_499',['fd_i2c',['../_i2_c_virtual_8cpp.html#a8dd1a45bc5567056b03e24febf185198',1,'I2CVirtual.cpp']]],
+  ['fiftycents_5f_500',['fiftyCents_',['../classpayment_window1.html#a56a045e7a85505b388d6ff96bc21185a',1,'paymentWindow1']]],
+  ['fiftyoreclicked_501',['fiftyOreClicked',['../classpayment_window1.html#aef224e8ec76501f71f7c97a53c828650',1,'paymentWindow1']]],
+  ['filename_5f_502',['fileName_',['../structosapi_1_1details_1_1_log.html#a47078e39b31512e2b0a9ece8a1889591',1,'osapi::details::Log']]],
+  ['finalropelength_503',['FinalRopeLength',['../struct_final_rope_length.html',1,'FinalRopeLength'],['../struct_final_rope_length.html#a2ec2f0d15ac765b164649378de0a7e9c',1,'FinalRopeLength::finalRopeLength()']]],
+  ['finalropelength_5f_504',['finalRopeLength_',['../classmain_controller.html#a2721118cbb8b9ae8389efc1cee2e0a28',1,'mainController']]],
+  ['finalropelengthfromguihandle_505',['finalRopeLengthFromGUIHandle',['../classcommunication_to_main_controller.html#a3ce5fb93b5f9fd7392b06588af2c3f65',1,'communicationToMainController::finalRopeLengthFromGUIHandle()'],['../classmain_controller.html#a90a49dc0e63d853a61c4b504df2c6002',1,'mainController::finalRopeLengthFromGUIHandle()']]],
+  ['fivecrownclicked_506',['fiveCrownClicked',['../classpayment_window1.html#ab56d1d2a0805327abe32173691f9bf7d',1,'paymentWindow1']]],
+  ['fivecrowns_5f_507',['fiveCrowns_',['../classpayment_window1.html#ad0c0e85ee3c5a4f2cc87026d83702a3f',1,'paymentWindow1']]],
+  ['functionname_5f_508',['functionName_',['../structosapi_1_1details_1_1_log.html#a0239a7dbd5fb94a003ae0a040fadc0fc',1,'osapi::details::Log']]]
 ];

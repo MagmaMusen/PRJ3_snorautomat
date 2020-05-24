@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['i2c_1906',['I2C',['../_snor_automat__i2_c.html',1,'index']]]
+  ['dosering_20psoc_1907',['Dosering PSoC',['../_snor_automat__dosering.html',1,'index']]]
 ];
