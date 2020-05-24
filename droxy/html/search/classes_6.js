@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['log_943',['Log',['../structosapi_1_1details_1_1_log.html',1,'osapi::details']]],
-  ['logind_944',['LogInd',['../struct_log_ind.html',1,'']]],
-  ['loglevelerror_945',['LogLevelError',['../classosapi_1_1_log_level_error.html',1,'osapi']]],
-  ['logoutputstdout_946',['LogOutputStdOut',['../classosapi_1_1_log_output_std_out.html',1,'osapi']]],
-  ['logsystem_947',['LogSystem',['../classosapi_1_1details_1_1_log_system.html',1,'osapi::details::LogSystem'],['../class_log_system.html',1,'LogSystem']]]
+  ['log_951',['Log',['../structosapi_1_1details_1_1_log.html',1,'osapi::details']]],
+  ['logind_952',['LogInd',['../struct_log_ind.html',1,'']]],
+  ['loglevelerror_953',['LogLevelError',['../classosapi_1_1_log_level_error.html',1,'osapi']]],
+  ['logoutputstdout_954',['LogOutputStdOut',['../classosapi_1_1_log_output_std_out.html',1,'osapi']]],
+  ['logsystem_955',['LogSystem',['../classosapi_1_1details_1_1_log_system.html',1,'osapi::details::LogSystem'],['../class_log_system.html',1,'LogSystem']]]
 ];
