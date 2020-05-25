@@ -29,12 +29,13 @@ void communicationToMainController::finalRopeLengthFromGUIHandle()
     finalRope->finalRopeLength = ropeLength;
     mq_.send(ID_FINALEROPELENGTHFROMGUI_IND, finalRope);
 }
-/*
+
 void communicationToMainController::updateAmountToPay(AmountLeft* moenyLeft)
 {
     price = moneyLeft->amountLeft;
+
 }
-*/
+
 
 void communicationToMainController::cancelFromGUIHandle()
 {
@@ -57,7 +58,7 @@ void communicationToMainController::communicationToMainControllerControllerHandl
             break;
 
         case ID_UPDATEAMOUNTTOPAYTOGUI_IND:
-            //updateAmountToPay(static_cast<AmountLeft*>(msg));
+            updateAmountToPay(static_cast<AmountLeft*>(msg));
             break;
         case ID_CANCELFROMGUI_IND:
             cancelFromGUIHandle();
