@@ -1,0 +1,126 @@
+\hypertarget{main_8c}{}\doxysection{main.\+c File Reference}
+\label{main_8c}\index{main.c@{main.c}}
+{\ttfamily \#include \char`\"{}project.\+h\char`\"{}}\newline
+Include dependency graph for main.\+c\+:
+% FIG 0
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{main_8c_abe2a495f8fb12203f43fa52b6d012ed7}{init\+I2C}} (void)
+\item 
+void \mbox{\hyperlink{main_8c_a925b8d6c96b66ccb4e2d7ba890804990}{udrulning}} (void)
+\item 
+int \mbox{\hyperlink{main_8c_a840291bc02cba5474a4cb46a9b9566fe}{main}} (void)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{main_8c_acd8d62179f75714af34ae50caa397a73}{B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+ZE}} = 6
+\item 
+uint8 \mbox{\hyperlink{main_8c_ad4dcdb22218160cac13ab166b824ef23}{buffer}} \mbox{[}$\,$\mbox{]} = \{0,0,0,0,0,0\}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{main_8c_abe2a495f8fb12203f43fa52b6d012ed7}\label{main_8c_abe2a495f8fb12203f43fa52b6d012ed7}} 
+\index{main.c@{main.c}!initI2C@{initI2C}}
+\index{initI2C@{initI2C}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{initI2C()}{initI2C()}}
+{\footnotesize\ttfamily void init\+I2C (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+To init the I2C function, firstly we start the I2C that we placed in the topdesign. Secondly the I2C Write Buf is initialized, this is the buf that the master writes too. It is the previously made buffer, this program will only use the first one, but this funtion is made so it can be implemented in our other P\+SoC programs. The last line do clear the buffer, the P\+SoC can have problems with it\textquotesingle{}s topdesigns if you dont clear them. 
+
+Definition at line 76 of file main.\+c.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{77 \{}
+\DoxyCodeLine{78     I2C\_1\_Start();}
+\DoxyCodeLine{79     uint8 *buf = \&\mbox{\hyperlink{main_8c_ad4dcdb22218160cac13ab166b824ef23}{buffer}}[0];}
+\DoxyCodeLine{80     I2C\_1\_SlaveInitWriteBuf(buf, \mbox{\hyperlink{main_8c_acd8d62179f75714af34ae50caa397a73}{BUFFER\_SIZE}});}
+\DoxyCodeLine{81     I2C\_1\_SlaveClearWriteBuf();}
+\DoxyCodeLine{82 \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:
+% FIG 1
+\mbox{\Hypertarget{main_8c_a840291bc02cba5474a4cb46a9b9566fe}\label{main_8c_a840291bc02cba5474a4cb46a9b9566fe}} 
+\index{main.c@{main.c}!main@{main}}
+\index{main@{main}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+In main the program is put together in the start the function \mbox{\hyperlink{main_8c_abe2a495f8fb12203f43fa52b6d012ed7}{init\+I2\+C()}} is called. After that there is an infinity for loop wich runs the \mbox{\hyperlink{main_8c_a925b8d6c96b66ccb4e2d7ba890804990}{udrulning()}} function. 
+
+Definition at line 58 of file main.\+c.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{59 \{}
+\DoxyCodeLine{60     CyGlobalIntEnable; \textcolor{comment}{/* Enable global interrupts. */}}
+\DoxyCodeLine{61     }
+\DoxyCodeLine{62     \mbox{\hyperlink{main_8c_abe2a495f8fb12203f43fa52b6d012ed7}{initI2C}}();}
+\DoxyCodeLine{63     }
+\DoxyCodeLine{64     \textcolor{keywordflow}{for}(;;)}
+\DoxyCodeLine{65     \{}
+\DoxyCodeLine{66         \mbox{\hyperlink{main_8c_a925b8d6c96b66ccb4e2d7ba890804990}{udrulning}}();}
+\DoxyCodeLine{67     \}}
+\DoxyCodeLine{68 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{main_8c_a925b8d6c96b66ccb4e2d7ba890804990}\label{main_8c_a925b8d6c96b66ccb4e2d7ba890804990}} 
+\index{main.c@{main.c}!udrulning@{udrulning}}
+\index{udrulning@{udrulning}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{udrulning()}{udrulning()}}
+{\footnotesize\ttfamily void udrulning (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+This function will first tjek on the write slave flag, if it is low nothing will happen but the function will be runned agin. If it is high, the function will turn on the motor for 5 second for every number recived in the first byte. To turn on the motor the P\+WM in the topdesign will be used. When the motor is done running, the slave buf and flag will be cleared. 
+
+Definition at line 88 of file main.\+c.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{89 \{}
+\DoxyCodeLine{90     }
+\DoxyCodeLine{91     \textcolor{keywordflow}{if}(I2C\_1\_SlaveStatus() \& I2C\_1\_SSTAT\_WR\_CMPLT)}
+\DoxyCodeLine{92         \{}
+\DoxyCodeLine{93             uint8 i = 0;}
+\DoxyCodeLine{94             \textcolor{keywordflow}{for}(i = 0;i < \mbox{\hyperlink{main_8c_ad4dcdb22218160cac13ab166b824ef23}{buffer}}[0];++i)}
+\DoxyCodeLine{95             \{}
+\DoxyCodeLine{96                 PWM\_1\_Start();}
+\DoxyCodeLine{97                 CyDelay(5000);}
+\DoxyCodeLine{98                 PWM\_1\_Stop();}
+\DoxyCodeLine{99             \}}
+\DoxyCodeLine{100             I2C\_1\_SlaveClearWriteBuf();}
+\DoxyCodeLine{101             I2C\_1\_SlaveClearWriteStatus();}
+\DoxyCodeLine{102         \}}
+\DoxyCodeLine{103 \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:
+% FIG 3
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{main_8c_ad4dcdb22218160cac13ab166b824ef23}\label{main_8c_ad4dcdb22218160cac13ab166b824ef23}} 
+\index{main.c@{main.c}!buffer@{buffer}}
+\index{buffer@{buffer}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{buffer}{buffer}}
+{\footnotesize\ttfamily uint8 buffer\mbox{[}$\,$\mbox{]} = \{0,0,0,0,0,0\}}
+
+Here is the buffer set, it is the one that \mbox{\hyperlink{main_8c_abe2a495f8fb12203f43fa52b6d012ed7}{init\+I2\+C(void)}} uses. It is preset to have six spots of 0, because when you use microprocessers, you cant use dynamic allocation as usualæ 
+
+Definition at line 52 of file main.\+c.
+
+\mbox{\Hypertarget{main_8c_acd8d62179f75714af34ae50caa397a73}\label{main_8c_acd8d62179f75714af34ae50caa397a73}} 
+\index{main.c@{main.c}!BUFFER\_SIZE@{BUFFER\_SIZE}}
+\index{BUFFER\_SIZE@{BUFFER\_SIZE}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{BUFFER\_SIZE}{BUFFER\_SIZE}}
+{\footnotesize\ttfamily int B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+ZE = 6}
+
+Decleration of the buffer size which is used in thee function void \mbox{\hyperlink{main_8c_abe2a495f8fb12203f43fa52b6d012ed7}{init\+I2\+C(void)}}. It is written as a global variable so it can be used every where in the program later. 
+
+Definition at line 47 of file main.\+c.
+
