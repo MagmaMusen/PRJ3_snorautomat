@@ -1,6 +1,0 @@
-C:\Users\Andreas\Documents\PSoC Creator\I2C_Slave_Snor_Funktioner_3.0\I2C_Slave_Snor.cywrk.Archive01\I2C_Slave_Snor_Funktioner_1.0\I2C_Slave.cydsn\I2C_Slave.cyprj|e23ff1de-8c8b-4c76-9642-99070df86d4b
-C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|0ab1ecdb-28eb-4ae1-8b3f-e30548fc6866
-C:\Users\Andreas\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\Downloads ( 4.2).cyprj|d133e3d9-98d0-4bb1-ac25-e0f3de6b6a54
-C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|011ed270-57c4-4c8c-b771-1ba008f760e2
-C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|20032537-f72e-42c1-b137-131141a9f7d4
-C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|7c943a84-64b3-430f-a2e7-8f8f98ae0289
